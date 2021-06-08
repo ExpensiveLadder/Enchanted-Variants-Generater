@@ -24,7 +24,7 @@ namespace EnchantedVariantsGenerater
         public ushort? EnchantmentAmount { get; set; }
     }
 
-
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Interoperability", "CA1416:Validate platform compatibility", Justification = "<Pending>")]
     public class Program
     {
 
@@ -36,19 +36,6 @@ namespace EnchantedVariantsGenerater
                 {
                     Count = 1,
                     Level = level
-                }
-            };
-        }
-
-        public static LeveledItemEntry CreateLeveledItemEntry(short level, IFormLink<IItemGetter> reference)
-        {
-            return new LeveledItemEntry
-            {
-                Data = new LeveledItemEntryData()
-                {
-                    Count = 1,
-                    Level = level,
-                    Reference = reference
                 }
             };
         }
@@ -67,7 +54,6 @@ namespace EnchantedVariantsGenerater
             return leveledItemEntry;
         }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Interoperability", "CA1416:Validate platform compatibility", Justification = "<Pending>")]
         public static EnchantmentInfo ParseEnchantments(IPatcherState<ISkyrimMod, ISkyrimModGetter> state, EnchantmentJSON enchantmentJSON)
         {
 
@@ -104,7 +90,6 @@ namespace EnchantedVariantsGenerater
             return enchantmentGetter;
         }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Interoperability", "CA1416:Validate platform compatibility", Justification = "<Pending>")]
         public static async Task<int> Main(string[] args)
         {
             return await SynthesisPipeline.Instance
@@ -122,7 +107,7 @@ namespace EnchantedVariantsGenerater
 
             foreach (var filePath in Directory.GetFiles(state.ExtraSettingsDataPath, "*.json"))
             {
-                Console.WriteLine("MESSAGE: Reading JSON file \"" + filePath + "\"");
+                Console.WriteLine("Reading JSON file \"" + filePath + "\"");
                 var inputJSON = JsonConvert.DeserializeObject<InputFileJSON>(File.ReadAllText(filePath));
                 if (inputJSON == null) continue;
                 if (inputJSON.InputWeapons != null) inputWeaponsJSON.Add(inputJSON.InputWeapons);
@@ -133,7 +118,6 @@ namespace EnchantedVariantsGenerater
             var baseSublist = new LeveledItem(state.PatchMod);
             baseSublist.Flags |= LeveledItem.Flag.CalculateForEachItemInCount;
             baseSublist.Flags |= LeveledItem.Flag.CalculateFromAllLevelsLessThanOrEqualPlayer;
-            // baseSublist.Entries = new Noggog.ExtendedList<LeveledItemEntry>();
 
             // Weapons Generator
             foreach (var inputWeapons in inputWeaponsJSON)
@@ -173,7 +157,6 @@ namespace EnchantedVariantsGenerater
 
                 // Parse Enchantments
                 List<EnchantmentInfo> enchantmentInfos = new();
-
                 foreach (var enchantmentGetter in inputWeapons.Enchantments)
                 {
                     enchantmentInfos.Add(ParseEnchantments(state, enchantmentGetter));
@@ -186,17 +169,51 @@ namespace EnchantedVariantsGenerater
 
                     // Create Leveled Lists
 
-                    var LItemEnchWeaponAll = state.PatchMod.LeveledItems.DuplicateInAsNewRecord(baseSublist);
-                    LItemEnchWeaponAll.EditorID = "LItemEnch_" + weaponGetter.EditorID + "_All";
-                    LItemEnchWeaponAll.Entries = new Noggog.ExtendedList<LeveledItemEntry>();
 
-                    var LItemEnchWeaponSublists = state.PatchMod.LeveledItems.DuplicateInAsNewRecord(baseSublist);
-                    LItemEnchWeaponSublists.EditorID = "LItemEnch_" + weaponGetter.EditorID + "_Sublists";
-                    LItemEnchWeaponSublists.Entries = new Noggog.ExtendedList<LeveledItemEntry>();
+                    LeveledItem LItemEnchWeaponAll;
+                    String LItemEnchWeaponAll_EditorID = "LItemEnch_" + weaponGetter.EditorID + "_All";
+                    if (state.LinkCache.TryResolve<ILeveledItemGetter>(LItemEnchWeaponAll_EditorID, out var LItemEnchWeaponAll_Original))
+                    {
+                        Console.WriteLine("Leveled List \"" + LItemEnchWeaponAll_EditorID + "\" already exists in plugin \"" + LItemEnchWeaponAll_Original.FormKey.ModKey.ToString() + "\", copying as override.");
+                        LItemEnchWeaponAll = LItemEnchWeaponAll_Original.DeepCopy();
+                        state.PatchMod.LeveledItems.Set(LItemEnchWeaponAll);
+                    } else
+                    {
+                        LItemEnchWeaponAll = state.PatchMod.LeveledItems.DuplicateInAsNewRecord(baseSublist);
+                        LItemEnchWeaponAll.EditorID = LItemEnchWeaponAll_EditorID;
+                    }
+                    if (LItemEnchWeaponAll.Entries == null) LItemEnchWeaponAll.Entries = new Noggog.ExtendedList<LeveledItemEntry>();
 
-                    var LItemEnchWeaponSublistsBest = state.PatchMod.LeveledItems.DuplicateInAsNewRecord(LItemEnchWeaponSublists);
-                    LItemEnchWeaponSublistsBest.EditorID += "Best";
-                    LItemEnchWeaponSublistsBest.Entries = new Noggog.ExtendedList<LeveledItemEntry>();
+                    LeveledItem LItemEnchWeaponSublists;
+                    String LItemEnchWeaponSublists_EditorID = "LItemEnch_" + weaponGetter.EditorID + "_Sublists";
+                    if (state.LinkCache.TryResolve<ILeveledItemGetter>(LItemEnchWeaponSublists_EditorID, out var LItemEnchWeaponSublists_Original))
+                    {
+                        Console.WriteLine("Leveled List \"" + LItemEnchWeaponSublists_EditorID + "\" already exists in plugin \"" + LItemEnchWeaponSublists_Original.FormKey.ModKey.ToString() + "\", copying as override.");
+                        LItemEnchWeaponSublists = LItemEnchWeaponSublists_Original.DeepCopy();
+                        state.PatchMod.LeveledItems.Set(LItemEnchWeaponSublists);
+                    }
+                    else
+                    {
+                        LItemEnchWeaponSublists = state.PatchMod.LeveledItems.DuplicateInAsNewRecord(baseSublist);
+                        LItemEnchWeaponSublists.EditorID = LItemEnchWeaponSublists_EditorID;
+                    }
+                    if (LItemEnchWeaponSublists.Entries == null) LItemEnchWeaponSublists.Entries = new Noggog.ExtendedList<LeveledItemEntry>();
+
+                    LeveledItem LItemEnchWeaponSublistsBest;
+                    String LItemEnchWeaponSublistsBest_EditorID = "LItemEnch_" + weaponGetter.EditorID + "_SublistsBest";
+                    if (state.LinkCache.TryResolve<ILeveledItemGetter>(LItemEnchWeaponSublistsBest_EditorID, out var LItemEnchWeaponSublistsBest_Original))
+                    {
+                        Console.WriteLine("Leveled List \"" + LItemEnchWeaponSublistsBest_EditorID + "\" already exists in plugin \"" + LItemEnchWeaponSublistsBest_Original.FormKey.ModKey.ToString() + "\", copying as override.");
+                        LItemEnchWeaponSublistsBest = LItemEnchWeaponSublistsBest_Original.DeepCopy();
+                        state.PatchMod.LeveledItems.Set(LItemEnchWeaponSublistsBest);
+                    }
+                    else
+                    {
+                        LItemEnchWeaponSublistsBest = state.PatchMod.LeveledItems.DuplicateInAsNewRecord(baseSublist);
+                        LItemEnchWeaponSublistsBest.EditorID = LItemEnchWeaponSublistsBest_EditorID;
+                    }
+                    if (LItemEnchWeaponSublistsBest.Entries == null) LItemEnchWeaponSublistsBest.Entries = new Noggog.ExtendedList<LeveledItemEntry>();
+
 
                     var sublists = new Dictionary<string, LeveledItem>();
                     var sublists_best = new Dictionary<string, LeveledItem>();
@@ -211,7 +228,6 @@ namespace EnchantedVariantsGenerater
                         weapon.Name = enchantmentInfo.Prefix + weapon.Name + enchantmentInfo.Suffix;
 
                         // Generate Leveled Lists
-
 
                         // Add to Leveled List All
                         var leveledItemEntry_LItemEnchWeaponAll = CreateLeveledItemEntry(enchantmentInfo.Level, weapon.FormKey);
