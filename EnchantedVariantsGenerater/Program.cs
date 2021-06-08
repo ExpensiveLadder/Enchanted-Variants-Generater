@@ -27,20 +27,21 @@ namespace EnchantedVariantsGenerater
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Interoperability", "CA1416:Validate platform compatibility", Justification = "<Pending>")]
     public class Program
     {
-
-        public static LeveledItemEntry CreateLeveledItemEntry(short level)
+        public static LeveledItemEntry CreateLeveledItemEntry(short level, FormKey reference)
         {
-            return new LeveledItemEntry
+            var leveledItemEntry = new LeveledItemEntry
             {
                 Data = new LeveledItemEntryData()
                 {
                     Count = 1,
-                    Level = level
+                    Level = level,
                 }
             };
+            leveledItemEntry.Data.Reference.SetTo(reference);
+            return leveledItemEntry;
         }
 
-        public static LeveledItemEntry CreateLeveledItemEntry(short level, FormKey reference)
+        public static LeveledItemEntry CreateLeveledItemEntry(short level, LeveledItem reference)
         {
             var leveledItemEntry = new LeveledItemEntry
             {
@@ -69,8 +70,7 @@ namespace EnchantedVariantsGenerater
             }
             else
             {
-                Console.WriteLine("ERROR: enchantment does not have a formkey or editorID specified");
-                throw new Exception();
+                throw new Exception("ERROR: enchantment does not have a formkey or editorID specified");
             }
 
             short level = 1;
@@ -229,59 +229,40 @@ namespace EnchantedVariantsGenerater
 
                         // Generate Leveled Lists
 
-                        // Add to Leveled List All
-                        var leveledItemEntry_LItemEnchWeaponAll = CreateLeveledItemEntry(enchantmentInfo.Level, weapon.FormKey);
-                        LItemEnchWeaponAll.Entries.Add(leveledItemEntry_LItemEnchWeaponAll);
-
-
-                        // Need to redo everything below this
+                        LItemEnchWeaponAll.Entries.Add(CreateLeveledItemEntry(enchantmentInfo.Level, weapon.FormKey)); // Add to Leveled List All
 
                         // Sublist
-
                         if (enchantmentInfo.Sublist != null)
                         {
 
-                            if (!sublists.TryGetValue(enchantmentInfo.Sublist, out LeveledItem? sublist))
+                            if (!sublists.TryGetValue(enchantmentInfo.Sublist, out LeveledItem? sublist)) // If Sublist does not exist, create it
                             {
                                 sublist = state.PatchMod.LeveledItems.DuplicateInAsNewRecord(baseSublist);
                                 sublist.EditorID = "SublistEnch_" + weaponGetter.EditorID + "_" + enchantmentInfo.Sublist;
                                 sublists.Add(enchantmentInfo.Sublist, sublist);
 
                                 // Leveled List of Sublists
-
-                                var sublistsEntry = CreateLeveledItemEntry(enchantmentInfo.Level);
-                                sublistsEntry.Data?.Reference.SetTo(sublist);
-
-                                if (LItemEnchWeaponSublists.Entries == null) LItemEnchWeaponSublists.Entries = new Noggog.ExtendedList<LeveledItemEntry>();
-                                LItemEnchWeaponSublists.Entries.Add(sublistsEntry);
+                                LItemEnchWeaponSublists.Entries.Add(CreateLeveledItemEntry(enchantmentInfo.Level, sublist));
                             };
                             if (sublist.Entries == null) sublist.Entries = new Noggog.ExtendedList<LeveledItemEntry>();
-                            var leveledItemEntrySublist = CreateLeveledItemEntry(enchantmentInfo.Level, weapon.FormKey);
-                            sublist.Entries.Add(leveledItemEntrySublist);
+                            sublist.Entries.Add(CreateLeveledItemEntry(enchantmentInfo.Level, weapon.FormKey));
 
                             state.PatchMod.LeveledItems.Set(sublist);
 
 
                             // Sublists Best
-                            if (!sublists_best.TryGetValue(enchantmentInfo.Sublist, out LeveledItem? sublist_best))
+                            if (!sublists_best.TryGetValue(enchantmentInfo.Sublist, out LeveledItem? sublist_best)) // If Sublist does not exist, create it
                             {
                                 sublist_best = state.PatchMod.LeveledItems.DuplicateInAsNewRecord(baseSublist);
                                 sublist_best.EditorID = "SublistEnchBest_" + weaponGetter.EditorID + "_" + enchantmentInfo.Sublist;
                                 sublist_best.Flags -= LeveledItem.Flag.CalculateFromAllLevelsLessThanOrEqualPlayer;
-                                sublist_best.Entries = new Noggog.ExtendedList<LeveledItemEntry>();
                                 sublists_best.Add(enchantmentInfo.Sublist, sublist_best);
 
                                 // Leveled List of Sublists
-
-                                var sublistsEntry = CreateLeveledItemEntry(enchantmentInfo.Level);
-                                sublistsEntry.Data?.Reference.SetTo(sublist_best);
-
-                                if (LItemEnchWeaponSublistsBest.Entries == null) LItemEnchWeaponSublistsBest.Entries = new Noggog.ExtendedList<LeveledItemEntry>();
-                                LItemEnchWeaponSublistsBest.Entries.Add(sublistsEntry);
+                                LItemEnchWeaponSublistsBest.Entries.Add(CreateLeveledItemEntry(enchantmentInfo.Level, sublist_best));
                             };
                             if (sublist_best.Entries == null) sublist_best.Entries = new Noggog.ExtendedList<LeveledItemEntry>();
-                            var leveledItemEntrySublistBest = CreateLeveledItemEntry(enchantmentInfo.Level, weapon.FormKey);
-                            sublist_best.Entries.Add(leveledItemEntrySublistBest);
+                            sublist_best.Entries.Add(CreateLeveledItemEntry(enchantmentInfo.Level, weapon.FormKey));
 
                             state.PatchMod.LeveledItems.Set(sublist_best);
                         }
