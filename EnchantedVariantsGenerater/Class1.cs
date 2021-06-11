@@ -33,5 +33,6 @@ namespace EnchantedVariantsGenerater
         public string? Sublist { get; set; }
         public int? Level { get; set; }
         public int? EnchantmentAmount { get; set; }
+        public bool Boss { get; set; } = true;
     }
 }
