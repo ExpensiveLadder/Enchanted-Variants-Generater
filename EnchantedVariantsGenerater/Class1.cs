@@ -15,6 +15,10 @@ namespace EnchantedVariantsGenerater
         public string[]? WeaponFormKeys { get; set; }
         public string[]? WeaponEditorIDs { get; set; }
         public EnchantmentJSON[]? Enchantments { get; set; }
+
+        public bool LItemEnchWeaponAll { get; set; } = false;
+        public bool LItemEnchWeaponAny { get; set; } = false;
+        public bool LItemEnchWeaponBest { get; set; } = false;
     }
 
     public class InputArmorsJSON
@@ -22,6 +26,8 @@ namespace EnchantedVariantsGenerater
         public string[]? ArmorFormKeys { get; set; }
         public string[]? ArmorEditorIDs { get; set; }
         public EnchantmentJSON[]? Enchantments { get; set; }
+
+        public bool Create_LItemEnchAll { get; set; }
     }
     
     public class EnchantmentJSON
