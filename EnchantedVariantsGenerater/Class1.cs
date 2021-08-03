@@ -4,6 +4,10 @@ using System.Text;
 
 namespace EnchantedVariantsGenerater
 {
+    public class Config
+    {
+        public bool LItemEnchWeaponAll { get; set; }
+    }
     public class InputFileJSON
     {
         public InputWeaponsJSON? InputWeapons { get; set; }

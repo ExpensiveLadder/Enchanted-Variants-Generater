@@ -87,7 +87,6 @@ namespace EnchantedVariantsGenerater
                 Sublist = enchantmentJSON.Sublist,
                 EditorID = enchantment.EditorID,
                 Boss = enchantmentJSON.Boss,
-                Create_LItemEnchWeaponAll = enchantmentJSON.Crea
             };
 
             return enchantmentGetter;
@@ -115,6 +114,14 @@ namespace EnchantedVariantsGenerater
             return LItemEnchWeapon;
         }
 
+        public static Config GetConfig(String path)
+        {
+            Config? config = JsonConvert.DeserializeObject<Config>(File.ReadAllText(path));
+            if (config == null) throw new Exception();
+
+            return config;
+        }
+
         public static Noggog.ExtendedList<LeveledItemEntry> GetLeveledItemEntries(LeveledItem leveledItem)
         {
             Noggog.ExtendedList<LeveledItemEntry>? leveledItemEntries = leveledItem.Entries;
@@ -136,8 +143,10 @@ namespace EnchantedVariantsGenerater
             List<InputWeaponsJSON> inputWeaponsJSON = new();
             List<InputArmorsJSON> inputArmorsJSONs = new();
 
+            // Config config = GetConfig(Path.Combine(state.ExtraSettingsDataPath, "config.json"));
 
-            foreach (var filePath in Directory.GetFiles(state.ExtraSettingsDataPath, "*.json"))
+
+            foreach (var filePath in Directory.GetFiles(state.ExtraSettingsDataPath + "\\input", "*.json"))
             {
                 Console.WriteLine("Reading JSON file \"" + filePath + "\"");
                 var inputJSON = JsonConvert.DeserializeObject<InputFileJSON>(File.ReadAllText(filePath));
@@ -194,15 +203,10 @@ namespace EnchantedVariantsGenerater
 
                     // Create Leveled Lists
 
-                    LeveledItem LItemEnchWeaponAll = CreateLItemEnchWeapon(state, weaponGetter, "All");
-             
-                    LeveledItem LItemEnchWeaponAllUnleveled = CreateLItemEnchWeapon(state, weaponGetter, "AllUnleveled");
                     LeveledItem LItemEnchWeaponSublists = CreateLItemEnchWeapon(state, weaponGetter, "Sublists");
-                    LeveledItem LItemEnchWeaponSublistsBest = CreateLItemEnchWeapon(state, weaponGetter, "SublistsBest");
-                    LeveledItem LItemEnchWeaponBoss = CreateLItemEnchWeapon(state, weaponGetter, "Boss");
+                    LeveledItem LItemEnchWeaponSublistsBoss = CreateLItemEnchWeapon(state, weaponGetter, "Boss");
 
                     var sublists = new Dictionary<string, LeveledItem>();
-                    var sublists_best = new Dictionary<string, LeveledItem>();
 
                     foreach (var enchantmentInfo in enchantmentInfos)
                     {
@@ -215,10 +219,7 @@ namespace EnchantedVariantsGenerater
 
                         // Generate Leveled Lists
 
-                        GetLeveledItemEntries(LItemEnchWeaponAll).Add(CreateLeveledItemEntry(enchantmentInfo.Level, weapon.FormKey)); // Add to Leveled List All
-                        GetLeveledItemEntries(LItemEnchWeaponAllUnleveled).Add(CreateLeveledItemEntry(1, weapon.FormKey)); // Add to Leveled List All Unleveled
-
-                        // Sublist
+                        // Sublists
                         if (enchantmentInfo.Sublist != null)
                         {
 
@@ -234,32 +235,18 @@ namespace EnchantedVariantsGenerater
 
                                 if (enchantmentInfo.Boss)
                                 {
-                                    GetLeveledItemEntries(LItemEnchWeaponBoss).Add(leveledItemEntry);
+                                    GetLeveledItemEntries(LItemEnchWeaponSublistsBoss).Add(leveledItemEntry);
                                 }
                             };
                             if (sublist.Entries == null) sublist.Entries = new Noggog.ExtendedList<LeveledItemEntry>();
                             sublist.Entries.Add(CreateLeveledItemEntry(enchantmentInfo.Level, weapon.FormKey));
 
                             state.PatchMod.LeveledItems.Set(sublist);
-
-
-                            // Sublists Best
-                            if (!sublists_best.TryGetValue(enchantmentInfo.Sublist, out LeveledItem? sublist_best)) // If Sublist does not exist, create it
-                            {
-                                sublist_best = state.PatchMod.LeveledItems.DuplicateInAsNewRecord(baseSublist);
-                                sublist_best.EditorID = "SublistEnchBest_" + weaponGetter.EditorID + "_" + enchantmentInfo.Sublist;
-                                sublist_best.Flags -= LeveledItem.Flag.CalculateFromAllLevelsLessThanOrEqualPlayer;
-                                sublists_best.Add(enchantmentInfo.Sublist, sublist_best);
-
-                                // Leveled List of Sublists
-                                GetLeveledItemEntries(LItemEnchWeaponSublistsBest).Add(CreateLeveledItemEntry(enchantmentInfo.Level, sublist_best));
-                            };
-                            if (sublist_best.Entries == null) sublist_best.Entries = new Noggog.ExtendedList<LeveledItemEntry>();
-                            sublist_best.Entries.Add(CreateLeveledItemEntry(enchantmentInfo.Level, weapon.FormKey));
-
-                            state.PatchMod.LeveledItems.Set(sublist_best);
                         }
                     }
+
+                    state.PatchMod.LeveledItems.Set(LItemEnchWeaponSublists);
+                    if (LItemEnchWeaponSublistsBoss.Entries?.Count != 0) state.PatchMod.LeveledItems.Set(LItemEnchWeaponSublistsBoss);
                 }
 
             }
@@ -307,11 +294,7 @@ namespace EnchantedVariantsGenerater
 
                     // Create Leveled Lists
 
-                    LeveledItem LItemEnchArmorAll = CreateLItemEnchWeapon(state, armorGetter, "All");
-                    LeveledItem LItemEnchArmorAllUnleveled = CreateLItemEnchWeapon(state, armorGetter, "AllUnleveled");
                     LeveledItem LItemEnchArmorSublists = CreateLItemEnchWeapon(state, armorGetter, "Sublists");
-                    LeveledItem LItemEnchArmorSublistsBest = CreateLItemEnchWeapon(state, armorGetter, "SublistsBest");
-                    LeveledItem LItemEnchArmorBoss = CreateLItemEnchWeapon(state, armorGetter, "Boss");
 
                     var sublists = new Dictionary<string, LeveledItem>();
                     var sublists_best = new Dictionary<string, LeveledItem>();
@@ -326,10 +309,7 @@ namespace EnchantedVariantsGenerater
 
                         // Generate Leveled Lists
 
-                        GetLeveledItemEntries(LItemEnchArmorAll).Add(CreateLeveledItemEntry(enchantmentInfo.Level, armor.FormKey)); // Add to Leveled List All
-                        GetLeveledItemEntries(LItemEnchArmorAllUnleveled).Add(CreateLeveledItemEntry(1, armor.FormKey)); // Add to Leveled List All Unleveled
-
-                        // Sublist
+                        // Sublists
                         if (enchantmentInfo.Sublist != null)
                         {
 
@@ -343,32 +323,11 @@ namespace EnchantedVariantsGenerater
                                 var leveledItemEntry = CreateLeveledItemEntry(enchantmentInfo.Level, sublist);
                                 GetLeveledItemEntries(LItemEnchArmorSublists).Add(leveledItemEntry);
 
-                                if (enchantmentInfo.Boss)
-                                {
-                                    GetLeveledItemEntries(LItemEnchArmorBoss).Add(leveledItemEntry);
-                                }
                             };
                             if (sublist.Entries == null) sublist.Entries = new Noggog.ExtendedList<LeveledItemEntry>();
                             sublist.Entries.Add(CreateLeveledItemEntry(enchantmentInfo.Level, armor.FormKey));
 
                             state.PatchMod.LeveledItems.Set(sublist);
-
-
-                            // Sublists Best
-                            if (!sublists_best.TryGetValue(enchantmentInfo.Sublist, out LeveledItem? sublist_best)) // If Sublist does not exist, create it
-                            {
-                                sublist_best = state.PatchMod.LeveledItems.DuplicateInAsNewRecord(baseSublist);
-                                sublist_best.EditorID = "SublistEnchBest_" + armorGetter.EditorID + "_" + enchantmentInfo.Sublist;
-                                sublist_best.Flags -= LeveledItem.Flag.CalculateFromAllLevelsLessThanOrEqualPlayer;
-                                sublists_best.Add(enchantmentInfo.Sublist, sublist_best);
-
-                                // Leveled List of Sublists
-                                GetLeveledItemEntries(LItemEnchArmorSublistsBest).Add(CreateLeveledItemEntry(enchantmentInfo.Level, sublist_best));
-                            };
-                            if (sublist_best.Entries == null) sublist_best.Entries = new Noggog.ExtendedList<LeveledItemEntry>();
-                            sublist_best.Entries.Add(CreateLeveledItemEntry(enchantmentInfo.Level, armor.FormKey));
-
-                            state.PatchMod.LeveledItems.Set(sublist_best);
                         }
                     }
                 }
