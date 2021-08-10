@@ -73,45 +73,59 @@ namespace EnchantedVariantsGenerater
             {
                 throw new Exception("ERROR: enchantment does not have a formkey or editorID specified");
             }
-
-            short level = 1;
-            if (enchantmentJSON.Level != null) level = (short)enchantmentJSON.Level;
-
             var enchantmentGetter = new EnchantmentInfo
             {
-                Level = level,
                 EnchantmentAmount = (ushort?)enchantmentJSON.EnchantmentAmount,
                 Enchantment = enchantment,
                 Prefix = enchantmentJSON.Prefix,
                 Suffix = enchantmentJSON.Suffix,
-                Sublist = enchantmentJSON.Sublist,
                 EditorID = enchantment.EditorID,
-                Boss = enchantmentJSON.Boss,
             };
 
             return enchantmentGetter;
         }
 
-        public static LeveledItem CreateLItemEnchWeapon(IPatcherState<ISkyrimMod, ISkyrimModGetter> state, IMajorRecordGetter weaponGetter, string suffix)
+        public static LeveledItem CreateLItemEnch(IPatcherState<ISkyrimMod, ISkyrimModGetter> state, IMajorRecordGetter referenceGetter, string prefix, string suffix)
         {
-            LeveledItem LItemEnchWeapon;
+            LeveledItem LItemEnch;
 
-            string LItemEnchWeapon_EditorID = "LItemEnch_" + weaponGetter.EditorID + "_" + suffix;
-            if (state.LinkCache.TryResolve<ILeveledItemGetter>(LItemEnchWeapon_EditorID, out var LItemEnchWeapon_Original))
+            string LItemEnch_EditorID = prefix + referenceGetter.EditorID + suffix;
+            if (state.LinkCache.TryResolve<ILeveledItemGetter>(LItemEnch_EditorID, out var LItemEnch_Original))
             {
-                Console.WriteLine("Leveled List \"" + LItemEnchWeapon_EditorID + "\" already exists in plugin \"" + LItemEnchWeapon_Original.FormKey.ModKey.ToString() + "\", copying as override, and appending changes");
-                LItemEnchWeapon = LItemEnchWeapon_Original.DeepCopy();
-                state.PatchMod.LeveledItems.Set(LItemEnchWeapon);
+                Console.WriteLine("Leveled List \"" + LItemEnch_EditorID + "\" already exists in plugin \"" + LItemEnch_Original.FormKey.ModKey.ToString() + "\", copying as override and appending changes");
+                LItemEnch = LItemEnch_Original.DeepCopy();
+                state.PatchMod.LeveledItems.Set(LItemEnch);
             }
             else
             {
-                LItemEnchWeapon = new LeveledItem(state.PatchMod);
-                LItemEnchWeapon.Flags |= LeveledItem.Flag.CalculateForEachItemInCount;
-                LItemEnchWeapon.Flags |= LeveledItem.Flag.CalculateFromAllLevelsLessThanOrEqualPlayer;
-                LItemEnchWeapon.EditorID = LItemEnchWeapon_EditorID;
-                LItemEnchWeapon.Entries = new Noggog.ExtendedList<LeveledItemEntry>();
+                LItemEnch = new LeveledItem(state.PatchMod);
+                LItemEnch.Flags |= LeveledItem.Flag.CalculateForEachItemInCount;
+                LItemEnch.Flags |= LeveledItem.Flag.CalculateFromAllLevelsLessThanOrEqualPlayer;
+                LItemEnch.EditorID = LItemEnch_EditorID;
+                LItemEnch.Entries = new Noggog.ExtendedList<LeveledItemEntry>();
             }
-            return LItemEnchWeapon;
+            return LItemEnch;
+        }
+
+        public static LeveledItem CreateLItemEnch(IPatcherState<ISkyrimMod, ISkyrimModGetter> state, string LItemEnch_EditorID)
+        {
+            LeveledItem LItemEnch;
+
+            if (state.LinkCache.TryResolve<ILeveledItemGetter>(LItemEnch_EditorID, out var LItemEnch_Original))
+            {
+                Console.WriteLine("Leveled List \"" + LItemEnch_EditorID + "\" already exists in plugin \"" + LItemEnch_Original.FormKey.ModKey.ToString() + "\", copying as override and appending changes");
+                LItemEnch = LItemEnch_Original.DeepCopy();
+                state.PatchMod.LeveledItems.Set(LItemEnch);
+            }
+            else
+            {
+                LItemEnch = new LeveledItem(state.PatchMod);
+                LItemEnch.Flags |= LeveledItem.Flag.CalculateForEachItemInCount;
+                LItemEnch.Flags |= LeveledItem.Flag.CalculateFromAllLevelsLessThanOrEqualPlayer;
+                LItemEnch.EditorID = LItemEnch_EditorID;
+                LItemEnch.Entries = new Noggog.ExtendedList<LeveledItemEntry>();
+            }
+            return LItemEnch;
         }
 
         public static Config GetConfig(String path)
@@ -143,7 +157,7 @@ namespace EnchantedVariantsGenerater
             List<InputWeaponsJSON> inputWeaponsJSON = new();
             List<InputArmorsJSON> inputArmorsJSONs = new();
 
-            // Config config = GetConfig(Path.Combine(state.ExtraSettingsDataPath, "config.json"));
+            Config config = GetConfig(Path.Combine(state.ExtraSettingsDataPath, "config.json"));
 
 
             foreach (var filePath in Directory.GetFiles(state.ExtraSettingsDataPath + "\\input", "*.json"))
@@ -155,11 +169,6 @@ namespace EnchantedVariantsGenerater
                 if (inputJSON.InputArmors != null) inputArmorsJSONs.Add(inputJSON.InputArmors);
             }
 
-            // Create base sublist
-            var baseSublist = new LeveledItem(state.PatchMod);
-            baseSublist.Flags |= LeveledItem.Flag.CalculateForEachItemInCount;
-            baseSublist.Flags |= LeveledItem.Flag.CalculateFromAllLevelsLessThanOrEqualPlayer;
-
             // Weapons Generator
             foreach (var inputWeapons in inputWeaponsJSON)
             {
@@ -167,25 +176,6 @@ namespace EnchantedVariantsGenerater
                 {
                     Console.WriteLine("Error: Weapon enchantment list is empty");
                     continue;
-                }
-
-                // Get Weapon FormKeys
-                List<FormKey> weaponFormkeys = new();
-
-                if (inputWeapons.WeaponFormKeys != null)
-                {
-                    foreach (var formKeyString in inputWeapons.WeaponFormKeys)
-                    {
-                        weaponFormkeys.Add(FormKey.Factory(formKeyString));
-                    }
-                }
-
-                if (inputWeapons.WeaponEditorIDs != null)
-                {
-                    foreach (var formIDString in inputWeapons.WeaponEditorIDs)
-                    {
-                        weaponFormkeys.Add(state.LinkCache.Resolve<IWeaponGetter>(formIDString).FormKey);
-                    }
                 }
 
 
@@ -197,59 +187,50 @@ namespace EnchantedVariantsGenerater
                 }
 
                 // Generate Enchanted Weapons
-                foreach (var weaponFormkey in weaponFormkeys)
+                if (inputWeapons.WeaponEditorIDs != null) foreach(var weaponEditorID in inputWeapons.WeaponEditorIDs)
                 {
-                    var weaponGetter = state.LinkCache.Resolve<IWeaponGetter>(weaponFormkey); // Get base weapon
+                    IWeaponGetter weaponGetter = state.LinkCache.Resolve<IWeaponGetter>(weaponEditorID); // Get base weapon
+                    
 
-                    // Create Leveled Lists
-
-                    LeveledItem LItemEnchWeaponSublists = CreateLItemEnchWeapon(state, weaponGetter, "Sublists");
-                    LeveledItem LItemEnchWeaponSublistsBoss = CreateLItemEnchWeapon(state, weaponGetter, "Boss");
-
-                    var sublists = new Dictionary<string, LeveledItem>();
+                    LeveledItem LItemEnchWeapon = CreateLItemEnch(state, inputWeapons.LeveledListPrefix + weaponEditorID + inputWeapons.LeveledListSuffix);
 
                     foreach (var enchantmentInfo in enchantmentInfos)
                     {
-                        var weapon = state.PatchMod.Weapons.DuplicateInAsNewRecord(weaponGetter); // Create new weapon and add it to patch
-                        weapon.ObjectEffect.SetTo(enchantmentInfo.Enchantment); // Set enchantment to weapon
-                        weapon.Template.SetTo(weaponFormkey); // Set template to base weapon
-                        if (enchantmentInfo.EnchantmentAmount != null) weapon.EnchantmentAmount = enchantmentInfo.EnchantmentAmount; // Set enchantment amount, if null it will have unlimited charges
-                        weapon.EditorID = "Ench_" + weapon.EditorID + "_" + enchantmentInfo.EditorID?.Replace("Ench", "");
-                        weapon.Name = enchantmentInfo.Prefix + weapon.Name + enchantmentInfo.Suffix;
+                        string enchanted_weapon_EditorID = "Ench_" + weaponGetter.EditorID + "_" + enchantmentInfo.EditorID?.Replace("Ench", "");
 
-                        // Generate Leveled Lists
-
-                        // Sublists
-                        if (enchantmentInfo.Sublist != null)
+                        if (state.LinkCache.TryResolve<IWeaponGetter>(enchanted_weapon_EditorID, out var Origenchanted_weapon))
                         {
-
-                            if (!sublists.TryGetValue(enchantmentInfo.Sublist, out LeveledItem? sublist)) // If Sublist does not exist, create it
+                            if (LItemEnchWeapon.Entries != null)
                             {
-                                sublist = state.PatchMod.LeveledItems.DuplicateInAsNewRecord(baseSublist);
-                                sublist.EditorID = "SublistEnch_" + weaponGetter.EditorID + "_" + enchantmentInfo.Sublist;
-                                sublists.Add(enchantmentInfo.Sublist, sublist);
-
-                                // Leveled List of Sublists
-                                var leveledItemEntry = CreateLeveledItemEntry(enchantmentInfo.Level, sublist);
-                                GetLeveledItemEntries(LItemEnchWeaponSublists).Add(leveledItemEntry);
-
-                                if (enchantmentInfo.Boss)
+                                bool add_to_leveled_list = true;
+                                foreach (var entry in LItemEnchWeapon.Entries)
                                 {
-                                    GetLeveledItemEntries(LItemEnchWeaponSublistsBoss).Add(leveledItemEntry);
+                                    if (entry.Data?.Reference == Origenchanted_weapon)
+                                    {
+                                        add_to_leveled_list = false;
+                                        break;
+                                    }
                                 }
-                            };
-                            if (sublist.Entries == null) sublist.Entries = new Noggog.ExtendedList<LeveledItemEntry>();
-                            sublist.Entries.Add(CreateLeveledItemEntry(enchantmentInfo.Level, weapon.FormKey));
+                                if (add_to_leveled_list) LItemEnchWeapon.Entries.Add(CreateLeveledItemEntry(1, Origenchanted_weapon.FormKey));
+                            }
+                        } else
+                        {
+                            Weapon enchanted_weapon = state.PatchMod.Weapons.DuplicateInAsNewRecord(weaponGetter); // Create new weapon and add it to patch
+                            enchanted_weapon.EditorID = enchanted_weapon_EditorID;
+                            enchanted_weapon.ObjectEffect.SetTo(enchantmentInfo.Enchantment); // Set enchantment to weapon
+                            enchanted_weapon.Template.SetTo(weaponGetter); // Set template to base weapon
+                            enchanted_weapon.Name = enchantmentInfo.Prefix + enchanted_weapon.Name + enchantmentInfo.Suffix;
 
-                            state.PatchMod.LeveledItems.Set(sublist);
+                            LItemEnchWeapon.Entries?.Add(CreateLeveledItemEntry(1, enchanted_weapon.FormKey)); // Add to Leveled List
                         }
                     }
 
-                    state.PatchMod.LeveledItems.Set(LItemEnchWeaponSublists);
-                    if (LItemEnchWeaponSublistsBoss.Entries?.Count != 0) state.PatchMod.LeveledItems.Set(LItemEnchWeaponSublistsBoss);
+                    state.PatchMod.LeveledItems.Set(LItemEnchWeapon);
                 }
 
             }
+
+            /*
 
             // Armors Generator
             foreach (var inputArmors in inputArmorsJSONs)
@@ -333,6 +314,9 @@ namespace EnchantedVariantsGenerater
                 }
 
             }
+
+            */
+
         } // End of Patching
     }
 }

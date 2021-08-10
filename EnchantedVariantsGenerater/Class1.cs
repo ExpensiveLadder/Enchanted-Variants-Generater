@@ -6,7 +6,7 @@ namespace EnchantedVariantsGenerater
 {
     public class Config
     {
-        public bool LItemEnchWeaponAll { get; set; }
+        public bool CheckExistingGenerated { get; set; } = false;
     }
     public class InputFileJSON
     {
@@ -19,10 +19,8 @@ namespace EnchantedVariantsGenerater
         public string[]? WeaponFormKeys { get; set; }
         public string[]? WeaponEditorIDs { get; set; }
         public EnchantmentJSON[]? Enchantments { get; set; }
-
-        public bool LItemEnchWeaponAll { get; set; } = false;
-        public bool LItemEnchWeaponAny { get; set; } = false;
-        public bool LItemEnchWeaponBest { get; set; } = false;
+        public string LeveledListPrefix { get; set; } = "SublistEnch";
+        public string LeveledListSuffix { get; set; } = "";
     }
 
     public class InputArmorsJSON
@@ -30,8 +28,8 @@ namespace EnchantedVariantsGenerater
         public string[]? ArmorFormKeys { get; set; }
         public string[]? ArmorEditorIDs { get; set; }
         public EnchantmentJSON[]? Enchantments { get; set; }
-
-        public bool Create_LItemEnchAll { get; set; }
+        public string LeveledListPrefix { get; set; } = "SublistEnch";
+        public string LeveledListSuffix { get; set; } = "";
     }
     
     public class EnchantmentJSON
@@ -40,9 +38,6 @@ namespace EnchantedVariantsGenerater
         public string? EditorID { get; set; }
         public string? Prefix { get; set; }
         public string? Suffix { get; set; }
-        public string? Sublist { get; set; }
-        public int? Level { get; set; }
         public int? EnchantmentAmount { get; set; }
-        public bool Boss { get; set; } = true;
     }
 }
