@@ -139,6 +139,19 @@ namespace EnchantedVariantsGenerater
             return config;
         }
 
+        /*
+        public static void CopyVirtualMachineAdapter(VirtualMachineAdapter? copyTo, IVirtualMachineAdapterGetter copyFrom)
+        {
+            if (copyFrom.TryGet(out var output))
+            {
+                copyTo.CopyInFromBinary(copyFrom.WriteToBinary(MutagenWriter.));
+            } else
+            {
+                throw new Exception("");
+            }
+        }
+        */
+
         // state.LinkCache.TryResolve<IWeaponGetter>(enchanted_weapon_EditorID, out var Origenchanted_weapon
 
         public static Noggog.ExtendedList<LeveledItemEntry> GetLeveledItemEntries(LeveledItem leveledItem)
@@ -174,8 +187,10 @@ namespace EnchantedVariantsGenerater
                 if (inputJSON.InputArmors != null) inputArmorsJSONs.Add(inputJSON.InputArmors);
             }
 
-            Dictionary<String, IObjectEffectGetter> enchantments_cache = new();
+            Dictionary<String, IObjectEffectGetter> weapon_enchantments_cache = new();
+            Dictionary<String, IObjectEffectGetter> armor_enchantments_cache = new();
             Dictionary<String, IWeaponGetter> weapons_cache = new();
+            Dictionary<String, IArmorGetter> armor_cache = new();
 
             // Weapons Generator
             foreach (var inputWeapons in inputWeaponsJSON)
@@ -191,7 +206,7 @@ namespace EnchantedVariantsGenerater
                 List<EnchantmentInfo> enchantmentInfos = new();
                 foreach (var enchantmentGetter in inputWeapons.Enchantments)
                 {
-                    enchantmentInfos.Add(ParseEnchantments(state, enchantments_cache, enchantmentGetter));
+                    enchantmentInfos.Add(ParseEnchantments(state, weapon_enchantments_cache, enchantmentGetter));
                 }
 
                 // Generate Enchanted Weapons
@@ -245,9 +260,9 @@ namespace EnchantedVariantsGenerater
                                 enchanted_weapon.BasicStats = new();
                                 enchanted_weapon.BasicStats.Value = weaponGetter.BasicStats.Value;
                             }
-                            if (enchanted_weapon.VirtualMachineAdapter != null)
+                            if (weaponGetter.VirtualMachineAdapter != null)
                                 {
-                                    enchanted_weapon.VirtualMachineAdapter = enchanted_weapon.VirtualMachineAdapter;
+                                    enchanted_weapon.VirtualMachineAdapter = weaponGetter.VirtualMachineAdapter.DeepCopy();
                                 }
 
                             state.PatchMod.Weapons.Set(enchanted_weapon);
@@ -261,10 +276,10 @@ namespace EnchantedVariantsGenerater
 
             }
             weapons_cache.Clear();
+            weapon_enchantments_cache.Clear();
 
-            /*
 
-            // Armors Generator
+            // Armor Generator
             foreach (var inputArmors in inputArmorsJSONs)
             {
                 if (inputArmors.Enchantments == null)
@@ -273,81 +288,77 @@ namespace EnchantedVariantsGenerater
                     continue;
                 }
 
-                // Get Weapon FormKeys
-                List<FormKey> armorFormKeys = new();
-
-                if (inputArmors.ArmorFormKeys != null)
-                {
-                    foreach (var formKeyString in inputArmors.ArmorFormKeys)
-                    {
-                        armorFormKeys.Add(FormKey.Factory(formKeyString));
-                    }
-                }
-
-                if (inputArmors.ArmorEditorIDs != null)
-                {
-                    foreach (var formIDString in inputArmors.ArmorEditorIDs)
-                    {
-                        armorFormKeys.Add(state.LinkCache.Resolve<IArmorGetter>(formIDString).FormKey);
-                    }
-                }
-
 
                 // Parse Enchantments
                 List<EnchantmentInfo> enchantmentInfos = new();
                 foreach (var enchantmentGetter in inputArmors.Enchantments)
                 {
-                    enchantmentInfos.Add(ParseEnchantments(state, enchantmentGetter));
+                    enchantmentInfos.Add(ParseEnchantments(state, armor_enchantments_cache, enchantmentGetter));
                 }
 
-                // Generate Enchanted Armors
-                foreach (var armorFormKey in armorFormKeys)
-                {
-                    var armorGetter = state.LinkCache.Resolve<IArmorGetter>(armorFormKey); // Get base armor
-
-                    // Create Leveled Lists
-
-                    LeveledItem LItemEnchArmorSublists = CreateLItemEnchWeapon(state, armorGetter, "Sublists");
-
-                    var sublists = new Dictionary<string, LeveledItem>();
-                    var sublists_best = new Dictionary<string, LeveledItem>();
-
-                    foreach (var enchantmentInfo in enchantmentInfos)
+                // Generate Enchanted Armor
+                if (inputArmors.ArmorEditorIDs != null) foreach (var armorEditorID in inputArmors.ArmorEditorIDs)
                     {
-                        var armor = state.PatchMod.Armors.DuplicateInAsNewRecord(armorGetter); // Create new weapon and add it to patch
-                        armor.ObjectEffect.SetTo(enchantmentInfo.Enchantment); // Set enchantment to weapon
-                        armor.TemplateArmor.SetTo(armorFormKey); // Set template to base weapon
-                        armor.EditorID = "Ench_" + armor.EditorID + "_" + enchantmentInfo.EditorID?.Replace("Ench", "");
-                        armor.Name = enchantmentInfo.Prefix + armor.Name + enchantmentInfo.Suffix;
+                        Console.WriteLine("Processing Record: " + armorEditorID);
 
-                        // Generate Leveled Lists
-
-                        // Sublists
-                        if (enchantmentInfo.Sublist != null)
+                        // Get base armor
+                        IArmorGetter armorGetter;
+                        if (armor_cache.ContainsKey(armorEditorID))
                         {
-
-                            if (!sublists.TryGetValue(enchantmentInfo.Sublist, out LeveledItem? sublist)) // If Sublist does not exist, create it
-                            {
-                                sublist = state.PatchMod.LeveledItems.DuplicateInAsNewRecord(baseSublist);
-                                sublist.EditorID = "SublistEnch_" + armorGetter.EditorID + "_" + enchantmentInfo.Sublist;
-                                sublists.Add(enchantmentInfo.Sublist, sublist);
-
-                                // Leveled List of Sublists
-                                var leveledItemEntry = CreateLeveledItemEntry(enchantmentInfo.Level, sublist);
-                                GetLeveledItemEntries(LItemEnchArmorSublists).Add(leveledItemEntry);
-
-                            };
-                            if (sublist.Entries == null) sublist.Entries = new Noggog.ExtendedList<LeveledItemEntry>();
-                            sublist.Entries.Add(CreateLeveledItemEntry(enchantmentInfo.Level, armor.FormKey));
-
-                            state.PatchMod.LeveledItems.Set(sublist);
+                            armorGetter = armor_cache[armorEditorID];
                         }
+                        else
+                        {
+                            armorGetter = state.LinkCache.Resolve<IArmorGetter>(armorEditorID);
+                        }
+
+
+                        LeveledItem LItemEnchArmor = CreateLItemEnch(state, inputArmors.LeveledListPrefix + armorEditorID + inputArmors.LeveledListSuffix);
+
+                        foreach (var enchantmentInfo in enchantmentInfos)
+                        {
+                            string enchanted_armor_EditorID = "Ench_" + armorEditorID + "_" + enchantmentInfo.EditorID?.Replace("Ench", "");
+
+                            if (state.LinkCache.TryResolve<IArmorGetter>(enchanted_armor_EditorID, out var Origenchanted_armor)) // Get enchanted weapon if it already exists
+                            {
+                                if (LItemEnchArmor.Entries != null)
+                                {
+                                    bool add_to_leveled_list = true;
+                                    foreach (var entry in LItemEnchArmor.Entries)
+                                    {
+                                        if (entry.Data?.Reference == Origenchanted_armor)
+                                        {
+                                            add_to_leveled_list = false;
+                                            break;
+                                        }
+                                    }
+                                    if (add_to_leveled_list) LItemEnchArmor.Entries.Add(CreateLeveledItemEntry(1, Origenchanted_armor.FormKey));
+                                }
+                            }
+                            else
+                            {
+                                Armor enchanted_armor = new(state.PatchMod, enchanted_armor_EditorID)
+                                {
+                                    Name = enchantmentInfo.Prefix + armorGetter.Name + enchantmentInfo.Suffix,
+                                    Value = armorGetter.Value
+                                };
+                                enchanted_armor.ObjectEffect.SetTo(enchantmentInfo.Enchantment); // Set enchantment to weapon
+                                enchanted_armor.TemplateArmor.SetTo(armorGetter); // Set template to base weapon
+                                if (armorGetter.VirtualMachineAdapter != null)
+                                {
+                                    enchanted_armor.VirtualMachineAdapter = armorGetter.VirtualMachineAdapter.DeepCopy();
+                                }
+
+                                state.PatchMod.Armors.Set(enchanted_armor);
+
+                                LItemEnchArmor.Entries?.Add(CreateLeveledItemEntry(1, enchanted_armor.FormKey)); // Add to Leveled List
+                            }
+                        }
+
+                        state.PatchMod.LeveledItems.Set(LItemEnchArmor);
                     }
-                }
 
             }
-
-            */
 
         } // End of Patching
     }
