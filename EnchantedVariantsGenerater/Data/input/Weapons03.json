@@ -1,0 +1,114 @@
+{
+	"InputWeapons": {
+		"WeaponEditorIDs": [
+			"IronClaws",
+			"IronClawsLeft",
+			"IronHalberd",
+			"IronPike",
+			"IronQStaff",
+			"IronRapier",
+			"IronWhip",
+			
+			"SteelClaws",
+			"SteelClawsLeft",
+			"SteelHalberd",
+			"SteelPike",
+			"SteelQStaff",
+			"SteelRapier",
+			"SteelWhip",
+			
+			"OrcishClaws",
+			"OrcishClawsLeft",
+			"OrcishHalberd",
+			"OrcishPike",
+			"OrcishQStaff",
+			"OrcishRapier",
+			"OrcishWhip",
+			
+			"DwarvenClaws",
+			"DwarvenClawsLeft",
+			"DwarvenHalberd",
+			"DwarvenPike",
+			"DwarvenQStaff",
+			"DwarvenRapier",
+			"DwarvenWhip",
+			
+			"ElvenClaws",
+			"ElvenClawsLeft",
+			"ElvenHalberd",
+			"ElvenPike",
+			"ElvenQStaff",
+			"ElvenRapier",
+			"ElvenWhip",
+			
+			"GlassClaws",
+			"GlassClawsLeft",
+			"GlassHalberd",
+			"GlassPike",
+			"GlassQStaff",
+			"GlassRapier",
+			"GlassWhip"
+		],
+		
+		"LeveledListPrefix": "SublistEnchWeapon_",
+		"LeveledListSuffix": "_03",
+		
+		"Enchantments": [
+			{
+				"EditorID": "EnchWeaponFrostDamage03",
+				"Suffix": " of Ice",
+				"EnchantmentAmount": 1500
+			},
+			{
+				"EditorID": "EnchWeaponFireDamage03",
+				"Suffix": " of Scorching",
+				"EnchantmentAmount": 1500
+			},
+			{
+				"EditorID": "EnchWeaponShockDamage03",
+				"Suffix": " of Shocks",
+				"EnchantmentAmount": 1500
+			},
+			{
+				"EditorID": "EnchWeaponStaminaDamage03",
+				"Suffix": " of Torpor",
+				"EnchantmentAmount": 1500
+			},
+			{
+				"EditorID": "EnchWeaponMagickaDamage03",
+				"Suffix": " of Diminishing",
+				"EnchantmentAmount": 1500
+			},
+			{
+				"EditorID": "EnchWeaponSoulTrap03",
+				"Suffix": " of Binding",
+				"EnchantmentAmount": 1500
+			},
+			{
+				"EditorID": "EnchWeaponFear03",
+				"Suffix": " of Fear",
+				"EnchantmentAmount": 1500
+			},
+			{
+				"EditorID": "EnchWeaponTurnUndead03",
+				"Prefix": "Reverent ",
+				"EnchantmentAmount": 1500
+			},
+			{
+				"EditorID": "EnchWeaponAbsorbHealth03",
+				"Suffix": " of Consuming",
+				"EnchantmentAmount": 1500
+			},
+			{
+				"EditorID": "EnchWeaponAbsorbMagicka03",
+				"Suffix": " of Harrowing",
+				"EnchantmentAmount": 1500
+			},
+			{
+				"EditorID": "EnchWeaponAbsorbStamina03",
+				"Suffix": " of Reaping",
+				"EnchantmentAmount": 1500
+			}
+		]
+	}
+}

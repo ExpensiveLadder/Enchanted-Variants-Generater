@@ -1,0 +1,69 @@
+{
+	"InputWeapons": {
+		"WeaponEditorIDs": [
+			"IronClaws",
+			"IronClawsLeft",
+			"IronHalberd",
+			"IronPike",
+			"IronQStaff",
+			"IronRapier",
+			"IronWhip",
+			
+			"SteelClaws",
+			"SteelClawsLeft",
+			"SteelHalberd",
+			"SteelPike",
+			"SteelQStaff",
+			"SteelRapier",
+			"SteelWhip",
+			
+			"OrcishClaws",
+			"OrcishClawsLeft",
+			"OrcishHalberd",
+			"OrcishPike",
+			"OrcishQStaff",
+			"OrcishRapier",
+			"OrcishWhip",
+			
+			"DwarvenClaws",
+			"DwarvenClawsLeft",
+			"DwarvenHalberd",
+			"DwarvenPike",
+			"DwarvenQStaff",
+			"DwarvenRapier",
+			"DwarvenWhip"
+		],
+		
+		"LeveledListPrefix": "SublistEnchWeapon_",
+		"LeveledListSuffix": "_Boss02",
+		
+		"Enchantments": [
+			{
+				"EditorID": "EnchWeaponFrostDamage02",
+				"Suffix": " of Frost",
+				"EnchantmentAmount": 1000
+			},
+			{
+				"EditorID": "EnchWeaponFireDamage02",
+				"Suffix": " of Burning",
+				"EnchantmentAmount": 1000
+			},
+			{
+				"EditorID": "EnchWeaponShockDamage02",
+				"Suffix": " of Arcing",
+				"EnchantmentAmount": 1000
+			},
+			{
+				"EditorID": "EnchWeaponStaminaDamage02",
+				"Suffix": " of Weariness",
+				"EnchantmentAmount": 1000
+			},
+			{
+				"EditorID": "EnchWeaponMagickaDamage02",
+				"Suffix": " of Draining",
+				"EnchantmentAmount": 1000
+			}
+		]
+	}
+}
+

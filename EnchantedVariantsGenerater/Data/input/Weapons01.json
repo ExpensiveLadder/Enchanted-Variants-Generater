@@ -1,0 +1,68 @@
+{
+	"InputWeapons": {
+		"WeaponEditorIDs": [
+			"IronClaws",
+			"IronClawsLeft",
+			"IronHalberd",
+			"IronPike",
+			"IronQStaff",
+			"IronRapier",
+			"IronWhip",
+			
+			"SteelClaws",
+			"SteelClawsLeft",
+			"SteelHalberd",
+			"SteelPike",
+			"SteelQStaff",
+			"SteelRapier",
+			"SteelWhip"
+		],
+		
+		"LeveledListPrefix": "SublistEnchWeapon_",
+		"LeveledListSuffix": "_01",
+		
+		"Enchantments": [
+			{
+				"EditorID": "EnchWeaponFrostDamage01",
+				"Suffix": " of Chills",
+				"EnchantmentAmount": 500
+			},
+			{
+				"EditorID": "EnchWeaponFireDamage01",
+				"Suffix": " of Embers",
+				"EnchantmentAmount": 500
+			},
+			{
+				"EditorID": "EnchWeaponShockDamage01",
+				"Suffix": " of Sparks",
+				"EnchantmentAmount": 500
+			},
+			{
+				"EditorID": "EnchWeaponStaminaDamage01",
+				"Suffix": " of Fatigue",
+				"EnchantmentAmount": 500
+			},
+			{
+				"EditorID": "EnchWeaponMagickaDamage01",
+				"Suffix": " of Sapping",
+				"EnchantmentAmount": 500
+			},
+			{
+				"EditorID": "EnchWeaponSoulTrap01",
+				"Suffix": " of Souls",
+				"EnchantmentAmount": 500
+			},
+			{
+				"EditorID": "EnchWeaponFear01",
+				"Suffix": " of Dismay",
+				"EnchantmentAmount": 500
+			},
+			{
+				"EditorID": "EnchWeaponTurnUndead01",
+				"Prefix": "Blessed ",
+				"EnchantmentAmount": 500
+			}
+		]
+	}
+}
+

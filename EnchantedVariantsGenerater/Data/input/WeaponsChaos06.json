@@ -1,0 +1,90 @@
+{
+	"InputWeapons": {
+		"WeaponEditorIDs": [
+			"StalhrimClaws",
+			"StalhrimClawsLeft",
+			"StalhrimHalberd",
+			"StalhrimPike",
+			"StalhrimQStaff",
+			"StalhrimRapier",
+			"StalhrimWhip"
+		],
+		
+		"LeveledListPrefix": "SublistEnchWeapon_",
+		"LeveledListSuffix": "_06",
+		
+		"Enchantments": [
+			{
+				"EditorID": "EnchWeaponFrostDamage06",
+				"Suffix": " of Winter",
+				"EnchantmentAmount": 3000,
+			},
+			{
+				"EditorID": "EnchWeaponFireDamage06",
+				"Suffix": " of Inferno",
+				"EnchantmentAmount": 3000
+			},
+			{
+				"EditorID": "EnchWeaponShockDamage06",
+				"Suffix": " of Storms",
+				"EnchantmentAmount": 3000
+			},
+			{
+				"EditorID": "EnchWeaponStaminaDamage06",
+				"Suffix": " of Exhaustion",
+				"EnchantmentAmount": 3000
+			},
+			{
+				"EditorID": "EnchWeaponMagickaDamage06",
+				"Suffix": " of Nullifying",
+				"EnchantmentAmount": 3000
+			},
+			{
+				"EditorID": "EnchWeaponAbsorbHealth06",
+				"Suffix": " of The Vampire",
+				"EnchantmentAmount": 3000
+			},
+			{
+				"EditorID": "EnchWeaponAbsorbMagicka06",
+				"Suffix": " of The Sorceror",
+				"EnchantmentAmount": 3000
+			},
+			{
+				"EditorID": "EnchWeaponAbsorbStamina06",
+				"Suffix": " of Subsuming",
+				"EnchantmentAmount": 3000
+			},
+			{
+				"EditorID": "EnchWeaponSoulTrap06",
+				"Suffix": " of Damnation",
+				"EnchantmentAmount": 3000
+			},
+			{
+				"EditorID": "EnchWeaponFear06",
+				"Suffix": " of Terror",
+				"EnchantmentAmount": 3000
+			},
+			{
+				"EditorID": "EnchWeaponTurnUndead06",
+				"Prefix": "Holy ",
+				"EnchantmentAmount": 3000
+			},
+			{
+				"EditorID": "EnchWeaponBanish06",
+				"Suffix": " of Annihilating",
+				"EnchantmentAmount": 3000
+			},
+			{
+				"EditorID": "EnchWeaponParalysis06",
+				"Suffix": " of Petrifying",
+				"EnchantmentAmount": 3000
+			},
+			{
+				"EditorID": "DLC2EnchWeaponChaosDamage06",
+				"Suffix": " of Ultimate Chaos",
+				"EnchantmentAmount": 3000
+			}
+		]
+	}
+}
+

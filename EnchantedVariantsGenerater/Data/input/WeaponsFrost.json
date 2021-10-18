@@ -1,0 +1,37 @@
+{
+	"InputWeapons": {
+		"WeaponEditorIDs": [
+			"DraugrHalberd",
+			"DraugrPike",
+			"DraugrQStaff",
+			"DraugrRapier",
+			
+			"DraugrHalberdHoned",
+			"DraugrPikeHoned",
+			"DraugrQStaffHoned",
+			"DraugrRapierHoned",
+		],
+		
+		"LeveledListPrefix": "SublistEnchFrost_",
+		"LeveledListSuffix": "_01",
+		
+		"Enchantments": [
+			{
+				"EditorID": "EnchWeaponFrostDamage01",
+				"Suffix": " of Chills",
+				"EnchantmentAmount": 500
+			},
+			{
+				"EditorID": "EnchWeaponFrostDamage02",
+				"Suffix": " of Frost",
+				"EnchantmentAmount": 1000
+			},
+			{
+				"EditorID": "EnchWeaponFrostDamage03",
+				"Suffix": " of Ice",
+				"EnchantmentAmount": 1500
+			}
+		]
+	}
+}
+

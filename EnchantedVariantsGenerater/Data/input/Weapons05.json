@@ -1,0 +1,99 @@
+{
+	"InputWeapons": {
+		"WeaponEditorIDs": [
+			"ElvenClaws",
+			"ElvenClawsLeft",
+			"ElvenHalberd",
+			"ElvenPike",
+			"ElvenQStaff",
+			"ElvenRapier",
+			"ElvenWhip",
+			
+			"GlassClaws",
+			"GlassClawsLeft",
+			"GlassHalberd",
+			"GlassPike",
+			"GlassQStaff",
+			"GlassRapier",
+			"GlassWhip",
+			
+			"EbonyClaws",
+			"EbonyClawsLeft",
+			"EbonyHalberd",
+			"EbonyPike",
+			"EbonyQStaff",
+			"EbonyRapier",
+			"EbonyWhip",
+			
+			"DaedricClaws",
+			"DaedricClawsLeft",
+			"DaedricHalberd",
+			"DaedricPike",
+			"DaedricQStaff",
+			"DaedricRapier",
+			"DaedricWhip"
+		],
+		
+		"LeveledListPrefix": "SublistEnchWeapon_",
+		"LeveledListSuffix": "_05",
+		
+		"Enchantments": [
+			{
+				"EditorID": "EnchWeaponFrostDamage05",
+				"Suffix": " of Blizzards",
+				"EnchantmentAmount": 2500
+			},
+			{
+				"EditorID": "EnchWeaponFireDamage05",
+				"Suffix": " of Blaze",
+				"EnchantmentAmount": 2500
+			},
+			{
+				"EditorID": "EnchWeaponShockDamage05",
+				"Suffix": " of Lightning",
+				"EnchantmentAmount": 2500
+			},
+			{
+				"EditorID": "EnchWeaponStaminaDamage05",
+				"Suffix": " of Lethargy",
+				"EnchantmentAmount": 2500
+			},
+			{
+				"EditorID": "EnchWeaponMagickaDamage05",
+				"Suffix": " of Enervating",
+				"EnchantmentAmount": 2500
+			},
+			{
+				"EditorID": "EnchWeaponAbsorbHealth05",
+				"Suffix": " of Leeching",
+				"EnchantmentAmount": 2500
+			},
+			{
+				"EditorID": "EnchWeaponAbsorbMagicka05",
+				"Suffix": " of Evoking",
+				"EnchantmentAmount": 2500
+			},
+			{
+				"EditorID": "EnchWeaponAbsorbStamina05",
+				"Suffix": " of Garnering",
+				"EnchantmentAmount": 2500
+			},
+					{
+				"EditorID": "EnchWeaponSoulTrap05",
+				"Suffix": " of Malediction",
+				"EnchantmentAmount": 2500
+			},
+			{
+				"EditorID": "EnchWeaponFear05",
+				"Suffix": " of Dread",
+				"EnchantmentAmount": 2500
+			},
+			{
+				"EditorID": "EnchWeaponTurnUndead05",
+				"Prefix": "Virtuous ",
+				"EnchantmentAmount": 2500
+			}
+		]
+	}
+}
+
