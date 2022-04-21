@@ -299,11 +299,12 @@ namespace EnchantedVariantsGenerater
                             var itemGetter = state.LinkCache.Resolve<IWeaponGetter>(FormKey.Factory(formKey)); // Get template item
                             var leveledlist = GetLeveledList(state, input.LeveledListPrefix + editorID + input.LeveledListSuffix, config.CheckExistingGenerated, out var leveledListAlreadyExists); // Get leveled list
                             var enchanted_item = GetEnchantedWeapon(state, enchanted_item_EditorID, config.CheckExistingGenerated, out var EnchantedItemAlreadyExists);
+                            var enchanted_item_name = enchantmentInfo.Prefix + itemGetter.Name + enchantmentInfo.Suffix;
 
                             if (!EnchantedItemAlreadyExists)
                             { // Create Enchanted Item
 
-                                enchanted_item.Name = enchantmentInfo.Prefix + itemGetter.Name + enchantmentInfo.Suffix;
+                                enchanted_item.Name = enchanted_item_name;
                                 enchanted_item.EnchantmentAmount = enchantmentInfo.EnchantmentAmount;
                                 enchanted_item.ObjectEffect.SetTo(enchantmentInfo.Enchantment); // Set enchantment to item
                                 enchanted_item.Template.SetTo(itemGetter); // Set template to base item
@@ -363,9 +364,14 @@ namespace EnchantedVariantsGenerater
                                     copyAsOverride = true;
                                 }
 
-                                if (copyAsOverride) state.PatchMod.Weapons.Set(enchanted_item);
+                                // Set Name
+                                if (enchanted_item.Name != enchanted_item_name)
+                                {
+                                    enchanted_item.Name = enchanted_item_name;
+                                    copyAsOverride = true;
+                                }
 
-                                
+                                if (copyAsOverride) state.PatchMod.Weapons.Set(enchanted_item); 
                             }
 
                             // Set Leveled List
