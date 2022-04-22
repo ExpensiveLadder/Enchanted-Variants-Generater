@@ -444,7 +444,25 @@ namespace EnchantedVariantsGenerater
                                             copyAsOverride = true;
                                         }
 
-                                        if (copyAsOverride) state.PatchMod.Weapons.Set(enchanted_item);
+                                        //Set Scripts
+                                        if (enchanted_item.VirtualMachineAdapter != itemGetter.VirtualMachineAdapter)
+                                        {
+                                            if (itemGetter.VirtualMachineAdapter == null)
+                                            {
+                                                enchanted_item.VirtualMachineAdapter = null;
+                                            }
+                                            else
+                                            {
+                                                enchanted_item.VirtualMachineAdapter = itemGetter.VirtualMachineAdapter.DeepCopy();
+                                            }
+                                            copyAsOverride = true;
+                                        }
+
+                                        if (copyAsOverride)
+                                        {
+                                            Console.WriteLine("Altering " + enchanted_item_EditorID);
+                                            state.PatchMod.Weapons.Set(enchanted_item);
+                                        }
                                     }
 
                                     // Set Leveled List
@@ -560,7 +578,24 @@ namespace EnchantedVariantsGenerater
                                             copyAsOverride = true;
                                         }
 
-                                        if (copyAsOverride) state.PatchMod.Armors.Set(enchanted_item);
+                                        //Set Scripts
+                                        if (enchanted_item.VirtualMachineAdapter != itemGetter.VirtualMachineAdapter)
+                                        {
+                                            if (itemGetter.VirtualMachineAdapter == null)
+                                            {
+                                                enchanted_item.VirtualMachineAdapter = null;
+                                            } else
+                                            {
+                                                enchanted_item.VirtualMachineAdapter = itemGetter.VirtualMachineAdapter.DeepCopy();
+                                            }
+                                            copyAsOverride = true;
+                                        }
+
+                                        if (copyAsOverride)
+                                        {
+                                            Console.WriteLine("Altering " + enchanted_item_EditorID);
+                                            state.PatchMod.Armors.Set(enchanted_item);
+                                        }
                                     }
 
                                     // Set Leveled List
