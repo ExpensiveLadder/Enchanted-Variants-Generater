@@ -16,6 +16,7 @@ namespace EnchantedVariantsGenerater
         public EnchantmentJSON[]? Enchantments { get; set; }
         public string LeveledListPrefix { get; set; } = "SublistEnch_";
         public string LeveledListSuffix { get; set; } = "";
+        public int PriorityOrder = 1;
     }
 
     public class ItemJSON
