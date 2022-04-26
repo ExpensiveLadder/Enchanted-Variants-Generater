@@ -72,62 +72,53 @@ namespace EnchantedVariantsGenerater
             return rawJSON;
         }
 
-        /*
-        public static List<InputJSON> GetInput(String path)
-        {
-            List<InputJSON> inputJSONList = new();
-            foreach (var filePath in Directory.GetFiles(path))
-            {
-                if (filePath == null) throw new Exception();
-                string rawJSON = ReadInputFile(filePath);
-                var inputJSON = JsonConvert.DeserializeObject<InputJSON>(rawJSON);
-                if (inputJSON == null) throw new Exception("Cannot read file \"" + filePath + "\"!");
-                inputJSONList.Add(inputJSON);
-            }
-            return inputJSONList;
-        }
-        */
-
-        public static List<InputThing> GetInputs(String path)
+        public static List<InputThing> GetInputs(String path, List<String> enabledMods)
         {
             List<InputThing> inputs = new();
             foreach (var folder in Directory.EnumerateDirectories(path))
             {
+                Console.WriteLine("Reading folder: " + folder);
                 InputThing input = new();
 
-                foreach (var file in Directory.GetFiles(path))
+                foreach (var file in Directory.GetFiles(folder))
                 {
                     string rawJSON = ReadInputFile(file);
                     var inputJSON = JsonConvert.DeserializeObject<InputJSON>(rawJSON);
                     if (inputJSON == null) throw new Exception("Cannot read file \"" + file + "\"!");
 
+                    if (inputJSON.RequiredMods != null && !CheckRequiredMods(enabledMods, inputJSON.RequiredMods)) continue;
+
                     if (inputJSON.Enchantments != null)
                     {
-                        if (input.Enchantments[0] == null) input.Enchantments[0] = new();
+                        if (!input.Enchantments.ContainsKey(inputJSON.PriorityOrder)) input.Enchantments[inputJSON.PriorityOrder] = new List<EnchantmentJSON>();
                         foreach (var item in inputJSON.Enchantments)
                         {
-                            input.Enchantments[0].Add(item);
+                            input.Enchantments[inputJSON.PriorityOrder].Add(item);
+                            Console.WriteLine("adding enchantment: " + item.EditorID);
                         }
                     }
                     if (inputJSON.Weapons != null)
                     {
-                        if (input.Weapons[0] == null) input.Weapons[0] = new();
+                        if (!input.Weapons.ContainsKey(inputJSON.PriorityOrder)) input.Weapons[inputJSON.PriorityOrder] = new List<ItemJSON>();
                         foreach (var item in inputJSON.Weapons)
                         {
-                            input.Weapons[0].Add(item);
+                            input.Weapons[inputJSON.PriorityOrder].Add(item);
+                            Console.WriteLine("adding weapon: " + item.EditorID);
                         }
                     }
                     if (inputJSON.Armors != null)
                     {
-                        if (input.Armors[0] == null) input.Armors[0] = new();
+                        if (!input.Armors.ContainsKey(inputJSON.PriorityOrder)) input.Armors[inputJSON.PriorityOrder] = new List<ItemJSON>();
                         foreach (var item in inputJSON.Armors)
                         {
-                            input.Armors[0].Add(item);
+                            input.Armors[inputJSON.PriorityOrder].Add(item);
+                            Console.WriteLine("adding armor: " + item.EditorID);
                         }
                     }
 
                     input.LeveledListSuffix = inputJSON.LeveledListSuffix; //temp
                 }
+                inputs.Add(input);
             }
 
             return inputs;
@@ -147,23 +138,6 @@ namespace EnchantedVariantsGenerater
             return leveledItemEntry;
         }
 
-        /*
-        public static bool CheckIfInLeveledList(LeveledItem leveledlist, FormKey item)
-        {
-            if (leveledlist.Entries != null)
-            {
-                foreach (var entry in leveledlist.Entries)
-                {
-                    if (entry.Data?.Reference.FormKey == item)
-                    {
-                        return true;
-                    }
-                }
-            }
-            return false;
-        }
-        */
-
         public static void AddToLeveledList(LeveledItem leveledlist, FormKey item)
         {
             if (leveledlist.Entries == null)
@@ -171,34 +145,6 @@ namespace EnchantedVariantsGenerater
                 leveledlist.Entries = new();
             }
             leveledlist.Entries.Add(CreateLeveledItemEntry(1, item));
-        }
-
-        public static void LeveledListThing(LeveledItem leveledlist, FormKey item, String mode)
-        {
-            if (leveledlist.Entries != null)
-            {
-                foreach (var entry in leveledlist.Entries)
-                {
-                    if (entry.Data?.Reference.FormKey == item)
-                    {
-                        if (mode == "Remove")
-                        {
-                            leveledlist.Entries.Remove(entry);
-                        }
-                        return;
-                    }
-                }
-                if (mode == "Add")
-                {
-                    AddToLeveledList(leveledlist, item);
-                }
-            } else
-            {
-                if (mode == "Add")
-                {
-                    AddToLeveledList(leveledlist, item);
-                }
-            }
         }
 
         public static bool CheckRequiredMods(List<string> enabledMods, string[] requiredMods)
@@ -213,13 +159,12 @@ namespace EnchantedVariantsGenerater
             return false;
         }
 
-        public static List<EnchantmentInfo> ParseEnchantments(IPatcherState<ISkyrimMod, ISkyrimModGetter> state, List<EnchantmentJSON> enchantmentJSONs, List<string> enabledMods)
+        public static List<EnchantmentInfo> ParseEnchantments(IPatcherState<ISkyrimMod, ISkyrimModGetter> state, List<EnchantmentJSON> enchantmentJSONs)
         {
             List<EnchantmentInfo> enchantmentInfos = new();
             foreach (var enchantmentJSON in enchantmentJSONs)
             {
                 if (string.IsNullOrEmpty(enchantmentJSON.EditorID) || string.IsNullOrEmpty(enchantmentJSON.FormKey)) throw new Exception("ERROR: enchantment does not have a formkey or editorID specified");
-                if (enchantmentJSON.RequiredMods != null && CheckRequiredMods(enabledMods, enchantmentJSON.RequiredMods)) continue;
 
                 IObjectEffectGetter enchantment;
                 if (state.LinkCache.TryResolve<IObjectEffectGetter>(FormKey.Factory(enchantmentJSON.FormKey), out var enchant))
@@ -251,9 +196,8 @@ namespace EnchantedVariantsGenerater
             if (checkExistingGenerated && state.LinkCache.TryResolve<ILeveledItemGetter>(editorID, out var leveledlist_Original))
             { // Get Leveled List if it already exists
                 alreadyExists = true;
-                Console.WriteLine("Leveled List \"" + editorID + "\" already exists in plugin \"" + leveledlist_Original.FormKey.ModKey.ToString() + "\", copying as override and appending changes");
+                // Console.WriteLine("Leveled List \"" + editorID + "\" already exists in plugin \"" + leveledlist_Original.FormKey.ModKey.ToString() + "\", copying as override and appending changes");
                 leveledlist = leveledlist_Original.DeepCopy();
-                state.PatchMod.LeveledItems.Set(leveledlist);
             }
             else
             { // Create Leveled List
@@ -263,7 +207,6 @@ namespace EnchantedVariantsGenerater
                 leveledlist.Flags |= LeveledItem.Flag.CalculateFromAllLevelsLessThanOrEqualPlayer;
                 leveledlist.EditorID = editorID;
                 leveledlist.Entries = new Noggog.ExtendedList<LeveledItemEntry>();
-                state.PatchMod.LeveledItems.Set(leveledlist);
             }
             return leveledlist;
         }
@@ -333,13 +276,14 @@ namespace EnchantedVariantsGenerater
             {
                 if (mod.Value.Enabled)
                 {
+                    Console.WriteLine("enabledmod: " + mod.Value.ModKey.ToString());
                     enabledMods.Add(mod.Value.ModKey.ToString());
                 }
             }
 
             // Read JSON Files
             Config config = GetConfig(Path.Combine(state.ExtraSettingsDataPath, "config.hjson"));
-            var inputs = GetInputs(state.ExtraSettingsDataPath + backslash + "input");
+            List<InputThing> inputs = GetInputs(state.ExtraSettingsDataPath + backslash + "input", enabledMods);
 
             //Generate Items
             foreach (var input in inputs)
@@ -347,7 +291,7 @@ namespace EnchantedVariantsGenerater
                 foreach (var enchantmentList in input.Enchantments.Values)
                 {
                     // Parse Enchantments
-                    List<EnchantmentInfo> enchantmentInfos = ParseEnchantments(state, enchantmentList, enabledMods);
+                    List<EnchantmentInfo> enchantmentInfos = ParseEnchantments(state, enchantmentList);
 
                     foreach (var enchantmentInfo in enchantmentInfos)
                     {
