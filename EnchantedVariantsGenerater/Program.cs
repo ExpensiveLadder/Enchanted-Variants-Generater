@@ -14,6 +14,13 @@ using DynamicData;
 
 namespace EnchantedVariantsGenerater
 {
+    public class LeveledListInfo
+    {
+        public string LeveledListPrefix { get; set; } = "SublistEnchWeapon_";
+        public string LeveledListSuffix { get; set; } = "";
+        public string Mode { get; set; } = "Add";
+    }
+
     public class EnchantmentInfo
     {
 #pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
@@ -24,14 +31,11 @@ namespace EnchantedVariantsGenerater
         public string? Suffix { get; set; }
         public string? Sublist { get; set; }
         public ushort? EnchantmentAmount { get; set; }
-        public string Mode { get; set; } = "Add";
+        public List<LeveledListInfo>? LeveledLists { get; set; }
     }
 
     public class InputThing
     {
-        public string LeveledListPrefix { get; set;  } = "SublistEnch_";
-        public string LeveledListSuffix { get; set;  } = "";
-
         public SortedDictionary<int, List<EnchantmentJSON>> Enchantments { get; } = new();
         public SortedDictionary<int, List<ItemJSON>> Weapons { get; } = new();
         public SortedDictionary<int, List<ItemJSON>> Armors { get; } = new();
@@ -115,8 +119,6 @@ namespace EnchantedVariantsGenerater
                             Console.WriteLine("adding armor: " + item.EditorID);
                         }
                     }
-
-                    input.LeveledListSuffix = inputJSON.LeveledListSuffix; //temp
                 }
                 inputs.Add(input);
             }
@@ -175,6 +177,8 @@ namespace EnchantedVariantsGenerater
                 {
                     throw new Exception("Cannot find enchantment with FormKey \"" + enchantmentJSON.FormKey.ToString() + "\"");
                 }
+                
+                
 
                 var enchantmentGetter = new EnchantmentInfo
                 {
@@ -183,7 +187,22 @@ namespace EnchantedVariantsGenerater
                     Prefix = enchantmentJSON.Prefix,
                     Suffix = enchantmentJSON.Suffix,
                     EditorID = enchantmentJSON.EditorID,
+                    LeveledLists = new List<LeveledListInfo>()
                 };
+
+                if (enchantmentJSON.LeveledLists != null)
+                {
+                    foreach (var leveledlistJSON in enchantmentJSON.LeveledLists)
+                    {
+                        enchantmentGetter.LeveledLists.Add(new LeveledListInfo()
+                        {
+                            LeveledListPrefix = leveledlistJSON.LeveledListPrefix,
+                            LeveledListSuffix = leveledlistJSON.LeveledListSuffix,
+                            Mode = leveledlistJSON.Mode
+                        });
+                    }
+                }
+
                 enchantmentInfos.Add(enchantmentGetter);
             }
             return enchantmentInfos;
@@ -316,7 +335,6 @@ namespace EnchantedVariantsGenerater
                                     var enchanted_item_EditorID = "Ench_" + editorID + "_" + enchantmentInfo.EditorID;
 
                                     var itemGetter = state.LinkCache.Resolve<IWeaponGetter>(FormKey.Factory(formKey)); // Get template item
-                                    var leveledlist = GetLeveledList(state, input.LeveledListPrefix + editorID + input.LeveledListSuffix, config.CheckExistingGenerated, out var leveledListAlreadyExists); // Get leveled list
                                     var enchanted_item = GetEnchantedWeapon(state, enchanted_item_EditorID, config.CheckExistingGenerated, out var EnchantedItemAlreadyExists);
                                     var enchanted_item_name = enchantmentInfo.Prefix + itemGetter.Name + enchantmentInfo.Suffix;
 
@@ -409,40 +427,48 @@ namespace EnchantedVariantsGenerater
                                         }
                                     }
 
-                                    // Set Leveled List
-                                    if (leveledListAlreadyExists)
+                                    // Set Leveled Lists
+                                    if (enchantmentInfo.LeveledLists != null)
                                     {
-                                        if (leveledlist.Entries != null)
+                                        foreach(var leveledlistinfo in enchantmentInfo.LeveledLists)
                                         {
-                                            bool addtoleveledlist = true;
-                                            foreach (var entry in leveledlist.Entries)
+                                            var leveledlist = GetLeveledList(state, leveledlistinfo.LeveledListPrefix + editorID + leveledlistinfo.LeveledListSuffix, config.CheckExistingGenerated, out var leveledListAlreadyExists); // Get leveled list
+                                            
+                                            if (leveledListAlreadyExists)
                                             {
-                                                if (entry.Data?.Reference.FormKey == enchanted_item.FormKey)
+                                                if (leveledlist.Entries != null)
                                                 {
-                                                    if (enchantmentInfo.Mode == "Remove")
+                                                    bool addtoleveledlist = true;
+                                                    foreach (var entry in leveledlist.Entries)
                                                     {
-                                                        leveledlist.Entries.Remove(entry);
+                                                        if (entry.Data?.Reference.FormKey == enchanted_item.FormKey)
+                                                        {
+                                                            if (leveledlistinfo.Mode == "Remove")
+                                                            {
+                                                                leveledlist.Entries.Remove(entry);
+                                                                state.PatchMod.LeveledItems.Set(leveledlist);
+                                                            }
+                                                            else
+                                                            {
+                                                                addtoleveledlist = false;
+                                                            }
+                                                            break;
+                                                        }
+                                                    }
+                                                    if (addtoleveledlist)
+                                                    {
+                                                        AddToLeveledList(leveledlist, enchanted_item.FormKey);
                                                         state.PatchMod.LeveledItems.Set(leveledlist);
                                                     }
-                                                    else
-                                                    {
-                                                        addtoleveledlist = false;
-                                                    }
-                                                    break;
                                                 }
                                             }
-                                            if (addtoleveledlist)
+                                            else
                                             {
                                                 AddToLeveledList(leveledlist, enchanted_item.FormKey);
                                                 state.PatchMod.LeveledItems.Set(leveledlist);
                                             }
                                         }
-                                    }
-                                    else
-                                    {
-                                        AddToLeveledList(leveledlist, enchanted_item.FormKey);
-                                        state.PatchMod.LeveledItems.Set(leveledlist);
-                                    }
+                                    }  
                                 }
                             }
                             
@@ -467,7 +493,6 @@ namespace EnchantedVariantsGenerater
                                     var enchanted_item_EditorID = "Ench_" + editorID + "_" + enchantmentInfo.EditorID;
 
                                     var itemGetter = state.LinkCache.Resolve<IArmorGetter>(FormKey.Factory(formKey)); // Get template item
-                                    var leveledlist = GetLeveledList(state, input.LeveledListPrefix + editorID + input.LeveledListSuffix, config.CheckExistingGenerated, out var leveledListAlreadyExists); // Get leveled list
                                     var enchanted_item = GetEnchantedArmor(state, enchanted_item_EditorID, config.CheckExistingGenerated, out var EnchantedItemAlreadyExists);
                                     var enchanted_item_name = enchantmentInfo.Prefix + itemGetter.Name + enchantmentInfo.Suffix;
 
@@ -542,39 +567,47 @@ namespace EnchantedVariantsGenerater
                                         }
                                     }
 
-                                    // Set Leveled List
-                                    if (leveledListAlreadyExists)
+                                    // Set Leveled Lists
+                                    if (enchantmentInfo.LeveledLists != null)
                                     {
-                                        if (leveledlist.Entries != null)
+                                        foreach (var leveledlistinfo in enchantmentInfo.LeveledLists)
                                         {
-                                            bool addtoleveledlist = true;
-                                            foreach (var entry in leveledlist.Entries)
+                                            var leveledlist = GetLeveledList(state, leveledlistinfo.LeveledListPrefix + editorID + leveledlistinfo.LeveledListSuffix, config.CheckExistingGenerated, out var leveledListAlreadyExists); // Get leveled list
+
+                                            if (leveledListAlreadyExists)
                                             {
-                                                if (entry.Data?.Reference.FormKey == enchanted_item.FormKey)
+                                                if (leveledlist.Entries != null)
                                                 {
-                                                    if (enchantmentInfo.Mode == "Remove")
+                                                    bool addtoleveledlist = true;
+                                                    foreach (var entry in leveledlist.Entries)
                                                     {
-                                                        leveledlist.Entries.Remove(entry);
+                                                        if (entry.Data?.Reference.FormKey == enchanted_item.FormKey)
+                                                        {
+                                                            if (leveledlistinfo.Mode == "Remove")
+                                                            {
+                                                                leveledlist.Entries.Remove(entry);
+                                                                state.PatchMod.LeveledItems.Set(leveledlist);
+                                                            }
+                                                            else
+                                                            {
+                                                                addtoleveledlist = false;
+                                                            }
+                                                            break;
+                                                        }
+                                                    }
+                                                    if (addtoleveledlist)
+                                                    {
+                                                        AddToLeveledList(leveledlist, enchanted_item.FormKey);
                                                         state.PatchMod.LeveledItems.Set(leveledlist);
                                                     }
-                                                    else
-                                                    {
-                                                        addtoleveledlist = false;
-                                                    }
-                                                    break;
                                                 }
                                             }
-                                            if (addtoleveledlist)
+                                            else
                                             {
                                                 AddToLeveledList(leveledlist, enchanted_item.FormKey);
                                                 state.PatchMod.LeveledItems.Set(leveledlist);
                                             }
                                         }
-                                    }
-                                    else
-                                    {
-                                        AddToLeveledList(leveledlist, enchanted_item.FormKey);
-                                        state.PatchMod.LeveledItems.Set(leveledlist);
                                     }
                                 }
                             }

@@ -14,8 +14,6 @@ namespace EnchantedVariantsGenerater
         public ItemJSON[]? Armors { get; set; }
         public ItemJSON[]? Weapons { get; set; }
         public EnchantmentJSON[]? Enchantments { get; set; }
-        public string LeveledListPrefix { get; set; } = "SublistEnch_";
-        public string LeveledListSuffix { get; set; } = "";
         public int PriorityOrder = 1;
     }
 
@@ -35,6 +33,6 @@ namespace EnchantedVariantsGenerater
         public string? Prefix { get; set; }
         public string? Suffix { get; set; }
         public int? EnchantmentAmount { get; set; }
-        public string? Mode { get; set; }
+        public LeveledListInfo[]? LeveledLists { get; set; }
     }
 }
