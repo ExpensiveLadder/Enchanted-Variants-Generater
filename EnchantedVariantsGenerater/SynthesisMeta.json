@@ -1,6 +1,6 @@
 {
   "Nickname": "EnchantedVariantsGenerater",
-  "Visibility": "Visible",
+  "Visibility": "Hidden",
   "OneLineDescription": " Generates Enchanted versions of weapons and armors, along with sublists",
   "LongDescription": "Requires inputting Enchantments, Weapons, and Armors manually, generated sublists need to be added to playable leveled lists manually",
   "PreferredAutoVersioning": "Default",
