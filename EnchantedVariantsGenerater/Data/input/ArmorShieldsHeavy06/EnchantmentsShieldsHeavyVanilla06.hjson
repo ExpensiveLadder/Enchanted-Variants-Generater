@@ -1,0 +1,59 @@
+{
+	"Enchantments": [
+		{
+			EditorID: "EnchArmorFortifyBlock06"
+			FormKey: "0BE036:Skyrim.esm"
+			"Suffix": " of Peerless Blocking"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistFire06"
+			FormKey: "0BE02A:Skyrim.esm"
+			Suffix: " of the Firewalker"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistFrost06"
+			FormKey: "0BE02D:Skyrim.esm"
+			Suffix: " of Warmth"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistShock06"
+			FormKey: "0BE030:Skyrim.esm"
+			Suffix: " of Grounding"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistMagic06"
+			FormKey: "0FC060:Skyrim.esm"
+			Suffix: " of Nullification"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+		}
+	]
+}

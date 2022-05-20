@@ -1,0 +1,76 @@
+{
+	LeveledListPrefix: "SublistEnchWeapon_"
+	LeveledListSuffix: "_01"
+	
+	RequiredMods: [
+		"Armoury of Tamriel.esm"
+	]
+	
+	Weapons: [
+		{
+			EditorID: "300IronAncientBow"
+			FormKey: "0302CA:Skyrim.esm"
+		}
+		{
+			EditorID: "300IronAltmerBow"
+			FormKey: "00D095:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300IronDremoraBow"
+			FormKey: "00D097:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300IronDunmerBow"
+			FormKey: "00D098:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300IronDwemerBow"
+			FormKey: "00D099:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300IronImperialBow"
+			FormKey: "017543:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300IronNordicBow"
+			FormKey: "0014DB:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300IronOrcishBow"
+			FormKey: "00D09A:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300IronOrnateBow"
+			FormKey: "00D09B:Armoury of Tamriel.esm"
+		}
+		
+		{
+			EditorID: "300SteelAltmerBow"
+			FormKey: "00D0B8:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300SteelBasicBow"
+			FormKey: "0012E9:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300SteelDremoraBow"
+			FormKey: "00D0BA:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300SteelDunmerBow"
+			FormKey: "00D0BB:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300SteelDwemerBow"
+			FormKey: "00D0BC:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300SteelOrcishBow"
+			FormKey: "00D0BD:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300SteelOrnateBow"
+			FormKey: "00D0BE:Armoury of Tamriel.esm"
+		}
+	]
+}

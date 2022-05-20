@@ -1,0 +1,231 @@
+{
+	LeveledListPrefix: "SublistEnchWeapon_"
+	LeveledListSuffix: "_04"
+	
+	Weapons: [
+		{
+			EditorID: "OrcishBattleaxe"
+			FormKey: "01398C:Skyrim.esm"
+		}
+		{
+			EditorID: "OrcishDagger"
+			FormKey: "01398E:Skyrim.esm"
+		}
+		{
+			EditorID: "OrcishGreatsword"
+			FormKey: "01398F:Skyrim.esm"
+		}
+		{
+			EditorID: "OrcishMace"
+			FormKey: "013990:Skyrim.esm"
+		}
+		{
+			EditorID: "OrcishSword"
+			FormKey: "013991:Skyrim.esm"
+		}
+		{
+			EditorID: "OrcishWarAxe"
+			FormKey: "01398B:Skyrim.esm"
+		}
+		{
+			EditorID: "OrcishWarhammer"
+			FormKey: "013992:Skyrim.esm"
+		}
+		{
+			EditorID: "DwarvenBattleaxe"
+			FormKey: "013994:Skyrim.esm"
+		}
+		{
+			EditorID: "DwarvenDagger"
+			FormKey: "013996:Skyrim.esm"
+		}
+		{
+			EditorID: "DwarvenGreatsword"
+			FormKey: "013997:Skyrim.esm"
+		}
+		{
+			EditorID: "DwarvenMace"
+			FormKey: "013998:Skyrim.esm"
+		}
+		{
+			EditorID: "DwarvenSword"
+			FormKey: "013999:Skyrim.esm"
+		}
+		{
+			EditorID: "DwarvenWarAxe"
+			FormKey: "013993:Skyrim.esm"
+		}
+		{
+			EditorID: "DwarvenWarhammer"
+			FormKey: "01399A:Skyrim.esm"
+		}
+		{
+			EditorID: "ElvenBattleaxe"
+			FormKey: "01399C:Skyrim.esm"
+		}
+		{
+			EditorID: "ElvenDagger"
+			FormKey: "01399E:Skyrim.esm"
+		}
+		{
+			EditorID: "ElvenGreatsword"
+			FormKey: "01399F:Skyrim.esm"
+		}
+		{
+			EditorID: "ElvenMace"
+			FormKey: "0139A0:Skyrim.esm"
+		}
+		{
+			EditorID: "ElvenSword"
+			FormKey: "0139A1:Skyrim.esm"
+		}
+		{
+			EditorID: "ElvenWarAxe"
+			FormKey: "01399B:Skyrim.esm"
+		}
+		{
+			EditorID: "ElvenWarhammer"
+			FormKey: "0139A2:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2NordicBattleaxe"
+			FormKey: "01CDAD:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2NordicDagger"
+			FormKey: "01CDAE:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2NordicGreatsword"
+			FormKey: "01CDAF:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2NordicMace"
+			FormKey: "01CDB0:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2NordicSword"
+			FormKey: "01CDB1:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2NordicWarAxe"
+			FormKey: "01CDB2:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2NordicWarhammer"
+			FormKey: "01CDB3:Dragonborn.esm"
+		}
+		{
+			EditorID: "GlassBattleaxe"
+			FormKey: "0139A4:Skyrim.esm"
+		}
+		{
+			EditorID: "GlassDagger"
+			FormKey: "0139A6:Skyrim.esm"
+		}
+		{
+			EditorID: "GlassGreatsword"
+			FormKey: "0139A7:Skyrim.esm"
+		}
+		{
+			EditorID: "GlassMace"
+			FormKey: "0139A8:Skyrim.esm"
+		}
+		{
+			EditorID: "GlassSword"
+			FormKey: "0139A9:Skyrim.esm"
+		}
+		{
+			EditorID: "GlassWarAxe"
+			FormKey: "0139A3:Skyrim.esm"
+		}
+		{
+			EditorID: "GlassWarhammer"
+			FormKey: "0139AA:Skyrim.esm"
+		}
+		{
+			EditorID: "EbonyBattleaxe"
+			FormKey: "0139AC:Skyrim.esm"
+		}
+		{
+			EditorID: "EbonyDagger"
+			FormKey: "0139AE:Skyrim.esm"
+		}
+		{
+			EditorID: "EbonyGreatsword"
+			FormKey: "0139AF:Skyrim.esm"
+		}
+		{
+			EditorID: "EbonyMace"
+			FormKey: "0139B0:Skyrim.esm"
+		}
+		{
+			EditorID: "EbonySword"
+			FormKey: "0139B1:Skyrim.esm"
+		}
+		{
+			EditorID: "EbonyWarAxe"
+			FormKey: "0139AB:Skyrim.esm"
+		}
+		{
+			EditorID: "EbonyWarhammer"
+			FormKey: "0139B2:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2StalhrimBattleaxe"
+			FormKey: "01CDB4:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2StalhrimDagger"
+			FormKey: "01CDB5:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2StalhrimGreatsword"
+			FormKey: "01CDB6:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2StalhrimMace"
+			FormKey: "01CDB7:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2StalhrimSword"
+			FormKey: "01CDB8:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2StalhrimWarAxe"
+			FormKey: "01CDB9:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2StalhrimWarhammer"
+			FormKey: "01CDBA:Dragonborn.esm"
+		}
+		{
+			EditorID: "DaedricBattleaxe"
+			FormKey: "0139B4:Skyrim.esm"
+		}
+		{
+			EditorID: "DaedricDagger"
+			FormKey: "0139B6:Skyrim.esm"
+		}
+		{
+			EditorID: "DaedricGreatsword"
+			FormKey: "0139B7:Skyrim.esm"
+		}
+		{
+			EditorID: "DaedricMace"
+			FormKey: "0139B8:Skyrim.esm"
+		}
+		{
+			EditorID: "DaedricSword"
+			FormKey: "0139B9:Skyrim.esm"
+		}
+		{
+			EditorID: "DaedricWarAxe"
+			FormKey: "0139B3:Skyrim.esm"
+		}
+		{
+			EditorID: "DaedricWarhammer"
+			FormKey: "0139BA:Skyrim.esm"
+		}
+	]
+}

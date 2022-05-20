@@ -1,0 +1,16 @@
+{
+	PriorityOrder: 2
+	
+	RequiredMods: [
+		"Weapons Armor Clothing & Clutter Fixes.esp"
+	]
+
+	Enchantments: [
+		{
+			EditorID: "EnchWeaponTurnUndead02"
+			FormKey: "05B46D:Skyrim.esm"
+			Suffix: " of Rebuke"
+			EnchantmentAmount: 1000
+		}
+	]
+}

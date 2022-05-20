@@ -1,0 +1,16 @@
+{
+	PriorityOrder: 2
+	
+	RequiredMods: [
+		"Weapons Armor Clothing & Clutter Fixes.esp"
+	]
+
+	Enchantments: [
+		{
+			EditorID: "EnchWeaponTurnUndead05"
+			FormKey: "05B470:Skyrim.esm"
+			Suffix: " of Turning"
+			EnchantmentAmount: 2500
+		}
+	]
+}

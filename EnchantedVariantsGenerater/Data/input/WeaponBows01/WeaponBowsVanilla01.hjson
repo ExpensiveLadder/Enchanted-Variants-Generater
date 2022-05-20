@@ -1,0 +1,19 @@
+{
+	LeveledListPrefix: "SublistEnchWeapon_"
+	LeveledListSuffix: "_01"
+	
+	Weapons: [
+		{
+			EditorID: "HuntingBow"
+			FormKey: "013985:Skyrim.esm"
+		}
+		{
+			EditorID: "LongBow"
+			FormKey: "03B562:Skyrim.esm"
+		}
+		{
+			EditorID: "ImperialBow"
+			FormKey: "013841:Skyrim.esm"
+		}
+	]
+}

@@ -1,0 +1,59 @@
+{
+	Enchantments: [
+		{
+			EditorID: "EnchArmorFortifyStamina01"
+			FormKey: "04950A:Skyrim.esm"
+			Suffix: " of Minor Stamina"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyCarry01"
+			FormKey: "07A109:Skyrim.esm"
+			Suffix: " of Lifting"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistFire01"
+			FormKey: "04950B:Skyrim.esm"
+			Suffix: " of Resist Fire"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistFrost01"
+			FormKey: "04950C:Skyrim.esm"
+			Suffix: " of Resist Frost"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistShock01"
+			FormKey: "04950D:Skyrim.esm"
+			Suffix: " of Resist Shock"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+	]
+}

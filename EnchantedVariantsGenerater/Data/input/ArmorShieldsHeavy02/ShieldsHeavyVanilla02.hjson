@@ -1,0 +1,24 @@
+{
+	"Armors": [
+		{
+			EditorID: "ArmorIronShield"
+			FormKey: "012EB6:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorIronBandedShield"
+			FormKey: "01394B:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorSteelShield"
+			FormKey: "013955:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorBonemoldShield"
+			FormKey: "026234:Dragonborn.esm"
+		}
+		{
+			EditorID: "ArmorDwarvenShield"
+			FormKey: "013950:Skyrim.esm"
+		}
+	]
+}

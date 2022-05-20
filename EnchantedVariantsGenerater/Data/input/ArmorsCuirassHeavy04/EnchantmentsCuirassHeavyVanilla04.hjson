@@ -1,0 +1,104 @@
+{
+	"Enchantments": [
+		{
+			EditorID: "EnchArmorFortifyAlteration04"
+			"Suffix": " of Eminent Alteration"
+			FormKey: "0BE037:Skyrim.esm"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyConjuration04"
+			FormKey: "0AD455:Skyrim.esm"
+			"Suffix": " of Eminent Conjuring"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyDestruction04"
+			FormKey: "0AD45A:Skyrim.esm"
+			"Suffix": " of Eminent Destruction"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyIllusion04"
+			"Suffix": " of Eminent Illusion"
+			FormKey: "0BE002:Skyrim.esm"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyRestoration04"
+			FormKey: "0BE015:Skyrim.esm"
+			"Suffix": " of Eminent Restoration"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyHealth04"
+			FormKey: "0BDFFC:Skyrim.esm"
+			"Suffix": " of Eminent Health"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyHealRate04"
+			FormKey: "07A10D:Skyrim.esm"
+			"Suffix": " of Mending"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyStaminaRate04"
+			FormKey: "07A11A:Skyrim.esm"
+			"Suffix": " of Rejuvenation"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyHeavyArmor04"
+			FormKey: "0BDFFF:Skyrim.esm"
+			"Suffix": " of the Eminent Knight"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+	]
+}
+

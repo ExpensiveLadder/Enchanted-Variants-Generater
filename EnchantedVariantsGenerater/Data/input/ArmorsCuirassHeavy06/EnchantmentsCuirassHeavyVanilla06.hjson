@@ -1,0 +1,103 @@
+{
+	"Enchantments": [
+		{
+			EditorID: "EnchArmorFortifyAlteration06"
+			FormKey: "0BE039:Skyrim.esm"
+			"Suffix": " of Peerless Alteration"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyConjuration06"
+			FormKey: "0AD457:Skyrim.esm"
+			"Suffix": " of Peerless Conjuring"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyDestruction06"
+			FormKey: "0AD45C:Skyrim.esm"
+			"Suffix": " of Peerless Destruction"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyIllusion06"
+			FormKey: "0BE004:Skyrim.esm"
+			Suffix: " of Peerless Illusion"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyRestoration06"
+			FormKey: "0BE017:Skyrim.esm"
+			"Suffix": " of Peerless Restoration"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyHealth06"
+			FormKey: "0BDFFE:Skyrim.esm"
+			"Suffix": " of Peerless Health"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyHealRate06"
+			FormKey: "0AD493:Skyrim.esm"
+			"Suffix": " of Revival"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyStaminaRate06"
+			FormKey: "0BE024:Skyrim.esm"
+			"Suffix": " of Renewal"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyHeavyArmor06"
+			FormKey: "0BE001:Skyrim.esm"
+			"Suffix": " of the Peerless Knight"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+		}
+	]
+}

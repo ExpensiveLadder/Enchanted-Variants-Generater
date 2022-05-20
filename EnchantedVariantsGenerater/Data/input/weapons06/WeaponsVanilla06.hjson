@@ -1,0 +1,91 @@
+{
+	LeveledListPrefix: "SublistEnchWeapon_"
+	LeveledListSuffix: "_06"
+	
+	Weapons: [
+		{
+			EditorID: "EbonyBattleaxe"
+			FormKey: "0139AC:Skyrim.esm"
+		}
+		{
+			EditorID: "EbonyDagger"
+			FormKey: "0139AE:Skyrim.esm"
+		}
+		{
+			EditorID: "EbonyGreatsword"
+			FormKey: "0139AF:Skyrim.esm"
+		}
+		{
+			EditorID: "EbonyMace"
+			FormKey: "0139B0:Skyrim.esm"
+		}
+		{
+			EditorID: "EbonySword"
+			FormKey: "0139B1:Skyrim.esm"
+		}
+		{
+			EditorID: "EbonyWarAxe"
+			FormKey: "0139AB:Skyrim.esm"
+		}
+		{
+			EditorID: "EbonyWarhammer"
+			FormKey: "0139B2:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2StalhrimBattleaxe"
+			FormKey: "01CDB4:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2StalhrimDagger"
+			FormKey: "01CDB5:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2StalhrimGreatsword"
+			FormKey: "01CDB6:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2StalhrimMace"
+			FormKey: "01CDB7:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2StalhrimSword"
+			FormKey: "01CDB8:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2StalhrimWarAxe"
+			FormKey: "01CDB9:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2StalhrimWarhammer"
+			FormKey: "01CDBA:Dragonborn.esm"
+		}
+		{
+			EditorID: "DaedricBattleaxe"
+			FormKey: "0139B4:Skyrim.esm"
+		}
+		{
+			EditorID: "DaedricDagger"
+			FormKey: "0139B6:Skyrim.esm"
+		}
+		{
+			EditorID: "DaedricGreatsword"
+			FormKey: "0139B7:Skyrim.esm"
+		}
+		{
+			EditorID: "DaedricMace"
+			FormKey: "0139B8:Skyrim.esm"
+		}
+		{
+			EditorID: "DaedricSword"
+			FormKey: "0139B9:Skyrim.esm"
+		}
+		{
+			EditorID: "DaedricWarAxe"
+			FormKey: "0139B3:Skyrim.esm"
+		}
+		{
+			EditorID: "DaedricWarhammer"
+			FormKey: "0139BA:Skyrim.esm"
+		}
+	]
+}

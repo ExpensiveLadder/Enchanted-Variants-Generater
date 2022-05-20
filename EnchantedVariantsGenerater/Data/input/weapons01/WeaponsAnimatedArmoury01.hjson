@@ -1,0 +1,75 @@
+{
+	LeveledListPrefix: "SublistEnchWeapon_"
+	LeveledListSuffix: "_01"
+	
+	RequiredMods: [
+		"NewArmoury.esp"
+	]
+	
+	Weapons: [
+		{
+			EditorID: "IronClaws"
+			FormKey: "19AAA5:NewArmoury.esp"
+		}
+		{
+			EditorID: "IronClawsLeft"
+			FormKey: "19AAE2:NewArmoury.esp"
+		}
+		{
+			EditorID: "IronHalberd"
+			FormKey: "167FFF:NewArmoury.esp"
+		}
+		{
+			EditorID: "IronKatana"
+			FormKey: "344734:NewArmoury.esp"
+		}
+		{
+			EditorID: "IronPike"
+			FormKey: "153BA6:NewArmoury.esp"
+		}
+		{
+			EditorID: "IronQStaff"
+			FormKey: "18B756:NewArmoury.esp"
+		}
+		{
+			EditorID: "IronRapier"
+			FormKey: "005903:NewArmoury.esp"
+		}
+		{
+			EditorID: "IronWhip"
+			FormKey: "31BDDD:NewArmoury.esp"
+		}
+		{
+			EditorID: "SteelClaws"
+			FormKey: "19AAA6:NewArmoury.esp"
+		}
+		{
+			EditorID: "SteelClawsLeft"
+			FormKey: "19AAE3:NewArmoury.esp"
+		}
+		{
+			EditorID: "SteelHalberd"
+			FormKey: "168010:NewArmoury.esp"
+		}
+		{
+			EditorID: "SteelKatana"
+			FormKey: "344735:NewArmoury.esp"
+		}
+		{
+			EditorID: "SteelPike"
+			FormKey: "153BB4:NewArmoury.esp"
+		}
+		{
+			EditorID: "SteelQStaff"
+			FormKey: "18B760:NewArmoury.esp"
+		}
+		{
+			EditorID: "SteelRapier"
+			FormKey: "019D0D:NewArmoury.esp"
+		}
+		{
+			EditorID: "SteelWhip"
+			FormKey: "31BDDE:NewArmoury.esp"
+		}
+	]
+}

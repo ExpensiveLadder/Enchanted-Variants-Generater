@@ -1,0 +1,82 @@
+{
+	"Enchantments": [
+		{
+			EditorID: "EnchArmorFortifyAlteration01"
+			"Suffix": " of Minor Alteration"
+			FormKey: "07A107:Skyrim.esm"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyConjuration01"
+			"Suffix": " of Minor Conjuring"
+			FormKey: "07A10A:Skyrim.esm"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyDestruction01"
+			FormKey: "07A10B:Skyrim.esm"
+			"Suffix": " of Minor Destruction"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			"EditorID": "EnchArmorFortifyIllusion01"
+			FormKey: "07A10F:Skyrim.esm"
+			"Suffix": " of Minor Illusion"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyRestoration01"
+			FormKey: "07A116:Skyrim.esm"
+			"Suffix": " of Minor Restoration"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyHealth01"
+			FormKey: "049509:Skyrim.esm"
+			"Suffix": " of Minor Health"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyHeavyArmor01"
+			FormKey: "07A10E:Skyrim.esm"
+			"Suffix": " of the Minor Knight"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+	]
+}
+

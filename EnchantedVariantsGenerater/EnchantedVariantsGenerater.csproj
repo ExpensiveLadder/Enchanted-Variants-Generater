@@ -11,4 +11,8 @@
 		<PackageReference Include="Hjson" Version="3.0.0" />
 	</ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Data\" />
+    </ItemGroup>
+
 </Project>

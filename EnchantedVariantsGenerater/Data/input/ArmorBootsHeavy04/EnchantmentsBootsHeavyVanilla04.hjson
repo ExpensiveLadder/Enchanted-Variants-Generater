@@ -1,0 +1,59 @@
+{
+	Enchantments: [
+		{
+			EditorID: "EnchArmorFortifyStamina04"
+			FormKey: "0BE021:Skyrim.esm"
+			Suffix: " of Eminent Stamina"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyCarry04"
+			FormKey: "0AD44E:Skyrim.esm"
+			Suffix: " of Brawn"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistFire04"
+			FormKey: "0BE028:Skyrim.esm"
+			Suffix: " of Fire Suppression"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistFrost04"
+			FormKey: "0BE02B:Skyrim.esm"
+			Suffix: " of Frost Suppression"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistShock04"
+			FormKey: "0BE02E:Skyrim.esm"
+			Suffix: " of Shock Suppression"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+	]
+}

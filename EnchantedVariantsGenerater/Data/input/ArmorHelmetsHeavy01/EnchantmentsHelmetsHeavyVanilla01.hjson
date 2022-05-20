@@ -1,0 +1,103 @@
+{
+	"Enchantments": [
+		{
+			EditorID: "EnchArmorFortifyAlteration01"
+			"Suffix": " of Minor Alteration"
+			FormKey: "07A107:Skyrim.esm"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyConjuration01"
+			"Suffix": " of Minor Conjuring"
+			FormKey: "07A10A:Skyrim.esm"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyDestruction01"
+			FormKey: "07A10B:Skyrim.esm"
+			"Suffix": " of Minor Destruction"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			"EditorID": "EnchArmorFortifyIllusion01",
+			FormKey: "07A10F:Skyrim.esm"
+			"Suffix": " of Minor Illusion"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyRestoration01"
+			FormKey: "07A116:Skyrim.esm"
+			"Suffix": " of Minor Restoration"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyMarksman01"
+			FormKey: "07A113:Skyrim.esm"
+			"Suffix": " of Minor Archery"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyAlchemy01"
+			FormKey: "08B65B:Skyrim.esm"
+			"Suffix": " of Minor Alchemy"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyMagicka01"
+			FormKey: "049508:Skyrim.esm"
+			"Suffix": " of Minor Magicka"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			"EditorID": "EnchArmorWaterbreathing"
+			FormKey: "092A76:Skyrim.esm"
+			"Suffix": " of Waterbreathing"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+	]
+}

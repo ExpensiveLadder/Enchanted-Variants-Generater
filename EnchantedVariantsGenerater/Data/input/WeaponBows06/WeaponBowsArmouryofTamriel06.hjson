@@ -1,0 +1,83 @@
+{
+	LeveledListPrefix: "SublistEnchWeapon_"
+	LeveledListSuffix: "_06"
+	
+	RequiredMods: [
+		"Armoury of Tamriel.esm"
+	]
+	
+	Weapons: [
+		{
+			EditorID: "300GlassAltmerBow"
+			FormKey: "00D09C:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300GlassAncientBow"
+			FormKey: "00D09D:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300GlassBasicBow"
+			FormKey: "0012E6:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300GlassDremoraBow"
+			FormKey: "00D09E:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300GlassDunmerBow"
+			FormKey: "00D09F:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300GlassDwemerBow"
+			FormKey: "00D0A0:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300GlassImperialBow"
+			FormKey: "017544:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300GlassNordicBow"
+			FormKey: "0014DC:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300GlassOrcishBow"
+			FormKey: "00D0A1:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300EbonyAltmerBow"
+			FormKey: "00D08E:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300EbonyAncientBow"
+			FormKey: "00D090:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300EbonyBasicBow"
+			FormKey: "0012E4:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300EbonyDremoraBow"
+			FormKey: "00D08F:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300EbonyDwemerBow"
+			FormKey: "00D092:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300EbonyImperialBow"
+			FormKey: "017542:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300EbonyNordicBow"
+			FormKey: "0014DA:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300EbonyOrcishBow"
+			FormKey: "00D093:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300EbonyOrnateBow"
+			FormKey: "00D094:Armoury of Tamriel.esm"
+		}
+	]
+}

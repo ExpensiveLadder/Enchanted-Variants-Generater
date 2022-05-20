@@ -1,0 +1,225 @@
+{
+	LeveledListPrefix: "SublistEnchWeapon_"
+	LeveledListSuffix: "_03"
+	
+	RequiredMods: [
+		"Armoury of Tamriel.esm"
+	]
+	
+	Weapons: [
+		{
+			EditorID: "300IronAncientBow"
+			FormKey: "0302CA:Skyrim.esm"
+		}
+		{
+			EditorID: "300IronAltmerBow"
+			FormKey: "00D095:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300IronDremoraBow"
+			FormKey: "00D097:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300IronDunmerBow"
+			FormKey: "00D098:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300IronDwemerBow"
+			FormKey: "00D099:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300IronImperialBow"
+			FormKey: "017543:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300IronNordicBow"
+			FormKey: "0014DB:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300IronOrcishBow"
+			FormKey: "00D09A:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300IronOrnateBow"
+			FormKey: "00D09B:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300SteelAltmerBow"
+			FormKey: "00D0B8:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300SteelBasicBow"
+			FormKey: "0012E9:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300SteelDremoraBow"
+			FormKey: "00D0BA:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300SteelDunmerBow"
+			FormKey: "00D0BB:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300SteelDwemerBow"
+			FormKey: "00D0BC:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300SteelOrcishBow"
+			FormKey: "00D0BD:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300SteelOrnateBow"
+			FormKey: "00D0BE:Armoury of Tamriel.esm"
+		}
+		
+		{
+			EditorID: "300OrichalcumAltmerBow"
+			FormKey: "00D0AA:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300OrichalcumAncientBow"
+			FormKey: "00D0AB:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300OrichalcumBasicBow"
+			FormKey: "0012E8:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300OrichalcumDremoraBow"
+			FormKey: "00D0AC:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300OrichalcumDunmerBow"
+			FormKey: "00D0AD:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300OrichalcumDwemerBow"
+			FormKey: "00D0AE:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300OrichalcumImperialBow"
+			FormKey: "017546:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300OrichalcumNordicBow"
+			FormKey: "0014DE:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300OrichalcumOrnateBow"
+			FormKey: "00D0B0:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300MoonstoneAncientBow"
+			FormKey: "00D0A4:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300MoonstoneBasicBow"
+			FormKey: "0012E5:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300MoonstoneDremoraBow"
+			FormKey: "00D0A5:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300MoonstoneDunmerBow"
+			FormKey: "00D0A6:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300MoonstoneDwemerBow"
+			FormKey: "00D0A7:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300MoonstoneImperialBow"
+			FormKey: "017545:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300MoonstoneNordicBow"
+			FormKey: "0014DD:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300MoonstoneOrcishBow"
+			FormKey: "00D0A8:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300MoonstoneOrnateBow"
+			FormKey: "00D0A9:Armoury of Tamriel.esm"
+		}
+		
+		{
+			EditorID: "300DwarvenAltmerBow"
+			FormKey: "00D087:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300DwarvenAncientBow"
+			FormKey: "00D089:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300DwarvenBasicBow"
+			FormKey: "0012D8:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300DwarvenDremoraBow"
+			FormKey: "00D088:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300DwarvenDunmerBow"
+			FormKey: "00D08A:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300DwarvenImperialBow"
+			FormKey: "017541:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300DwarvenNordicBow"
+			FormKey: "0014D9:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300DwarvenOrcishBow"
+			FormKey: "00D08C:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300DwarvenOrnateBow"
+			FormKey: "00D08D:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300SilverAltmerBow"
+			FormKey: "00D0B1:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300SilverAncientBow"
+			FormKey: "00D0B2:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300SilverBasicBow"
+			FormKey: "0012EA:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300SilverDremoraBow"
+			FormKey: "00D0B3:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300SilverDunmerBow"
+			FormKey: "00D0B4:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300SilverDwarvenBow"
+			FormKey: "00D0B5:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300SilverImperialBow"
+			FormKey: "017547:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300SilverNordicBow"
+			FormKey: "0014DF:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300SilverOrcishBow"
+			FormKey: "00D0B6:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300SilverOrnateBow"
+			FormKey: "00D0B7:Armoury of Tamriel.esm"
+		}
+	]
+}

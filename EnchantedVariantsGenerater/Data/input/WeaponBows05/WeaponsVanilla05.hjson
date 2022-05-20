@@ -1,0 +1,33 @@
+{
+	LeveledListPrefix: "SublistEnchWeapon_"
+	LeveledListSuffix: "_05"
+	
+	Weapons: [
+		{
+			EditorID: "ElvenBow"
+			FormKey: "01399D:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2NordicBow"
+			FormKey: "026232:Dragonborn.esm"
+		}
+		{
+			EditorID: "GlassBow"
+			FormKey: "0139A5:Skyrim.esm"
+		}
+		
+		{
+			EditorID: "EbonyBow"
+			FormKey: "0139AD:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2StalhrimBow"
+			FormKey: "026231:Dragonborn.esm"
+		}
+		{
+			EditorID: "DaedricBow"
+			FormKey: "0139B5:Skyrim.esm"
+		}
+	]
+}
+

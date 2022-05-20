@@ -1,0 +1,12 @@
+{
+	LeveledListPrefix: "SublistEnchWeapon_"
+	LeveledListSuffix: "_05"
+	
+	Weapons: [
+		{
+			EditorID: "OrcishBow"
+			FormKey: "01398D:Skyrim.esm"
+		}
+	]
+}
+

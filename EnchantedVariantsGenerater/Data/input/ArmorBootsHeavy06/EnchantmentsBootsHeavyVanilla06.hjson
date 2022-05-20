@@ -1,0 +1,59 @@
+{
+	Enchantments: [
+		{
+			EditorID: "EnchArmorFortifyStamina06"
+			FormKey: "0BE023:Skyrim.esm"
+			Suffix: " of Peerless Stamina"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyCarry06"
+			FormKey: "0AD450:Skyrim.esm"
+			Suffix: " of the Mammoth"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistFire06"
+			FormKey: "0BE02A:Skyrim.esm"
+			Suffix: " of the Firewalker"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistFrost06"
+			FormKey: "0BE02D:Skyrim.esm"
+			Suffix: " of Warmth"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistShock06"
+			FormKey: "0BE030:Skyrim.esm"
+			Suffix: " of Grounding"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+		}
+	]
+}

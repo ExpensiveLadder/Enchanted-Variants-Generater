@@ -1,0 +1,60 @@
+{	
+	"Enchantments": [
+		{
+			EditorID: "EnchArmorFortifyBlock04"
+			FormKey: "0BE034:Skyrim.esm"
+			"Suffix": " of Eminent Blocking"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistFire04"
+			FormKey: "0BE028:Skyrim.esm"
+			Suffix: " of Fire Suppression"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistFrost04"
+			FormKey: "0BE02B:Skyrim.esm"
+			Suffix: " of Frost Suppression"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistShock04"
+			FormKey: "0BE02E:Skyrim.esm"
+			Suffix: " of Shock Suppression"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistMagic04"
+			FormKey: "0FC05E:Skyrim.esm"
+			Suffix: " of Magic Suppression"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+	]
+}
+

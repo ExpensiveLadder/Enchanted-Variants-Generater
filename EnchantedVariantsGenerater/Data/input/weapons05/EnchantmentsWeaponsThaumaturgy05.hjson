@@ -1,0 +1,60 @@
+{
+	RequiredMods: [
+		"Thaumaturgy.esp"
+	]
+	
+	Enchantments: [
+		{
+			EditorID: "EnchWeaponDamageArmor05"
+			FormKey: "13064B:Thaumaturgy.esp"
+			Suffix: " of Grand Corrosion"
+			EnchantmentAmount: 2500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_05"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC05"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponSunDamage05"
+			FormKey: "13062A:Thaumaturgy.esp"
+			Suffix: " of Aetherius"
+			EnchantmentAmount: 2500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_05"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponFrenzy05"
+			FormKey: "130657:Thaumaturgy.esp"
+			Suffix: " of Wrath"
+			EnchantmentAmount: 2500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_05"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponSilence05"
+			FormKey: "FFF841:Thaumaturgy.esp"
+			Suffix: " of Quietude"
+			EnchantmentAmount: 2500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_05"
+				}
+			]
+		}
+	]
+}

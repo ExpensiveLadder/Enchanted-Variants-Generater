@@ -1,0 +1,16 @@
+{
+	PriorityOrder: 2
+	
+	RequiredMods: [
+		"Weapons Armor Clothing & Clutter Fixes.esp"
+	]
+
+	Enchantments: [
+		{
+			EditorID: "EnchWeaponTurnUndead06"
+			FormKey: "0BF3F5:Skyrim.esm"
+			Suffix: " of Holy Light"
+			EnchantmentAmount: 3000
+		}
+	]
+}

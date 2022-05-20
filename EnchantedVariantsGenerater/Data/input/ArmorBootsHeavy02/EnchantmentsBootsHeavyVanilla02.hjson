@@ -1,0 +1,59 @@
+{
+	Enchantments: [
+		{
+			EditorID: "EnchArmorFortifyStamina02"
+			FormKey: "0AD47D:Skyrim.esm"
+			Suffix: " of Stamina"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyCarry02"
+			FormKey: "0AD44C:Skyrim.esm"
+			Suffix: " of Hauling"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistFire02"
+			FormKey: "0AD483:Skyrim.esm"
+			Suffix: " of Waning Fire"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistFrost02"
+			FormKey: "0AD485:Skyrim.esm"
+			Suffix: " of Waning Frost"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistShock02"
+			FormKey: "0AD487:Skyrim.esm"
+			Suffix: " of Waning Shock"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+	]
+}

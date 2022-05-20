@@ -1,0 +1,28 @@
+{
+	"Armors": [
+		{
+			EditorID: "ArmorDwarvenShield"
+			FormKey: "013950:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorOrcishShield"
+			FormKey: "013946:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorNordicShield"
+			FormKey: "026236:Dragonborn.esm"
+		}
+		{
+			EditorID: "ArmorEbonyShield"
+			FormKey: "013964:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorDaedricShield"
+			FormKey: "01396E:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorDragonplateShield"
+			FormKey: "013968:Skyrim.esm"
+		}
+	]
+}

@@ -1,0 +1,60 @@
+{
+	Enchantments: [
+		{
+			EditorID: "EnchArmorFortifyStamina05"
+			FormKey: "0BE022:Skyrim.esm"
+			Suffix: " of Extreme Stamina"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyCarry05"
+			FormKey: "0AD44F:Skyrim.esm"
+			Suffix: " of the Ox"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistFire05"
+			FormKey: "0BE029:Skyrim.esm"
+			Suffix: " of Fire Abatement"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistFrost05"
+			FormKey: "0BE02C:Skyrim.esm"
+			Suffix: " of Frost Abatement"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistShock05"
+			FormKey: "0BE02F:Skyrim.esm"
+			Suffix: " of Shock Abatement"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+		}
+	]
+}
+

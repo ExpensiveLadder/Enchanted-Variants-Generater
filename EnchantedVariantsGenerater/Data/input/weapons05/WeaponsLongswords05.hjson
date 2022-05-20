@@ -1,0 +1,36 @@
+{
+	LeveledListPrefix: "SublistEnchWeapon_"
+	LeveledListSuffix: "_05"
+	
+	RequiredMods: [
+		"Lovely Longswords - Vanilla Version.esp"
+	]
+	
+	Weapons: [
+		{
+			EditorID: "ElvenLongsword"
+			FormKey: "005917:Lovely Longswords - Vanilla Version.esp"
+		}
+		{
+			EditorID: "NordicLongsword"
+			FormKey: "00591E:Lovely Longswords - Vanilla Version.esp"
+		}
+		{
+			EditorID: "GlassLongsword"
+			FormKey: "005916:Lovely Longswords - Vanilla Version.esp"
+		}
+		{
+			EditorID: "EbonyLongsword"
+			FormKey: "005918:Lovely Longswords - Vanilla Version.esp"
+		}
+		{
+			EditorID: "StalhrimLongsword"
+			FormKey: "00591D:Lovely Longswords - Vanilla Version.esp"
+		}
+		{
+			EditorID: "DaedricLongsword"
+			FormKey: "00591C:Lovely Longswords - Vanilla Version.esp"
+		}
+	]
+}
+

@@ -1,0 +1,141 @@
+{
+	RequiredMods: [
+		"Thaumaturgy.esp"
+	]
+	
+	Enchantments: [
+		{
+			EditorID: "EnchWeaponDamageArmor02"
+			FormKey: "130647:Thaumaturgy.esp"
+			Suffix: " of Corrosion"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponDamageWeapon02"
+			FormKey: "130642:Thaumaturgy.esp"
+			Suffix: " of Disintegration"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponPoisonDamage02"
+			FormKey: "130621:Thaumaturgy.esp"
+			Suffix: " of Venom"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponSunDamage02"
+			FormKey: "130627:Thaumaturgy.esp"
+			Suffix: " of Daylight"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponFrenzy02"
+			FormKey: "130654:Thaumaturgy.esp"
+			Suffix: " of Frenzy"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponSilence02"
+			FormKey: "FFF83E:Thaumaturgy.esp"
+			Suffix: " of Silence"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponWeaknessToFire02"
+			FormKey: "13062E:Thaumaturgy.esp"
+			Suffix: " of Weakness to Fire"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponWeaknessToFrost02"
+			FormKey: "130633:Thaumaturgy.esp"
+			Suffix: " of Weakness to Frost"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponWeaknessToShock02"
+			FormKey: "130638:Thaumaturgy.esp"
+			Suffix: " of Weakness to Shock"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponWeaknessToPoison02"
+			FormKey: "13063D:Thaumaturgy.esp"
+			Suffix: " of Weakness to Poison"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		
+	]
+}

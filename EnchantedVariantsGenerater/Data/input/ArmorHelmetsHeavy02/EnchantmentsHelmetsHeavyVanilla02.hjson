@@ -1,0 +1,104 @@
+{
+	"Enchantments": [
+		{
+			EditorID: "EnchArmorFortifyAlteration02"
+			"Suffix": " of Alteration"
+			FormKey: "0AD49F:Skyrim.esm"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyConjuration02"
+			FormKey: "0AD453:Skyrim.esm"
+			"Suffix": " of Conjuring"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyDestruction02"
+			FormKey: "0AD458:Skyrim.esm"
+			"Suffix": " of Destruction"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			"EditorID": "EnchArmorFortifyIllusion02"
+			"Suffix": " of Illusion"
+			FormKey: "0AD465:Skyrim.esm"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyRestoration02"
+			FormKey: "0AD475:Skyrim.esm"
+			"Suffix": " of Restoration"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyMarksman02"
+			FormKey: "0AD46F:Skyrim.esm"
+			"Suffix": " of Archery"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyAlchemy02"
+			FormKey: "08B65D:Skyrim.esm"
+			"Suffix": " of Alchemy"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyMagicka02"
+			FormKey: "0AD46B:Skyrim.esm"
+			"Suffix": " of Magicka"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			"EditorID": "EnchArmorWaterbreathing"
+			FormKey: "092A76:Skyrim.esm"
+			"Suffix": " of Waterbreathing"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+	]
+}
+

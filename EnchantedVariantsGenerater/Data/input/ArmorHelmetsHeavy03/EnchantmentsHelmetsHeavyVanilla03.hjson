@@ -1,0 +1,115 @@
+{
+	"Enchantments": [
+		{
+			EditorID: "EnchArmorFortifyAlteration03"
+			"Suffix": " of Major Alteration"
+			FormKey: "0AD4A0:Skyrim.esm"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyConjuration03"
+			FormKey: "0AD454:Skyrim.esm"
+			"Suffix": " of Major Conjuring"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyDestruction03"
+			FormKey: "0AD459:Skyrim.esm"
+			"Suffix": " of Major Destruction"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			"EditorID": "EnchArmorFortifyIllusion03",
+			"Suffix": " of Major Illusion"
+			FormKey: "0AD466:Skyrim.esm"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyRestoration03"
+			FormKey: "0AD476:Skyrim.esm"
+			"Suffix": " of Major Restoration"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyMarksman03"
+			FormKey: "0AD470:Skyrim.esm"
+			"Suffix": " of Major Archery"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyAlchemy03"
+			FormKey: "08B65E:Skyrim.esm"
+			"Suffix": " of Major Alchemy"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyMagicka03"
+			FormKey: "0AD46C:Skyrim.esm"
+			"Suffix": " of Major Magicka"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyMagickaRate03"
+			FormKey: "0AD46E:Skyrim.esm"
+			"Suffix": " of Recharging"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			"EditorID": "EnchArmorWaterbreathing"
+			FormKey: "092A76:Skyrim.esm"
+			"Suffix": " of Waterbreathing"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+	]
+}
+

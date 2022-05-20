@@ -1,0 +1,59 @@
+{
+	Enchantments: [
+		{
+			EditorID: "EnchArmorFortifyStamina03"
+			"FormKey": "0AD47E:Skyrim.esm"
+			"Suffix": " of Major Stamina"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyCarry03"
+			"FormKey": "0AD44D:Skyrim.esm"
+			"Suffix": " of Strength"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistFire03"
+			"FormKey": "0AD484:Skyrim.esm"
+			"Suffix": " of Dwindling Flames"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistFrost03"
+			"FormKey": "0AD486:Skyrim.esm"
+			"Suffix": " of Dwindling Frost"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistShock03"
+			"FormKey": "0AD488:Skyrim.esm"
+			"Suffix": " of Dwindling Shock"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+	]
+}

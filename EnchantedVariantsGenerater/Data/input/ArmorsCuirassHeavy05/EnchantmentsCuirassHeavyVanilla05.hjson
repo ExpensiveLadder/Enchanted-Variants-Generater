@@ -1,0 +1,110 @@
+{
+	"Enchantments": [
+		{
+			EditorID: "EnchArmorFortifyAlteration05"
+			"Suffix": " of Extreme Alteration"
+			FormKey: "0BE038:Skyrim.esm"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyConjuration05"
+			FormKey: "0AD456:Skyrim.esm"
+			"Suffix": " of Extreme Conjuring"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyDestruction05"
+			FormKey: "0AD45B:Skyrim.esm"
+			"Suffix": " of Extreme Destruction"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyIllusion05"
+			"Suffix": " of Extreme Illusion"
+			FormKey: "0BE003:Skyrim.esm"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyRestoration05"
+			FormKey: "0BE016:Skyrim.esm"
+			"Suffix": " of Extreme Restoration"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyHealth05"
+			FormKey: "0BDFFD:Skyrim.esm"
+			"Suffix": " of Extreme Health"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyHealRate05"
+			FormKey: "0AD45F:Skyrim.esm"
+			"Suffix": " of Regeneration"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyStaminaRate05"
+			FormKey: "0AD47F:Skyrim.esm"
+			"Suffix": " of Invigoration"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyHeavyArmor05"
+			FormKey: "0BE000:Skyrim.esm"
+			"Suffix": " of the Noble Knight"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+		}
+	]
+}
+

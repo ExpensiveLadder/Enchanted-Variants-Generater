@@ -1,0 +1,41 @@
+{
+	"Armors": [
+		{
+			EditorID: "ArmorDwarvenGauntlets"
+			FormKey: "01394E:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorSteelPlateGauntlets"
+			FormKey: "01395D:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorChitinHeavyGauntlets"
+			FormKey: "01CD8B:Dragonborn.esm"
+		}
+		{
+			EditorID: "ArmorOrcishGauntlets"
+			FormKey: "013958:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorNordicHeavyGauntlets"
+			FormKey: "01CD98:Dragonborn.esm"
+		}
+		{
+			EditorID: "ArmorEbonyGauntlets"
+			FormKey: "013962:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorStalhrimHeavyGauntlets"
+			FormKey: "01CDA0:Dragonborn.esm"
+		}
+		{
+			EditorID: "ArmorDaedricGauntlets"
+			FormKey: "01396C:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorDragonplateGauntlets"
+			FormKey: "013967:Skyrim.esm"
+		}
+	]
+}
+

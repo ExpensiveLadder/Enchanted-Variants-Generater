@@ -1,0 +1,59 @@
+{
+	"Enchantments": [
+		{
+			EditorID: "EnchArmorFortifyMarksman03"
+			FormKey: "0AD470:Skyrim.esm"
+			"Suffix": " of Major Archery"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyOneHanded03"
+			FormKey: "0AD472:Skyrim.esm"
+			"Suffix": " of Major Wielding"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyTwoHanded03"
+			FormKey: "0AD482:Skyrim.esm"
+			"Suffix": " of Major Sure Grip"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyAlchemy03"
+			FormKey: "08B65E:Skyrim.esm"
+			"Suffix": " of Major Alchemy"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifySmithing03"
+			FormKey: "0AD478:Skyrim.esm"
+			"Suffix": " of Major Smithing"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+	]
+}

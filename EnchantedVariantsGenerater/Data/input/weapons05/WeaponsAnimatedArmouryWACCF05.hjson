@@ -1,0 +1,44 @@
+{
+	LeveledListPrefix: "SublistEnchWeapon_"
+	LeveledListSuffix: "_05"
+	
+	RequiredMods: [
+		"NewArmoury.esp"
+	]
+	
+	Weapons: [
+		{
+			EditorID: "OrcishClaws"
+			FormKey: "19AAA7:NewArmoury.esp"
+		}
+		{
+			EditorID: "OrcishClawsLeft"
+			FormKey: "19AAE4:NewArmoury.esp"
+		}
+		{
+			EditorID: "OrcishHalberd"
+			FormKey: "168011:NewArmoury.esp"
+		}
+		{
+			EditorID: "OrcishKatana"
+			FormKey: "344736:NewArmoury.esp"
+		}
+		{
+			EditorID: "OrcishPike"
+			FormKey: "153BB1:NewArmoury.esp"
+		}
+		{
+			EditorID: "OrcishQStaff"
+			FormKey: "18B75E:NewArmoury.esp"
+		}
+		{
+			EditorID: "OrcishRapier"
+			FormKey: "019D0E:NewArmoury.esp"
+		}
+		{
+			EditorID: "OrcishWhip"
+			FormKey: "31BDDF:NewArmoury.esp"
+		}
+	]
+}
+
