@@ -11,6 +11,10 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Hjson;
 using DynamicData;
+using System.Threading;
+
+
+
 
 namespace EnchantedVariantsGenerater
 {
@@ -282,7 +286,8 @@ namespace EnchantedVariantsGenerater
             if (checkExistingGenerated && state.LinkCache.TryResolve<IWeaponGetter>(editorID, out var weapon_Original))
             { // Get Enchanted Weapon if it already exists
                 alreadyExists = true;
-                weapon = state.LinkCache.Resolve<IWeaponGetter>(weapon_Original.FormKey).DeepCopy(weapontranslationmark);
+                weapon = weapon_Original.DeepCopy(weapontranslationmark);
+                //weapon = state.LinkCache.Resolve<IWeaponGetter>(weapon_Original.FormKey).DeepCopy(weapontranslationmark);
             }
             else
             { // Create Enchanted Weapo
@@ -314,7 +319,8 @@ namespace EnchantedVariantsGenerater
             if (checkExistingGenerated && state.LinkCache.TryResolve<IArmorGetter>(editorID, out var armor_Original))
             { // Get Enchanted Weapon if it already exists
                 alreadyExists = true;
-                armor = state.LinkCache.Resolve<IArmorGetter>(armor_Original.FormKey).DeepCopy(armortranslationmark);
+                armor = armor_Original.DeepCopy(armortranslationmark);
+                // armor = state.LinkCache.Resolve<IArmorGetter>(armor_Original.FormKey).DeepCopy(armortranslationmark);
             }
             else
             { // Create Enchanted Weapo
@@ -328,39 +334,21 @@ namespace EnchantedVariantsGenerater
             return armor;
         }
 
-        public static async Task<int> Main(string[] args)
+        public static bool GenerateWeapons(IPatcherState<ISkyrimMod, ISkyrimModGetter> state, Config config, List<InputThing> inputs)
         {
-            return await SynthesisPipeline.Instance
-                .AddPatch<ISkyrimMod, ISkyrimModGetter>(RunPatch)
-                .SetTypicalOpen(GameRelease.SkyrimSE, "generatedenchantments.esp")
-                .Run(args);
-        }
-
-        // Run Patch
-        public static void RunPatch(IPatcherState<ISkyrimMod, ISkyrimModGetter> state)
-        {
-            List<String> enabledMods = new();
-            foreach (var mod in state.LoadOrder)
-            {
-                if (mod.Value.Enabled)
-                {
-                    Console.WriteLine("enabledmod: " + mod.Value.ModKey.ToString());
-                    enabledMods.Add(mod.Value.ModKey.ToString());
-                }
-            }
-
-            // Read JSON Files
-            Config config = GetConfig(Path.Combine(state.ExtraSettingsDataPath, "config.hjson"));
-            List<InputThing> inputs = GetInputs(state, enabledMods);
-
-            //Generate Items
-            foreach (var input in inputs)
-            {
-                //Generate Weapons
+            foreach (var input in inputs) {
                 foreach (var item in input.Weapons.Values)
                 {
                     Console.WriteLine("Processing Weapon: " + item.EditorID);
-                    var itemGetter = state.LinkCache.Resolve<IWeaponGetter>(FormKey.Factory(item.FormKey)); // Get template item
+                    IWeaponGetter itemGetter;
+                    if (state.LinkCache.TryResolve<IWeaponGetter>(FormKey.Factory(item.FormKey), out var output))
+                    { // Get template item
+                        itemGetter = output;
+                    }
+                    else
+                    {
+                        throw new Exception("Could not find Weapon:" + item.EditorID + " : " + item.FormKey);
+                    }
 
                     Dictionary<String, LeveledItem> leveledlists = new();
 
@@ -468,13 +456,14 @@ namespace EnchantedVariantsGenerater
                                 var leveledlisteditorid = leveledlistinfo.LeveledListPrefix + item.EditorID + leveledlistinfo.LeveledListSuffix;
                                 bool leveledListAlreadyExists = true;
                                 LeveledItem leveledlist;
-                                if (leveledlists.TryGetValue(leveledlisteditorid, out var output))
+                                if (leveledlists.TryGetValue(leveledlisteditorid, out var idk))
                                 {
-                                    leveledlist = output;
-                                } else
+                                    leveledlist = idk;
+                                }
+                                else
                                 {
                                     leveledlist = GetLeveledList(state, leveledlisteditorid, config.CheckExistingGenerated, out var b); // Get leveled list
-                                    //leveledlist.Entries?.Clear();
+                                                                                                                                        //leveledlist.Entries?.Clear();
                                     leveledListAlreadyExists = b;
                                     leveledlists.Add(leveledlisteditorid, leveledlist);
                                 }
@@ -520,12 +509,26 @@ namespace EnchantedVariantsGenerater
                         }
                     }
                 }
+            }
+            return true;
+        }
 
-                //Generate Armors
+        public static bool GenerateArmors(IPatcherState<ISkyrimMod, ISkyrimModGetter> state, Config config, List<InputThing> inputs)
+        {
+            foreach (var input in inputs)
+            {
                 foreach (var item in input.Armors.Values)
                 {
                     Console.WriteLine("Processing Armor: " + item.EditorID);
-                    var itemGetter = state.LinkCache.Resolve<IArmorGetter>(FormKey.Factory(item.FormKey)); // Get template item
+                    IArmorGetter itemGetter;
+                    if (state.LinkCache.TryResolve<IArmorGetter>(FormKey.Factory(item.FormKey), out var output))
+                    { // Get template item
+                        itemGetter = output;
+                    }
+                    else
+                    {
+                        throw new Exception("Could not find Armor:" + item.EditorID + " : " + item.FormKey);
+                    }
 
                     Dictionary<String, LeveledItem> leveledlists = new();
 
@@ -616,14 +619,14 @@ namespace EnchantedVariantsGenerater
                                 var leveledlisteditorid = leveledlistinfo.LeveledListPrefix + item.EditorID + leveledlistinfo.LeveledListSuffix;
                                 bool leveledListAlreadyExists = true;
                                 LeveledItem leveledlist;
-                                if (leveledlists.TryGetValue(leveledlisteditorid, out var output))
+                                if (leveledlists.TryGetValue(leveledlisteditorid, out var idk))
                                 {
-                                    leveledlist = output;
+                                    leveledlist = idk;
                                 }
                                 else
                                 {
                                     leveledlist = GetLeveledList(state, leveledlisteditorid, config.CheckExistingGenerated, out var b); // Get leveled list
-                                    //leveledlist.Entries?.Clear();
+                                                                                                                                        //leveledlist.Entries?.Clear();
                                     leveledListAlreadyExists = b;
                                     leveledlists.Add(leveledlisteditorid, leveledlist);
                                 }
@@ -670,6 +673,41 @@ namespace EnchantedVariantsGenerater
                     }
                 }
             }
+            
+            return true;
+        }
+
+        public static async Task<int> Main(string[] args)
+        {
+            return await SynthesisPipeline.Instance
+                .AddPatch<ISkyrimMod, ISkyrimModGetter>(RunPatch)
+                .SetTypicalOpen(GameRelease.SkyrimSE, "generatedenchantments.esp")
+                .Run(args);
+        }
+
+        // Run Patch
+        public static void RunPatch(IPatcherState<ISkyrimMod, ISkyrimModGetter> state)
+        {
+            List<String> enabledMods = new();
+            foreach (var mod in state.LoadOrder)
+            {
+                if (mod.Value.Enabled)
+                {
+                    Console.WriteLine("enabledmod: " + mod.Value.ModKey.ToString());
+                    enabledMods.Add(mod.Value.ModKey.ToString());
+                }
+            }
+
+            // Read JSON Files
+            Config config = GetConfig(Path.Combine(state.ExtraSettingsDataPath, "config.hjson"));
+            List<InputThing> inputs = GetInputs(state, enabledMods);
+
+            Task[] tasks = {
+                    Task.Factory.StartNew(() => GenerateWeapons(state, config, inputs)),
+                    Task.Factory.StartNew(() => GenerateArmors(state, config, inputs))
+                };
+            Task.WaitAll(tasks);
+
         } // End of Patching
     }
 }
