@@ -14,6 +14,13 @@ using DynamicData;
 
 namespace EnchantedVariantsGenerater
 {
+
+    public enum LeveledListMode
+    {
+        Add,
+        Remove
+    }
+
     public class LeveledListInfo
     {
         public string LeveledListPrefix { get; set; } = "SublistEnchWeapon_";
@@ -36,9 +43,10 @@ namespace EnchantedVariantsGenerater
 
     public class InputThing
     {
-        public SortedDictionary<int, List<EnchantmentJSON>> Enchantments { get; } = new();
-        public SortedDictionary<int, List<ItemJSON>> Weapons { get; } = new();
-        public SortedDictionary<int, List<ItemJSON>> Armors { get; } = new();
+        //                EditorID, Info
+        public Dictionary<String, EnchantmentInfo> Enchantments { get; } = new();
+        public Dictionary<String, ItemJSON> Weapons { get; } = new();
+        public Dictionary<String, ItemJSON> Armors { get; } = new();
     }
 
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Interoperability", "CA1416:Validate platform compatibility", Justification = "<Pending>")]
@@ -76,14 +84,16 @@ namespace EnchantedVariantsGenerater
             return rawJSON;
         }
 
-        public static List<InputThing> GetInputs(String path, List<String> enabledMods)
+        public static List<InputThing> GetInputs(IPatcherState<ISkyrimMod, ISkyrimModGetter> state, List<String> enabledMods)
         {
             List<InputThing> inputs = new();
-            foreach (var folder in Directory.EnumerateDirectories(path))
+            foreach (var folder in Directory.EnumerateDirectories(state.ExtraSettingsDataPath + backslash + "input"))
             {
                 Console.WriteLine("Reading folder: " + folder);
                 InputThing input = new();
 
+                /* TODO
+                var files = new SortedDictionary<int, InputJSON>();
                 foreach (var file in Directory.GetFiles(folder))
                 {
                     string rawJSON = ReadInputFile(file);
@@ -92,30 +102,101 @@ namespace EnchantedVariantsGenerater
 
                     if (inputJSON.RequiredMods != null && !CheckRequiredMods(enabledMods, inputJSON.RequiredMods)) continue;
 
+                    files.Add(inputJSON.PriorityOrder, inputJSON);
+                }
+                */
+
+                var files = new List<InputJSON>();
+                foreach (var file in Directory.GetFiles(folder))
+                {
+                    string rawJSON = ReadInputFile(file);
+                    var inputJSON = JsonConvert.DeserializeObject<InputJSON>(rawJSON);
+                    if (inputJSON == null) throw new Exception("Cannot read file \"" + file + "\"!");
+
+                    if (inputJSON.RequiredMods != null && !CheckRequiredMods(enabledMods, inputJSON.RequiredMods)) continue;
+
+                    files.Add(inputJSON);
+                }
+
+                foreach (var inputJSON in files)
+                {
                     if (inputJSON.Enchantments != null)
                     {
-                        if (!input.Enchantments.ContainsKey(inputJSON.PriorityOrder)) input.Enchantments[inputJSON.PriorityOrder] = new List<EnchantmentJSON>();
                         foreach (var item in inputJSON.Enchantments)
                         {
-                            input.Enchantments[inputJSON.PriorityOrder].Add(item);
+                            if (string.IsNullOrEmpty(item.EditorID) || string.IsNullOrEmpty(item.FormKey)) throw new Exception("ERROR: enchantment does not have a formkey or editorID specified");
+                            if (input.Enchantments.ContainsKey(item.EditorID))
+                            {
+                                //TODO
+                            } else
+                            {
+                                IObjectEffectGetter enchantment;
+                                if (state.LinkCache.TryResolve<IObjectEffectGetter>(FormKey.Factory(item.FormKey), out var enchant))
+                                {
+                                    enchantment = enchant;
+                                }
+                                else
+                                {
+                                    throw new Exception("Cannot find enchantment with FormKey \"" + item.FormKey.ToString() + "\"");
+                                }
+
+                                var enchantmentGetter = new EnchantmentInfo
+                                {
+                                    EnchantmentAmount = (ushort?)item.EnchantmentAmount,
+                                    Enchantment = enchantment,
+                                    Prefix = item.Prefix,
+                                    Suffix = item.Suffix,
+                                    EditorID = item.EditorID,
+                                    LeveledLists = new List<LeveledListInfo>()
+                                };
+                                if (item.LeveledLists != null)
+                                {
+                                    foreach (var leveledlistJSON in item.LeveledLists)
+                                    {
+                                        enchantmentGetter.LeveledLists.Add(new LeveledListInfo()
+                                        {
+                                            LeveledListPrefix = leveledlistJSON.LeveledListPrefix,
+                                            LeveledListSuffix = leveledlistJSON.LeveledListSuffix,
+                                            Mode = leveledlistJSON.Mode
+                                        });
+                                    }
+                                }
+
+                                input.Enchantments.Add(item.EditorID, enchantmentGetter);
+                            }
+
                             Console.WriteLine("adding enchantment: " + item.EditorID);
                         }
                     }
                     if (inputJSON.Weapons != null)
                     {
-                        if (!input.Weapons.ContainsKey(inputJSON.PriorityOrder)) input.Weapons[inputJSON.PriorityOrder] = new List<ItemJSON>();
                         foreach (var item in inputJSON.Weapons)
                         {
-                            input.Weapons[inputJSON.PriorityOrder].Add(item);
+                            if (string.IsNullOrEmpty(item.EditorID) || string.IsNullOrEmpty(item.FormKey)) throw new Exception("ERROR: weapon does not have a formkey or editorID specified");
+                            if (input.Enchantments.ContainsKey(item.EditorID))
+                            {
+                                //TODO
+                            }
+                            else
+                            {
+                                input.Weapons.Add(item.EditorID, item);
+                            }
                             Console.WriteLine("adding weapon: " + item.EditorID);
                         }
                     }
                     if (inputJSON.Armors != null)
                     {
-                        if (!input.Armors.ContainsKey(inputJSON.PriorityOrder)) input.Armors[inputJSON.PriorityOrder] = new List<ItemJSON>();
                         foreach (var item in inputJSON.Armors)
                         {
-                            input.Armors[inputJSON.PriorityOrder].Add(item);
+                            if (string.IsNullOrEmpty(item.EditorID) || string.IsNullOrEmpty(item.FormKey)) throw new Exception("ERROR: armor does not have a formkey or editorID specified");
+                            if (input.Enchantments.ContainsKey(item.EditorID))
+                            {
+                                //TODO
+                            }
+                            else
+                            {
+                                input.Armors.Add(item.EditorID, item);
+                            }
                             Console.WriteLine("adding armor: " + item.EditorID);
                         }
                     }
@@ -144,7 +225,7 @@ namespace EnchantedVariantsGenerater
         {
             if (leveledlist.Entries == null)
             {
-                leveledlist.Entries = new();
+                leveledlist.Entries = new Noggog.ExtendedList<LeveledItemEntry>();
             }
             leveledlist.Entries.Add(CreateLeveledItemEntry(1, item));
         }
@@ -159,53 +240,6 @@ namespace EnchantedVariantsGenerater
                 }
             }
             return false;
-        }
-
-        public static List<EnchantmentInfo> ParseEnchantments(IPatcherState<ISkyrimMod, ISkyrimModGetter> state, List<EnchantmentJSON> enchantmentJSONs)
-        {
-            List<EnchantmentInfo> enchantmentInfos = new();
-            foreach (var enchantmentJSON in enchantmentJSONs)
-            {
-                if (string.IsNullOrEmpty(enchantmentJSON.EditorID) || string.IsNullOrEmpty(enchantmentJSON.FormKey)) throw new Exception("ERROR: enchantment does not have a formkey or editorID specified");
-
-                IObjectEffectGetter enchantment;
-                if (state.LinkCache.TryResolve<IObjectEffectGetter>(FormKey.Factory(enchantmentJSON.FormKey), out var enchant))
-                {
-                    enchantment = enchant;
-                }
-                else
-                {
-                    throw new Exception("Cannot find enchantment with FormKey \"" + enchantmentJSON.FormKey.ToString() + "\"");
-                }
-                
-                
-
-                var enchantmentGetter = new EnchantmentInfo
-                {
-                    EnchantmentAmount = (ushort?)enchantmentJSON.EnchantmentAmount,
-                    Enchantment = enchantment,
-                    Prefix = enchantmentJSON.Prefix,
-                    Suffix = enchantmentJSON.Suffix,
-                    EditorID = enchantmentJSON.EditorID,
-                    LeveledLists = new List<LeveledListInfo>()
-                };
-
-                if (enchantmentJSON.LeveledLists != null)
-                {
-                    foreach (var leveledlistJSON in enchantmentJSON.LeveledLists)
-                    {
-                        enchantmentGetter.LeveledLists.Add(new LeveledListInfo()
-                        {
-                            LeveledListPrefix = leveledlistJSON.LeveledListPrefix,
-                            LeveledListSuffix = leveledlistJSON.LeveledListSuffix,
-                            Mode = leveledlistJSON.Mode
-                        });
-                    }
-                }
-
-                enchantmentInfos.Add(enchantmentGetter);
-            }
-            return enchantmentInfos;
         }
 
         public static LeveledItem GetLeveledList(IPatcherState<ISkyrimMod, ISkyrimModGetter> state, string editorID, bool checkExistingGenerated, out bool alreadyExists)
@@ -230,6 +264,17 @@ namespace EnchantedVariantsGenerater
             return leveledlist;
         }
 
+        public static readonly Weapon.TranslationMask weapontranslationmark = new(defaultOn: false)
+        {
+            ObjectEffect = true,
+            EnchantmentAmount = true,
+            Name = true,
+            BasicStats = true,
+            VirtualMachineAdapter = true,
+            Template = true,
+            FormVersion = true
+        };
+
         public static Weapon GetEnchantedWeapon(IPatcherState<ISkyrimMod, ISkyrimModGetter> state, string editorID, bool checkExistingGenerated, out bool alreadyExists)
         {
             Weapon weapon;
@@ -237,7 +282,7 @@ namespace EnchantedVariantsGenerater
             if (checkExistingGenerated && state.LinkCache.TryResolve<IWeaponGetter>(editorID, out var weapon_Original))
             { // Get Enchanted Weapon if it already exists
                 alreadyExists = true;
-                weapon = weapon_Original.DeepCopy();
+                weapon = state.LinkCache.Resolve<IWeaponGetter>(weapon_Original.FormKey).DeepCopy(weapontranslationmark);
             }
             else
             { // Create Enchanted Weapo
@@ -251,6 +296,17 @@ namespace EnchantedVariantsGenerater
             return weapon;
         }
 
+        public static readonly Armor.TranslationMask armortranslationmark = new(defaultOn: false)
+        {
+            ObjectEffect = true,
+            EnchantmentAmount = true,
+            VirtualMachineAdapter = true,
+            Name = true,
+            Value = true,
+            TemplateArmor = true,
+            FormVersion = true
+        };
+
         public static Armor GetEnchantedArmor(IPatcherState<ISkyrimMod, ISkyrimModGetter> state, string editorID, bool checkExistingGenerated, out bool alreadyExists)
         {
             Armor armor;
@@ -258,7 +314,7 @@ namespace EnchantedVariantsGenerater
             if (checkExistingGenerated && state.LinkCache.TryResolve<IArmorGetter>(editorID, out var armor_Original))
             { // Get Enchanted Weapon if it already exists
                 alreadyExists = true;
-                armor = armor_Original.DeepCopy();
+                armor = state.LinkCache.Resolve<IArmorGetter>(armor_Original.FormKey).DeepCopy(armortranslationmark);
             }
             else
             { // Create Enchanted Weapo
@@ -272,18 +328,11 @@ namespace EnchantedVariantsGenerater
             return armor;
         }
 
-        public static Noggog.ExtendedList<LeveledItemEntry> GetLeveledItemEntries(LeveledItem leveledItem)
-        {
-            Noggog.ExtendedList<LeveledItemEntry>? leveledItemEntries = leveledItem.Entries;
-            if (leveledItemEntries == null) leveledItemEntries = new();
-            return leveledItemEntries;
-        }
-
         public static async Task<int> Main(string[] args)
         {
             return await SynthesisPipeline.Instance
                 .AddPatch<ISkyrimMod, ISkyrimModGetter>(RunPatch)
-                .SetTypicalOpen(GameRelease.SkyrimSE, "enchantments.esp")
+                .SetTypicalOpen(GameRelease.SkyrimSE, "generatedenchantments.esp")
                 .Run(args);
         }
 
@@ -302,318 +351,324 @@ namespace EnchantedVariantsGenerater
 
             // Read JSON Files
             Config config = GetConfig(Path.Combine(state.ExtraSettingsDataPath, "config.hjson"));
-            List<InputThing> inputs = GetInputs(state.ExtraSettingsDataPath + backslash + "input", enabledMods);
+            List<InputThing> inputs = GetInputs(state, enabledMods);
 
             //Generate Items
             foreach (var input in inputs)
             {
-                foreach (var enchantmentList in input.Enchantments.Values)
+                //Generate Weapons
+                foreach (var item in input.Weapons.Values)
                 {
-                    // Parse Enchantments
-                    List<EnchantmentInfo> enchantmentInfos = ParseEnchantments(state, enchantmentList);
+                    Console.WriteLine("Processing Weapon: " + item.EditorID);
+                    var itemGetter = state.LinkCache.Resolve<IWeaponGetter>(FormKey.Factory(item.FormKey)); // Get template item
 
-                    foreach (var enchantmentInfo in enchantmentInfos)
+                    Dictionary<String, LeveledItem> leveledlists = new();
+
+                    foreach (var enchantmentInfo in input.Enchantments.Values)
                     {
-                        Console.WriteLine("Processing Enchantment: " + enchantmentInfo.EditorID);
+                        var enchanted_item_EditorID = "Ench_" + item.EditorID + "_" + enchantmentInfo.EditorID;
+                        var enchanted_item = GetEnchantedWeapon(state, enchanted_item_EditorID, config.CheckExistingGenerated, out var EnchantedItemAlreadyExists);
+                        var enchanted_item_name = enchantmentInfo.Prefix + itemGetter.Name + enchantmentInfo.Suffix;
 
-                        // Generate Enchanted Weapons
-                        if (input.Weapons != null)
-                        {
-                            foreach (var itemList in input.Weapons.Values)
+                        if (!EnchantedItemAlreadyExists)
+                        { // Create Enchanted Item
+
+                            enchanted_item.Name = enchanted_item_name;
+                            enchanted_item.EnchantmentAmount = enchantmentInfo.EnchantmentAmount;
+                            enchanted_item.ObjectEffect.SetTo(enchantmentInfo.Enchantment); // Set enchantment to item
+                            enchanted_item.Template.SetTo(itemGetter); // Set template to base item
+                            if (itemGetter.VirtualMachineAdapter != null) enchanted_item.VirtualMachineAdapter = itemGetter.VirtualMachineAdapter.DeepCopy();
+
+                            // Set Value
+                            enchanted_item.BasicStats = new();
+                            if (item.Value != null)
                             {
-                                foreach (var itemInput in itemList)
+                                enchanted_item.BasicStats.Value = (uint)item.Value;
+                            }
+                            else
+                            {
+                                if (itemGetter.BasicStats != null)
                                 {
-                                    if (itemInput.RequiredMods != null && CheckRequiredMods(enabledMods, itemInput.RequiredMods)) continue;
-
-                                    var formKey = itemInput.FormKey;
-                                    var editorID = itemInput.EditorID;
-                                    if (editorID == null || formKey == null)
-                                    {
-                                        throw new Exception("weapon formkey or editorid is null");
-                                    }
-
-                                    var enchanted_item_EditorID = "Ench_" + editorID + "_" + enchantmentInfo.EditorID;
-
-                                    var itemGetter = state.LinkCache.Resolve<IWeaponGetter>(FormKey.Factory(formKey)); // Get template item
-                                    var enchanted_item = GetEnchantedWeapon(state, enchanted_item_EditorID, config.CheckExistingGenerated, out var EnchantedItemAlreadyExists);
-                                    var enchanted_item_name = enchantmentInfo.Prefix + itemGetter.Name + enchantmentInfo.Suffix;
-
-                                    if (!EnchantedItemAlreadyExists)
-                                    { // Create Enchanted Item
-
-                                        enchanted_item.Name = enchanted_item_name;
-                                        enchanted_item.EnchantmentAmount = enchantmentInfo.EnchantmentAmount;
-                                        enchanted_item.ObjectEffect.SetTo(enchantmentInfo.Enchantment); // Set enchantment to item
-                                        enchanted_item.Template.SetTo(itemGetter); // Set template to base item
-                                        if (itemGetter.VirtualMachineAdapter != null) enchanted_item.VirtualMachineAdapter = itemGetter.VirtualMachineAdapter.DeepCopy();
-
-                                        // Set Value
-                                        enchanted_item.BasicStats = new();
-                                        if (itemInput.Value != null)
-                                        {
-                                            enchanted_item.BasicStats.Value = (uint)itemInput.Value;
-                                        }
-                                        else
-                                        {
-                                            if (itemGetter.BasicStats != null)
-                                            {
-                                                enchanted_item.BasicStats.Value = itemGetter.BasicStats.Value;
-                                            }
-                                        }
-
-                                        Console.WriteLine("Generating weapon \"" + enchanted_item_EditorID + "\"");
-                                        state.PatchMod.Weapons.Set(enchanted_item);
-                                    }
-                                    else
-                                    {
-                                        bool copyAsOverride = false;
-
-                                        // Set Value
-                                        if (enchanted_item.BasicStats == null)
-                                        {
-                                            if (itemInput.Value != null)
-                                            {
-                                                enchanted_item.BasicStats = new();
-                                                enchanted_item.BasicStats.Value = (uint)itemInput.Value;
-                                                copyAsOverride = true;
-                                            }
-                                        }
-                                        else
-                                        {
-                                            if (itemInput.Value != null && enchanted_item.BasicStats.Value != itemInput.Value)
-                                            {
-                                                enchanted_item.BasicStats.Value = (uint)itemInput.Value;
-                                                copyAsOverride = true;
-                                            }
-                                            else if (itemGetter.BasicStats != null && enchanted_item.BasicStats.Value != itemGetter.BasicStats.Value)
-                                            {
-                                                enchanted_item.BasicStats.Value = itemGetter.BasicStats.Value;
-                                                copyAsOverride = true;
-                                            }
-                                        }
-
-                                        // Set Enchantment Amount
-                                        if (enchanted_item.EnchantmentAmount != enchantmentInfo.EnchantmentAmount)
-                                        {
-                                            enchanted_item.EnchantmentAmount = enchantmentInfo.EnchantmentAmount;
-                                            copyAsOverride = true;
-                                        }
-
-                                        // Set Name
-                                        if (enchanted_item.Name != enchanted_item_name)
-                                        {
-                                            enchanted_item.Name = enchanted_item_name;
-                                            copyAsOverride = true;
-                                        }
-
-                                        //Set Scripts
-                                        if (enchanted_item.VirtualMachineAdapter != itemGetter.VirtualMachineAdapter)
-                                        {
-                                            if (itemGetter.VirtualMachineAdapter == null)
-                                            {
-                                                enchanted_item.VirtualMachineAdapter = null;
-                                            }
-                                            else
-                                            {
-                                                enchanted_item.VirtualMachineAdapter = itemGetter.VirtualMachineAdapter.DeepCopy();
-                                            }
-                                            copyAsOverride = true;
-                                        }
-
-                                        if (copyAsOverride)
-                                        {
-                                            Console.WriteLine("Altering " + enchanted_item_EditorID);
-                                            state.PatchMod.Weapons.Set(enchanted_item);
-                                        }
-                                    }
-
-                                    // Set Leveled Lists
-                                    if (enchantmentInfo.LeveledLists != null)
-                                    {
-                                        foreach(var leveledlistinfo in enchantmentInfo.LeveledLists)
-                                        {
-                                            var leveledlist = GetLeveledList(state, leveledlistinfo.LeveledListPrefix + editorID + leveledlistinfo.LeveledListSuffix, config.CheckExistingGenerated, out var leveledListAlreadyExists); // Get leveled list
-                                            
-                                            if (leveledListAlreadyExists)
-                                            {
-                                                if (leveledlist.Entries != null)
-                                                {
-                                                    bool addtoleveledlist = true;
-                                                    foreach (var entry in leveledlist.Entries)
-                                                    {
-                                                        if (entry.Data?.Reference.FormKey == enchanted_item.FormKey)
-                                                        {
-                                                            if (leveledlistinfo.Mode == "Remove")
-                                                            {
-                                                                leveledlist.Entries.Remove(entry);
-                                                                state.PatchMod.LeveledItems.Set(leveledlist);
-                                                            }
-                                                            else
-                                                            {
-                                                                addtoleveledlist = false;
-                                                            }
-                                                            break;
-                                                        }
-                                                    }
-                                                    if (addtoleveledlist)
-                                                    {
-                                                        AddToLeveledList(leveledlist, enchanted_item.FormKey);
-                                                        state.PatchMod.LeveledItems.Set(leveledlist);
-                                                    }
-                                                }
-                                            }
-                                            else
-                                            {
-                                                AddToLeveledList(leveledlist, enchanted_item.FormKey);
-                                                state.PatchMod.LeveledItems.Set(leveledlist);
-                                            }
-                                        }
-                                    }  
+                                    enchanted_item.BasicStats.Value = itemGetter.BasicStats.Value;
                                 }
                             }
-                            
+
+                            Console.WriteLine("Generating weapon \"" + enchanted_item_EditorID + "\"");
+                            state.PatchMod.Weapons.Set(enchanted_item);
+                        }
+                        else
+                        {
+                            bool copyAsOverride = false;
+
+                            // Set Value
+                            if (enchanted_item.BasicStats == null)
+                            {
+                                if (item.Value != null)
+                                {
+                                    enchanted_item.BasicStats = new();
+                                    enchanted_item.BasicStats.Value = (uint)item.Value;
+                                    copyAsOverride = true;
+                                }
+                            }
+                            else
+                            {
+                                if (item.Value != null && enchanted_item.BasicStats.Value != item.Value)
+                                {
+                                    enchanted_item.BasicStats.Value = (uint)item.Value;
+                                    copyAsOverride = true;
+                                }
+                                else if (itemGetter.BasicStats != null && enchanted_item.BasicStats.Value != itemGetter.BasicStats.Value)
+                                {
+                                    enchanted_item.BasicStats.Value = itemGetter.BasicStats.Value;
+                                    copyAsOverride = true;
+                                }
+                            }
+
+                            // Set Enchantment Amount
+                            if (enchanted_item.EnchantmentAmount != enchantmentInfo.EnchantmentAmount)
+                            {
+                                enchanted_item.EnchantmentAmount = enchantmentInfo.EnchantmentAmount;
+                                copyAsOverride = true;
+                            }
+
+                            // Set Name
+                            if (enchanted_item.Name != enchanted_item_name)
+                            {
+                                enchanted_item.Name = enchanted_item_name;
+                                copyAsOverride = true;
+                            }
+
+                            //Set Scripts
+                            if (enchanted_item.VirtualMachineAdapter != itemGetter.VirtualMachineAdapter)
+                            {
+                                if (itemGetter.VirtualMachineAdapter == null)
+                                {
+                                    enchanted_item.VirtualMachineAdapter = null;
+                                }
+                                else
+                                {
+                                    enchanted_item.VirtualMachineAdapter = itemGetter.VirtualMachineAdapter.DeepCopy();
+                                }
+                                copyAsOverride = true;
+                            }
+
+                            if (copyAsOverride)
+                            {
+                                enchanted_item.EditorID = enchanted_item_EditorID;
+                                Console.WriteLine("Altering " + enchanted_item_EditorID);
+                                state.PatchMod.Weapons.Set(enchanted_item);
+                            }
                         }
 
-                        // Generate Enchanted Armors
-                        if (input.Armors != null)
+                        // Set Leveled Lists
+                        if (enchantmentInfo.LeveledLists != null)
                         {
-                            foreach (var itemList in input.Armors.Values)
+                            foreach (var leveledlistinfo in enchantmentInfo.LeveledLists)
                             {
-                                foreach (var itemInput in itemList)
+                                var leveledlisteditorid = leveledlistinfo.LeveledListPrefix + item.EditorID + leveledlistinfo.LeveledListSuffix;
+                                bool leveledListAlreadyExists = true;
+                                LeveledItem leveledlist;
+                                if (leveledlists.TryGetValue(leveledlisteditorid, out var output))
                                 {
-                                    if (itemInput.RequiredMods != null && CheckRequiredMods(enabledMods, itemInput.RequiredMods)) continue;
+                                    leveledlist = output;
+                                } else
+                                {
+                                    leveledlist = GetLeveledList(state, leveledlisteditorid, config.CheckExistingGenerated, out var b); // Get leveled list
+                                    //leveledlist.Entries?.Clear();
+                                    leveledListAlreadyExists = b;
+                                    leveledlists.Add(leveledlisteditorid, leveledlist);
+                                }
 
-                                    var formKey = itemInput.FormKey;
-                                    var editorID = itemInput.EditorID;
-                                    if (editorID == null || formKey == null)
+                                if (leveledListAlreadyExists)
+                                {
+                                    if (leveledlist.Entries == null)
                                     {
-                                        throw new Exception("armor formkey or editorid is null");
+                                        leveledlist.Entries = new();
                                     }
 
-                                    var enchanted_item_EditorID = "Ench_" + editorID + "_" + enchantmentInfo.EditorID;
-
-                                    var itemGetter = state.LinkCache.Resolve<IArmorGetter>(FormKey.Factory(formKey)); // Get template item
-                                    var enchanted_item = GetEnchantedArmor(state, enchanted_item_EditorID, config.CheckExistingGenerated, out var EnchantedItemAlreadyExists);
-                                    var enchanted_item_name = enchantmentInfo.Prefix + itemGetter.Name + enchantmentInfo.Suffix;
-
-                                    if (!EnchantedItemAlreadyExists)
-                                    { // Create Enchanted Item
-
-                                        enchanted_item.Name = enchanted_item_name;
-                                        enchanted_item.EnchantmentAmount = enchantmentInfo.EnchantmentAmount;
-                                        enchanted_item.ObjectEffect.SetTo(enchantmentInfo.Enchantment); // Set enchantment to item
-                                        enchanted_item.TemplateArmor.SetTo(itemGetter); // Set template to base item
-                                        if (itemGetter.VirtualMachineAdapter != null) enchanted_item.VirtualMachineAdapter = itemGetter.VirtualMachineAdapter.DeepCopy();
-
-                                        // Set Value
-                                        if (itemInput.Value != null)
-                                        {
-                                            enchanted_item.Value = (uint)itemInput.Value;
-                                        }
-                                        else
-                                        {
-                                            enchanted_item.Value = itemGetter.Value;
-                                        }
-
-                                        Console.WriteLine("Generating armor \"" + enchanted_item_EditorID + "\"");
-                                        state.PatchMod.Armors.Set(enchanted_item);
-                                    }
-                                    else
+                                    bool addtoleveledlist = true;
+                                    foreach (var entry in leveledlist.Entries)
                                     {
-                                        bool copyAsOverride = false;
-
-                                        // Set Value
-                                        if (itemInput.Value != null)
+                                        if (entry.Data?.Reference.FormKey == enchanted_item.FormKey)
                                         {
-                                            if (enchanted_item.Value != itemInput.Value)
+                                            if (leveledlistinfo.Mode == "Remove")
                                             {
-                                                enchanted_item.Value = (uint)itemInput.Value;
-                                                copyAsOverride = true;
-                                            }
-                                        }
-                                        else
-                                        {
-                                            if (enchanted_item.Value != itemGetter.Value)
-                                            {
-                                                enchanted_item.Value = itemGetter.Value;
-                                                copyAsOverride = true;
-                                            }
-                                        }
-
-                                        // Set Name
-                                        if (enchanted_item.Name != enchanted_item_name)
-                                        {
-                                            enchanted_item.Name = enchanted_item_name;
-                                            copyAsOverride = true;
-                                        }
-
-                                        //Set Scripts
-                                        if (enchanted_item.VirtualMachineAdapter != itemGetter.VirtualMachineAdapter)
-                                        {
-                                            if (itemGetter.VirtualMachineAdapter == null)
-                                            {
-                                                enchanted_item.VirtualMachineAdapter = null;
-                                            } else
-                                            {
-                                                enchanted_item.VirtualMachineAdapter = itemGetter.VirtualMachineAdapter.DeepCopy();
-                                            }
-                                            copyAsOverride = true;
-                                        }
-
-                                        if (copyAsOverride)
-                                        {
-                                            Console.WriteLine("Altering " + enchanted_item_EditorID);
-                                            state.PatchMod.Armors.Set(enchanted_item);
-                                        }
-                                    }
-
-                                    // Set Leveled Lists
-                                    if (enchantmentInfo.LeveledLists != null)
-                                    {
-                                        foreach (var leveledlistinfo in enchantmentInfo.LeveledLists)
-                                        {
-                                            var leveledlist = GetLeveledList(state, leveledlistinfo.LeveledListPrefix + editorID + leveledlistinfo.LeveledListSuffix, config.CheckExistingGenerated, out var leveledListAlreadyExists); // Get leveled list
-
-                                            if (leveledListAlreadyExists)
-                                            {
-                                                if (leveledlist.Entries != null)
-                                                {
-                                                    bool addtoleveledlist = true;
-                                                    foreach (var entry in leveledlist.Entries)
-                                                    {
-                                                        if (entry.Data?.Reference.FormKey == enchanted_item.FormKey)
-                                                        {
-                                                            if (leveledlistinfo.Mode == "Remove")
-                                                            {
-                                                                leveledlist.Entries.Remove(entry);
-                                                                state.PatchMod.LeveledItems.Set(leveledlist);
-                                                            }
-                                                            else
-                                                            {
-                                                                addtoleveledlist = false;
-                                                            }
-                                                            break;
-                                                        }
-                                                    }
-                                                    if (addtoleveledlist)
-                                                    {
-                                                        AddToLeveledList(leveledlist, enchanted_item.FormKey);
-                                                        state.PatchMod.LeveledItems.Set(leveledlist);
-                                                    }
-                                                }
+                                                leveledlist.Entries.Remove(entry);
+                                                state.PatchMod.LeveledItems.Set(leveledlist);
                                             }
                                             else
                                             {
-                                                AddToLeveledList(leveledlist, enchanted_item.FormKey);
-                                                state.PatchMod.LeveledItems.Set(leveledlist);
+                                                addtoleveledlist = false;
                                             }
+                                            break;
                                         }
                                     }
+                                    if (addtoleveledlist)
+                                    {
+                                        AddToLeveledList(leveledlist, enchanted_item.FormKey);
+                                        Console.WriteLine("Adding item: " + enchanted_item_EditorID + " to leveledlist: " + leveledlisteditorid);
+                                        state.PatchMod.LeveledItems.Set(leveledlist);
+                                    }
+                                }
+                                else
+                                {
+                                    AddToLeveledList(leveledlist, enchanted_item.FormKey);
+                                    Console.WriteLine("Adding item: " + enchanted_item_EditorID + " to leveledlist: " + leveledlisteditorid);
+                                    state.PatchMod.LeveledItems.Set(leveledlist);
                                 }
                             }
                         }
                     }
-                }  
+                }
+
+                //Generate Armors
+                foreach (var item in input.Armors.Values)
+                {
+                    Console.WriteLine("Processing Armor: " + item.EditorID);
+                    var itemGetter = state.LinkCache.Resolve<IArmorGetter>(FormKey.Factory(item.FormKey)); // Get template item
+
+                    Dictionary<String, LeveledItem> leveledlists = new();
+
+                    foreach (var enchantmentInfo in input.Enchantments.Values)
+                    {
+                        var enchanted_item_EditorID = "Ench_" + item.EditorID + "_" + enchantmentInfo.EditorID;
+                        var enchanted_item = GetEnchantedArmor(state, enchanted_item_EditorID, config.CheckExistingGenerated, out var EnchantedItemAlreadyExists);
+                        var enchanted_item_name = enchantmentInfo.Prefix + itemGetter.Name + enchantmentInfo.Suffix;
+
+                        if (!EnchantedItemAlreadyExists)
+                        { // Create Enchanted Item
+
+                            enchanted_item.Name = enchanted_item_name;
+                            enchanted_item.EnchantmentAmount = enchantmentInfo.EnchantmentAmount;
+                            enchanted_item.ObjectEffect.SetTo(enchantmentInfo.Enchantment); // Set enchantment to item
+                            enchanted_item.TemplateArmor.SetTo(itemGetter); // Set template to base item
+                            if (itemGetter.VirtualMachineAdapter != null) enchanted_item.VirtualMachineAdapter = itemGetter.VirtualMachineAdapter.DeepCopy();
+
+                            // Set Value
+                            if (item.Value != null)
+                            {
+                                enchanted_item.Value = (uint)item.Value;
+                            }
+                            else
+                            {
+                                enchanted_item.Value = itemGetter.Value;
+                            }
+
+                            Console.WriteLine("Generating armor \"" + enchanted_item_EditorID + "\"");
+                            state.PatchMod.Armors.Set(enchanted_item);
+                        }
+                        else
+                        {
+                            bool copyAsOverride = false;
+
+                            // Set Value
+                            if (item.Value != null)
+                            {
+                                if (enchanted_item.Value != item.Value)
+                                {
+                                    enchanted_item.Value = (uint)item.Value;
+                                    copyAsOverride = true;
+                                }
+                            }
+                            else
+                            {
+                                if (enchanted_item.Value != itemGetter.Value)
+                                {
+                                    enchanted_item.Value = itemGetter.Value;
+                                    copyAsOverride = true;
+                                }
+                            }
+
+                            // Set Name
+                            if (enchanted_item.Name != enchanted_item_name)
+                            {
+                                enchanted_item.Name = enchanted_item_name;
+                                copyAsOverride = true;
+                            }
+
+                            //Set Scripts
+                            if (enchanted_item.VirtualMachineAdapter != itemGetter.VirtualMachineAdapter)
+                            {
+                                if (itemGetter.VirtualMachineAdapter == null)
+                                {
+                                    enchanted_item.VirtualMachineAdapter = null;
+                                }
+                                else
+                                {
+                                    enchanted_item.VirtualMachineAdapter = itemGetter.VirtualMachineAdapter.DeepCopy();
+                                }
+                                copyAsOverride = true;
+                            }
+
+                            if (copyAsOverride)
+                            {
+                                enchanted_item.EditorID = enchanted_item_EditorID;
+                                Console.WriteLine("Altering " + enchanted_item_EditorID);
+                                state.PatchMod.Armors.Set(enchanted_item);
+                            }
+                        }
+
+                        // Set Leveled Lists
+                        if (enchantmentInfo.LeveledLists != null)
+                        {
+                            foreach (var leveledlistinfo in enchantmentInfo.LeveledLists)
+                            {
+                                var leveledlisteditorid = leveledlistinfo.LeveledListPrefix + item.EditorID + leveledlistinfo.LeveledListSuffix;
+                                bool leveledListAlreadyExists = true;
+                                LeveledItem leveledlist;
+                                if (leveledlists.TryGetValue(leveledlisteditorid, out var output))
+                                {
+                                    leveledlist = output;
+                                }
+                                else
+                                {
+                                    leveledlist = GetLeveledList(state, leveledlisteditorid, config.CheckExistingGenerated, out var b); // Get leveled list
+                                    //leveledlist.Entries?.Clear();
+                                    leveledListAlreadyExists = b;
+                                    leveledlists.Add(leveledlisteditorid, leveledlist);
+                                }
+
+                                if (leveledListAlreadyExists)
+                                {
+                                    if (leveledlist.Entries == null)
+                                    {
+                                        leveledlist.Entries = new();
+                                    }
+
+                                    bool addtoleveledlist = true;
+                                    foreach (var entry in leveledlist.Entries)
+                                    {
+                                        if (entry.Data?.Reference.FormKey == enchanted_item.FormKey)
+                                        {
+                                            if (leveledlistinfo.Mode == "Remove")
+                                            {
+                                                leveledlist.Entries.Remove(entry);
+                                                state.PatchMod.LeveledItems.Set(leveledlist);
+                                            }
+                                            else
+                                            {
+                                                addtoleveledlist = false;
+                                            }
+                                            break;
+                                        }
+                                    }
+                                    if (addtoleveledlist)
+                                    {
+                                        AddToLeveledList(leveledlist, enchanted_item.FormKey);
+                                        Console.WriteLine("Adding item: " + enchanted_item_EditorID + " to leveledlist: " + leveledlisteditorid);
+                                        state.PatchMod.LeveledItems.Set(leveledlist);
+                                    }
+                                }
+                                else
+                                {
+                                    AddToLeveledList(leveledlist, enchanted_item.FormKey);
+                                    Console.WriteLine("Adding item: " + enchanted_item_EditorID + " to leveledlist: " + leveledlisteditorid);
+                                    state.PatchMod.LeveledItems.Set(leveledlist);
+                                }
+                            }
+                        }
+                    }
+                }
             }
         } // End of Patching
     }

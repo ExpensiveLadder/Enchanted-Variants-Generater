@@ -55,5 +55,16 @@
 				}
 			]
 		}
+		{
+			EditorID: "EnchArmorMuffle"
+			FormKey: "092A77:Skyrim.esm"
+			Suffix: " of Muffling"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
 	]
 }

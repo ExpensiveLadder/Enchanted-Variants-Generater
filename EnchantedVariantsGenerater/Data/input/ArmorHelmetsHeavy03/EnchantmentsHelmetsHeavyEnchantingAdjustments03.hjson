@@ -1,0 +1,33 @@
+{
+	PriorityOrder: 2
+	
+	RequiredMods: [
+		"EnchantingAdjustments.esp"
+	]
+	
+	Enchantments: [
+		{
+			EditorID: "EnchArmorWaterbreathing"
+			FormKey: "092A76:Skyrim.esm"
+			Suffix: " of Waterbreathing"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Mode: "Remove"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorWaterbreathing03"
+			FormKey: "0A2838:EnchantingAdjustments.esm"
+			Suffix: " of Major Waterbreathing"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+	]
+}

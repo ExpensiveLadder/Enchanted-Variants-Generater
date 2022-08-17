@@ -64,8 +64,6 @@
 					LeveledListPrefix: "SublistEnchArmor_"
 					LeveledListSuffix: "_05"
 				}
-			]
-			LeveledLists: [
 				{
 					LeveledListPrefix: "SublistEnchArmor_"
 					LeveledListSuffix: "_05"
@@ -107,4 +105,3 @@
 		}
 	]
 }
-

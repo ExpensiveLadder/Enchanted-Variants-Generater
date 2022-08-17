@@ -1,4 +1,8 @@
 {
+	RequiredMods: [
+		"Enchantments.esp"
+	]
+	
 	"Armors": [
 		{
 			EditorID: "ArmorDwarvenCuirass"

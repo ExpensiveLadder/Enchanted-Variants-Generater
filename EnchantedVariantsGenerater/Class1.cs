@@ -14,7 +14,7 @@ namespace EnchantedVariantsGenerater
         public ItemJSON[]? Armors { get; set; }
         public ItemJSON[]? Weapons { get; set; }
         public EnchantmentJSON[]? Enchantments { get; set; }
-        public int PriorityOrder = 1;
+        public int PriorityOrder = 0;
     }
 
     public class ItemJSON
@@ -23,6 +23,7 @@ namespace EnchantedVariantsGenerater
         public string? FormKey { get; set; }
         public string? EditorID { get; set; }
         public uint? Value { get; set; }
+        public bool Append { get; set; } = false;
     }
 
     public class EnchantmentJSON
@@ -34,5 +35,6 @@ namespace EnchantedVariantsGenerater
         public string? Suffix { get; set; }
         public int? EnchantmentAmount { get; set; }
         public LeveledListInfo[]? LeveledLists { get; set; }
+        public bool Append { get; set; } = false;
     }
 }
