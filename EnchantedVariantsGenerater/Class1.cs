@@ -20,10 +20,10 @@ namespace EnchantedVariantsGenerater
     public class ItemJSON
     {
         public string[]? RequiredMods { get; set; }
+        public string[]? BlacklistedMods { get; set; }
         public string? FormKey { get; set; }
         public string? EditorID { get; set; }
         public uint? Value { get; set; }
-        public bool Append { get; set; } = false;
     }
 
     public class EnchantmentJSON
@@ -35,6 +35,6 @@ namespace EnchantedVariantsGenerater
         public string? Suffix { get; set; }
         public int? EnchantmentAmount { get; set; }
         public LeveledListInfo[]? LeveledLists { get; set; }
-        public bool Append { get; set; } = false;
+        public EnchantmentJSON[]? Overwrites { get; set; }
     }
 }
