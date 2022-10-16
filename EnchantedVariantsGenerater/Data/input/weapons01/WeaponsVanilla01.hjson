@@ -1,6 +1,10 @@
 {
 	LeveledListPrefix: "SublistEnchWeapon_"
 	LeveledListSuffix: "_01"
+
+	RequiredMods: [
+		"Enchantments.esp"
+	]
 	
 	Weapons: [
 		{

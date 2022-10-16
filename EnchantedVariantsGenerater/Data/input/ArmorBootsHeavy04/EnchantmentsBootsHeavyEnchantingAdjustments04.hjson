@@ -1,0 +1,33 @@
+{
+	PriorityOrder: 2
+	
+	RequiredMods: [
+		"EnchantingAdjustments.esp"
+	]
+	
+	Enchantments: [
+		{
+			EditorID: "EnchArmorMuffle"
+			FormKey: "092A77:Skyrim.esm"
+			Suffix: " of Muffling"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Mode: "Remove"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorMuffle04"
+			FormKey: "09D730:EnchantingAdjustments.esm"
+			Suffix: " of Eminent Muffling"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+	]
+}
