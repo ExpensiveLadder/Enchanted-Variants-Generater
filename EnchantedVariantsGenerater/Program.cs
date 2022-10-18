@@ -34,15 +34,19 @@ namespace EnchantedVariantsGenerater
 
     public class EnchantmentInfo
     {
-#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         public IObjectEffectGetter Enchantment { get; set; }
         public string EditorID { get; set; }
-#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         public string? Prefix { get; set; }
         public string? Suffix { get; set; }
         public string? Sublist { get; set; }
         public ushort? EnchantmentAmount { get; set; }
         public List<LeveledListInfo>? LeveledLists { get; set; }
+
+        public EnchantmentInfo(string editorID, IObjectEffectGetter enchantment)
+        {
+            Enchantment = enchantment;
+            EditorID = editorID;
+        }
     }
 
     public class InputThing
@@ -143,13 +147,11 @@ namespace EnchantedVariantsGenerater
                                     throw new Exception("Cannot find enchantment with FormKey \"" + item.FormKey.ToString() + "\"");
                                 }
 
-                                var enchantmentGetter = new EnchantmentInfo
+                                var enchantmentGetter = new EnchantmentInfo(item.EditorID, enchantment)
                                 {
                                     EnchantmentAmount = (ushort?)item.EnchantmentAmount,
-                                    Enchantment = enchantment,
                                     Prefix = item.Prefix,
                                     Suffix = item.Suffix,
-                                    EditorID = item.EditorID,
                                     LeveledLists = new List<LeveledListInfo>()
                                 };
                                 if (item.LeveledLists != null)
@@ -493,17 +495,33 @@ namespace EnchantedVariantsGenerater
                         }
 
                         //Set Scripts
-                        if (enchanted_item.VirtualMachineAdapter != itemGetter.VirtualMachineAdapter)
+                        if (item.SetScripts)
                         {
-                            if (itemGetter.VirtualMachineAdapter == null)
+                            if (enchanted_item.VirtualMachineAdapter == null)
                             {
-                                enchanted_item.VirtualMachineAdapter = null;
-                            }
-                            else
+                                if (itemGetter.VirtualMachineAdapter != null)
+                                {
+                                    enchanted_item.VirtualMachineAdapter = itemGetter.VirtualMachineAdapter.DeepCopy();
+                                    copyAsOverride = true;
+                                }
+                            } else if (itemGetter.VirtualMachineAdapter == null)
                             {
-                                enchanted_item.VirtualMachineAdapter = itemGetter.VirtualMachineAdapter.DeepCopy();
+                                if (enchanted_item.VirtualMachineAdapter != null)
+                                {
+                                    enchanted_item.VirtualMachineAdapter = null;
+                                    copyAsOverride = true;
+                                }
+                            } else
+                            {
+                                var equalsmask = enchanted_item.VirtualMachineAdapter.GetEqualsMask(itemGetter.VirtualMachineAdapter);
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
+                                if (!equalsmask.Scripts.Overall)
+                                {
+                                    enchanted_item.VirtualMachineAdapter = itemGetter.VirtualMachineAdapter.DeepCopy();
+                                    copyAsOverride = true;
+                                }
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
                             }
-                            copyAsOverride = true;
                         }
 
                         if (copyAsOverride)
@@ -659,18 +677,37 @@ namespace EnchantedVariantsGenerater
                             copyAsOverride = true;
                         }
 
+
                         //Set Scripts
-                        if (enchanted_item.VirtualMachineAdapter != itemGetter.VirtualMachineAdapter)
+                        if (item.SetScripts)
                         {
-                            if (itemGetter.VirtualMachineAdapter == null)
+                            if (enchanted_item.VirtualMachineAdapter == null)
                             {
-                                enchanted_item.VirtualMachineAdapter = null;
+                                if (itemGetter.VirtualMachineAdapter != null)
+                                {
+                                    enchanted_item.VirtualMachineAdapter = itemGetter.VirtualMachineAdapter.DeepCopy();
+                                    copyAsOverride = true;
+                                }
+                            }
+                            else if (itemGetter.VirtualMachineAdapter == null)
+                            {
+                                if (enchanted_item.VirtualMachineAdapter != null)
+                                {
+                                    enchanted_item.VirtualMachineAdapter = null;
+                                    copyAsOverride = true;
+                                }
                             }
                             else
                             {
-                                enchanted_item.VirtualMachineAdapter = itemGetter.VirtualMachineAdapter.DeepCopy();
+                                var equalsmask = enchanted_item.VirtualMachineAdapter.GetEqualsMask(itemGetter.VirtualMachineAdapter);
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
+                                if (!equalsmask.Scripts.Overall)
+                                {
+                                    enchanted_item.VirtualMachineAdapter = itemGetter.VirtualMachineAdapter.DeepCopy();
+                                    copyAsOverride = true;
+                                }
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
                             }
-                            copyAsOverride = true;
                         }
 
                         if (copyAsOverride)
