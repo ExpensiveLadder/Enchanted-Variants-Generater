@@ -7,7 +7,9 @@ namespace EnchantedVariantsGenerater
     public class Config
     {
         public bool CheckExistingGenerated { get; set; } = true;
+        public bool VerboseLogging { get; set; } = false;
     }
+
     public class InputJSON
     {
         public string[]? RequiredMods { get; set; }
@@ -24,6 +26,7 @@ namespace EnchantedVariantsGenerater
         public string? FormKey { get; set; }
         public string? EditorID { get; set; }
         public uint? Value { get; set; }
+        public bool SetScripts { get; set; } = true;
     }
 
     public class EnchantmentJSON
