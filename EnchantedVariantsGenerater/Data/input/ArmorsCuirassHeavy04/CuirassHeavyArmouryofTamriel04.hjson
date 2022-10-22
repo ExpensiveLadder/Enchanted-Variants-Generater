@@ -1,0 +1,312 @@
+{
+	RequiredMods: [
+		"Armoury of Tamriel.esm"
+	]
+	
+	Armors: [
+		{
+			EditorID: "ArmorEbonyCuirass"
+			FormKey: "013961:Skyrim.esm"
+		}
+		{
+			EditorID: "300ArmorALTEbonyBladesCuirass"
+			FormKey: "02B26F:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTEbonyAltmerCuirass"
+			FormKey: "02B272:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTEbonyAncientCuirass"
+			FormKey: "02B277:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTEbonyDwemerCuirass"
+			FormKey: "02B288:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTEbonyDunmerCuirass"
+			FormKey: "02B28D:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTEbonyNordicBCuirass"
+			FormKey: "02B299:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTEbonyNordicPlateCuirass"
+			FormKey: "02B29B:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTEbonyOrcishCuirass"
+			FormKey: "02B29F:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTEbonyOrnateCuirass"
+			FormKey: "02B2A4:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTEbonyAltmerCuirassLight"
+			FormKey: "02B2A8:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTEbonyBasicCuirassPlate"
+			FormKey: "02B2A9:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTEbonyBasicCuirass"
+			FormKey: "02B2AA:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTEbonyDunmerMailCuirass"
+			FormKey: "02B2AC:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTEbonyNordicCuirass"
+			FormKey: "02B2B1:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTDaedricBladesCuirass"
+			FormKey: "02B2B5:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTDaedricAltmerCuirass"
+			FormKey: "02B2B8:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTDaedricAncientCuirass"
+			FormKey: "02B2BD:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTDaedricDremoraCuirass"
+			FormKey: "02B2C9:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTDaedricDwemerCuirass"
+			FormKey: "02B2CE:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTDaedricDunmerCuirass"
+			FormKey: "02B2D3:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTDaedricNordicBCuirass"
+			FormKey: "02B2DF:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTDaedricNordicPlateCuirass"
+			FormKey: "02B2E1:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTDaedricOrcishCuirass"
+			FormKey: "02B2E5:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTDaedricOrnateCuirass"
+			FormKey: "02B2EA:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTDaedricAltmerCuirassLight"
+			FormKey: "02B2EE:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTDaedricBasicCuirassPlate"
+			FormKey: "02B2EF:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTDaedricBasicCuirass"
+			FormKey: "02B2F0:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTDaedricDunmerMailCuirass"
+			FormKey: "02B2F2:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTDaedricNordicCuirass"
+			FormKey: "02B2F7:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorGlassNordicCuirass"
+			FormKey: "02B2FD:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorEbonyNordicCuirass"
+			FormKey: "02B2FE:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDaedricNordicCuirass"
+			FormKey: "02B2FF:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorGlassDunmerMailCuirass"
+			FormKey: "02B325:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorEbonyDunmerMailCuirass"
+			FormKey: "02B326:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDaedricDunmerMailCuirass"
+			FormKey: "02B327:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorGlassBasicCuirass"
+			FormKey: "02B335:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorEbonyBasicCuirass"
+			FormKey: "02B336:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDaedricBasicCuirass"
+			FormKey: "02B337:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorGlassBasicCuirassPlate"
+			FormKey: "02B33D:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorEbonyBasicCuirassPlate"
+			FormKey: "02B33E:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDaedricBasicCuirassPlate"
+			FormKey: "02B33F:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorGlassAltmerCuirassLight"
+			FormKey: "02B345:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorEbonyAltmerCuirassLight"
+			FormKey: "02B346:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDaedricAltmerCuirassLight"
+			FormKey: "02B347:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorEbonyOrnateCuirass"
+			FormKey: "02B369:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDaedricOrnateCuirass"
+			FormKey: "02B36E:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorGlassOrcishCuirass"
+			FormKey: "02B38C:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorEbonyOrcishCuirass"
+			FormKey: "02B391:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDaedricOrcishCuirass"
+			FormKey: "02B396:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorGlassNordicPlateCuirass"
+			FormKey: "02B3AE:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorEbonyNordicPlateCuirass"
+			FormKey: "02B3B2:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDaedricNordicPlateCuirass"
+			FormKey: "02B3B6:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorGlassNordicBCuirass"
+			FormKey: "02B3BD:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorEbonyNordicBCuirass"
+			FormKey: "02B3BE:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDaedricNordicBCuirass"
+			FormKey: "02B3BF:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorGlassDunmerCuirass"
+			FormKey: "02B41C:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDaedricDunmerCuirass"
+			FormKey: "02B426:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorGlassDwemerCuirass"
+			FormKey: "02B444:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorEbonyDwemerCuirass"
+			FormKey: "02B449:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDaedricDwemerCuirass"
+			FormKey: "02B44E:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorGlassAncientCuirass"
+			FormKey: "02B4CE:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorEbonyAncientCuirass"
+			FormKey: "02B4D2:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDaedricAncientCuirass"
+			FormKey: "02B4D6:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorGlassAltmerCuirass"
+			FormKey: "02B4F4:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorEbonyAltmerCuirass"
+			FormKey: "02B4F9:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDaedricAltmerCuirass"
+			FormKey: "02B4FE:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDaedricBladesCuirass"
+			FormKey: "02B542:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorEbonyBladesCuirass"
+			FormKey: "02B547:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorGlassBladesCuirass"
+			FormKey: "02B54C:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPGlassOrnateCuirass"
+			FormKey: "02BFF8:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300DLC2ArmorDaedricSkaalCuirass"
+			FormKey: "0023EF:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300DLC2ArmorEbonySkaalCuirass"
+			FormKey: "0023F0:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300DLC2ArmorGlassSkaalCuirass"
+			FormKey: "0023F1:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300DLC2ArmorALTDaedricSkaalCuirass"
+			FormKey: "0023F6:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300DLC2ArmorALTEbonySkaalCuirass"
+			FormKey: "0023FB:Armoury of Tamriel Integration.esp"
+		}
+	]
+}

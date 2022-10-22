@@ -1,0 +1,20 @@
+{
+	RequiredMods: [
+		"Enchantments.esp"
+	]
+	
+	"Armors": [
+		{
+			EditorID: "ArmorHideHelmet"
+			FormKey: "013913:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorLeatherHelmet"
+			FormKey: "013922:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorImperialLightHelmet"
+			FormKey: "013EDB:Skyrim.esm"
+		}
+	]
+}

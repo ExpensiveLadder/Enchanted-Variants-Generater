@@ -1,6 +1,7 @@
 {
 	RequiredMods: [
-		"Enchantments.esp"
+		"Enchantments.esp",
+		"Armoury of Tamriel - Enchantments.esp"
 	]
 	
 	Weapons: [
@@ -15,6 +16,10 @@
 		{
 			EditorID: "ImperialBow"
 			FormKey: "013841:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC1CrossBow"
+			FormKey: "000801:Dawnguard.esm"
 		}
 	]
 }

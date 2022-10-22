@@ -1,0 +1,13 @@
+{
+	RequiredMods: [
+		"Enchantments.esp"
+	]
+	
+	"Armors": [
+		{
+			EditorID: "ArmorDragonscaleGauntlets"
+			FormKey: "01393F:Skyrim.esm"
+		}
+	]
+}
+

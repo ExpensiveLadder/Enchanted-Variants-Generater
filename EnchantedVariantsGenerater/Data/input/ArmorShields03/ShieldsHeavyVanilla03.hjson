@@ -1,0 +1,29 @@
+{
+	RequiredMods: [
+		"Enchantments.esp"
+	]
+	
+	"Armors": [
+		{
+			EditorID: "ArmorOrcishShield"
+			FormKey: "013946:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
+		}
+		{
+			EditorID: "DLC2ArmorNordicShield"
+			FormKey: "026236:Dragonborn.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
+		}
+		{
+			EditorID: "ArmorEbonyShield"
+			FormKey: "013964:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
+		}
+	]
+}

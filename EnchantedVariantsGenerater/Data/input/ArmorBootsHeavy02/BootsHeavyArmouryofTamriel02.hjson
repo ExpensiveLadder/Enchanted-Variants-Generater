@@ -1,0 +1,108 @@
+{
+	RequiredMods: [
+		"Armoury of Tamriel.esm"
+	]
+	
+	Armors: [
+		{
+			EditorID: "ArmorOrcishBoots"
+			FormKey: "013956:Skyrim.esm"
+		}
+		{
+			EditorID: "300DLC2ArmorOrichalcumSkaalBoots"
+			FormKey: "0023E3:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300ArmorOrichalcumAltmerBoots"
+			FormKey: "02B4E6:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorOrichalcumAncientBoots"
+			FormKey: "02B4C3:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorOrichalcumBasicBoots"
+			FormKey: "02B4A3:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorOrichalcumBladesBoots"
+			FormKey: "02B55A:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorOrichalcumCompanionsBoots"
+			FormKey: "02B483:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorOrichalcumDunmerBoots"
+			FormKey: "02B40E:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorOrichalcumDwemerBoots"
+			FormKey: "02B436:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorOrichalcumImperialBoots"
+			FormKey: "02B3EB:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorOrichalcumNordicBoots"
+			FormKey: "02B3CB:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorOrichalcumNordicPlateBoots"
+			FormKey: "02B3A3:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorOrichalcumOrnateBoots"
+			FormKey: "02B356:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300DLC2ArmorMoonstoneSkaalBoots"
+			FormKey: "0023E7:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300ArmorMoonstoneAncientBoots"
+			FormKey: "02B4BF:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorMoonstoneBasicBoots"
+			FormKey: "02B49F:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorMoonstoneBladesBoots"
+			FormKey: "02B55F:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorMoonstoneDunmerBoots"
+			FormKey: "02B409:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorMoonstoneDwemerBoots"
+			FormKey: "02B431:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorMoonstoneImperialBoots"
+			FormKey: "02B3E7:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorMoonstoneNordicBoots"
+			FormKey: "02B3C7:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorMoonstoneNordicPlateBoots"
+			FormKey: "02B39F:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorMoonstoneOrcishBoots"
+			FormKey: "02B379:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorMoonstoneOrnateBoots"
+			FormKey: "02B351:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPMoonstoneAltmerBoots"
+			FormKey: "02BF33:Armoury of Tamriel.esm"
+		}
+	]
+}

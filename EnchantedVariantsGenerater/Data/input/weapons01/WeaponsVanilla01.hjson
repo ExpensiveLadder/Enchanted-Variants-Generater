@@ -1,9 +1,7 @@
 {
-	LeveledListPrefix: "SublistEnchWeapon_"
-	LeveledListSuffix: "_01"
-
 	RequiredMods: [
-		"Enchantments.esp"
+		"Enchantments.esp",
+		"Armoury of Tamriel - Enchantments.esp"
 	]
 	
 	Weapons: [
@@ -62,6 +60,10 @@
 		{
 			EditorID: "SteelWarhammer"
 			FormKey: "01398A:Skyrim.esm"
+		}
+		{
+			EditorID: "ImperialSword"
+			FormKey: "0135B8:Skyrim.esm"
 		}
 	]
 }

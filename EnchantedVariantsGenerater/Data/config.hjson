@@ -1,4 +1,5 @@
 {
-	"CheckExistingGenerated": true
+	"CheckExistingGenerated": true,
+	"VerboseLogging": false
 }
 

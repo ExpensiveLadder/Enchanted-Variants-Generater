@@ -1,0 +1,290 @@
+{	
+	"Enchantments": [
+		{
+			EditorID: "EnchArmorFortifyBlock04"
+			FormKey: "0BE034:Skyrim.esm"
+			"Suffix": " of Eminent Blocking"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of the Major Gladiator"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistFire04"
+			FormKey: "0BE028:Skyrim.esm"
+			Suffix: " of Fire Suppression"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of Major Fire Resistance"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistFrost04"
+			FormKey: "0BE02B:Skyrim.esm"
+			Suffix: " of Frost Suppression"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of Major Fire Resistance"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistShock04"
+			FormKey: "0BE02E:Skyrim.esm"
+			Suffix: " of Shock Suppression"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of Major Shock Resistance"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistMagic04"
+			FormKey: "0FC05E:Skyrim.esm"
+			Suffix: " of Magic Suppression"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of Major Magic Resistance"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyBlock05"
+			FormKey: "0BE035:Skyrim.esm"
+			"Suffix": " of Extreme Blocking"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of the Peerless Gladiator"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistFire05"
+			FormKey: "0BE029:Skyrim.esm"
+			Suffix: " of Fire Abatement"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of Peerless Fire Resistance"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistFrost05"
+			FormKey: "0BE02C:Skyrim.esm"
+			Suffix: " of Frost Abatement"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of Peerless Frost Resistance"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistShock05"
+			FormKey: "0BE02F:Skyrim.esm"
+			Suffix: " of Shock Abatement"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of Peerless Shock Resistance"
+				}
+			]
+		}		
+		{
+			EditorID: "EnchArmorResistMagic05"
+			FormKey: "0FC05F:Skyrim.esm"
+			"Suffix": " of Magic Abatement"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of Peerless Magic Resistance"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyBlock06"
+			FormKey: "0BE036:Skyrim.esm"
+			"Suffix": " of Peerless Blocking"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of the Peerless Gladiator"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistFire06"
+			FormKey: "0BE02A:Skyrim.esm"
+			Suffix: " of the Firewalker"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of Peerless Fire Resistance"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistFrost06"
+			FormKey: "0BE02D:Skyrim.esm"
+			Suffix: " of Warmth"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of Peerless Frost Resistance"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistShock06"
+			FormKey: "0BE030:Skyrim.esm"
+			Suffix: " of Grounding"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of Peerless Shock Resistance"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistMagic06"
+			FormKey: "0FC060:Skyrim.esm"
+			Suffix: " of Nullification"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of Peerless Magic Resistance"
+				}
+			]
+		}
+	]
+}
+

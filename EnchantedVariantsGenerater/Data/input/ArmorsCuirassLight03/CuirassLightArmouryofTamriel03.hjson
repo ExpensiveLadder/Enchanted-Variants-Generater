@@ -1,0 +1,124 @@
+{
+	RequiredMods: [
+		"Armoury of Tamriel.esm"
+	]
+	
+	Armors: [
+		{
+			EditorID: "300ArmorDwarvenHideCuirass"
+			FormKey: "02B1FF:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenHideCuirass01"
+			FormKey: "02B13D:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenHideCuirass02"
+			FormKey: "02B132:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenHideCuirass03"
+			FormKey: "02B127:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenLeatherCuirass"
+			FormKey: "02B22B:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenLeatherCuirassAlt"
+			FormKey: "02B0F0:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenStuddedLeatherCuirass"
+			FormKey: "02B254:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverHideCuirass"
+			FormKey: "02B1FB:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverHideCuirass01"
+			FormKey: "02B13E:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverHideCuirass02"
+			FormKey: "02B133:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverHideCuirass03"
+			FormKey: "02B128:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverLeatherCuirass"
+			FormKey: "02B227:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverLeatherCuirassAlt"
+			FormKey: "02B0F1:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverStuddedLeatherCuirass"
+			FormKey: "02B258:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300DLC2ArmorCSWAPSilverSkaalCuirass"
+			FormKey: "0023BB:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverAltmerCuirass"
+			FormKey: "02BF7D:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverAltmerCuirassLight"
+			FormKey: "02BFFD:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverAncientCuirass"
+			FormKey: "02BF86:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverBasicCuirass"
+			FormKey: "02BFDF:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverBasicCuirassPlate"
+			FormKey: "02BFDD:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverBladesCuirass"
+			FormKey: "02BF70:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverDunmerCuirass"
+			FormKey: "02BFB4:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverDunmerMailCuirass"
+			FormKey: "02BFE3:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverDwemerCuirass"
+			FormKey: "02BFAA:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverNordicBCuirass"
+			FormKey: "02BFC9:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverNordicCuirass"
+			FormKey: "02BFEB:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverNordicPlateCuirass"
+			FormKey: "02BFCF:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverOrcishCuirass"
+			FormKey: "02BFD8:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverOrnateCuirass"
+			FormKey: "02BFED:Armoury of Tamriel.esm"
+		}
+	]
+}

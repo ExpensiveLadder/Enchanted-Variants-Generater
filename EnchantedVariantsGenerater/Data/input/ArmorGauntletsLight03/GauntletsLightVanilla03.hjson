@@ -1,0 +1,20 @@
+{
+	RequiredMods: [
+		"Enchantments.esp"
+	]
+	
+	"Armors": [
+		{
+			EditorID: "ArmorGlassGauntlets"
+			FormKey: "01393A:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
+		}
+		{
+			EditorID: "DLC2ArmorStalhrimLightGauntlets"
+			FormKey: "01CDA5:Dragonborn.esm"
+		}
+	]
+}
+

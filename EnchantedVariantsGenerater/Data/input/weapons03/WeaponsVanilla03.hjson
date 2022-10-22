@@ -5,200 +5,102 @@
 	
 	Weapons: [
 		{
-			EditorID: "IronBattleaxe"
-			FormKey: "013980:Skyrim.esm"
-		}
-		{
-			EditorID: "IronDagger"
-			FormKey: "01397E:Skyrim.esm"
-		}
-		{
-			EditorID: "IronGreatsword"
-			FormKey: "01359D:Skyrim.esm"
-		}
-		{
-			EditorID: "IronMace"
-			FormKey: "013982:Skyrim.esm"
-		}
-		{
-			EditorID: "IronSword"
-			FormKey: "012EB7:Skyrim.esm"
-		}
-		{
-			EditorID: "IronWarAxe"
-			FormKey: "013790:Skyrim.esm"
-		}
-		{
-			EditorID: "IronWarhammer"
-			FormKey: "013981:Skyrim.esm"
-		}
-		{
-			EditorID: "SteelBattleaxe"
-			FormKey: "013984:Skyrim.esm"
-		}
-		{
-			EditorID: "SteelDagger"
-			FormKey: "013986:Skyrim.esm"
-		}
-		{
-			EditorID: "SteelGreatsword"
-			FormKey: "013987:Skyrim.esm"
-		}
-		{
-			EditorID: "SteelMace"
-			FormKey: "013988:Skyrim.esm"
-		}
-		{
-			EditorID: "SteelSword"
-			FormKey: "013989:Skyrim.esm"
-		}
-		{
-			EditorID: "SteelWarAxe"
-			FormKey: "013983:Skyrim.esm"
-		}
-		{
-			EditorID: "SteelWarhammer"
-			FormKey: "01398A:Skyrim.esm"
-		}
-		{
-			EditorID: "OrcishBattleaxe"
-			FormKey: "01398C:Skyrim.esm"
-		}
-		{
-			EditorID: "OrcishDagger"
-			FormKey: "01398E:Skyrim.esm"
-		}
-		{
-			EditorID: "OrcishGreatsword"
-			FormKey: "01398F:Skyrim.esm"
-		}
-		{
-			EditorID: "OrcishMace"
-			FormKey: "013990:Skyrim.esm"
-		}
-		{
-			EditorID: "OrcishSword"
-			FormKey: "013991:Skyrim.esm"
-		}
-		{
-			EditorID: "OrcishWarAxe"
-			FormKey: "01398B:Skyrim.esm"
-		}
-		{
-			EditorID: "OrcishWarhammer"
-			FormKey: "013992:Skyrim.esm"
-		}
-		{
-			EditorID: "DwarvenBattleaxe"
-			FormKey: "013994:Skyrim.esm"
-		}
-		{
-			EditorID: "DwarvenDagger"
-			FormKey: "013996:Skyrim.esm"
-		}
-		{
-			EditorID: "DwarvenGreatsword"
-			FormKey: "013997:Skyrim.esm"
-		}
-		{
-			EditorID: "DwarvenMace"
-			FormKey: "013998:Skyrim.esm"
-		}
-		{
-			EditorID: "DwarvenSword"
-			FormKey: "013999:Skyrim.esm"
-		}
-		{
-			EditorID: "DwarvenWarAxe"
-			FormKey: "013993:Skyrim.esm"
-		}
-		{
-			EditorID: "DwarvenWarhammer"
-			FormKey: "01399A:Skyrim.esm"
-		}
-		{
 			EditorID: "ElvenBattleaxe"
 			FormKey: "01399C:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
 		}
 		{
 			EditorID: "ElvenDagger"
 			FormKey: "01399E:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
 		}
 		{
 			EditorID: "ElvenGreatsword"
 			FormKey: "01399F:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
 		}
 		{
 			EditorID: "ElvenMace"
 			FormKey: "0139A0:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
 		}
 		{
 			EditorID: "ElvenSword"
 			FormKey: "0139A1:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
 		}
 		{
 			EditorID: "ElvenWarAxe"
 			FormKey: "01399B:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
 		}
 		{
 			EditorID: "ElvenWarhammer"
 			FormKey: "0139A2:Skyrim.esm"
-		}
-		{
-			EditorID: "DLC2NordicBattleaxe"
-			FormKey: "01CDAD:Dragonborn.esm"
-		}
-		{
-			EditorID: "DLC2NordicDagger"
-			FormKey: "01CDAE:Dragonborn.esm"
-		}
-		{
-			EditorID: "DLC2NordicGreatsword"
-			FormKey: "01CDAF:Dragonborn.esm"
-		}
-		{
-			EditorID: "DLC2NordicMace"
-			FormKey: "01CDB0:Dragonborn.esm"
-		}
-		{
-			EditorID: "DLC2NordicSword"
-			FormKey: "01CDB1:Dragonborn.esm"
-		}
-		{
-			EditorID: "DLC2NordicWarAxe"
-			FormKey: "01CDB2:Dragonborn.esm"
-		}
-		{
-			EditorID: "DLC2NordicWarhammer"
-			FormKey: "01CDB3:Dragonborn.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
 		}
 		{
 			EditorID: "GlassBattleaxe"
 			FormKey: "0139A4:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
 		}
 		{
 			EditorID: "GlassDagger"
 			FormKey: "0139A6:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
 		}
 		{
 			EditorID: "GlassGreatsword"
 			FormKey: "0139A7:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
 		}
 		{
 			EditorID: "GlassMace"
 			FormKey: "0139A8:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
 		}
 		{
 			EditorID: "GlassSword"
 			FormKey: "0139A9:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
 		}
 		{
 			EditorID: "GlassWarAxe"
 			FormKey: "0139A3:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
 		}
 		{
 			EditorID: "GlassWarhammer"
 			FormKey: "0139AA:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
 		}
 	]
 }

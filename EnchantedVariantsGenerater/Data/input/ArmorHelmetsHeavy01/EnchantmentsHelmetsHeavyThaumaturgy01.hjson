@@ -1,0 +1,272 @@
+{
+	RequiredMods: [
+		"Thaumaturgy.esp"
+	]
+	
+	Enchantments: [
+		{
+			EditorID: "EnchArmorFortifySmithing01"
+			FormKey: "07A117:Skyrim.esm"
+			Suffix: " of the Minor Defender"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifySmithing02"
+			FormKey: "0AD477:Skyrim.esm"
+			Suffix: " of the Minor Defender"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifySmithing03"
+			FormKey: "0AD478:Skyrim.esm"
+			Suffix: " of the Defender"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyHealth01"
+			FormKey: "049509:Skyrim.esm"
+			"Suffix": " of Minor Health"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyHeavyArmor01"
+			FormKey: "07A10E:Skyrim.esm"
+			"Suffix": " of the Minor Mirror"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyHealth02"
+			FormKey: "0AD461:Skyrim.esm"
+			"Suffix": " of Minor Health"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyHeavyArmor02"
+			FormKey: "0AD463:Skyrim.esm"
+			"Suffix": " of the Minor Mirror"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyHealth03"
+			FormKey: "0AD462:Skyrim.esm"
+			"Suffix": " of Health"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyHeavyArmor03"
+			FormKey: "0AD464:Skyrim.esm"
+			"Suffix": " of the Mirror"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyBlock01"
+			FormKey: "07A108:Skyrim.esm"
+			Suffix: " of the Minor Gladiator"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyBlock02"
+			FormKey: "0AD4A1:Skyrim.esm"
+			Suffix: " of the Minor Gladiator"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyBlock03"
+			FormKey: "0AD4A2:Skyrim.esm"
+			Suffix: " of the Gladiator"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifySpeechcraft01"
+			FormKey: "07A119:Skyrim.esm"
+			Suffix: " of the Minor Merchant"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifySpeechcraft02"
+			FormKey: "0AD47B:Skyrim.esm"
+			Suffix: " of the Minor Merchant"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifySpeechcraft03"
+			FormKey: "0AD47C:Skyrim.esm"
+			Suffix: " of the Merchant"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyPowerAttacks01"
+			FormKey: "19F7AF:Thaumaturgy.esp"
+			Suffix: " of the Minor Barbarian"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyPowerAttacks02"
+			FormKey: "19F7B0:Thaumaturgy.esp"
+			Suffix: " of the Minor Barbarian"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyPowerAttacks03"
+			FormKey: "19F7B1:Thaumaturgy.esp"
+			Suffix: " of the Barbarian"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyShouts01"
+			FormKey: "0D01C3:Thaumaturgy.esp"
+			Suffix: " of the Minor Voice"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyShouts02"
+			FormKey: "0D01C4:Thaumaturgy.esp"
+			Suffix: " of the Voice"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyHealRate01"
+			FormKey: "10CF26:Skyrim.esm"
+			Suffix: " of Minor Mending"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyHealRate03"
+			FormKey: "0AD460:Skyrim.esm"
+			Suffix: " of Mending"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyStaminaRate03"
+			FormKey: "0AD480:Skyrim.esm"
+			"Suffix": " of Minor Rejuvenation"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyStaminaRate04"
+			FormKey: "07A11A:Skyrim.esm"
+			"Suffix": " of Rejuvenation"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+	]
+}

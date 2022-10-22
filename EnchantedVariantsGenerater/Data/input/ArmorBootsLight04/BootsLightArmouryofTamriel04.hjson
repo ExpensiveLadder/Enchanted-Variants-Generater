@@ -1,0 +1,184 @@
+{
+	RequiredMods: [
+		"Armoury of Tamriel.esm"
+	]
+	
+	Armors: [
+		{
+			EditorID: "ArmorGlassBoots"
+			FormKey: "013938:Skyrim.esm"
+		}
+		{
+			EditorID: "300ArmorGlassHideBoots"
+			FormKey: "02B200:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorGlassHideBoots01"
+			FormKey: "02B110:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorGlassImperialLightBoots"
+			FormKey: "02B1D4:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorGlassLeatherBoots"
+			FormKey: "02B22C:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorGlassStormCloakBoots"
+			FormKey: "02B1AD:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorGlassStuddedLeatherBoots"
+			FormKey: "02B253:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300DLC2ArmorCSWAPGlassSkaalBoots"
+			FormKey: "0023C4:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPGlassAltmerBoots"
+			FormKey: "02BF77:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPGlassAncientBoots"
+			FormKey: "02BF81:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPGlassBasicBoots"
+			FormKey: "02BF89:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPGlassBladesBoots"
+			FormKey: "02BF76:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPGlassCompanionsBoots"
+			FormKey: "02BF91:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPGlassDremoraBoots"
+			FormKey: "02BF99:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPGlassDunmerBoots"
+			FormKey: "02BFAE:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPGlassDwemerBoots"
+			FormKey: "02BFA4:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPGlassImperialBoots"
+			FormKey: "02BFB8:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPGlassNordicBoots"
+			FormKey: "02BFC0:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPGlassNordicPlateBoots"
+			FormKey: "02BFCA:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPGlassOrcishBoots"
+			FormKey: "02BFD2:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTEbonyHideBoots"
+			FormKey: "02B208:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTEbonyHideBoots01"
+			FormKey: "02B10E:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTEbonyImperialLightBoots"
+			FormKey: "02B1DC:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTEbonyLeatherBoots"
+			FormKey: "02B234:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTEbonyStormCloakBoots"
+			FormKey: "02B1B3:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTEbonyStuddedLeatherBoots"
+			FormKey: "02B24B:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorEbonyHideBoots"
+			FormKey: "02B204:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorEbonyHideBoots01"
+			FormKey: "02B10F:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorEbonyImperialLightBoots"
+			FormKey: "02B1D8:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorEbonyLeatherBoots"
+			FormKey: "02B230:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorEbonyStormCloakBoots"
+			FormKey: "02B1B0:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorEbonyStuddedLeatherBoots"
+			FormKey: "02B24F:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTDaedricHideBoots"
+			FormKey: "02B210:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTDaedricHideBoots01"
+			FormKey: "02B10C:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTDaedricImperialLightBoots"
+			FormKey: "02B1E4:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTDaedricLeatherBoots"
+			FormKey: "02B23C:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTDaedricStormCloakBoots"
+			FormKey: "02B1B9:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTDaedricStuddedLeatherBoots"
+			FormKey: "02B243:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDaedricHideBoots"
+			FormKey: "02B20C:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDaedricHideBoots01"
+			FormKey: "02B10D:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDaedricImperialLightBoots"
+			FormKey: "02B1E0:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDaedricLeatherBoots"
+			FormKey: "02B238:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDaedricStormCloakBoots"
+			FormKey: "02B1B6:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDaedricStuddedLeatherBoots"
+			FormKey: "02B247:Armoury of Tamriel.esm"
+		}
+	]
+}

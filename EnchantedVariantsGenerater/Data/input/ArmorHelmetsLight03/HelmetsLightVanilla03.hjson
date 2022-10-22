@@ -1,0 +1,19 @@
+{
+	RequiredMods: [
+		"Enchantments.esp"
+	]
+	
+	"Armors": [
+		{
+			EditorID: "ArmorGlassHelmet"
+			FormKey: "01393B:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
+		}
+		{
+			EditorID: "DLC2ArmorStalhrimLightHelmet"
+			FormKey: "01CDA3:Dragonborn.esm"
+		}
+	]
+}

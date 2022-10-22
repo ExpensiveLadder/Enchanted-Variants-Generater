@@ -1,0 +1,44 @@
+{
+	RequiredMods: [
+		"Armoury of Tamriel.esm"
+	]
+	
+	Armors: [
+		{
+			EditorID: "ArmorScaledGauntlets"
+			FormKey: "01B3A0:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorStormcloakGauntlets"
+			FormKey: "0A6D7D:Skyrim.esm"
+		}
+		{
+			EditorID: "300ArmorIronHideGauntlets01"
+			FormKey: "02B121:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorIronImperialLightGauntlets"
+			FormKey: "02B1BE:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorIronLeatherGauntlets"
+			FormKey: "02B216:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorIronStuddedLeatherGauntlets"
+			FormKey: "02B269:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSteelStormCloakGauntlets"
+			FormKey: "02B19F:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSteelHideGauntlets"
+			FormKey: "02B1ED:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSteelLeatherGauntlets"
+			FormKey: "02B219:Armoury of Tamriel.esm"
+		}
+	]
+}

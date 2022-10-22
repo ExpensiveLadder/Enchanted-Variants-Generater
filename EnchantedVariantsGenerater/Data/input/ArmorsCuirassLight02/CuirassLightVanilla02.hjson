@@ -1,0 +1,30 @@
+{
+	RequiredMods: [
+		"Enchantments.esp"
+	]
+	
+	"Armors": [
+		{
+			EditorID: "ArmorElvenCuirass"
+			FormKey: "0896A3:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorScaledCuirass"
+			FormKey: "01B3A3:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
+		}
+		{
+			EditorID: "ArmorScaledCuirassB"
+			FormKey: "01B3A4:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
+		}
+		{
+			EditorID: "DLC2ArmorChitinLightCuirass"
+			FormKey: "01CD87:Dragonborn.esm"
+		}
+	]
+}

@@ -52,17 +52,15 @@ namespace EnchantedVariantsGenerater
     public class InputThing
     {
         //                EditorID, Info
-        public Dictionary<String, EnchantmentInfo> Enchantments { get; } = new();
-        public Dictionary<String, ItemJSON> Weapons { get; } = new();
-        public Dictionary<String, ItemJSON> Armors { get; } = new();
+        public Dictionary<string, EnchantmentInfo> Enchantments { get; } = new();
+        public Dictionary<string, ItemJSON> Weapons { get; } = new();
+        public Dictionary<string, ItemJSON> Armors { get; } = new();
     }
 
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Interoperability", "CA1416:Validate platform compatibility", Justification = "<Pending>")]
     public class Program
     {
-        private static readonly String backslash = "\\";
-
-        public static Config GetConfig(String filePath)
+        public static Config GetConfig(string filePath)
         {
             Config? config = JsonConvert.DeserializeObject<Config>(HjsonValue.Load(filePath).ToString());
             if (config == null) throw new Exception("config does not exist");
@@ -72,17 +70,15 @@ namespace EnchantedVariantsGenerater
             return config;
         }
 
-        public static String ReadInputFile(String filePath)
+        public static string ReadInputFile(string filePath)
         {
             string rawJSON;
             if (filePath.EndsWith(".json"))
             {
-                Console.WriteLine("Reading JSON file \"" + filePath + "\"");
                 rawJSON = File.ReadAllText(filePath);
             }
             else if (filePath.EndsWith(".hjson"))
             {
-                Console.WriteLine("Reading HJSON file \"" + filePath + "\"");
                 rawJSON = HjsonValue.Load(filePath).ToString();
             }
             else
@@ -92,12 +88,22 @@ namespace EnchantedVariantsGenerater
             return rawJSON;
         }
 
-        public static List<InputThing> GetInputs(IPatcherState<ISkyrimMod, ISkyrimModGetter> state, List<String> enabledMods)
+        public static List<InputThing> GetInputs(IPatcherState<ISkyrimMod, ISkyrimModGetter> state, Config config)
         {
-            List<InputThing> inputs = new();
-            foreach (var folder in Directory.EnumerateDirectories(state.ExtraSettingsDataPath + backslash + "input"))
+            Console.WriteLine("Reading input files");
+            List<string> enabledMods = new();
+            foreach (var mod in state.LoadOrder)
             {
-                Console.WriteLine("Reading folder: " + folder);
+                if (mod.Value.Enabled)
+                {
+                    if (config.VerboseLogging) Console.WriteLine("enabledmod: " + mod.Value.ModKey.ToString());
+                    enabledMods.Add(mod.Value.ModKey.ToString());
+                }
+            }
+            List<InputThing> inputs = new();
+            foreach (var folder in Directory.EnumerateDirectories(state.ExtraSettingsDataPath + "\\input"))
+            {
+                Console.WriteLine("Reading folder: " + folder.Replace(state.ExtraSettingsDataPath, ""));
                 InputThing input = new();
 
                 /* TODO
@@ -116,6 +122,7 @@ namespace EnchantedVariantsGenerater
                 foreach (var file in Directory.GetFiles(folder))
                 {
                     string rawJSON = ReadInputFile(file);
+                    Console.WriteLine("Reading input file \"" + file.Replace(state.ExtraSettingsDataPath, "")  + "\"");
                     var inputJSON = JsonConvert.DeserializeObject<InputJSON>(rawJSON);
                     if (inputJSON == null) throw new Exception("Cannot read file \"" + file + "\"!");
 
@@ -196,7 +203,6 @@ namespace EnchantedVariantsGenerater
                                                     {
                                                         if (oldleveledlist.Mode == "Add" && oldleveledlist.LeveledListPrefix == leveledlist.LeveledListPrefix && oldleveledlist.LeveledListSuffix == leveledlist.LeveledListSuffix)
                                                         {
-                                                            Console.WriteLine("overwrite remove");
                                                             enchantmentGetter.LeveledLists.Remove(oldleveledlist);
                                                             break;
                                                         }
@@ -216,7 +222,7 @@ namespace EnchantedVariantsGenerater
                                 input.Enchantments.Add(item.EditorID, enchantmentGetter);
                             }
 
-                            Console.WriteLine("adding enchantment: " + item.EditorID);
+                            if (config.VerboseLogging) Console.WriteLine("adding enchantment: " + item.EditorID);
                         }
                     }
                     if (inputJSON.Weapons != null)
@@ -227,13 +233,13 @@ namespace EnchantedVariantsGenerater
 
                             if (item.BlacklistedMods != null && CheckRequiredMods(enabledMods, item.BlacklistedMods))
                             {
-                                Console.WriteLine("Blacklisted mod detected! Skipping item: " + item.EditorID);
+                                if (config.VerboseLogging) Console.WriteLine("Blacklisted mod detected! Skipping item: " + item.EditorID);
                                 continue;
                             }
                             else
                             {
                                 input.Weapons.Add(item.EditorID, item);
-                                Console.WriteLine("adding weapon: " + item.EditorID);
+                                if (config.VerboseLogging) Console.WriteLine("adding weapon: " + item.EditorID);
                             }
                             /*
                             if (input.Enchantments.ContainsKey(item.EditorID))
@@ -253,13 +259,13 @@ namespace EnchantedVariantsGenerater
                             if (string.IsNullOrEmpty(item.EditorID) || string.IsNullOrEmpty(item.FormKey)) throw new Exception("ERROR: armor does not have a formkey or editorID specified");
                             if (item.BlacklistedMods != null && CheckRequiredMods(enabledMods, item.BlacklistedMods))
                             {
-                                Console.WriteLine("Blacklisted mod detected! Skipping item: " + item.EditorID);
+                                if (config.VerboseLogging) Console.WriteLine("Blacklisted mod detected! Skipping item: " + item.EditorID);
                                 continue;
                             }
                             else
                             {
                                 input.Armors.Add(item.EditorID, item);
-                                Console.WriteLine("adding armor: " + item.EditorID);
+                                if (config.VerboseLogging) Console.WriteLine("adding armor: " + item.EditorID);
                             }
                             /*
                             if (input.Enchantments.ContainsKey(item.EditorID))
@@ -409,7 +415,7 @@ namespace EnchantedVariantsGenerater
             UnsafeThreadStuff stuff = new();
             foreach (var item in input.Weapons.Values)
             {
-                Console.WriteLine("Processing Weapon: " + item.EditorID);
+                if (config.VerboseLogging) Console.WriteLine("Processing Weapon: " + item.EditorID);
                 IWeaponGetter itemGetter;
                 if (linkCache.TryResolve<IWeaponGetter>(FormKey.Factory(item.FormKey), out var output))
                 { // Get template item
@@ -420,7 +426,7 @@ namespace EnchantedVariantsGenerater
                     throw new Exception("Could not find Weapon:" + item.EditorID + " : " + item.FormKey);
                 }
 
-                Dictionary<String, LeveledItem> leveledlists = new();
+                Dictionary<string, LeveledItem> leveledlists = new();
 
                 foreach (var enchantmentInfo in input.Enchantments.Values)
                 {
@@ -609,7 +615,7 @@ namespace EnchantedVariantsGenerater
             UnsafeThreadStuff stuff = new();
             foreach (var item in input.Armors.Values)
             {
-                Console.WriteLine("Processing Armor: " + item.EditorID);
+                if (config.VerboseLogging) Console.WriteLine("Processing Armor: " + item.EditorID);
                 IArmorGetter itemGetter;
                 if (state.LinkCache.TryResolve<IArmorGetter>(FormKey.Factory(item.FormKey), out var output))
                 { // Get template item
@@ -620,7 +626,7 @@ namespace EnchantedVariantsGenerater
                     throw new Exception("Could not find Armor:" + item.EditorID + " : " + item.FormKey);
                 }
 
-                Dictionary<String, LeveledItem> leveledlists = new();
+                Dictionary<string, LeveledItem> leveledlists = new();
 
                 foreach (var enchantmentInfo in input.Enchantments.Values)
                 {
@@ -801,23 +807,14 @@ namespace EnchantedVariantsGenerater
         // Run Patch
         public static void RunPatch(IPatcherState<ISkyrimMod, ISkyrimModGetter> state)
         {
-            List<String> enabledMods = new();
-            foreach (var mod in state.LoadOrder)
-            {
-                if (mod.Value.Enabled)
-                {
-                    Console.WriteLine("enabledmod: " + mod.Value.ModKey.ToString());
-                    enabledMods.Add(mod.Value.ModKey.ToString());
-                }
-            }
-
             // Read JSON Files
             Config config = GetConfig(Path.Combine(state.ExtraSettingsDataPath, "config.hjson"));
-            List<InputThing> inputs = GetInputs(state, enabledMods);
+            List<InputThing> inputs = GetInputs(state, config);
 
 
             var linkcache = state.LoadOrder.ToImmutableLinkCache();
 
+            Console.WriteLine("Running Generator");
             List<Task<UnsafeThreadStuff>> tasks = new();
             foreach (var input in inputs)
             {

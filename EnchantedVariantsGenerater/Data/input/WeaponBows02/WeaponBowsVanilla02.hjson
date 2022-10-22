@@ -1,22 +1,10 @@
 {
 	RequiredMods: [
-		"Enchantments.esp"
+		"Enchantments.esp",
+		"Armoury of Tamriel - Enchantments.esp"
 	]
 	
 	Weapons: [
-		{
-			EditorID: "HuntingBow"
-			FormKey: "013985:Skyrim.esm"
-		}
-		{
-			EditorID: "LongBow"
-			FormKey: "03B562:Skyrim.esm"
-		}
-		{
-			EditorID: "ImperialBow"
-			FormKey: "013841:Skyrim.esm"
-		}
-		
 		{
 			EditorID: "OrcishBow"
 			FormKey: "01398D:Skyrim.esm"
@@ -24,6 +12,9 @@
 		{
 			EditorID: "DwarvenBow"
 			FormKey: "013995:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
 		}
 	]
 }

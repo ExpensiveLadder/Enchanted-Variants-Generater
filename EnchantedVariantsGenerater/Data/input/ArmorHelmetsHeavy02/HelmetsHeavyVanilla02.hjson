@@ -5,32 +5,18 @@
 	
 	"Armors": [
 		{
-			EditorID: "ArmorIronHelmet"
-			FormKey: "012E4D:Skyrim.esm"
-		}
-		{
-			EditorID: "ArmorSteelHelmetA"
-			FormKey: "013954:Skyrim.esm"
-		}
-		{
-			EditorID: "ArmorSteelHelmetB"
-			FormKey: "0F6F24:Skyrim.esm"
-		}
-		{
-			EditorID: "ArmorImperialHelmet"
-			FormKey: "013EDC:Skyrim.esm"
-		}
-		{
-			EditorID: "DLC2ArmorBonemoldHelmet"
-			FormKey: "01CD95:Dragonborn.esm"
-		}
-		{
 			EditorID: "ArmorDwarvenHelmet"
 			FormKey: "01394F:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
 		}
 		{
 			EditorID: "ArmorSteelPlateHelmet"
 			FormKey: "01395E:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
 		}
 		{
 			EditorID: "DLC2ArmorChitinHeavyHelmet"

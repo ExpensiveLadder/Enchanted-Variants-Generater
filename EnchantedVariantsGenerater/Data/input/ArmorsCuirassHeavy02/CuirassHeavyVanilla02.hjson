@@ -5,40 +5,18 @@
 	
 	"Armors": [
 		{
-			EditorID: "ArmorIronCuirass"
-			FormKey: "012E49:Skyrim.esm"
-		}
-		{
-			EditorID: "ArmorIronBandedCuirass"
-			FormKey: "013948:Skyrim.esm"
-		}
-		{
-			EditorID: "ArmorSteelCuirassA"
-			FormKey: "013952:Skyrim.esm"
-		}
-		{
-			EditorID: "ArmorSteelCuirassB"
-			FormKey: "0F6F22:Skyrim.esm"
-		}
-		{
-			EditorID: "ArmorImperialCuirass"
-			FormKey: "0136D5:Skyrim.esm"
-		}
-		{
-			EditorID: "DLC2ArmorBonemoldCuirassVariant01"
-			FormKey: "037563:Dragonborn.esm"
-		}
-		{
-			EditorID: "DLC2ArmorBonemoldCuirassVariant02"
-			FormKey: "01CD93:Dragonborn.esm"
-		}
-		{
 			EditorID: "ArmorDwarvenCuirass"
 			FormKey: "01394D:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
 		}
 		{
 			EditorID: "ArmorSteelPlateCuirass"
 			FormKey: "01395C:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
 		}
 		{
 			EditorID: "DLC2ArmorChitinHeavyCuirass"

@@ -1,0 +1,28 @@
+{
+	RequiredMods: [
+		"Enchantments.esp"
+	]
+	
+	"Armors": [
+		{
+			EditorID: "ArmorHideCuirass"
+			FormKey: "013911:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorStuddedCuirass"
+			FormKey: "01B3A2:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorLeatherCuirass"
+			FormKey: "03619E:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorImperialLightCuirass"
+			FormKey: "013ED9:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorImperialStuddedCuirass"
+			FormKey: "013ED8:Skyrim.esm"
+		}
+	]
+}

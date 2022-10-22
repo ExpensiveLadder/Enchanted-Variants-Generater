@@ -1,0 +1,92 @@
+{
+	RequiredMods: [
+		"Armoury of Tamriel.esm"
+	]
+	
+	Armors: [
+		{
+			EditorID: "ArmorSteelPlateHelmet"
+			FormKey: "01395E:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorNordicHeavyHelmet"
+			FormKey: "01CD99:Dragonborn.esm"
+		}
+		{
+			EditorID: "ArmorDraugrHelmet"
+			FormKey: "056A9E:Skyrim.esm"
+		}
+		{
+			EditorID: "300ArmorIronNordicBHelmet"
+			FormKey: "02B501:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorIronOrnateHelmet"
+			FormKey: "02B50B:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorIronOrcishHelmet"
+			FormKey: "02B510:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorIronNordicPlateHelmet"
+			FormKey: "02B515:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorIronNordicHelmet"
+			FormKey: "02B519:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorIronDunmerHelmet"
+			FormKey: "02B523:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorIronDwemerHelmet"
+			FormKey: "02B528:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorIronAncientHelmet"
+			FormKey: "02B53B:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorIronAltmerHelmet"
+			FormKey: "02B53F:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorIronBladesHelmet"
+			FormKey: "02B56C:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300DLC2ArmorIronSkaalHelmet"
+			FormKey: "0023CB:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300ArmorSteelOrnateHelmet"
+			FormKey: "02B349:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSteelOrcishHelmet"
+			FormKey: "02B371:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSteelDunmerHelmet"
+			FormKey: "02B401:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSteelDwemerHelmet"
+			FormKey: "02B429:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSteelBasicHelmet"
+			FormKey: "02B499:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSteelAltmerHelmet"
+			FormKey: "02B4D9:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSteelBladesHelmet"
+			FormKey: "02B567:Armoury of Tamriel.esm"
+		}
+	]
+}

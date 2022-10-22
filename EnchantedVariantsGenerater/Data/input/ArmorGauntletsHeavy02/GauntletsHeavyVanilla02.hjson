@@ -5,32 +5,18 @@
 	
 	"Armors": [
 		{
-			EditorID: "ArmorIronGauntlets"
-			FormKey: "012E46:Skyrim.esm"
-		}
-		{
-			EditorID: "ArmorSteelGauntletsA"
-			FormKey: "013953:Skyrim.esm"
-		}
-		{
-			EditorID: "ArmorSteelGauntletsB"
-			FormKey: "0F6F23:Skyrim.esm"
-		}
-		{
-			EditorID: "ArmorImperialGauntlets"
-			FormKey: "0136D4:Skyrim.esm"
-		}
-		{
-			EditorID: "DLC2ArmorBonemoldGauntlets"
-			FormKey: "01CD94:Dragonborn.esm"
-		}
-		{
 			EditorID: "ArmorDwarvenGauntlets"
 			FormKey: "01394E:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
 		}
 		{
 			EditorID: "ArmorSteelPlateGauntlets"
 			FormKey: "01395D:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
 		}
 		{
 			EditorID: "DLC2ArmorChitinHeavyGauntlets"

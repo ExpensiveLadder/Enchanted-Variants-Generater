@@ -1,0 +1,15 @@
+{
+	RequiredMods: [
+		"Enchantments.esp"
+	]
+	
+	Weapons: [
+		{
+			EditorID: "DLC2NordicBow"
+			FormKey: "026232:Dragonborn.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
+		}
+	]
+}

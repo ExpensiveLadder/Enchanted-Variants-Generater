@@ -1,0 +1,44 @@
+{
+	RequiredMods: [
+		"Armoury of Tamriel.esm"
+	]
+	
+	Armors: [
+		{
+			EditorID: "ArmorScaledBoots"
+			FormKey: "01B39F:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorStormcloakBoots"
+			FormKey: "0A6D7F:Skyrim.esm"
+		}
+		{
+			EditorID: "300ArmorIronHideBoots01"
+			FormKey: "02B116:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorIronImperialLightBoots"
+			FormKey: "02B1BF:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorIronLeatherBoots"
+			FormKey: "02B217:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorIronStuddedLeatherBoots"
+			FormKey: "02B268:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSteelHideBoots"
+			FormKey: "02B1EC:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSteelLeatherBoots"
+			FormKey: "02B218:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSteelStormCloakBoots"
+			FormKey: "02B19E:Armoury of Tamriel.esm"
+		}
+	]
+}

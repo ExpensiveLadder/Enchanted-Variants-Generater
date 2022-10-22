@@ -1,578 +1,37 @@
 {
-	LeveledListPrefix: "SublistEnchWeapon_"
-	LeveledListSuffix: "_02"
-	
 	RequiredMods: [
 		"Armoury of Tamriel.esm"
 	]
 	
 	Weapons: [
 		{
-			EditorID: "300IronAncientBattleAxe"
-			FormKey: "01CB64:Skyrim.esm"
+			EditorID: "ElvenBattleaxe"
+			FormKey: "01399C:Skyrim.esm"
 		}
 		{
-			EditorID: "300IronAncientGreatsword"
-			FormKey: "0236A5:Skyrim.esm"
+			EditorID: "ElvenDagger"
+			FormKey: "01399E:Skyrim.esm"
 		}
 		{
-			EditorID: "300IronAncientSword"
-			FormKey: "02C66F:Skyrim.esm"
+			EditorID: "ElvenGreatsword"
+			FormKey: "01399F:Skyrim.esm"
 		}
 		{
-			EditorID: "300IronAncientWarAxe"
-			FormKey: "02C672:Skyrim.esm"
+			EditorID: "ElvenMace"
+			FormKey: "0139A0:Skyrim.esm"
 		}
 		{
-			EditorID: "300IronAkavirDagger"
-			FormKey: "0564EB:Armoury of Tamriel.esm"
+			EditorID: "ElvenSword"
+			FormKey: "0139A1:Skyrim.esm"
 		}
 		{
-			EditorID: "300IronAkaviriGreatsword"
-			FormKey: "00D03E:Armoury of Tamriel.esm"
+			EditorID: "ElvenWarAxe"
+			FormKey: "01399B:Skyrim.esm"
 		}
 		{
-			EditorID: "300IronAkaviriSword"
-			FormKey: "0011A6:Armoury of Tamriel.esm"
+			EditorID: "ElvenWarhammer"
+			FormKey: "0139A2:Skyrim.esm"
 		}
-		{
-			EditorID: "300IronAltmerBattleaxe"
-			FormKey: "00C506:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronAltmerDagger"
-			FormKey: "00D063:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronAltmerGreataxe"
-			FormKey: "00CAA3:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronAltmerGreatsword"
-			FormKey: "00366D:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronAltmerMace"
-			FormKey: "00B903:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronAltmerSword"
-			FormKey: "001166:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronAltmerWarhammer"
-			FormKey: "00BF71:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronAncientDagger"
-			FormKey: "05649D:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronAncientMace"
-			FormKey: "0564C4:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronBretonDagger"
-			FormKey: "05642E:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronBretonGreatsword"
-			FormKey: "00D047:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronBretonMace"
-			FormKey: "056453:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronBretonSword"
-			FormKey: "001172:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronBretonWarhammer"
-			FormKey: "056478:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronDremoraBattleaxe"
-			FormKey: "00C508:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronDremoraDagger"
-			FormKey: "00D064:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronDremoraGreataxe"
-			FormKey: "00CAA5:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronDremoraGreatsword"
-			FormKey: "00D03F:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronDremoraMace"
-			FormKey: "00B90C:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronDremoraSword"
-			FormKey: "0011F4:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronDremoraWarhammer"
-			FormKey: "00BF72:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronDunmerBattleaxe"
-			FormKey: "00C509:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronDunmerDagger"
-			FormKey: "00D065:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronDunmerGreataxe"
-			FormKey: "00CAA6:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronDunmerGreatsword"
-			FormKey: "00D040:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronDunmerMace"
-			FormKey: "00BE89:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronDunmerSword"
-			FormKey: "0011DA:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronDunmerWarhammer"
-			FormKey: "00BF73:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronDwemerBattleaxe"
-			FormKey: "00C50A:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronDwemerDagger"
-			FormKey: "00D066:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronDwemerGreataxe"
-			FormKey: "00CAA7:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronDwemerGreatsword"
-			FormKey: "0015D1:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronDwemerMace"
-			FormKey: "00BE8A:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronDwemerSword"
-			FormKey: "00110C:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronDwemerWarhammer"
-			FormKey: "00BF74:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronImperialDagger"
-			FormKey: "05633A:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronImperialGreatsword"
-			FormKey: "056390:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronImperialMace"
-			FormKey: "05636A:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronImperialSword"
-			FormKey: "001123:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronImperialWarhammer"
-			FormKey: "0563BE:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronNordicBattleaxe"
-			FormKey: "0014FF:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronNordicDagger"
-			FormKey: "001493:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronNordicGreataxe"
-			FormKey: "001523:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronNordicGreatsword"
-			FormKey: "001449:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronNordicMace"
-			FormKey: "00146F:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronNordicSword"
-			FormKey: "0010EF:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronNordicWarhammer"
-			FormKey: "0014B7:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronOrcishBattleaxe"
-			FormKey: "00C50B:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronOrcishDagger"
-			FormKey: "00D067:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronOrcishGreataxe"
-			FormKey: "00CAA8:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronOrcishGreatsword"
-			FormKey: "0030E7:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronOrcishMace"
-			FormKey: "00BE8B:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronOrcishSword"
-			FormKey: "00113E:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronOrcishWarhammer"
-			FormKey: "00BF75:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronOrnateBattleaxe"
-			FormKey: "00C50C:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronOrnateDagger"
-			FormKey: "00D068:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronOrnateGreataxe"
-			FormKey: "00CAA9:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronOrnateGreatsword"
-			FormKey: "00D041:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronOrnateMace"
-			FormKey: "00BE8C:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronOrnateSword"
-			FormKey: "0011C0:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronOrnateWarhammer"
-			FormKey: "00BF76:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronRedguardBattleaxe"
-			FormKey: "0563E3:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronRedguardGreatsword"
-			FormKey: "056409:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300IronRedguardSword"
-			FormKey: "00118C:Armoury of Tamriel.esm"
-		}
-		
-		{
-			EditorID: "300SteelAkaviriSword"
-			FormKey: "03AEB9:Skyrim.esm"
-		}
-		{
-			EditorID: "300SteelRedguardSword"
-			FormKey: "07A91A:Skyrim.esm"
-		}
-		{
-			EditorID: "300SteelAncientBattleAxe"
-			FormKey: "05BF12:Skyrim.esm"
-		}
-		{
-			EditorID: "300SteelAncientGreatsword"
-			FormKey: "05BF13:Skyrim.esm"
-		}
-		{
-			EditorID: "300SteelAncientSword"
-			FormKey: "05BF14:Skyrim.esm"
-		}
-		{
-			EditorID: "300SteelAncientWarAxe"
-			FormKey: "05BF15:Skyrim.esm"
-		}
-		{
-			EditorID: "300SteelAkavirDagger"
-			FormKey: "0564F0:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelAkaviriGreatsword"
-			FormKey: "00D058:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelAltmerBattleaxe"
-			FormKey: "00C52C:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelAltmerDagger"
-			FormKey: "00D081:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelAltmerGreataxe"
-			FormKey: "00CAC6:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelAltmerGreatsword"
-			FormKey: "003674:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelAltmerMace"
-			FormKey: "00BF5F:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelAltmerSword"
-			FormKey: "00115B:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelAltmerWarhammer"
-			FormKey: "00C4F1:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelAncientDagger"
-			FormKey: "0564A2:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelAncientMace"
-			FormKey: "0564C9:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelBasicBattleaxe"
-			FormKey: "00125F:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelBasicDagger"
-			FormKey: "0012BE:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelBasicGreataxe"
-			FormKey: "00128B:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelBasicGreatsword"
-			FormKey: "00122B:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelBasicMace"
-			FormKey: "001245:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelBasicSword"
-			FormKey: "0010D3:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelBasicWarhammer"
-			FormKey: "0012A8:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelBretonDagger"
-			FormKey: "056433:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelBretonGreatsword"
-			FormKey: "00D059:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelBretonMace"
-			FormKey: "056458:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelBretonSword"
-			FormKey: "001177:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelBretonWarhammer"
-			FormKey: "05647D:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelDremoraBattleaxe"
-			FormKey: "00C52E:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelDremoraDagger"
-			FormKey: "00D082:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelDremoraGreataxe"
-			FormKey: "00CAC8:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelDremoraGreatsword"
-			FormKey: "00D05A:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelDremoraMace"
-			FormKey: "00BF60:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelDremoraSword"
-			FormKey: "0011F9:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelDremoraWarhammer"
-			FormKey: "00C4F2:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelDunmerBattleaxe"
-			FormKey: "00C52F:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelDunmerDagger"
-			FormKey: "00D083:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelDunmerGreataxe"
-			FormKey: "00CAC9:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelDunmerGreatsword"
-			FormKey: "00D05B:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelDunmerMace"
-			FormKey: "00BF61:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelDunmerSword"
-			FormKey: "0011DF:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelDunmerWarhammer"
-			FormKey: "00C4F3:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelDwemerBattleaxe"
-			FormKey: "00C530:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelDwemerDagger"
-			FormKey: "00D084:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelDwemerGreataxe"
-			FormKey: "00CACA:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelDwemerGreatsword"
-			FormKey: "0015D6:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelDwemerMace"
-			FormKey: "00BF62:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelDwemerSword"
-			FormKey: "00110D:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelDwemerWarhammer"
-			FormKey: "00C4F4:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelImperialDagger"
-			FormKey: "05633F:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelImperialGreatsword"
-			FormKey: "056395:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelImperialMace"
-			FormKey: "05636F:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelImperialWarhammer"
-			FormKey: "0563C3:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelOrcishBattleaxe"
-			FormKey: "00C531:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelOrcishDagger"
-			FormKey: "00D085:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelOrcishGreataxe"
-			FormKey: "00CACB:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelOrcishGreatsword"
-			FormKey: "0030EC:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelOrcishMace"
-			FormKey: "00BF63:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelOrcishSword"
-			FormKey: "001143:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelOrcishWarhammer"
-			FormKey: "00C4F5:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelOrnateBattleaxe"
-			FormKey: "00C532:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelOrnateDagger"
-			FormKey: "00D086:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelOrnateGreataxe"
-			FormKey: "00CACC:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelOrnateGreatsword"
-			FormKey: "00D05C:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelOrnateMace"
-			FormKey: "00BF64:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelOrnateSword"
-			FormKey: "0011C5:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelOrnateWarhammer"
-			FormKey: "00C4F6:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelRedguardBattleaxe"
-			FormKey: "0563E8:Armoury of Tamriel.esm"
-		}
-		{
-			EditorID: "300SteelRedguardGreatsword"
-			FormKey: "05640E:Armoury of Tamriel.esm"
-		}
-		
 		{
 			EditorID: "300OrichalcumAkaviriDagger"
 			FormKey: "0564EE:Armoury of Tamriel.esm"
@@ -857,8 +316,35 @@
 			EditorID: "300OrichalcumRedguardSword"
 			FormKey: "00118F:Armoury of Tamriel.esm"
 		}
-		
-				{
+		{
+			EditorID: "300DLC2OrichalcumSkaalBattleaxe"
+			FormKey: "002352:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300DLC2OrichalcumSkaalDagger"
+			FormKey: "002337:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300DLC2OrichalcumSkaalGreataxe"
+			FormKey: "00235B:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300DLC2OrichalcumSkaalGreatsword"
+			FormKey: "002325:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300DLC2OrichalcumSkaalMace"
+			FormKey: "00232E:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300DLC2OrichalcumSkaalSword"
+			FormKey: "00231C:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300DLC2OrichalcumSkaalWarhammer"
+			FormKey: "002340:Armoury of Tamriel Integration.esp"
+		}
+		{
 			EditorID: "300MoonstoneAkaviriDagger"
 			FormKey: "0564ED:Armoury of Tamriel.esm"
 		}
@@ -1141,6 +627,34 @@
 		{
 			EditorID: "300MoonstoneRedguardSword"
 			FormKey: "00118E:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300DLC2MoonstoneSkaalBattleaxe"
+			FormKey: "002351:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300DLC2MoonstoneSkaalDagger"
+			FormKey: "002336:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300DLC2MoonstoneSkaalGreataxe"
+			FormKey: "00235A:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300DLC2MoonstoneSkaalGreatsword"
+			FormKey: "002324:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300DLC2MoonstoneSkaalMace"
+			FormKey: "00232D:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300DLC2MoonstoneSkaalSword"
+			FormKey: "00231B:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300DLC2MoonstoneSkaalWarhammer"
+			FormKey: "00233F:Armoury of Tamriel Integration.esp"
 		}
 	]
 }

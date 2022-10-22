@@ -1,0 +1,21 @@
+{
+	RequiredMods: [
+		"Enchantments.esp",
+		"Armoury of Tamriel - Enchantments.esp"
+	]
+	
+	Armors: [
+		{
+			EditorID: "ArmorHideBoots"
+			FormKey: "013910:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorLeatherBoots"
+			FormKey: "013920:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorImperialLightBoots"
+			FormKey: "013ED7:Skyrim.esm"
+		}
+	]
+}

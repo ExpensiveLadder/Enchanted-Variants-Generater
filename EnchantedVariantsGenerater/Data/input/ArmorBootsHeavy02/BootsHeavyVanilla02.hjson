@@ -1,36 +1,23 @@
 {
 	RequiredMods: [
-		"Enchantments.esp"
+		"Enchantments.esp",
+		"Armoury of Tamriel - Enchantments.esp"
 	]
 	
 	Armors: [
 		{
-			EditorID: "ArmorIronBoots"
-			FormKey: "012E4B:Skyrim.esm"
-		}
-		{
-			EditorID: "ArmorSteelBootsA"
-			FormKey: "013951:Skyrim.esm"
-		}
-		{
-			EditorID: "ArmorSteelBootsB"
-			FormKey: "0F6F21:Skyrim.esm"
-		}
-		{
-			EditorID: "ArmorImperialBoots"
-			FormKey: "0136D6:Skyrim.esm"
-		}
-		{
-			EditorID: "DLC2ArmorBonemoldBoots"
-			FormKey: "01CD92:Dragonborn.esm"
-		}
-		{
 			EditorID: "ArmorDwarvenBoots"
 			FormKey: "01394C:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
 		}
 		{
 			EditorID: "ArmorSteelPlateBoots"
 			FormKey: "01395B:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
 		}
 		{
 			EditorID: "DLC2ArmorChitinHeavyBoots"

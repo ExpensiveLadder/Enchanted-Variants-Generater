@@ -1,0 +1,40 @@
+{
+	RequiredMods: [
+		"NewArmoury.esp"
+	]
+	
+	Weapons: [
+		{
+			EditorID: "StalhrimClaws"
+			FormKey: "19AAB1:NewArmoury.esp"
+		}
+		{
+			EditorID: "StalhrimClawsLeft"
+			FormKey: "19AAED:NewArmoury.esp"
+		}
+		{
+			EditorID: "StalhrimHalberd"
+			FormKey: "168020:NewArmoury.esp"
+		}
+		{
+			EditorID: "StalhrimKatana"
+			FormKey: "34473B:NewArmoury.esp"
+		}
+		{
+			EditorID: "StalhrimPike"
+			FormKey: "153BBB:NewArmoury.esp"
+		}
+		{
+			EditorID: "StalhrimQStaff"
+			FormKey: "18B765:NewArmoury.esp"
+		}
+		{
+			EditorID: "StalhrimRapier"
+			FormKey: "01EE21:NewArmoury.esp"
+		}
+		{
+			EditorID: "StalhrimWhip"
+			FormKey: "31BDE3:NewArmoury.esp"
+		}
+	]
+}

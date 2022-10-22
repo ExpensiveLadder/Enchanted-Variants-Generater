@@ -1,0 +1,52 @@
+{
+	RequiredMods: [
+		"Armoury of Tamriel.esm"
+	]
+	
+	Armors: [
+		{
+			EditorID: "ArmorScaledCuirass"
+			FormKey: "01B3A3:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorScaledCuirassB"
+			FormKey: "01B3A4:Skyrim.esm"
+		}
+		{
+			EditorID: "300ArmorIronHideCuirass02"
+			FormKey: "02B137:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorIronHideCuirass03"
+			FormKey: "02B12C:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorIronLeatherCuirass"
+			FormKey: "02B214:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorIronLeatherCuirassAlt"
+			FormKey: "02B0F5:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorIronStuddedLeatherCuirass"
+			FormKey: "02B26B:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSteelHideCuirass"
+			FormKey: "02B1EF:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSteelHideCuirass01"
+			FormKey: "02B141:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSteelLeatherCuirass"
+			FormKey: "02B21B:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSteelLeatherCuirassAlt"
+			FormKey: "02B0F4:Armoury of Tamriel.esm"
+		}
+	]
+}

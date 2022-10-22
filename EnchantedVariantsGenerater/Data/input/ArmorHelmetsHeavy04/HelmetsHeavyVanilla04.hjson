@@ -5,18 +5,6 @@
 	
 	Armors: [
 		{
-			EditorID: "ArmorOrcishHelmet"
-			FormKey: "013959:Skyrim.esm"
-		}
-		{
-			EditorID: "DLC2ArmorNordicHeavyHelmet"
-			FormKey: "01CD99:Dragonborn.esm"
-		}
-		{
-			EditorID: "ArmorEbonyHelmet"
-			FormKey: "013963:Skyrim.esm"
-		}
-		{
 			EditorID: "DLC2ArmorStalhrimHeavyHelmet"
 			FormKey: "01CDA1:Dragonborn.esm"
 		}
