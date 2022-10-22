@@ -1,0 +1,704 @@
+{
+	RequiredMods: [
+		"Animated Armoury - Armoury of Tamriel Addon.esp"
+	]
+	
+	Weapons: [
+		{
+			EditorID: "400IronAkaviriClaws"
+			FormKey: "001080:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronAkaviriClawsLeft"
+			FormKey: "0010A0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronAltmerClaws"
+			FormKey: "000EC0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronAltmerClawsLeft"
+			FormKey: "001000:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronAltmerHalberd"
+			FormKey: "000BA0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronAltmerKatana"
+			FormKey: "0012C0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronAltmerPike"
+			FormKey: "000A20:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronAltmerQStaff"
+			FormKey: "000D60:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronAltmerRapier"
+			FormKey: "0008A0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronAltmerWhip"
+			FormKey: "001160:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronAncientHalberd"
+			FormKey: "16801A:NewArmoury.esp"
+		}
+		{
+			EditorID: "400IronAncientPike"
+			FormKey: "153BAA:NewArmoury.esp"
+		}
+		{
+			EditorID: "400IronAncientQStaff"
+			FormKey: "18B758:NewArmoury.esp"
+		}
+		{
+			EditorID: "400IronAncientRapier"
+			FormKey: "01EE24:NewArmoury.esp"
+		}
+		{
+			EditorID: "400IronBasicClaws"
+			FormKey: "19AAA5:NewArmoury.esp"
+		}
+		{
+			EditorID: "400IronBasicClawsLeft"
+			FormKey: "19AAE2:NewArmoury.esp"
+		}
+		{
+			EditorID: "400IronBasicHalberd"
+			FormKey: "167FFF:NewArmoury.esp"
+		}
+		{
+			EditorID: "400IronBasicKatana"
+			FormKey: "344734:NewArmoury.esp"
+		}
+		{
+			EditorID: "400IronBasicPike"
+			FormKey: "153BA6:NewArmoury.esp"
+		}
+		{
+			EditorID: "400IronBasicQStaff"
+			FormKey: "18B756:NewArmoury.esp"
+		}
+		{
+			EditorID: "400IronBasicRapier"
+			FormKey: "005903:NewArmoury.esp"
+		}
+		{
+			EditorID: "400IronBasicWhip"
+			FormKey: "31BDDD:NewArmoury.esp"
+		}
+		{
+			EditorID: "400IronBretonKatana"
+			FormKey: "001340:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronBretonPike"
+			FormKey: "000A80:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronBretonQStaff"
+			FormKey: "000CA0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronBretonRapier"
+			FormKey: "000960:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronBretonWhip"
+			FormKey: "0011E0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronDremoraClaws"
+			FormKey: "000F20:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronDremoraClawsLeft"
+			FormKey: "001040:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronDremoraHalberd"
+			FormKey: "000C00:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronDremoraKatana"
+			FormKey: "001300:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronDremoraPike"
+			FormKey: "0009A0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronDremoraQStaff"
+			FormKey: "000CE0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronDremoraRapier"
+			FormKey: "000900:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronDremoraWhip"
+			FormKey: "0011C0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronDunmerClaws"
+			FormKey: "000F00:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronDunmerClawsLeft"
+			FormKey: "001020:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronDunmerHalberd"
+			FormKey: "000BE0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronDunmerKatana"
+			FormKey: "0012E0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronDunmerPike"
+			FormKey: "000A00:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronDunmerQStaff"
+			FormKey: "000D40:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronDunmerRapier"
+			FormKey: "0008E0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronDunmerWhip"
+			FormKey: "0011A0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronDwemerClaws"
+			FormKey: "000EA0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronDwemerClawsLeft"
+			FormKey: "000FE0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronDwemerHalberd"
+			FormKey: "000B80:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronDwemerKatana"
+			FormKey: "0012A0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronDwemerPike"
+			FormKey: "0009E0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronDwemerQStaff"
+			FormKey: "000D20:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronDwemerRapier"
+			FormKey: "000880:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronDwemerWhip"
+			FormKey: "001140:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronImperialHalberd"
+			FormKey: "000C40:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronImperialPike"
+			FormKey: "000AE0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronImperialQStaff"
+			FormKey: "000E00:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronImperialRapier"
+			FormKey: "000820:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronNordicClaws"
+			FormKey: "000E60:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronNordicClawsLeft"
+			FormKey: "000FA0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronNordicHalberd"
+			FormKey: "000B40:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronNordicKatana"
+			FormKey: "001260:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronNordicPike"
+			FormKey: "000AA0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronNordicQStaff"
+			FormKey: "000DC0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronNordicRapier"
+			FormKey: "000840:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronNordicWhip"
+			FormKey: "001100:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronOrcishClaws"
+			FormKey: "000E80:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronOrcishClawsLeft"
+			FormKey: "000FC0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronOrcishHalberd"
+			FormKey: "000B60:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronOrcishKatana"
+			FormKey: "001280:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronOrcishPike"
+			FormKey: "000A60:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronOrcishQStaff"
+			FormKey: "000DA0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronOrcishRapier"
+			FormKey: "000860:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronOrcishWhip"
+			FormKey: "001120:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronOrnateClaws"
+			FormKey: "000EE0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronOrnateClawsLeft"
+			FormKey: "000F60:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronOrnateHalberd"
+			FormKey: "000BC0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronOrnateKatana"
+			FormKey: "001220:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronOrnatePike"
+			FormKey: "000A40:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronOrnateQStaff"
+			FormKey: "000D80:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronOrnateRapier"
+			FormKey: "0008C0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronOrnateWhip"
+			FormKey: "0010C0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronSkaalClaws"
+			FormKey: "000F40:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronSkaalClawsLeft"
+			FormKey: "001060:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronSkaalHalberd"
+			FormKey: "000C80:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronSkaalKatana"
+			FormKey: "001320:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronSkaalPike"
+			FormKey: "000AC0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronSkaalQStaff"
+			FormKey: "000DE0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronSkaalRapier"
+			FormKey: "000920:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400IronSkaalWhip"
+			FormKey: "001180:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelAkaviriClaws"
+			FormKey: "1B4017:NewArmoury.esp"
+		}
+		{
+			EditorID: "400SteelAkaviriClawsLeft"
+			FormKey: "1B401A:NewArmoury.esp"
+		}
+		{
+			EditorID: "400SteelAltmerClaws"
+			FormKey: "000EC4:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelAltmerClawsLeft"
+			FormKey: "001004:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelAltmerHalberd"
+			FormKey: "000BA4:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelAltmerKatana"
+			FormKey: "0012C4:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelAltmerPike"
+			FormKey: "000A24:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelAltmerQStaff"
+			FormKey: "000D64:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelAltmerRapier"
+			FormKey: "0008A4:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelAltmerWhip"
+			FormKey: "001164:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelAncientHalberd"
+			FormKey: "168017:NewArmoury.esp"
+		}
+		{
+			EditorID: "400SteelAncientPike"
+			FormKey: "153BAB:NewArmoury.esp"
+		}
+		{
+			EditorID: "400SteelAncientQStaff"
+			FormKey: "18B759:NewArmoury.esp"
+		}
+		{
+			EditorID: "400SteelAncientRapier"
+			FormKey: "05183C:NewArmoury.esp"
+		}
+		{
+			EditorID: "400SteelBasicClaws"
+			FormKey: "000E40:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelBasicClawsLeft"
+			FormKey: "000F80:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelBasicHalberd"
+			FormKey: "000B20:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelBasicKatana"
+			FormKey: "001240:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelBasicPike"
+			FormKey: "000980:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelBasicQStaff"
+			FormKey: "000CC0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelBasicRapier"
+			FormKey: "000800:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelBasicWhip"
+			FormKey: "0010E0:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelBretonKatana"
+			FormKey: "001344:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelBretonPike"
+			FormKey: "000A84:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelBretonQStaff"
+			FormKey: "000CA4:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelBretonRapier"
+			FormKey: "000964:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelBretonWhip"
+			FormKey: "0011E4:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelDremoraClaws"
+			FormKey: "000F24:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelDremoraClawsLeft"
+			FormKey: "001044:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelDremoraHalberd"
+			FormKey: "000C04:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelDremoraKatana"
+			FormKey: "001304:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelDremoraPike"
+			FormKey: "0009A4:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelDremoraQStaff"
+			FormKey: "000CE4:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelDremoraRapier"
+			FormKey: "000904:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelDremoraWhip"
+			FormKey: "0011C4:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelDunmerClaws"
+			FormKey: "000F04:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelDunmerClawsLeft"
+			FormKey: "001024:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelDunmerHalberd"
+			FormKey: "000BE4:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelDunmerKatana"
+			FormKey: "0012E4:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelDunmerPike"
+			FormKey: "000A04:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelDunmerQStaff"
+			FormKey: "000D44:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelDunmerRapier"
+			FormKey: "0008E4:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelDunmerWhip"
+			FormKey: "0011A4:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelDwemerClaws"
+			FormKey: "000EA4:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelDwemerClawsLeft"
+			FormKey: "000FE4:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelDwemerHalberd"
+			FormKey: "000B84:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelDwemerKatana"
+			FormKey: "0012A4:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelDwemerPike"
+			FormKey: "0009E4:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelDwemerQStaff"
+			FormKey: "000D24:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelDwemerRapier"
+			FormKey: "000884:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelDwemerWhip"
+			FormKey: "001144:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelImperialHalberd"
+			FormKey: "16801B:NewArmoury.esp"
+		}
+		{
+			EditorID: "400SteelImperialPike"
+			FormKey: "153BBC:NewArmoury.esp"
+		}
+		{
+			EditorID: "400SteelImperialQStaff"
+			FormKey: "18B766:NewArmoury.esp"
+		}
+		{
+			EditorID: "400SteelImperialRapier"
+			FormKey: "019D0C:NewArmoury.esp"
+		}
+		{
+			EditorID: "400SteelNordicClaws"
+			FormKey: "19AAA6:NewArmoury.esp"
+		}
+		{
+			EditorID: "400SteelNordicClawsLeft"
+			FormKey: "19AAE3:NewArmoury.esp"
+		}
+		{
+			EditorID: "400SteelNordicHalberd"
+			FormKey: "168010:NewArmoury.esp"
+		}
+		{
+			EditorID: "400SteelNordicKatana"
+			FormKey: "344735:NewArmoury.esp"
+		}
+		{
+			EditorID: "400SteelNordicPike"
+			FormKey: "153BB4:NewArmoury.esp"
+		}
+		{
+			EditorID: "400SteelNordicQStaff"
+			FormKey: "18B760:NewArmoury.esp"
+		}
+		{
+			EditorID: "400SteelNordicRapier"
+			FormKey: "019D0D:NewArmoury.esp"
+		}
+		{
+			EditorID: "400SteelNordicWhip"
+			FormKey: "31BDDE:NewArmoury.esp"
+		}
+		{
+			EditorID: "400SteelOrcishClaws"
+			FormKey: "000E84:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelOrcishClawsLeft"
+			FormKey: "000FC4:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelOrcishHalberd"
+			FormKey: "000B64:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelOrcishKatana"
+			FormKey: "001284:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelOrcishPike"
+			FormKey: "000A64:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelOrcishQStaff"
+			FormKey: "000DA4:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelOrcishRapier"
+			FormKey: "000864:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelOrcishWhip"
+			FormKey: "001124:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelOrnateClaws"
+			FormKey: "000EE4:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelOrnateClawsLeft"
+			FormKey: "000F64:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelOrnateHalberd"
+			FormKey: "000BC4:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelOrnateKatana"
+			FormKey: "001224:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelOrnatePike"
+			FormKey: "000A44:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelOrnateQStaff"
+			FormKey: "000D84:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelOrnateRapier"
+			FormKey: "0008C4:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelOrnateWhip"
+			FormKey: "0010C4:Animated Armoury - Armoury of Tamriel Addon.esp"
+		}
+		{
+			EditorID: "400SteelSkaalClaws"
+			FormKey: "19AAB0:NewArmoury.esp"
+		}
+		{
+			EditorID: "400SteelSkaalClawsLeft"
+			FormKey: "19AAEC:NewArmoury.esp"
+		}
+		{
+			EditorID: "400SteelSkaalHalberd"
+			FormKey: "16801F:NewArmoury.esp"
+		}
+		{
+			EditorID: "400SteelSkaalKatana"
+			FormKey: "34473C:NewArmoury.esp"
+		}
+		{
+			EditorID: "400SteelSkaalPike"
+			FormKey: "153BBA:NewArmoury.esp"
+		}
+		{
+			EditorID: "400SteelSkaalQStaff"
+			FormKey: "18B764:NewArmoury.esp"
+		}
+		{
+			EditorID: "400SteelSkaalRapier"
+			FormKey: "01EE22:NewArmoury.esp"
+		}
+		{
+			EditorID: "400SteelSkaalWhip"
+			FormKey: "31BDE2:NewArmoury.esp"
+		}
+	]
+}

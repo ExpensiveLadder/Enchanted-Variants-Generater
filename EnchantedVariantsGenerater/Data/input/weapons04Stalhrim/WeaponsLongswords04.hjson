@@ -1,0 +1,12 @@
+{
+	RequiredMods: [
+		"Lovely Longswords - Vanilla Version.esp"
+	]
+	
+	Weapons: [
+		{
+			EditorID: "StalhrimLongsword"
+			FormKey: "00591D:Lovely Longswords - Vanilla Version.esp"
+		}
+	]
+}

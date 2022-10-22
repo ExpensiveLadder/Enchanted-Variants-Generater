@@ -1,0 +1,108 @@
+{
+	RequiredMods: [
+		"Armoury of Tamriel.esm"
+	]
+	
+	Armors: [
+		{
+			EditorID: "300ArmorDwarvenHideGauntlets01"
+			FormKey: "02B11C:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenStormCloakGauntlets"
+			FormKey: "02B1AB:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenImperialLightGauntlets"
+			FormKey: "02B1D1:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenHideGauntlets"
+			FormKey: "02B1FD:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenLeatherGauntlets"
+			FormKey: "02B229:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenStuddedLeatherGauntlets"
+			FormKey: "02B256:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverHideGauntlets01"
+			FormKey: "02B11D:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverStormCloakGauntlets"
+			FormKey: "02B1A8:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverImperialLightGauntlets"
+			FormKey: "02B1CD:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverHideGauntlets"
+			FormKey: "02B1F9:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverLeatherGauntlets"
+			FormKey: "02B225:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverStuddedLeatherGauntlets"
+			FormKey: "02B25A:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverBladesGauntlets"
+			FormKey: "02BF6F:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverAltmerGauntlets"
+			FormKey: "02BF7E:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverAncientGauntlets"
+			FormKey: "02BF87:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverBasicGauntlets"
+			FormKey: "02BF8E:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverDremoraGauntlets"
+			FormKey: "02BFA0:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverDwemerGauntlets"
+			FormKey: "02BFAB:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverDunmerGauntlets"
+			FormKey: "02BFB5:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverImperialGauntlets"
+			FormKey: "02BFBE:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverNordicGauntlets"
+			FormKey: "02BFC5:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverNordicPlateGauntlets"
+			FormKey: "02BFD0:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverOrcishGauntlets"
+			FormKey: "02BFD9:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverOrnateGauntlets"
+			FormKey: "02BFEE:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300DLC2ArmorCSWAPSilverSkaalGauntlets"
+			FormKey: "0023BF:Armoury of Tamriel Integration.esp"
+		}
+	]
+}

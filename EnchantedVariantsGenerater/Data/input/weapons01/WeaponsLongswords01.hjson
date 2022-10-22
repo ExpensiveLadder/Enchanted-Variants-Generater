@@ -1,7 +1,4 @@
 {
-	LeveledListPrefix: "SublistEnchWeapon_"
-	LeveledListSuffix: "_01"
-	
 	RequiredMods: [
 		"Lovely Longswords - Vanilla Version.esp"
 	]

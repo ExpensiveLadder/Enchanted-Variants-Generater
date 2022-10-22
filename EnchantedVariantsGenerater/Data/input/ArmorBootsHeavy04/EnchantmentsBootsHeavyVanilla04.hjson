@@ -10,6 +10,14 @@
 					LeveledListSuffix: "_04"
 				}
 			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of Major Stamina"
+				}
+			]
 		}
 		{
 			EditorID: "EnchArmorFortifyCarry04"
@@ -19,6 +27,14 @@
 				{
 					LeveledListPrefix: "SublistEnchArmor_"
 					LeveledListSuffix: "_04"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of Major Strength"
 				}
 			]
 		}
@@ -32,6 +48,14 @@
 					LeveledListSuffix: "_04"
 				}
 			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of Major Fire Resistance"
+				}
+			]
 		}
 		{
 			EditorID: "EnchArmorResistFrost04"
@@ -41,6 +65,14 @@
 				{
 					LeveledListPrefix: "SublistEnchArmor_"
 					LeveledListSuffix: "_04"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of Major Fire Resistance"
 				}
 			]
 		}
@@ -54,6 +86,14 @@
 					LeveledListSuffix: "_04"
 				}
 			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of Major Shock Resistance"
+				}
+			]
 		}
 		{
 			EditorID: "EnchArmorMuffle"
@@ -63,6 +103,196 @@
 				{
 					LeveledListPrefix: "SublistEnchArmor_"
 					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyStamina05"
+			FormKey: "0BE022:Skyrim.esm"
+			Suffix: " of Extreme Stamina"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of Peerless Stamina"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyCarry05"
+			FormKey: "0AD44F:Skyrim.esm"
+			Suffix: " of the Ox"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of Peerless Strength"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistFire05"
+			FormKey: "0BE029:Skyrim.esm"
+			Suffix: " of Fire Abatement"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of Peerless Fire Resistance"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistFrost05"
+			FormKey: "0BE02C:Skyrim.esm"
+			Suffix: " of Frost Abatement"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of Peerless Frost Resistance"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistShock05"
+			FormKey: "0BE02F:Skyrim.esm"
+			Suffix: " of Shock Abatement"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of Peerless Shock Resistance"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyStamina06"
+			FormKey: "0BE023:Skyrim.esm"
+			Suffix: " of Peerless Stamina"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of Peerless Stamina"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyCarry06"
+			FormKey: "0AD450:Skyrim.esm"
+			Suffix: " of the Mammoth"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of Peerless Strength"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistFire06"
+			FormKey: "0BE02A:Skyrim.esm"
+			Suffix: " of the Firewalker"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of Peerless Fire Resistance"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistFrost06"
+			FormKey: "0BE02D:Skyrim.esm"
+			Suffix: " of Warmth"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of Peerless Frost Resistance"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorResistShock06"
+			FormKey: "0BE030:Skyrim.esm"
+			Suffix: " of Grounding"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of Peerless Shock Resistance"
 				}
 			]
 		}

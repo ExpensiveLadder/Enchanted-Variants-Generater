@@ -1,9 +1,6 @@
 {
-	LeveledListPrefix: "SublistEnchWeapon_"
-	LeveledListSuffix: "_01"
-	
 	RequiredMods: [
-		"NewArmoury.esp"
+		"Animated Armoury - Enchantments.esp"
 	]
 	
 	Weapons: [

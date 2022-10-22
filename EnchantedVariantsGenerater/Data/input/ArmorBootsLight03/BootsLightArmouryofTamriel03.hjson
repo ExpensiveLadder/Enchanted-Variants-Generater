@@ -1,0 +1,112 @@
+{
+	RequiredMods: [
+		"Armoury of Tamriel.esm"
+	]
+	
+	Armors: [
+		{
+			EditorID: "300ArmorDwarvenHideBoots"
+			FormKey: "02B1FC:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenHideBoots01"
+			FormKey: "02B111:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenImperialLightBoots"
+			FormKey: "02B1D0:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenLeatherBoots"
+			FormKey: "02B228:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenStormCloakBoots"
+			FormKey: "02B1AA:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenStuddedLeatherBoots"
+			FormKey: "02B257:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverHideBoots"
+			FormKey: "02B1F8:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverHideBoots01"
+			FormKey: "02B112:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverImperialLightBoots"
+			FormKey: "02B1CC:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverLeatherBoots"
+			FormKey: "02B224:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverStormCloakBoots"
+			FormKey: "02B1A7:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverStuddedLeatherBoots"
+			FormKey: "02B25B:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300DLC2ArmorCSWAPSilverSkaalBoots"
+			FormKey: "0023C0:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverAltmerBoots"
+			FormKey: "02BF7C:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverAncientBoots"
+			FormKey: "02BF85:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverBasicBoots"
+			FormKey: "02BF8D:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverBladesBoots"
+			FormKey: "02BF71:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverCompanionsBoots"
+			FormKey: "02BF95:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverDremoraBoots"
+			FormKey: "02BF9E:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverDunmerBoots"
+			FormKey: "02BFB3:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverDwemerBoots"
+			FormKey: "02BFA9:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverImperialBoots"
+			FormKey: "02BFBC:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverNordicBoots"
+			FormKey: "02BFC4:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverNordicPlateBoots"
+			FormKey: "02BFCE:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverOrcishBoots"
+			FormKey: "02BFD7:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverOrnateBoots"
+			FormKey: "02BFEC:Armoury of Tamriel.esm"
+		}
+	]
+}

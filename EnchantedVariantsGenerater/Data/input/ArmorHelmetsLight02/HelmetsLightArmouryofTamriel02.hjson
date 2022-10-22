@@ -1,0 +1,96 @@
+{
+	RequiredMods: [
+		"Armoury of Tamriel.esm"
+	]
+	
+	Armors: [
+		{
+			EditorID: "300ArmorOrichalcumLeatherHelmetAlt"
+			FormKey: "02B0C6:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorMoonstoneLeatherHelmetAlt"
+			FormKey: "02B0C7:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorOrichalcumHideHelmet01"
+			FormKey: "02B108:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorMoonstoneHideHelmet01"
+			FormKey: "02B109:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorMoonstoneHideHelmet"
+			FormKey: "02B1F2:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorOrichalcumHideHelmet"
+			FormKey: "02B1F6:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorMoonstoneLeatherHelmet"
+			FormKey: "02B21E:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorOrichalcumLeatherHelmet"
+			FormKey: "02B222:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorOrichalcumStuddedLeatherHelmet"
+			FormKey: "02B25D:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorMoonstoneStuddedLeatherHelmet"
+			FormKey: "02B261:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPMoonstoneBladesHelmet"
+			FormKey: "02BF2F:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPMoonstoneAncientHelmet"
+			FormKey: "02BF3B:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPMoonstoneBasicHelmet"
+			FormKey: "02BF3E:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPMoonstoneCompanionsHelmet"
+			FormKey: "02BF43:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPMoonstoneDwemerHelmet"
+			FormKey: "02BF4C:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPMoonstoneDunmerHelmet"
+			FormKey: "02BF51:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPMoonstoneNordicHelmet"
+			FormKey: "02BF59:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPMoonstoneNordicPlateHelmet"
+			FormKey: "02BF5F:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPMoonstoneOrcishHelmet"
+			FormKey: "02BF63:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPMoonstoneNordicBHelmet"
+			FormKey: "02BF6B:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPMoonstoneOrnateHelmet"
+			FormKey: "02BFF4:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300DLC2ArmorCSWAPMoonstoneSkaalHelmet"
+			FormKey: "0023C7:Armoury of Tamriel Integration.esp"
+		}
+	]
+}

@@ -1,0 +1,20 @@
+{
+	RequiredMods: [
+		"Enchantments.esp",
+		"Armoury of Tamriel - Enchantments.esp"
+	]
+	
+	Armors: [
+		{
+			EditorID: "ArmorGlassBoots"
+			FormKey: "013938:Skyrim.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Enchantments.esp"
+			]
+		}
+		{
+			EditorID: "DLC2ArmorStalhrimLightBoots"
+			FormKey: "01CD7E:Dragonborn.esm"
+		}
+	]
+}

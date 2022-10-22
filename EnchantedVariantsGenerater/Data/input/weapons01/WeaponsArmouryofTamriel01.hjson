@@ -1,12 +1,77 @@
 {
-	LeveledListPrefix: "SublistEnchWeapon_"
-	LeveledListSuffix: "_01"
-	
 	RequiredMods: [
 		"Armoury of Tamriel.esm"
 	]
 	
 	Weapons: [
+		{
+			EditorID: "AkaviriKatana"
+			FormKey: "03AEB9:Skyrim.esm"
+		}
+		{
+			EditorID: "Scimitar"
+			FormKey: "07A91A:Skyrim.esm"
+		}
+		{
+			EditorID: "DraugrBattleAxe"
+			FormKey: "01CB64:Skyrim.esm"
+		}
+		{
+			EditorID: "DraugrBattleAxeHoned"
+			FormKey: "05BF12:Skyrim.esm"
+		}
+		{
+			EditorID: "DraugrGreatsword"
+			FormKey: "0236A5:Skyrim.esm"
+		}
+		{
+			EditorID: "DraugrGreatswordHoned"
+			FormKey: "05BF13:Skyrim.esm"
+		}
+		{
+			EditorID: "DraugrSword"
+			FormKey: "02C66F:Skyrim.esm"
+		}
+		{
+			EditorID: "DraugrSwordHoned"
+			FormKey: "05BF14:Skyrim.esm"
+		}
+		{
+			EditorID: "DraugrWarAxe"
+			FormKey: "02C672:Skyrim.esm"
+		}
+		{
+			EditorID: "DraugrWarAxeHoned"
+			FormKey: "05BF15:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2NordicBattleaxe"
+			FormKey: "01CDAD:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2NordicDagger"
+			FormKey: "01CDAE:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2NordicGreatsword"
+			FormKey: "01CDAF:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2NordicMace"
+			FormKey: "01CDB0:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2NordicSword"
+			FormKey: "01CDB1:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2NordicWarAxe"
+			FormKey: "01CDB2:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2NordicWarhammer"
+			FormKey: "01CDB3:Dragonborn.esm"
+		}
 		{
 			EditorID: "300IronAncientBattleAxe"
 			FormKey: "01CB64:Skyrim.esm"
@@ -24,7 +89,7 @@
 			FormKey: "02C672:Skyrim.esm"
 		}
 		{
-			EditorID: "300IronAkavirDagger"
+			EditorID: "300IronAkaviriDagger"
 			FormKey: "0564EB:Armoury of Tamriel.esm"
 		}
 		{
@@ -291,33 +356,36 @@
 			EditorID: "300IronRedguardSword"
 			FormKey: "00118C:Armoury of Tamriel.esm"
 		}
-		
 		{
-			EditorID: "300SteelAkaviriSword"
-			FormKey: "03AEB9:Skyrim.esm"
+			EditorID: "300DLC2IronSkaalBattleaxe"
+			FormKey: "00234F:Armoury of Tamriel Integration.esp"
 		}
 		{
-			EditorID: "300SteelRedguardSword"
-			FormKey: "07A91A:Skyrim.esm"
+			EditorID: "300DLC2IronSkaalDagger"
+			FormKey: "002334:Armoury of Tamriel Integration.esp"
 		}
 		{
-			EditorID: "300SteelAncientBattleAxe"
-			FormKey: "05BF12:Skyrim.esm"
+			EditorID: "300DLC2IronSkaalGreataxe"
+			FormKey: "002358:Armoury of Tamriel Integration.esp"
 		}
 		{
-			EditorID: "300SteelAncientGreatsword"
-			FormKey: "05BF13:Skyrim.esm"
+			EditorID: "300DLC2IronSkaalGreatsword"
+			FormKey: "002322:Armoury of Tamriel Integration.esp"
 		}
 		{
-			EditorID: "300SteelAncientSword"
-			FormKey: "05BF14:Skyrim.esm"
+			EditorID: "300DLC2IronSkaalMace"
+			FormKey: "00232B:Armoury of Tamriel Integration.esp"
 		}
 		{
-			EditorID: "300SteelAncientWarAxe"
-			FormKey: "05BF15:Skyrim.esm"
+			EditorID: "300DLC2IronSkaalSword"
+			FormKey: "002361:Armoury of Tamriel Integration.esp"
 		}
 		{
-			EditorID: "300SteelAkavirDagger"
+			EditorID: "300DLC2IronSkaalWarhammer"
+			FormKey: "00233D:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300SteelAkaviriDagger"
 			FormKey: "0564F0:Armoury of Tamriel.esm"
 		}
 		{

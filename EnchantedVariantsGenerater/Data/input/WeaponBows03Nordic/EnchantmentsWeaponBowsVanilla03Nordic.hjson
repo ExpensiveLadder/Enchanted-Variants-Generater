@@ -1,0 +1,400 @@
+{
+	Enchantments: [
+		{
+			EditorID: "EnchWeaponFrostDamage03"
+			FormKey: "045C39:Skyrim.esm"
+			Suffix: " of Ice"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponFireDamage03"
+			FormKey: "045C2C:Skyrim.esm"
+			Suffix: " of Scorching"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponShockDamage03"
+			FormKey: "045F6F:Skyrim.esm"
+			Suffix: " of Shocks"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponStaminaDamage03"
+			FormKey: "05B45B:Skyrim.esm"
+			Suffix: " of Torpor"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponMagickaDamage03"
+			FormKey: "05B455:Skyrim.esm"
+			Suffix: " of Diminishing"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponSoulTrap03"
+			FormKey: "05B461:Skyrim.esm"
+			Suffix: " of Binding"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponFear03"
+			FormKey: "05B467:Skyrim.esm"
+			Suffix: " of Fear"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponTurnUndead03"
+			FormKey: "05B46E:Skyrim.esm"
+			Prefix: "Reverent "
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponFrostDamage04"
+			FormKey: "045D4B:Skyrim.esm"
+			Suffix: " of Freezing"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponFireDamage04"
+			FormKey: "045C2D:Skyrim.esm"
+			Suffix: " of Flames"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponShockDamage04"
+			FormKey: "045F89:Skyrim.esm"
+			Suffix: " of Thunderbolts"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponStaminaDamage04"
+			FormKey: "05B45C:Skyrim.esm"
+			Suffix: " of Debilitation"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponMagickaDamage04"
+			FormKey: "05B456:Skyrim.esm"
+			Suffix: " of Depleting"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponSoulTrap04"
+			FormKey: "05B462:Skyrim.esm"
+			Suffix: " of Animus"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponFear04"
+			FormKey: "05B468:Skyrim.esm"
+			Suffix: " of Despair"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponTurnUndead04"
+			FormKey: "05B46F:Skyrim.esm"
+			Prefix: "Hallowed "
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponFrostDamage05"
+			FormKey: "045D56:Skyrim.esm"
+			Suffix: " of Blizzards"
+			EnchantmentAmount: 2500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_05"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC05"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponFireDamage05"
+			FormKey: "045C30:Skyrim.esm"
+			Suffix: " of the Blaze"
+			EnchantmentAmount: 2500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_05"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC05"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponShockDamage05"
+			FormKey: "045F8D:Skyrim.esm"
+			Suffix: " of Lightning"
+			EnchantmentAmount: 2500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_05"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC05"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponStaminaDamage05"
+			FormKey: "05B45D:Skyrim.esm"
+			Suffix: " of Lethargy"
+			EnchantmentAmount: 2500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_05"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC05"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponMagickaDamage05"
+			FormKey: "05B457:Skyrim.esm"
+			Suffix: " of Enervating"
+			EnchantmentAmount: 2500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_05"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC05"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponSoulTrap05"
+			FormKey: "05B463:Skyrim.esm"
+			Suffix: " of Malediction"
+			EnchantmentAmount: 2500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_05"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponFear05"
+			FormKey: "05B469:Skyrim.esm"
+			Suffix: " of Dread"
+			EnchantmentAmount: 2500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_05"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponTurnUndead05"
+			FormKey: "05B470:Skyrim.esm"
+			Prefix: "Virtuous "
+			EnchantmentAmount: 2500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_05"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponChaosDamage03"
+			FormKey: "02C46F:Dragonborn.esm"
+			Suffix: " of Chaos"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponChaosDamage04"
+			FormKey: "02C470:Dragonborn.esm"
+			Suffix: " of High Chaos"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponChaosDamage05"
+			FormKey: "02C471:Dragonborn.esm"
+			Suffix: " of Extreme Chaos"
+			EnchantmentAmount: 2500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_05"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC05"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,104 @@
+{
+	RequiredMods: [
+		"Armoury of Tamriel.esm"
+	]
+	
+	Armors: [
+		{
+			EditorID: "ArmorDwarvenHelmet"
+			FormKey: "01394F:Skyrim.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenAncientHelmet"
+			FormKey: "02B4C8:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverBasicHelmet"
+			FormKey: "02B4A5:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenBasicHelmet"
+			FormKey: "02B4A9:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverAltmerHelmet"
+			FormKey: "02B4E8:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenAltmerHelmet"
+			FormKey: "02B4ED:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenBladesHelmet"
+			FormKey: "02B553:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverBladesHelmet"
+			FormKey: "02B558:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300DLC2ArmorDwarvenSkaalHelmet"
+			FormKey: "0023DD:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300DLC2ArmorSilverSkaalHelmet"
+			FormKey: "0023E1:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300ArmorSilverNordicBHelmet"
+			FormKey: "02B303:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenNordicBHelmet"
+			FormKey: "02B304:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverOrnateHelmet"
+			FormKey: "02B358:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenOrnateHelmet"
+			FormKey: "02B35D:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverNordicPlateHelmet"
+			FormKey: "02B3A4:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenNordicPlateHelmet"
+			FormKey: "02B3A8:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverNordicHelmet"
+			FormKey: "02B3CD:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenNordicHelmet"
+			FormKey: "02B3D1:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverDunmerHelmet"
+			FormKey: "02B410:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenDunmerHelmet"
+			FormKey: "02B415:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverDwemerHelmet"
+			FormKey: "02B438:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverAncientHelmet"
+			FormKey: "02B4C4:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenOrcishHelmet"
+			FormKey: "02B385:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverOrcishHelmet"
+			FormKey: "02B380:Armoury of Tamriel.esm"
+		}
+	]
+}

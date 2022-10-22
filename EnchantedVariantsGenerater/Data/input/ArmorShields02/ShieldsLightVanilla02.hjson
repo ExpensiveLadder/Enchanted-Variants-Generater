@@ -1,0 +1,16 @@
+{
+	RequiredMods: [
+		"Enchantments.esp"
+	]
+	
+	"Armors": [
+		{
+			EditorID: "ArmorElvenShield"
+			FormKey: "01391E:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorChitinShield"
+			FormKey: "026235:Dragonborn.esm"
+		}
+	]
+}

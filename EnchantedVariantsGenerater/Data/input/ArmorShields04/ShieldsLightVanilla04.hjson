@@ -1,0 +1,12 @@
+{
+	RequiredMods: [
+		"Enchantments.esp"
+	]
+	
+	"Armors": [
+		{
+			EditorID: "ArmorDragonscaleShield"
+			FormKey: "013941:Skyrim.esm"
+		}
+	]
+}

@@ -1,0 +1,36 @@
+{
+	RequiredMods: [
+		"Enchantments.esp"
+	]
+	
+	Weapons: [
+		{
+			EditorID: "DLC2StalhrimBattleaxe"
+			FormKey: "01CDB4:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2StalhrimDagger"
+			FormKey: "01CDB5:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2StalhrimGreatsword"
+			FormKey: "01CDB6:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2StalhrimMace"
+			FormKey: "01CDB7:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2StalhrimSword"
+			FormKey: "01CDB8:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2StalhrimWarAxe"
+			FormKey: "01CDB9:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2StalhrimWarhammer"
+			FormKey: "01CDBA:Dragonborn.esm"
+		}
+	]
+}

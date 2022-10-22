@@ -1,0 +1,52 @@
+{
+	RequiredMods: [
+		"Thaumaturgy.esp"
+	]
+	
+	Enchantments: [
+		{
+			EditorID: "EnchArmorWaterwalking"
+			FormKey: "0EDD13:Thaumaturgy.esp"
+			Suffix: " of Waterwalking"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyStaminaRate03"
+			FormKey: "0AD480:Skyrim.esm"
+			"Suffix": " of Minor Rejuvenation"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyStaminaRate04"
+			FormKey: "07A11A:Skyrim.esm"
+			"Suffix": " of Rejuvenation"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorSlowfall"
+			FormKey: "12ABF9:Thaumaturgy.esp"
+			Suffix: " of the Acrobat"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+				}
+			]
+		}
+	]
+}

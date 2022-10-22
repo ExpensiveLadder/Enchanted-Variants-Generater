@@ -1,6 +1,7 @@
 {
 	RequiredMods: [
-		"Enchantments.esp"
+		"Enchantments.esp",
+		"Armoury of Tamriel - Enchantments.esp"
 	]
 	
 	"Armors": [

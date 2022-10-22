@@ -1,0 +1,60 @@
+{
+	RequiredMods: [
+		"Armoury of Tamriel.esm"
+	]
+	
+	Armors: [
+		{
+			EditorID: "300ArmorOrichalcumHideShield"
+			FormKey: "02B15A:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorOrichalcumImperialLightShield"
+			FormKey: "02B159:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorMoonstoneHideShield"
+			FormKey: "02B15D:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorMoonstoneImperialLightShield"
+			FormKey: "02B15C:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300DLC2ArmorCSWAPMoonstoneSkaalShield"
+			FormKey: "0023C6:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPMoonstoneBasicShield"
+			FormKey: "02BF3F:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPMoonstoneBasicShieldHeavy"
+			FormKey: "02BF67:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPMoonstoneBladesShield"
+			FormKey: "02BF2E:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPMoonstoneDunmerShield"
+			FormKey: "02BF52:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPMoonstoneDwemerShield"
+			FormKey: "02BF4D:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPMoonstoneNordicShield"
+			FormKey: "02BF5A:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPMoonstoneOrcishShield"
+			FormKey: "02BF64:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPMoonstoneOrnateShield"
+			FormKey: "02BFF5:Armoury of Tamriel.esm"
+		}
+	]
+}

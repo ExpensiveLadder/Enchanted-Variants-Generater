@@ -1,0 +1,96 @@
+{
+	RequiredMods: [
+		"Armoury of Tamriel.esm"
+	]
+	
+	Armors: [
+		{
+			EditorID: "300ArmorDwarvenLeatherHelmetAlt"
+			FormKey: "02B0C4:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverLeatherHelmetAlt"
+			FormKey: "02B0C5:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenHideHelmet01"
+			FormKey: "02B106:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverHideHelmet01"
+			FormKey: "02B107:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverHideHelmet"
+			FormKey: "02B1FA:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenHideHelmet"
+			FormKey: "02B1FE:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverLeatherHelmet"
+			FormKey: "02B226:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenLeatherHelmet"
+			FormKey: "02B22A:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenStuddedLeatherHelmet"
+			FormKey: "02B255:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverStuddedLeatherHelmet"
+			FormKey: "02B259:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverBladesHelmet"
+			FormKey: "02BF6E:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverAncientHelmet"
+			FormKey: "02BF88:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverBasicHelmet"
+			FormKey: "02BF8F:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverDwemerHelmet"
+			FormKey: "02BFAC:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverDunmerHelmet"
+			FormKey: "02BFB6:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverNordicHelmet"
+			FormKey: "02BFC6:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverNordicPlateHelmet"
+			FormKey: "02BFD1:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverOrcishHelmet"
+			FormKey: "02BFDA:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverNordicBHelmet"
+			FormKey: "02BFE9:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverOrnateHelmet"
+			FormKey: "02BFEF:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300DLC2ArmorCSWAPSilverSkaalHelmet"
+			FormKey: "0023BE:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPSilverAltmerHelmet"
+			FormKey: "02BF7F:Armoury of Tamriel.esm"
+		}
+	]
+}

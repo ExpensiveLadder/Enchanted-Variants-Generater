@@ -1,15 +1,32 @@
 {
-	LeveledListPrefix: "SublistEnchWeapon_"
-	LeveledListSuffix: "_01"
-	
 	RequiredMods: [
-		"Armoury of Tamriel.esm"
+		"Armoury of Tamriel - Enchantments.esp"
 	]
 	
 	Weapons: [
 		{
-			EditorID: "300IronAncientBow"
+			EditorID: "DraugrBow"
 			FormKey: "0302CA:Skyrim.esm"
+		}
+		{
+			EditorID: "DraugrBowSupple"
+			FormKey: "05D179:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2NordicBow"
+			FormKey: "026232:Dragonborn.esm"
+		}
+		{
+			EditorID: "300DLC2IronSkaalBow"
+			FormKey: "002346:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300DLC1IronCrossBow"
+			FormKey: "00D4B0:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300DLC1IronCrossBowHeavy"
+			FormKey: "002FB1:Armoury of Tamriel Integration.esp"
 		}
 		{
 			EditorID: "300IronAltmerBow"

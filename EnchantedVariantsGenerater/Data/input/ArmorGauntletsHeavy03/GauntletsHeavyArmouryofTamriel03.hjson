@@ -1,0 +1,104 @@
+{
+	RequiredMods: [
+		"Armoury of Tamriel.esm"
+	]
+	
+	Armors: [
+		{
+			EditorID: "ArmorDwarvenGauntlets"
+			FormKey: "01394E:Skyrim.esm"
+		}
+		{
+			EditorID: "300DLC2ArmorDwarvenSkaalGauntlets"
+			FormKey: "0023DC:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300ArmorDwarvenAltmerGauntlets"
+			FormKey: "02B4EE:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenAncientGauntlets"
+			FormKey: "02B4C9:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenBasicGauntlets"
+			FormKey: "02B4AA:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenBladesGauntlets"
+			FormKey: "02B552:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenDunmerGauntlets"
+			FormKey: "02B416:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenImperialGauntlets"
+			FormKey: "02B3F1:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenNordicGauntlets"
+			FormKey: "02B3D2:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenNordicPlateGauntlets"
+			FormKey: "02B3A9:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenOrcishGauntlets"
+			FormKey: "02B386:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDwarvenOrnateGauntlets"
+			FormKey: "02B35E:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300DLC2ArmorSilverSkaalGauntlets"
+			FormKey: "0023E0:Armoury of Tamriel Integration.esp"
+		}
+		{
+			EditorID: "300ArmorSilverAltmerGauntlets"
+			FormKey: "02B4E9:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverAncientGauntlets"
+			FormKey: "02B4C5:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverBasicGauntlets"
+			FormKey: "02B4A6:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverBladesGauntlets"
+			FormKey: "02B557:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverDunmerGauntlets"
+			FormKey: "02B411:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverDwemerGauntlets"
+			FormKey: "02B439:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverImperialGauntlets"
+			FormKey: "02B3ED:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverNordicGauntlets"
+			FormKey: "02B3CE:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverNordicPlateGauntlets"
+			FormKey: "02B3A5:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverOrcishGauntlets"
+			FormKey: "02B381:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorSilverOrnateGauntlets"
+			FormKey: "02B359:Armoury of Tamriel.esm"
+		}
+	]
+}

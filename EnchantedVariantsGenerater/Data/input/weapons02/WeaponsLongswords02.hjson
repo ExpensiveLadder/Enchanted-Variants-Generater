@@ -1,20 +1,9 @@
 {
-	LeveledListPrefix: "SublistEnchWeapon_"
-	LeveledListSuffix: "_02"
-	
 	RequiredMods: [
 		"Lovely Longswords - Vanilla Version.esp"
 	]
 	
 	Weapons: [
-		{
-			EditorID: "IronLongsword"
-			FormKey: "005914:Lovely Longswords - Vanilla Version.esp"
-		}
-		{
-			EditorID: "SteelLongsword"
-			FormKey: "00590F:Lovely Longswords - Vanilla Version.esp"
-		}
 		{
 			EditorID: "OrcishLongsword"
 			FormKey: "005912:Lovely Longswords - Vanilla Version.esp"

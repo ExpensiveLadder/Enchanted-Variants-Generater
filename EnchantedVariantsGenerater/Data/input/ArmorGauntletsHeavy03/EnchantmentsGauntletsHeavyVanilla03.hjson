@@ -10,6 +10,20 @@
 					LeveledListSuffix: "_03"
 				}
 			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					LeveledLists: [
+						{
+							LeveledListPrefix: "SublistEnchArmor_"
+							LeveledListSuffix: "_03"
+							Mode: "Remove"
+						}
+					]
+				}
+			]
 		}
 		{
 			EditorID: "EnchArmorFortifyOneHanded03"
@@ -19,6 +33,14 @@
 				{
 					LeveledListPrefix: "SublistEnchArmor_"
 					LeveledListSuffix: "_03"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of the Skirmisher"
 				}
 			]
 		}
@@ -32,6 +54,14 @@
 					LeveledListSuffix: "_03"
 				}
 			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of the Champion"
+				}
+			]
 		}
 		{
 			EditorID: "EnchArmorFortifyAlchemy03"
@@ -43,6 +73,14 @@
 					LeveledListSuffix: "_03"
 				}
 			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of the Alchemist"
+				}
+			]
 		}
 		{
 			EditorID: "EnchArmorFortifySmithing03"
@@ -52,6 +90,234 @@
 				{
 					LeveledListPrefix: "SublistEnchArmor_"
 					LeveledListSuffix: "_03"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					LeveledLists: [
+						{
+							LeveledListPrefix: "SublistEnchArmor_"
+							LeveledListSuffix: "_03"
+							Mode: "Remove"
+						}
+					]
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyMarksman04"
+			FormKey: "0BE00C:Skyrim.esm"
+			"Suffix": " of Eminent Archery"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					LeveledLists: [
+						{
+							LeveledListPrefix: "SublistEnchArmor_"
+							LeveledListSuffix: "_04"
+							Mode: "Remove"
+						}
+					]
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyOneHanded04"
+			FormKey: "0BE00F:Skyrim.esm"
+			"Suffix": " of Eminent Wielding"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of the Major Skirmisher"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyTwoHanded04"
+			FormKey: "0BE025:Skyrim.esm"
+			"Suffix": " of Eminent Sure Grip"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of the Major Champion"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyAlchemy04"
+			FormKey: "08B65F:Skyrim.esm"
+			"Suffix": " of Eminent Alchemy"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of the Major Alchemist"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifySmithing04"
+			FormKey: "0BE018:Skyrim.esm"
+			"Suffix": " of Eminent Smithing"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					LeveledLists: [
+						{
+							LeveledListPrefix: "SublistEnchArmor_"
+							LeveledListSuffix: "_04"
+							Mode: "Remove"
+						}
+					]
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyMarksman05"
+			FormKey: "0BE00D:Skyrim.esm"
+			"Suffix": " of Extreme Archery"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					LeveledLists: [
+						{
+							LeveledListPrefix: "SublistEnchArmor_"
+							LeveledListSuffix: "_05"
+							Mode: "Remove"
+						}
+					]
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyOneHanded05"
+			FormKey: "0BE010:Skyrim.esm"
+			"Suffix": " of Extreme Wielding"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of the Peerless Skirmisher"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyTwoHanded05"
+			FormKey: "0BE026:Skyrim.esm"
+			"Suffix": " of Extreme Sure Grip"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of the Peerless Champion"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifyAlchemy05"
+			FormKey: "08B660:Skyrim.esm"
+			"Suffix": " of Extreme Alchemy"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					Suffix: " of the Peerless Alchemist"
+				}
+			]
+		}
+		{
+			EditorID: "EnchArmorFortifySmithing05"
+			FormKey: "0BE019:Skyrim.esm"
+			"Suffix": " of Extreme Smithing"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+				}
+			]
+			Overwrites: [
+				{
+					RequiredMods: [
+						"Thaumaturgy.esp"
+					]
+					LeveledLists: [
+						{
+							LeveledListPrefix: "SublistEnchArmor_"
+							LeveledListSuffix: "_05"
+							Mode: "Remove"
+						}
+					]
 				}
 			]
 		}

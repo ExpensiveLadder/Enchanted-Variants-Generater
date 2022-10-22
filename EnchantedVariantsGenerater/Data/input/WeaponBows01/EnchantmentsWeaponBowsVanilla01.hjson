@@ -17,6 +17,38 @@
 			]
 		}
 		{
+			EditorID: "EnchWeaponFrostDamage02"
+			FormKey: "045C37:Skyrim.esm"
+			Suffix: " of Frost"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponFrostDamage03"
+			FormKey: "045C39:Skyrim.esm"
+			Suffix: " of Ice"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+				}
+			]
+		}
+		{
 			EditorID: "EnchWeaponFireDamage01"
 			FormKey: "049BB7:Skyrim.esm"
 			Suffix: " of Embers"
@@ -29,6 +61,38 @@
 				{
 					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_NPC01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponFireDamage02"
+			FormKey: "045C2A:Skyrim.esm"
+			Suffix: " of Burning"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponFireDamage03"
+			FormKey: "045C2C:Skyrim.esm"
+			Suffix: " of Scorching"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
 				}
 			]
 		}
@@ -49,6 +113,38 @@
 			]
 		}
 		{
+			EditorID: "EnchWeaponShockDamage02"
+			FormKey: "045D97:Skyrim.esm"
+			Suffix: " of Arcing"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponShockDamage03"
+			FormKey: "045F6F:Skyrim.esm"
+			Suffix: " of Shocks"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+				}
+			]
+		}
+		{
 			EditorID: "EnchWeaponStaminaDamage01"
 			FormKey: "05B459:Skyrim.esm"
 			Suffix: " of Fatigue"
@@ -61,6 +157,38 @@
 				{
 					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_NPC01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponStaminaDamage02"
+			FormKey: "05B45A:Skyrim.esm"
+			Suffix: " of Weariness"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponStaminaDamage03"
+			FormKey: "05B45B:Skyrim.esm"
+			Suffix: " of Torpor"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
 				}
 			]
 		}
@@ -81,6 +209,38 @@
 			]
 		}
 		{
+			EditorID: "EnchWeaponMagickaDamage02"
+			FormKey: "05B454:Skyrim.esm"
+			Suffix: " of Draining"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponMagickaDamage03"
+			FormKey: "05B455:Skyrim.esm"
+			Suffix: " of Diminishing"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+				}
+			]
+		}
+		{
 			EditorID: "EnchWeaponSoulTrap01"
 			FormKey: "05B45F:Skyrim.esm"
 			Suffix: " of Souls"
@@ -89,6 +249,30 @@
 				{
 					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponSoulTrap02"
+			FormKey: "05B460:Skyrim.esm"
+			Suffix: " of Soul Snares"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponSoulTrap03"
+			FormKey: "05B461:Skyrim.esm"
+			Suffix: " of Binding"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
 				}
 			]
 		}
@@ -105,6 +289,30 @@
 			]
 		}
 		{
+			EditorID: "EnchWeaponFear02"
+			FormKey: "05B466:Skyrim.esm"
+			Suffix: " of Cowardice"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponFear03"
+			FormKey: "05B467:Skyrim.esm"
+			Suffix: " of Fear"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
 			EditorID: "EnchWeaponTurnUndead01"
 			FormKey: "05B46C:Skyrim.esm"
 			Prefix: "Blessed "
@@ -113,6 +321,30 @@
 				{
 					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_01"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponTurnUndead02"
+			FormKey: "05B46D:Skyrim.esm"
+			Prefix: "Sanctified "
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponTurnUndead03"
+			FormKey: "05B46E:Skyrim.esm"
+			Prefix: "Reverent "
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
 				}
 			]
 		}

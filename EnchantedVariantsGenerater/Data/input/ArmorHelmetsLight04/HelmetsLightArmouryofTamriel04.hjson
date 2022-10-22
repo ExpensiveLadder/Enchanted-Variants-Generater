@@ -1,0 +1,156 @@
+{
+	RequiredMods: [
+		"Armoury of Tamriel.esm"
+	]
+	
+	Armors: [
+		{
+			EditorID: "ArmorGlassHelmet"
+			FormKey: "01393B:Skyrim.esm"
+		}
+		{
+			EditorID: "300ArmorALTDaedricLeatherHelmetAlt"
+			FormKey: "02B0BF:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDaedricLeatherHelmetAlt"
+			FormKey: "02B0C0:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTEbonyLeatherHelmetAlt"
+			FormKey: "02B0C1:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorEbonyLeatherHelmetAlt"
+			FormKey: "02B0C2:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorGlassLeatherHelmetAlt"
+			FormKey: "02B0C3:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTDaedricHideHelmet01"
+			FormKey: "02B101:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDaedricHideHelmet01"
+			FormKey: "02B102:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTEbonyHideHelmet01"
+			FormKey: "02B103:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorEbonyHideHelmet01"
+			FormKey: "02B104:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorGlassHideHelmet01"
+			FormKey: "02B105:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorGlassHideHelmet"
+			FormKey: "02B202:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorEbonyHideHelmet"
+			FormKey: "02B206:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTEbonyHideHelmet"
+			FormKey: "02B20A:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDaedricHideHelmet"
+			FormKey: "02B20E:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTDaedricHideHelmet"
+			FormKey: "02B212:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorGlassLeatherHelmet"
+			FormKey: "02B22E:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorEbonyLeatherHelmet"
+			FormKey: "02B232:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTEbonyLeatherHelmet"
+			FormKey: "02B236:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDaedricLeatherHelmet"
+			FormKey: "02B23A:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTDaedricLeatherHelmet"
+			FormKey: "02B23E:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTDaedricStuddedLeatherHelmet"
+			FormKey: "02B241:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorDaedricStuddedLeatherHelmet"
+			FormKey: "02B245:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorALTEbonyStuddedLeatherHelmet"
+			FormKey: "02B249:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorEbonyStuddedLeatherHelmet"
+			FormKey: "02B24D:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorGlassStuddedLeatherHelmet"
+			FormKey: "02B251:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPGlassBladesHelmet"
+			FormKey: "02BF73:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPGlassAltmerHelmet"
+			FormKey: "02BF7A:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPGlassAncientHelmet"
+			FormKey: "02BF84:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPGlassBasicHelmet"
+			FormKey: "02BF8B:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPGlassDwemerHelmet"
+			FormKey: "02BFA7:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPGlassDunmerHelmet"
+			FormKey: "02BFB1:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPGlassNordicHelmet"
+			FormKey: "02BFC2:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPGlassNordicPlateHelmet"
+			FormKey: "02BFCD:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPGlassOrcishHelmet"
+			FormKey: "02BFD5:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300ArmorCSWAPGlassNordicBHelmet"
+			FormKey: "02BFE8:Armoury of Tamriel.esm"
+		}
+		{
+			EditorID: "300DLC2ArmorCSWAPGlassSkaalHelmet"
+			FormKey: "0023C2:Armoury of Tamriel Integration.esp"
+		}
+	]
+}
