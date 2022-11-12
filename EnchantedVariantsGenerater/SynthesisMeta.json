@@ -1,8 +1,9 @@
 {
-  "Nickname": "EnchantedVariantsGenerater",
+  "Nickname": "EnchantedVariantsGenerator",
   "Visibility": "Visible",
   "OneLineDescription": "",
   "LongDescription": "",
   "PreferredAutoVersioning": "Default",
-  "RequiredMods": []
+  "RequiredMods": [],
+  "TargetedReleases": []
 }

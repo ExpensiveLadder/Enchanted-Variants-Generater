@@ -12,9 +12,7 @@ using Newtonsoft.Json.Linq;
 using Hjson;
 using DynamicData;
 using System.Threading;
-
-
-
+using Mutagen.Bethesda.Core.Persistance;
 
 namespace EnchantedVariantsGenerater
 {
@@ -364,14 +362,11 @@ namespace EnchantedVariantsGenerater
                 weapon = weapon_Original.DeepCopy(weapontranslationmark);
             }
             else
-            { // Create Enchanted Weapo
+            { // Create Enchanted Weapon
                 alreadyExists = false;
-                weapon = new Weapon(patchMod)
-                {
-                    EditorID = editorID,
-                    ObjectEffect = enchantment,
-                    Template = template
-                };
+                weapon = patchMod.Weapons.AddNew(editorID);
+                weapon.ObjectEffect = enchantment;
+                weapon.Template = template;
             }
             return weapon;
         }
@@ -400,12 +395,9 @@ namespace EnchantedVariantsGenerater
             else
             { // Create Enchanted Weapo
                 alreadyExists = false;
-                armor = new Armor(patchMod)
-                {
-                    EditorID = editorID,
-                    ObjectEffect = enchantment,
-                    TemplateArmor = template
-                };
+                armor = patchMod.Armors.AddNew(editorID);
+                armor.ObjectEffect = enchantment;
+                armor.TemplateArmor = template;
             }
             return armor;
         }
@@ -811,6 +803,8 @@ namespace EnchantedVariantsGenerater
             Config config = GetConfig(Path.Combine(state.ExtraSettingsDataPath, "config.hjson"));
             List<InputThing> inputs = GetInputs(state, config);
 
+            var allocator = new TextFileSharedFormKeyAllocator(state.PatchMod, state.ExtraSettingsDataPath, "EnchantedVariantsGenerator");
+            state.PatchMod.SetAllocator(allocator);
 
             var linkcache = state.LoadOrder.ToImmutableLinkCache();
 
@@ -838,6 +832,7 @@ namespace EnchantedVariantsGenerater
                     state.PatchMod.LeveledItems.Set(leveledlist);
                 }
             }
+            allocator.Commit();
         } // End of Patching
     }
 }
