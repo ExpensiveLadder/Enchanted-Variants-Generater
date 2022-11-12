@@ -1,18 +1,12 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Synthesis;
 using Mutagen.Bethesda.Skyrim;
 using System.Threading.Tasks;
-using Mutagen.Bethesda.FormKeys.SkyrimSE;
 using System.IO;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using Hjson;
-using DynamicData;
-using System.Threading;
-using Mutagen.Bethesda.Core.Persistance;
 
 namespace EnchantedVariantsGenerater
 {
@@ -332,10 +326,9 @@ namespace EnchantedVariantsGenerater
             else
             { // Create Leveled List
                 alreadyExists = false;
-                leveledlist = new LeveledItem(patchMod);
+                leveledlist = new LeveledItem(patchMod, editorID);
                 leveledlist.Flags |= LeveledItem.Flag.CalculateForEachItemInCount;
                 leveledlist.Flags |= LeveledItem.Flag.CalculateFromAllLevelsLessThanOrEqualPlayer;
-                leveledlist.EditorID = editorID;
                 leveledlist.Entries = new Noggog.ExtendedList<LeveledItemEntry>();
             }
             return leveledlist;
@@ -364,9 +357,11 @@ namespace EnchantedVariantsGenerater
             else
             { // Create Enchanted Weapon
                 alreadyExists = false;
-                weapon = patchMod.Weapons.AddNew(editorID);
-                weapon.ObjectEffect = enchantment;
-                weapon.Template = template;
+                weapon = new Weapon(patchMod, editorID)
+                {
+                    ObjectEffect = enchantment,
+                    Template = template
+                };
             }
             return weapon;
         }
@@ -395,9 +390,12 @@ namespace EnchantedVariantsGenerater
             else
             { // Create Enchanted Weapo
                 alreadyExists = false;
-                armor = patchMod.Armors.AddNew(editorID);
-                armor.ObjectEffect = enchantment;
-                armor.TemplateArmor = template;
+                armor = new Armor(patchMod, editorID)
+                {
+                    EditorID = editorID,
+                    ObjectEffect = enchantment,
+                    TemplateArmor = template
+                };
             }
             return armor;
         }
@@ -803,9 +801,6 @@ namespace EnchantedVariantsGenerater
             Config config = GetConfig(Path.Combine(state.ExtraSettingsDataPath, "config.hjson"));
             List<InputThing> inputs = GetInputs(state, config);
 
-            var allocator = new TextFileSharedFormKeyAllocator(state.PatchMod, state.ExtraSettingsDataPath, "EnchantedVariantsGenerator");
-            state.PatchMod.SetAllocator(allocator);
-
             var linkcache = state.LoadOrder.ToImmutableLinkCache();
 
             Console.WriteLine("Running Generator");
@@ -832,7 +827,6 @@ namespace EnchantedVariantsGenerater
                     state.PatchMod.LeveledItems.Set(leveledlist);
                 }
             }
-            allocator.Commit();
         } // End of Patching
     }
 }

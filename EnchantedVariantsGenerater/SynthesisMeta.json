@@ -5,5 +5,7 @@
   "LongDescription": "",
   "PreferredAutoVersioning": "Default",
   "RequiredMods": [],
-  "TargetedReleases": []
+  "TargetedReleases": [
+    "SkyrimSE"
+  ]
 }
