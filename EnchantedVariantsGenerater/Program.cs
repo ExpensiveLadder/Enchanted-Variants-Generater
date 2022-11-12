@@ -803,8 +803,10 @@ namespace EnchantedVariantsGenerater
             Config config = GetConfig(Path.Combine(state.ExtraSettingsDataPath, "config.hjson"));
             List<InputThing> inputs = GetInputs(state, config);
 
+            /*
             var allocator = new TextFileSharedFormKeyAllocator(state.PatchMod, state.ExtraSettingsDataPath, "EnchantedVariantsGenerator");
             state.PatchMod.SetAllocator(allocator);
+            */
 
             var linkcache = state.LoadOrder.ToImmutableLinkCache();
 
@@ -832,7 +834,7 @@ namespace EnchantedVariantsGenerater
                     state.PatchMod.LeveledItems.Set(leveledlist);
                 }
             }
-            allocator.Commit();
+            //allocator.Commit();
         } // End of Patching
     }
 }
