@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 using System.IO;
 using Newtonsoft.Json;
 using Hjson;
+using Mutagen.Bethesda.Plugins;
+using Mutagen.Bethesda.Plugins.Cache.Internals.Implementations;
+using Mutagen.Bethesda.Plugins.Records;
 
 namespace EnchantedVariantsGenerater
 {
@@ -312,7 +315,7 @@ namespace EnchantedVariantsGenerater
             return false;
         }
 
-        public static LeveledItem GetLeveledList(ImmutableLoadOrderLinkCache linkCache, ISkyrimMod patchMod, string editorID, bool checkExistingGenerated, out bool alreadyExists)
+        public static LeveledItem GetLeveledList(ImmutableLoadOrderLinkCache<ISkyrimMod, ISkyrimModGetter> linkCache, ISkyrimMod patchMod, string editorID, bool checkExistingGenerated, out bool alreadyExists)
         {
             LeveledItem leveledlist;
 
@@ -345,7 +348,7 @@ namespace EnchantedVariantsGenerater
             FormVersion = true,
         };
 
-        public static Weapon GetEnchantedWeapon(ImmutableLoadOrderLinkCache linkCache, ISkyrimMod patchMod, string editorID, bool checkExistingGenerated, out bool alreadyExists, IFormLinkNullable<IObjectEffectGetter> enchantment, IFormLinkNullable<IWeaponGetter> template)
+        public static Weapon GetEnchantedWeapon(ImmutableLoadOrderLinkCache<ISkyrimMod, ISkyrimModGetter> linkCache, ISkyrimMod patchMod, string editorID, bool checkExistingGenerated, out bool alreadyExists, IFormLinkNullable<IObjectEffectGetter> enchantment, IFormLinkNullable<IWeaponGetter> template)
         {
             Weapon weapon;
 
@@ -378,7 +381,7 @@ namespace EnchantedVariantsGenerater
             WorldModel = new GenderedItem<ArmorModel.TranslationMask>(new ArmorModel.TranslationMask(defaultOn: false) { Model = new Model.TranslationMask(false) { } }, new ArmorModel.TranslationMask(defaultOn: false) { Model = new Model.TranslationMask(false) { } })
         };
 
-        public static Armor GetEnchantedArmor(ImmutableLoadOrderLinkCache linkCache, ISkyrimMod patchMod, string editorID, bool checkExistingGenerated, out bool alreadyExists, IFormLinkNullable<IObjectEffectGetter> enchantment, IFormLinkNullable<IArmorGetter> template)
+        public static Armor GetEnchantedArmor(ImmutableLoadOrderLinkCache<ISkyrimMod, ISkyrimModGetter> linkCache, ISkyrimMod patchMod, string editorID, bool checkExistingGenerated, out bool alreadyExists, IFormLinkNullable<IObjectEffectGetter> enchantment, IFormLinkNullable<IArmorGetter> template)
         {
             Armor armor;
 
@@ -400,7 +403,7 @@ namespace EnchantedVariantsGenerater
             return armor;
         }
 
-        public static UnsafeThreadStuff GenerateWeapon(IPatcherState<ISkyrimMod, ISkyrimModGetter> state, Config config, InputThing input, ImmutableLoadOrderLinkCache linkCache)
+        public static UnsafeThreadStuff GenerateWeapon(IPatcherState<ISkyrimMod, ISkyrimModGetter> state, Config config, InputThing input, ImmutableLoadOrderLinkCache<ISkyrimMod, ISkyrimModGetter> linkCache)
         {
             UnsafeThreadStuff stuff = new();
             foreach (var item in input.Weapons.Values)
@@ -421,7 +424,7 @@ namespace EnchantedVariantsGenerater
                 foreach (var enchantmentInfo in input.Enchantments.Values)
                 {
                     var enchanted_item_EditorID = "Ench_" + item.EditorID + "_" + enchantmentInfo.EditorID;
-                    var enchanted_item = GetEnchantedWeapon(linkCache, state.PatchMod, enchanted_item_EditorID, config.CheckExistingGenerated, out var EnchantedItemAlreadyExists, enchantmentInfo.Enchantment.AsNullableLink(), itemGetter.AsNullableLink());
+                    var enchanted_item = GetEnchantedWeapon(linkCache, state.PatchMod, enchanted_item_EditorID, config.CheckExistingGenerated, out var EnchantedItemAlreadyExists, enchantmentInfo.Enchantment.ToNullableLink(), itemGetter.ToNullableLink());
                     var enchanted_item_name = enchantmentInfo.Prefix + itemGetter.Name + enchantmentInfo.Suffix;
 
                     if (!EnchantedItemAlreadyExists)
@@ -600,7 +603,7 @@ namespace EnchantedVariantsGenerater
             return stuff;
         }
 
-        public static UnsafeThreadStuff GenerateArmor(IPatcherState<ISkyrimMod, ISkyrimModGetter> state, Config config, InputThing input, ImmutableLoadOrderLinkCache linkCache)
+        public static UnsafeThreadStuff GenerateArmor(IPatcherState<ISkyrimMod, ISkyrimModGetter> state, Config config, InputThing input, ImmutableLoadOrderLinkCache<ISkyrimMod, ISkyrimModGetter> linkCache)
         {
             UnsafeThreadStuff stuff = new();
             foreach (var item in input.Armors.Values)
@@ -621,7 +624,7 @@ namespace EnchantedVariantsGenerater
                 foreach (var enchantmentInfo in input.Enchantments.Values)
                 {
                     var enchanted_item_EditorID = "Ench_" + item.EditorID + "_" + enchantmentInfo.EditorID;
-                    var enchanted_item = GetEnchantedArmor(linkCache, state.PatchMod, enchanted_item_EditorID, config.CheckExistingGenerated, out var EnchantedItemAlreadyExists, enchantmentInfo.Enchantment.AsNullableLink(), itemGetter.AsNullableLink());
+                    var enchanted_item = GetEnchantedArmor(linkCache, state.PatchMod, enchanted_item_EditorID, config.CheckExistingGenerated, out var EnchantedItemAlreadyExists, enchantmentInfo.Enchantment.ToNullableLink(), itemGetter.ToNullableLink());
                     var enchanted_item_name = enchantmentInfo.Prefix + itemGetter.Name + enchantmentInfo.Suffix;
 
                     if (!EnchantedItemAlreadyExists)
@@ -828,5 +831,6 @@ namespace EnchantedVariantsGenerater
                 }
             }
         } // End of Patching
+
     }
 }
