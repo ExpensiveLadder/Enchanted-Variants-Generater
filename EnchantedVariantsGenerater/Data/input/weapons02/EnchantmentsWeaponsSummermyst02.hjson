@@ -1,0 +1,1316 @@
+{
+	RequiredMods: [
+		"Summermyst - Enchantments of Skyrim.esp"
+	]
+	
+	Enchantments: [
+		{
+			EditorID: "EnchSUMAbsorbArmor02"
+			FormKey: "0510DD:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Electrolysis"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMAbsorbArmor03"
+			FormKey: "0510DE:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Chrome"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMAbsorbArmor04"
+			FormKey: "05111F:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Anodization"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMClumsy02"
+			FormKey: "0511A3:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Clumsiness"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMClumsy03"
+			FormKey: "0511A4:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Twitching"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMClumsy04"
+			FormKey: "051105:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Spasming"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMDrainArmor02"
+			FormKey: "05118F:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Crushing"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMDrainArmor03"
+			FormKey: "051190:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Bending"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMDrainArmor04"
+			FormKey: "051191:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Buckling"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMDrainAttackDamage02"
+			FormKey: "05119E:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Frailty"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMDrainAttackDamage03"
+			FormKey: "0511A0:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Stifling"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMDrainAttackDamage04"
+			FormKey: "0511A1:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Weakness"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMMomentum02"
+			FormKey: "051223:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Dominance"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMMomentum03"
+			FormKey: "051224:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Authority"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMMomentum04"
+			FormKey: "051225:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Superiority"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMShiftingEarth02"
+			FormKey: "051507:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Mud"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMShiftingEarth03"
+			FormKey: "051508:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Clay"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMShiftingEarth04"
+			FormKey: "051214:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of the Land"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMSkyhook02"
+			FormKey: "051420:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Force"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMSkyhook03"
+			FormKey: "051421:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Orbits"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMSkyhook04"
+			FormKey: "051422:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Repulsion"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMThresholdThrow02"
+			FormKey: "0510FE:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Slinging"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMThresholdThrow03"
+			FormKey: "0510FF:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Havoc"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMThresholdThrow04"
+			FormKey: "051198:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Hurling"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMCommandDaedra02"
+			FormKey: "0513E6:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Domination"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMCommandDaedra03"
+			FormKey: "0513E7:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of the Conjurer"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMCommandDaedra04"
+			FormKey: "051179:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of the Coven"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMDischarge02"
+			FormKey: "0511CD:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Shorting"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMDischarge03"
+			FormKey: "0511CE:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Spoliation"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMDischarge04"
+			FormKey: "0511CF:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Depletion"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMBalefire02"
+			FormKey: "0513F9:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Balefire"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMBalefire03"
+			FormKey: "0513FA:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Hellfire"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMBalefire04"
+			FormKey: "0513FB:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Abaddon"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMBattleHunger02"
+			FormKey: "0511F6:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Ire"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMBattleHunger03"
+			FormKey: "0511F7:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Jinxes"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMBattleHunger04"
+			FormKey: "0511F8:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Curses"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMBeaconbound02"
+			FormKey: "05143D:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Azura"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMBeaconbound03"
+			FormKey: "051440:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of the Greybeards"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMBeaconbound04"
+			FormKey: "051441:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Labyrinthian"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMBerserking02"
+			FormKey: "05121A:Summermyst - Enchantments of Skyrim.esp"
+			Prefix: "Executioner's "
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMBerserking03"
+			FormKey: "05121B:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Rage"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMBerserking04"
+			FormKey: "05121C:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Decimation"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMDeathsDoor02"
+			FormKey: "05150C:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of the Threads"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMDeathsDoor03"
+			FormKey: "05150D:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Mortality"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMDeathsDoor04"
+			FormKey: "05150E:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of the Fates"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMDiseaseDamage02"
+			FormKey: "051403:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Bubbling"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMDiseaseDamage03"
+			FormKey: "051404:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Festering"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMDiseaseDamage04"
+			FormKey: "051405:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Seething"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMFireDamageLingering02"
+			FormKey: "0511D8:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Slow Burning"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMFireDamageLingering03"
+			FormKey: "0511D9:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Lingering Fire"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMFireDamageLingering04"
+			FormKey: "0511DA:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Everlasting Fire"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMFrostDamagePiercing02"
+			FormKey: "051200:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Crystals"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMFrostDamagePiercing03"
+			FormKey: "051201:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Fragments"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMFrostDamagePiercing04"
+			FormKey: "051202:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Hail"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMKillstreak02"
+			FormKey: "05120A:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Carnage"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMKillstreak03"
+			FormKey: "05120B:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Butchery"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMKillstreak04"
+			FormKey: "05120C:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Gore"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMMight02"
+			FormKey: "0513F1:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Valor"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMMight03"
+			FormKey: "0513F2:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Muscle"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMMight04"
+			FormKey: "0513F3:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Despotism"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMPoisonDamage02"
+			FormKey: "051230:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Venom"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMPoisonDamage03"
+			FormKey: "051231:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Blight"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMPoisonDamage04"
+			FormKey: "051232:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Rot"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMResonance02"
+			FormKey: "051417:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Harmonies"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMResonance03"
+			FormKey: "051416:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Dirges"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMResonance04"
+			FormKey: "051418:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Elegies"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMShockDamageWild02"
+			FormKey: "0511EB:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Jolts"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMShockDamageWild03"
+			FormKey: "0511EC:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Voltage"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMShockDamageWild04"
+			FormKey: "0511ED:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Surges"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMCounterspell02"
+			FormKey: "051133:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Cancellation"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMCounterspell03"
+			FormKey: "051134:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Grounding"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMCounterspell04"
+			FormKey: "051135:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Frustration"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMDimVision02"
+			FormKey: "0513ED:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Blinding"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMDimVision03"
+			FormKey: "0513EE:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Blackness"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMDimVision04"
+			FormKey: "051189:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Phantoms"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMIllusoryBurden02"
+			FormKey: "0511A8:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Burdens"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMIllusoryBurden03"
+			FormKey: "0511A9:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Weight"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMIllusoryBurden04"
+			FormKey: "0511AA:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Encumbrance"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMKarma02"
+			FormKey: "05112B:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Spite"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMKarma03"
+			FormKey: "05112C:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Retribution"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMKarma04"
+			FormKey: "05112D:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Reckoning"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMSound02"
+			FormKey: "0511B4:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Noise"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMSound03"
+			FormKey: "0511B5:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Annoyance"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMSound04"
+			FormKey: "051151:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Irritation"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMThresholdWail02"
+			FormKey: "0511AF:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Wailing"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMThresholdWail03"
+			FormKey: "0511B0:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Screaming"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMThresholdWail04"
+			FormKey: "0511B1:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Shrieking"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMDampenSkills02"
+			FormKey: "0513E8:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Sorrow"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMDampenSkills03"
+			FormKey: "051454:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Grief"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMDampenSkills04"
+			FormKey: "051455:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Failure"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMHaltRegen02"
+			FormKey: "05116C:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Wasting"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMHaltRegen03"
+			FormKey: "05116D:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Withering"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMHaltRegen04"
+			FormKey: "05116E:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Wilting"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMSunDamage02"
+			FormKey: "051161:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Daylight"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMSunDamage03"
+			FormKey: "051162:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Noon"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMSunDamage04"
+			FormKey: "051163:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Radiance"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMThresholdDeath02"
+			FormKey: "051117:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Culling"
+			EnchantmentAmount: 1000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMThresholdDeath03"
+			FormKey: "051118:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Teeth"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchSUMThresholdDeath04"
+			FormKey: "051125:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Agony"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+			]
+		}
+	]
+}
