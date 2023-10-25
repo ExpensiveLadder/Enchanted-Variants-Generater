@@ -1,0 +1,96 @@
+{
+	RequiredMods: [
+		"Armoury of Tamriel - Seperate Quicksilver.esp"
+	]
+	
+	Armors: [
+		{
+			EditorID: "300ArmorQuicksilverHideCuirass03"
+			FormKey: "000889:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverHideCuirass02"
+			FormKey: "00088A:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverStuddedLeatherCuirass"
+			FormKey: "00088E:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverLeatherCuirassAlt"
+			FormKey: "0008C0:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverHideCuirass01"
+			FormKey: "0008C5:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverHideCuirass"
+			FormKey: "0008D5:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverLeatherCuirass"
+			FormKey: "0008D9:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverBladesCuirass"
+			FormKey: "000923:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverAncientCuirass"
+			FormKey: "000929:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverDremoraCuirass"
+			FormKey: "000933:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverDwemerCuirass"
+			FormKey: "000937:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverDunmerCuirass"
+			FormKey: "00093B:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverNordicBCuirass"
+			FormKey: "000943:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverNordicPlateCuirass"
+			FormKey: "000945:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverOrcishCuirass"
+			FormKey: "000949:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverBasicCuirassPlate"
+			FormKey: "00094C:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverBasicCuirass"
+			FormKey: "00094D:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverDunmerMailCuirass"
+			FormKey: "00094E:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverNordicCuirass"
+			FormKey: "000952:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverOrnateCuirass"
+			FormKey: "000954:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverAltmerCuirassLight"
+			FormKey: "000958:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300DLC2ArmorCSWAPQuicksilverSkaalCuirass"
+			FormKey: "000D60:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+	]
+}

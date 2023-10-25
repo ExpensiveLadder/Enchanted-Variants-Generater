@@ -1,12 +1,15 @@
 {
 	RequiredMods: [
-		"Armoury of Tamriel.esm"
+		"Armoury of Tamriel - Enchantments.esp"
 	]
 	
 	Armors: [
 		{
 			EditorID: "DLC2ArmorNordicShield"
 			FormKey: "026236:Dragonborn.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Seperate Quicksilver.esp"
+			]
 		}
 		{
 			EditorID: "300DLC2ArmorIronSkaalShield"

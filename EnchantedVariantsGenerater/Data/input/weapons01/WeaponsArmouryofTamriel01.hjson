@@ -47,30 +47,51 @@
 		{
 			EditorID: "DLC2NordicBattleaxe"
 			FormKey: "01CDAD:Dragonborn.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Seperate Quicksilver.esp"
+			]
 		}
 		{
 			EditorID: "DLC2NordicDagger"
 			FormKey: "01CDAE:Dragonborn.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Seperate Quicksilver.esp"
+			]
 		}
 		{
 			EditorID: "DLC2NordicGreatsword"
 			FormKey: "01CDAF:Dragonborn.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Seperate Quicksilver.esp"
+			]
 		}
 		{
 			EditorID: "DLC2NordicMace"
 			FormKey: "01CDB0:Dragonborn.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Seperate Quicksilver.esp"
+			]
 		}
 		{
 			EditorID: "DLC2NordicSword"
 			FormKey: "01CDB1:Dragonborn.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Seperate Quicksilver.esp"
+			]
 		}
 		{
 			EditorID: "DLC2NordicWarAxe"
 			FormKey: "01CDB2:Dragonborn.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Seperate Quicksilver.esp"
+			]
 		}
 		{
 			EditorID: "DLC2NordicWarhammer"
 			FormKey: "01CDB3:Dragonborn.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Seperate Quicksilver.esp"
+			]
 		}
 		{
 			EditorID: "300IronAncientBattleAxe"

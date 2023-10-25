@@ -1,0 +1,57 @@
+{
+	RequiredMods: [
+		"Armoury of Tamriel - Seperate Quicksilver.esp"
+	]
+	
+	Armors: [
+		{
+			EditorID: "DLC2ArmorNordicShield"
+			FormKey: "026236:Dragonborn.esm"
+		}		
+		{
+			EditorID: "300ArmorQuicksilverAltmerShield"
+			FormKey: "000917:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverBasicShield"
+			FormKey: "00090F:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverBasicShieldHeavy"
+			FormKey: "0008E3:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverBladesShield"
+			FormKey: "000920:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverDremoraShield"
+			FormKey: "000907:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverDunmerShield"
+			FormKey: "0008FD:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverDwemerShield"
+			FormKey: "000902:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverNordicShield"
+			FormKey: "0008F6:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverOrcishShield"
+			FormKey: "0008EC:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverOrnateShield"
+			FormKey: "0008E7:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverStormCloakShield"
+			FormKey: "0008C6:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+
+	]
+}

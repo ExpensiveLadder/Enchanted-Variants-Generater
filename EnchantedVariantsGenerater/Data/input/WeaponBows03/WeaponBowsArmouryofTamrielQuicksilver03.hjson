@@ -1,0 +1,52 @@
+{
+	RequiredMods: [
+		"Armoury of Tamriel - Seperate Quicksilver.esp"
+	]
+	
+	Weapons: [
+		{
+			EditorID: "DLC2NordicBow"
+			FormKey: "026232:Dragonborn.esm"
+		}
+		{
+			EditorID: "300QuicksilverAltmerBow"
+			FormKey: "00085E:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300QuicksilverAncientBow"
+			FormKey: "00085F:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300QuicksilverBasicBow"
+			FormKey: "00082E:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300QuicksilverDremoraBow"
+			FormKey: "000860:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300QuicksilverDunmerBow"
+			FormKey: "000861:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300QuicksilverDwemerBow"
+			FormKey: "000862:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300QuicksilverImperialBow"
+			FormKey: "000865:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300QuicksilverNordicBow"
+			FormKey: "000835:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300QuicksilverOrcishBow"
+			FormKey: "000863:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300QuicksilverOrnateBow"
+			FormKey: "000864:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+	]
+}

@@ -1,0 +1,88 @@
+{
+	RequiredMods: [
+		"Armoury of Tamriel - Seperate Quicksilver.esp"
+	]
+	
+	Armors: [
+		{
+			EditorID: "300ArmorCSWAPQuicksilverAltmerGauntlets"
+			FormKey: "000926:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverAncientGauntlets"
+			FormKey: "00092A:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverBasicGauntlets"
+			FormKey: "00092D:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverBladesGauntlets"
+			FormKey: "000922:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverDremoraGauntlets"
+			FormKey: "000934:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverDunmerGauntlets"
+			FormKey: "00093C:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverDwemerGauntlets"
+			FormKey: "000938:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverImperialGauntlets"
+			FormKey: "00093F:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverNordicGauntlets"
+			FormKey: "000941:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverNordicPlateGauntlets"
+			FormKey: "000946:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverOrcishGauntlets"
+			FormKey: "00094A:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverOrnateGauntlets"
+			FormKey: "000955:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverHideGauntlets"
+			FormKey: "0008D3:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverHideGauntlets01"
+			FormKey: "0008C4:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverImperialLightGauntlets"
+			FormKey: "0008D0:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverLeatherGauntlets"
+			FormKey: "0008D7:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverStormCloakBearGauntlets"
+			FormKey: "0008CA:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverStormCloakGauntlets"
+			FormKey: "0008CE:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverStuddedLeatherGauntlets"
+			FormKey: "0008DB:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300DLC2ArmorCSWAPQuicksilverSkaalGauntlets"
+			FormKey: "000D61:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+	]
+}

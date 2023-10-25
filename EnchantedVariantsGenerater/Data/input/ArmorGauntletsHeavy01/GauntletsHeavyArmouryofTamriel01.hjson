@@ -1,6 +1,6 @@
 {
 	RequiredMods: [
-		"Armoury of Tamriel.esm"
+		"Armoury of Tamriel - Enchantments.esp"
 	]
 	
 	Armors: [
@@ -11,6 +11,9 @@
 		{
 			EditorID: "DLC2ArmorNordicHeavyGauntlets"
 			FormKey: "01CD98:Dragonborn.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Seperate Quicksilver.esp"
+			]
 		}
 		{
 			EditorID: "ArmorDraugrGauntlets"

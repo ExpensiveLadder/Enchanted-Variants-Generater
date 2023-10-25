@@ -15,6 +15,9 @@
 		{
 			EditorID: "DLC2NordicBow"
 			FormKey: "026232:Dragonborn.esm"
+			BlacklistedMods: [
+				"Armoury of Tamriel - Seperate Quicksilver.esp"
+			]
 		}
 		{
 			EditorID: "300DLC2IronSkaalBow"

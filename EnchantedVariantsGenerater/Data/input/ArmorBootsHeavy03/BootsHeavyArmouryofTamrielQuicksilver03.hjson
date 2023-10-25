@@ -1,0 +1,60 @@
+{
+	RequiredMods: [
+		"Armoury of Tamriel - Seperate Quicksilver.esp"
+	]
+	
+	Armors: [
+		{
+			EditorID: "DLC2ArmorNordicHeavyBoots"
+			FormKey: "01CD96:Dragonborn.esm"
+		}
+		{
+			EditorID: "300ArmorQuicksilverAltmerBoots"
+			FormKey: "00091B:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverAncientBoots"
+			FormKey: "000916:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverBasicBoots"
+			FormKey: "000912:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverBladesBoots"
+			FormKey: "00091C:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverDremoraBoots"
+			FormKey: "00090B:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverDunmerBoots"
+			FormKey: "000901:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverDwemerBoots"
+			FormKey: "000906:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverImperialBoots"
+			FormKey: "0008FC:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverNordicBoots"
+			FormKey: "0008F9:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverNordicPlateBoots"
+			FormKey: "0008F4:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverOrcishBoots"
+			FormKey: "0008F0:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverOrnateBoots"
+			FormKey: "0008EB:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+	]
+}

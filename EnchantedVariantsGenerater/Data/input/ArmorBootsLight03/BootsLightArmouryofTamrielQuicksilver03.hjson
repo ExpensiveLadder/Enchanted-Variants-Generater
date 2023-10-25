@@ -1,0 +1,88 @@
+{
+	RequiredMods: [
+		"Armoury of Tamriel - Seperate Quicksilver.esp"
+	]
+	
+	Armors: [
+		{
+			EditorID: "300ArmorCSWAPQuicksilverAltmerBoots"
+			FormKey: "000925:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverAncientBoots"
+			FormKey: "000928:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverBasicBoots"
+			FormKey: "00092C:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverBladesBoots"
+			FormKey: "000924:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverDremoraBoots"
+			FormKey: "000932:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverDunmerBoots"
+			FormKey: "00093A:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverDwemerBoots"
+			FormKey: "000936:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverImperialBoots"
+			FormKey: "00093E:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverNordicBoots"
+			FormKey: "000940:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverNordicPlateBoots"
+			FormKey: "000944:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverOrcishBoots"
+			FormKey: "000948:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorCSWAPQuicksilverOrnateBoots"
+			FormKey: "000953:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverHideBoots"
+			FormKey: "0008D2:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverHideBoots01"
+			FormKey: "0008C3:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverImperialLightBoots"
+			FormKey: "0008CF:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverLeatherBoots"
+			FormKey: "0008D6:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverStormCloakBearBoots"
+			FormKey: "0008C9:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverStormCloakBoots"
+			FormKey: "0008CD:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300ArmorQuicksilverStuddedLeatherBoots"
+			FormKey: "0008DC:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+		{
+			EditorID: "300DLC2ArmorCSWAPQuicksilverSkaalBoots"
+			FormKey: "000D5F:Armoury of Tamriel - Seperate Quicksilver.esp"
+		}
+	]
+}

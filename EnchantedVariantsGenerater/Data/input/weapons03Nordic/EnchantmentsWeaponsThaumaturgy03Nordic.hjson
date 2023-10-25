@@ -320,5 +320,53 @@
 				}
 			]
 		}
+		{
+			EditorID: "EnchWeaponPoisonDamage05"
+			FormKey: "274612:Thaumaturgy.esp"
+			Suffix: " of the Plague"
+			EnchantmentAmount: 2500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_05"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC05"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponBurden03"
+			FormKey: "204CF9:Thaumaturgy.esp"
+			Suffix: " of Encumbrance"
+			EnchantmentAmount: 1500
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+				}
+			]
+		}
+		{
+			EditorID: "EnchWeaponBurden04"
+			FormKey: "204CFB:Thaumaturgy.esp"
+			Suffix: " of Oppression"
+			EnchantmentAmount: 2000
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+				}
+			]
+		}
 	]
 }
