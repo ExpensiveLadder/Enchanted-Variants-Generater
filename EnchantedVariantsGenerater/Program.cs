@@ -58,11 +58,11 @@ namespace EnchantedVariantsGenerater
                 }
             }
 
-            List<InputJSON> inputs = JSONReader.GetJSONs((Noggog.DirectoryPath)state.ExtraSettingsDataPath, enabledMods);
+            Dictionary<string, InputJSON> inputs = JSONReader.GetJSONs((Noggog.DirectoryPath)state.ExtraSettingsDataPath, enabledMods);
             Dictionary<string, EnchantmentInfo> enchantments = JSONReader.GetEnchantments(inputs);
-            Dictionary<string, GroupInfo> groups = JSONReader.GetGroups(inputs);
+            Dictionary<string, GroupInfo> groups = JSONReader.GetGroups(inputs, enchantments);
 
-
+            //ItemGenerator.GenerateWeapons(state, enchantments, groups);
 
         } // End of Patching
     }

@@ -20,13 +20,12 @@ namespace EnchantedVariantsGenerater
 {
     public class JSONReader
     {
-        public static List<InputJSON> GetJSONs(DirectoryPath path, List<string> modlist)
+        public static Dictionary<string, InputJSON> GetJSONs(DirectoryPath path, List<string> modlist)
         {
             Console.WriteLine("Reading input files");
-            List<InputJSON> jsons = new();
+            Dictionary<string, InputJSON> jsons = new();
             foreach (var filePath in Directory.EnumerateFiles(path, "*.hjson", SearchOption.AllDirectories))
             {
-                Console.WriteLine(filePath);
                 var parsedfile = JsonConvert.DeserializeObject<InputJSON>(HjsonValue.Load(filePath).ToString());
                 if (parsedfile == null)
                 {
@@ -35,7 +34,7 @@ namespace EnchantedVariantsGenerater
                 }
                 if (modlist.Contains(parsedfile.Master))
                 {
-                    jsons.Add(parsedfile);
+                    jsons.Add(filePath, parsedfile);
                 }
                 else
                 {
@@ -45,13 +44,14 @@ namespace EnchantedVariantsGenerater
             return jsons;
         }
 
-        public static Dictionary<string, EnchantmentInfo> GetEnchantments(List<InputJSON> jsons)
+        public static Dictionary<string, EnchantmentInfo> GetEnchantments(Dictionary<string, InputJSON> jsons)
         {
             Dictionary<string, EnchantmentInfo> enchantments = new();
             foreach (var json in jsons)
             {
-                if (json.Enchantments == null) continue;
-                foreach (var enchantment in json.Enchantments)
+                if (json.Value.Enchantments == null) continue;
+                Console.WriteLine("Reading enchantment JSON: " + json.Key);
+                foreach (var enchantment in json.Value.Enchantments)
                 {
                     if (enchantment.FormKey == null)
                     {
@@ -84,13 +84,14 @@ namespace EnchantedVariantsGenerater
             return enchantments;
         }
 
-        public static Dictionary<string, GroupInfo> GetGroups(List<InputJSON> jsons)
+        public static Dictionary<string, GroupInfo> GetGroups(Dictionary<string, InputJSON> jsons, Dictionary<string, EnchantmentInfo> enchantments)
         {
             Dictionary<string, GroupInfo> groups = new();
             foreach (var json in jsons)
             {
-                if (json.Groups == null) continue;
-                foreach (var group in json.Groups)
+                if (json.Value.Groups == null) continue;
+                Console.WriteLine("Reading group JSON: " + json.Key);
+                foreach (var group in json.Value.Groups)
                 {
                     if (group.GroupName == null)
                     {
@@ -142,22 +143,38 @@ namespace EnchantedVariantsGenerater
                                 {
                                     if (leveledlist.RemoveEnchantments != null)
                                     {
-                                        oldleveledlist.Enchantments.RemoveMany(leveledlist.RemoveEnchantments);
+                                        oldleveledlist.Enchantments.Remove(leveledlist.RemoveEnchantments);
                                     }
                                     if (leveledlist.Enchantments != null)
                                     {
-                                        oldleveledlist.Enchantments.Add(leveledlist.Enchantments);
+                                        foreach (var enchantment in leveledlist.Enchantments) {
+
+                                            if (enchantments.ContainsKey(enchantment)) 
+                                            {
+                                                Program.DoError("Leveled List: " + leveledlist.LeveledListPrefix + leveledlist.LeveledListSuffix + " already contains enchantment: " + enchantment);
+                                            } else
+                                            {
+                                                if (enchantments.TryGetValue(enchantment, out var enchantmentdefinition))
+                                                {
+                                                    oldleveledlist.Enchantments.Add(enchantment, enchantmentdefinition);
+                                                }
+                                                else
+                                                {
+                                                    Program.DoError("Could not find enchantment definition: " + enchantment);
+                                                }
+                                            }
+                                        }
                                     }
                                 } else
                                 {
-                                    oldgroup.LeveledLists.Add(leveledlist.LeveledListPrefix + leveledlist.LeveledListSuffix, new LeveledListInfo(leveledlist));
+                                    oldgroup.LeveledLists.Add(leveledlist.LeveledListPrefix + leveledlist.LeveledListSuffix, new LeveledListInfo(leveledlist, enchantments));
                                 }
                             }
                         }
                     }
                     else
                     {
-                        groups.Add(group.GroupName, new GroupInfo(group));
+                        groups.Add(group.GroupName, new GroupInfo(group, enchantments));
                     }
                 }
             }

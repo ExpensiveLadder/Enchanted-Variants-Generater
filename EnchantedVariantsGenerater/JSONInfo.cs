@@ -1,4 +1,5 @@
 ﻿using DynamicData;
+using Mutagen.Bethesda.Oblivion;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
@@ -80,23 +81,29 @@ namespace EnchantedVariantsGenerater
 
     public class LeveledListInfo
     {
-        public LeveledListInfo(LeveledListJSON leveledList)
+        public LeveledListInfo(LeveledListJSON leveledList, Dictionary<string, EnchantmentInfo> enchantments)
         {
             LeveledListPrefix = leveledList.LeveledListPrefix;
             LeveledListSuffix = leveledList.LeveledListSuffix;
             if (leveledList.Enchantments != null)
             {
-                Enchantments.Add(leveledList.Enchantments);
+                foreach (var enchantment in leveledList.Enchantments) {
+                    if (enchantments.TryGetValue(enchantment, out var enchantmentdefinition)) {
+                        Enchantments.Add(enchantment, enchantmentdefinition);
+                    } else {
+                        Program.DoError("Could not find enchantment definition: " + enchantment);
+                    }
+                }
             }
         }
         public string? LeveledListPrefix { get; set; }
         public string? LeveledListSuffix { get; set; }
-        public List<string> Enchantments { get; set; } = new();
+        public Dictionary<string, EnchantmentInfo> Enchantments { get; set; } = new();
     }
 
     public class GroupInfo
     {
-        public GroupInfo(GroupJSON group)
+        public GroupInfo(GroupJSON group, Dictionary<string, EnchantmentInfo> enchantments)
         {
             if (group.Weapons != null)
             {
@@ -131,7 +138,7 @@ namespace EnchantedVariantsGenerater
                         Program.DoError("Leveledlist has null editorID");
                         continue;
                     }
-                    LeveledLists.Add(leveledlist.LeveledListPrefix + leveledlist.LeveledListSuffix, new LeveledListInfo(leveledlist));
+                    LeveledLists.Add(leveledlist.LeveledListPrefix + leveledlist.LeveledListSuffix, new LeveledListInfo(leveledlist, enchantments));
                 }
             }
         }
