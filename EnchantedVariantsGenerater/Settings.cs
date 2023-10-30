@@ -10,5 +10,6 @@ namespace EnchantedVariantsGenerater
     {
         public bool CheckExistingGenerated { get; set; } = true;
         public bool VerboseLogging { get; set; } = false;
+        public bool IgnoreErrors { get; set; } = false;
     }
 }

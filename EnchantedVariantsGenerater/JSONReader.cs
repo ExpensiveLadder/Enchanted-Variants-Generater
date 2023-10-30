@@ -1,5 +1,7 @@
 ﻿using DynamicData;
 using Hjson;
+using Mutagen.Bethesda.Fallout4;
+using Mutagen.Bethesda.Oblivion;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Synthesis;
@@ -18,41 +20,148 @@ namespace EnchantedVariantsGenerater
 {
     public class JSONReader
     {
-        public static List<InputJSON> GetJSONs(DirectoryPath path)
+        public static List<InputJSON> GetJSONs(DirectoryPath path, List<string> modlist)
         {
             Console.WriteLine("Reading input files");
-            List<InputJSON> things = new();
-            foreach (var filePath in Directory.EnumerateFiles(path, "*.hjson", SearchOption.AllDirectories)) {
+            List<InputJSON> jsons = new();
+            foreach (var filePath in Directory.EnumerateFiles(path, "*.hjson", SearchOption.AllDirectories))
+            {
                 Console.WriteLine(filePath);
                 var parsedfile = JsonConvert.DeserializeObject<InputJSON>(HjsonValue.Load(filePath).ToString());
-                if (parsedfile == null) {
-                    Console.WriteLine("ERROR: Could not read HJSON file: " + filePath);
-                } else {
-                    things.Add(parsedfile);
+                if (parsedfile == null)
+                {
+                    Program.DoError("ERROR: Could not read HJSON file: " + filePath);
+                    continue;
+                }
+                if (modlist.Contains(parsedfile.Master))
+                {
+                    jsons.Add(parsedfile);
+                }
+                else
+                {
+                    Console.WriteLine("Skipping HJSON with missing master: " + filePath);
                 }
             }
-            return things;
+            return jsons;
         }
 
-        public static List<InputJSON> SortJSONs(List<InputJSON> unsortedList, List<string> modlist)
+        public static Dictionary<string, EnchantmentInfo> GetEnchantments(List<InputJSON> jsons)
         {
-            //var orderedList = unsortedList.OrderBy(a => a.Master.IndexOf(modlist));
-
-            Console.WriteLine("Unordered Masters List:");
-            foreach (var item in unsortedList) {
-                Console.WriteLine(item.Master);
-            }
-
-            var orderedList = unsortedList.OrderBy(o => modlist.IndexOf(o.Master)).ToList();
-
-            Console.WriteLine("Ordered Masters List:");
-            foreach (var item in orderedList)
+            Dictionary<string, EnchantmentInfo> enchantments = new();
+            foreach (var json in jsons)
             {
-                Console.WriteLine(item.Master);
+                if (json.Enchantments == null) continue;
+                foreach (var enchantment in json.Enchantments)
+                {
+                    if (enchantment.FormKey == null)
+                    {
+                        Program.DoError("Error: " + enchantment.EditorID + " has missing FormKey");
+                        continue;
+                    }
+                    if (enchantment.EditorID == null)
+                    {
+                        Program.DoError("Error: " + enchantment.FormKey + " has missing FormKey");
+                        continue;
+                    }
+                    if (enchantments.TryGetValue(enchantment.EditorID, out var oldenchantment))
+                    {
+                        if (oldenchantment.Prefix != null || oldenchantment.Suffix != null)
+                        {
+                            enchantment.Prefix = oldenchantment.Prefix;
+                            enchantment.Suffix = oldenchantment.Suffix;
+                        }
+                        if (oldenchantment.EnchantmentAmount != null && oldenchantment.EnchantmentAmount != enchantment.EnchantmentAmount)
+                        {
+                            enchantment.EnchantmentAmount = oldenchantment.EnchantmentAmount;
+                        }
+                    }
+                    else
+                    {
+                        enchantments.Add(enchantment.EditorID, new EnchantmentInfo(enchantment));
+                    }
+                }
             }
+            return enchantments;
+        }
 
-            //var orderedList = modlist.Select((s, p) => new { s, p }).ToList();
-            return orderedList;
+        public static Dictionary<string, GroupInfo> GetGroups(List<InputJSON> jsons)
+        {
+            Dictionary<string, GroupInfo> groups = new();
+            foreach (var json in jsons)
+            {
+                if (json.Groups == null) continue;
+                foreach (var group in json.Groups)
+                {
+                    if (group.GroupName == null)
+                    {
+                        Program.DoError("Error: Group has no name");
+                        continue;
+                    }
+
+                    if (groups.TryGetValue(group.GroupName, out var oldgroup))
+                    {
+                        if (oldgroup.Weapons.Any() && group.RemoveWeapons != null)
+                        {
+                            oldgroup.Weapons.Remove(group.RemoveWeapons);
+                        }
+                        if (group.Weapons != null)
+                        {
+                            foreach (var weapon in group.Weapons)
+                            {
+                                if (weapon.EditorID == null)
+                                {
+                                    Program.DoError("Error: Weapon has no editorid");
+                                    continue;
+                                }
+                                oldgroup.Weapons.Add(weapon.EditorID, new ItemInfo(weapon));
+                            }
+                        }
+
+                        if (oldgroup.Armors.Any() && group.RemoveArmors != null)
+                        {
+                            oldgroup.Armors.Remove(group.RemoveArmors);
+                        }
+                        if (group.Armors != null)
+                        {
+                            foreach (var armor in group.Armors)
+                            {
+                                if (armor.EditorID == null)
+                                {
+                                    Program.DoError("Error: Armor has no editorid");
+                                    continue;
+                                }
+                                oldgroup.Armors.Add(armor.EditorID, new ItemInfo(armor));
+                            }
+                        }
+
+                        if (group.LeveledLists != null)
+                        {
+                            foreach (var leveledlist in group.LeveledLists)
+                            {
+                                if (oldgroup.LeveledLists.TryGetValue(leveledlist.LeveledListPrefix + leveledlist.LeveledListSuffix, out var oldleveledlist))
+                                {
+                                    if (leveledlist.RemoveEnchantments != null)
+                                    {
+                                        oldleveledlist.Enchantments.RemoveMany(leveledlist.RemoveEnchantments);
+                                    }
+                                    if (leveledlist.Enchantments != null)
+                                    {
+                                        oldleveledlist.Enchantments.Add(leveledlist.Enchantments);
+                                    }
+                                } else
+                                {
+                                    oldgroup.LeveledLists.Add(leveledlist.LeveledListPrefix + leveledlist.LeveledListSuffix, new LeveledListInfo(leveledlist));
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        groups.Add(group.GroupName, new GroupInfo(group));
+                    }
+                }
+            }
+            return groups;
         }
     }
 }

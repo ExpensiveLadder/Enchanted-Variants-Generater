@@ -4,5 +4,3 @@
 // a specific target and scoped to a namespace, type, member, etc.
 
 using System.Diagnostics.CodeAnalysis;
-
-[assembly: SuppressMessage("Interoperability", "CA1416:Validate platform compatibility", Justification = "<Pending>", Scope = "member", Target = "~M:EnchantedVariantsGenerater.Program.RunPatch(Mutagen.Bethesda.Synthesis.IPatcherState{Mutagen.Bethesda.Skyrim.ISkyrimMod,Mutagen.Bethesda.Skyrim.ISkyrimModGetter})")]

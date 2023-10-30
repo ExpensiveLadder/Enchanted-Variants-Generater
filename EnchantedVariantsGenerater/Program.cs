@@ -10,12 +10,25 @@ using Hjson;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Cache.Internals.Implementations;
 using Mutagen.Bethesda.Plugins.Records;
+using System.Reflection.Metadata;
+using Mutagen.Bethesda.Oblivion;
 
 namespace EnchantedVariantsGenerater
 {
     public class Program
     {
         static Lazy<Settings> Settings = null!;
+
+        public static void DoError(string text) {
+            if (Settings.Value.IgnoreErrors)
+            {
+                Console.WriteLine(text);
+            }
+            else
+            {
+                throw new Exception(text);
+            }
+        }
 
         public static async Task<int> Main(string[] args)
         {
@@ -45,39 +58,12 @@ namespace EnchantedVariantsGenerater
                 }
             }
 
-            List<InputJSON> inputs = JSONReader.GetJSONs((Noggog.DirectoryPath)state.ExtraSettingsDataPath);
+            List<InputJSON> inputs = JSONReader.GetJSONs((Noggog.DirectoryPath)state.ExtraSettingsDataPath, enabledMods);
+            Dictionary<string, EnchantmentInfo> enchantments = JSONReader.GetEnchantments(inputs);
+            Dictionary<string, GroupInfo> groups = JSONReader.GetGroups(inputs);
 
-            var sortedJSONList = JSONReader.SortJSONs(inputs, enabledMods);
 
-            /*
-            var linkcache = state.LoadOrder.ToImmutableLinkCache();
 
-            Console.WriteLine("Running Generator");
-            List<Task<UnsafeThreadStuff>> tasks = new();
-            foreach (var input in inputs)
-            {
-                tasks.Add(Task<UnsafeThreadStuff>.Factory.StartNew(() => GenerateArmor(state, config, input, linkcache)));
-                tasks.Add(Task<UnsafeThreadStuff>.Factory.StartNew(() => GenerateWeapon(state, config, input, linkcache)));
-            }
-            Task.WaitAll(tasks.ToArray());
-            Console.WriteLine("Finishing Up!");
-            foreach(var task in tasks)
-            {
-                foreach(var weapon in task.Result.WeaponsToSet)
-                {
-                    state.PatchMod.Weapons.Set(weapon);
-                }
-                foreach (var armor in task.Result.ArmorToSet)
-                {
-                    state.PatchMod.Armors.Set(armor);
-                }
-                foreach (var leveledlist in task.Result.LeveledListsToSet)
-                {
-                    state.PatchMod.LeveledItems.Set(leveledlist);
-                }
-            }
-            */
         } // End of Patching
-
     }
 }

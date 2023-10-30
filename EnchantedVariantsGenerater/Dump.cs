@@ -13,6 +13,35 @@ using static Mutagen.Bethesda.Plugins.Binary.Processing.BinaryFileProcessor;
 
 namespace EnchantedVariantsGenerater
 {
+
+    /*
+    var linkcache = state.LoadOrder.ToImmutableLinkCache();
+
+    Console.WriteLine("Running Generator");
+    List<Task<UnsafeThreadStuff>> tasks = new();
+    foreach (var input in inputs)
+    {
+        tasks.Add(Task<UnsafeThreadStuff>.Factory.StartNew(() => GenerateArmor(state, config, input, linkcache)));
+        tasks.Add(Task<UnsafeThreadStuff>.Factory.StartNew(() => GenerateWeapon(state, config, input, linkcache)));
+    }
+    Task.WaitAll(tasks.ToArray());
+    Console.WriteLine("Finishing Up!");
+    foreach(var task in tasks)
+    {
+        foreach(var weapon in task.Result.WeaponsToSet)
+        {
+            state.PatchMod.Weapons.Set(weapon);
+        }
+        foreach (var armor in task.Result.ArmorToSet)
+        {
+            state.PatchMod.Armors.Set(armor);
+        }
+        foreach (var leveledlist in task.Result.LeveledListsToSet)
+        {
+            state.PatchMod.LeveledItems.Set(leveledlist);
+        }
+    }
+    */
     /*
     internal class Dump
     {
