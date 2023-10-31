@@ -62,7 +62,7 @@ namespace EnchantedVariantsGenerater
             Dictionary<string, EnchantmentInfo> enchantments = JSONReader.GetEnchantments(inputs);
             Dictionary<string, GroupInfo> groups = JSONReader.GetGroups(inputs, enchantments);
 
-            //ItemGenerator.GenerateWeapons(state, enchantments, groups);
+            WeaponGenerator.GenerateWeapons(state, groups);
 
         } // End of Patching
     }

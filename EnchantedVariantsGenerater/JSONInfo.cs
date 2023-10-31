@@ -1,5 +1,5 @@
 ﻿using DynamicData;
-using Mutagen.Bethesda.Oblivion;
+using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
@@ -55,26 +55,39 @@ namespace EnchantedVariantsGenerater
     {
         public EnchantmentInfo(EnchantmentJSON enchantment)
         {
-            Enchantment = FormKey.Factory(enchantment.FormKey).ToLink<IEffectRecordGetter>();
+            Enchantment = FormKey.Factory(enchantment.FormKey).ToNullableLink<IEffectRecordGetter>();
             EnchantmentAmount = enchantment.EnchantmentAmount;
             Prefix = enchantment.Prefix;
             Suffix = enchantment.Suffix;
         }
-        public IFormLink<IEffectRecordGetter> Enchantment { get; set; }
+        public IFormLinkNullable<IEffectRecordGetter> Enchantment { get; set; }
         public string? Prefix { get; set; }
         public string? Suffix { get; set; }
         public int? EnchantmentAmount { get; set; }
     }
 
-    public class ItemInfo
+    public class WeaponInfo
     {
-        public ItemInfo(ItemJSON item)
+        public WeaponInfo(ItemJSON item)
         {
-            Item = FormKey.Factory(item.FormKey).ToLink<IEffectRecordGetter>();
+            Item = FormKey.Factory(item.FormKey).ToLink<IWeaponGetter>();
             Value = item.Value;
             SetScripts = item.SetScripts;
         }
-        public IFormLink<IEffectRecordGetter> Item { get; set; }
+        public IFormLink<IWeaponGetter> Item { get; set; }
+        public uint? Value { get; set; }
+        public bool SetScripts { get; set; } = true;
+    }
+
+    public class ArmorInfo
+    {
+        public ArmorInfo(ItemJSON item)
+        {
+            Item = FormKey.Factory(item.FormKey).ToLink<IArmorGetter>();
+            Value = item.Value;
+            SetScripts = item.SetScripts;
+        }
+        public IFormLink<IArmorGetter> Item { get; set; }
         public uint? Value { get; set; }
         public bool SetScripts { get; set; } = true;
     }
@@ -114,7 +127,7 @@ namespace EnchantedVariantsGenerater
                         Program.DoError("Weapon has null editorID");
                         continue;
                     }
-                    Weapons.Add(weapon.EditorID, new ItemInfo(weapon));
+                    Weapons.Add(weapon.EditorID, new WeaponInfo(weapon));
                 }
             }
             if (group.Armors != null)
@@ -126,7 +139,7 @@ namespace EnchantedVariantsGenerater
                         Program.DoError("Armor has null editorID");
                         continue;
                     }
-                    Weapons.Add(armor.EditorID, new ItemInfo(armor));
+                    Armors.Add(armor.EditorID, new ArmorInfo(armor));
                 }
             }
             if (group.LeveledLists != null)
@@ -143,7 +156,7 @@ namespace EnchantedVariantsGenerater
             }
         }
         public Dictionary<string, LeveledListInfo> LeveledLists { get; set; } = new();
-        public Dictionary<string, ItemInfo> Armors { get; set; } = new();
-        public Dictionary<string, ItemInfo> Weapons { get; set; } = new();
+        public Dictionary<string, ArmorInfo> Armors { get; set; } = new();
+        public Dictionary<string, WeaponInfo> Weapons { get; set; } = new();
     }
 }

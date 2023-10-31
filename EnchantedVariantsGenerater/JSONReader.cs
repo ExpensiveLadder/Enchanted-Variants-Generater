@@ -34,13 +34,14 @@ namespace EnchantedVariantsGenerater
                 }
                 if (modlist.Contains(parsedfile.Master))
                 {
-                    jsons.Add(filePath, parsedfile);
+                    jsons.Add(filePath.ToString().Replace(path, ""), parsedfile);
                 }
                 else
                 {
                     Console.WriteLine("Skipping HJSON with missing master: " + filePath);
                 }
             }
+            jsons = jsons.OrderBy(o => modlist.IndexOf(o.Value.Master)).ToDictionary();
             return jsons;
         }
 
@@ -114,7 +115,7 @@ namespace EnchantedVariantsGenerater
                                     Program.DoError("Error: Weapon has no editorid");
                                     continue;
                                 }
-                                oldgroup.Weapons.Add(weapon.EditorID, new ItemInfo(weapon));
+                                oldgroup.Weapons.Add(weapon.EditorID, new WeaponInfo(weapon));
                             }
                         }
 
@@ -131,7 +132,7 @@ namespace EnchantedVariantsGenerater
                                     Program.DoError("Error: Armor has no editorid");
                                     continue;
                                 }
-                                oldgroup.Armors.Add(armor.EditorID, new ItemInfo(armor));
+                                oldgroup.Armors.Add(armor.EditorID, new ArmorInfo(armor));
                             }
                         }
 
