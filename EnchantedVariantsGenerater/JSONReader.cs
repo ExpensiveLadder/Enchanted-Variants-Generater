@@ -1,20 +1,13 @@
-﻿using DynamicData;
-using Hjson;
-using Mutagen.Bethesda.Fallout4;
-using Mutagen.Bethesda.Oblivion;
+﻿using Hjson;
+using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
-using Mutagen.Bethesda.Synthesis;
 using Newtonsoft.Json;
 using Noggog;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static Mutagen.Bethesda.Plugins.Binary.Processing.BinaryFileProcessor;
 
 namespace EnchantedVariantsGenerater
 {
@@ -54,11 +47,6 @@ namespace EnchantedVariantsGenerater
                 Console.WriteLine("Reading enchantment JSON: " + json.Key);
                 foreach (var enchantment in json.Value.Enchantments)
                 {
-                    if (enchantment.FormKey == null)
-                    {
-                        Program.DoError("Error: " + enchantment.EditorID + " has missing FormKey");
-                        continue;
-                    }
                     if (enchantment.EditorID == null)
                     {
                         Program.DoError("Error: " + enchantment.FormKey + " has missing FormKey");
@@ -75,9 +63,18 @@ namespace EnchantedVariantsGenerater
                         {
                             enchantment.EnchantmentAmount = oldenchantment.EnchantmentAmount;
                         }
+                        if (enchantment.FormKey != null && FormKey.Factory(enchantment.FormKey) != oldenchantment.Enchantment.FormKey)
+                        {
+                            oldenchantment.Enchantment = FormKey.Factory(enchantment.FormKey).ToNullableLink<IEffectRecordGetter>();
+                        }
                     }
                     else
                     {
+                        if (enchantment.FormKey == null)
+                        {
+                            Program.DoError("Error: " + enchantment.EditorID + " has missing FormKey");
+                            continue;
+                        }
                         enchantments.Add(enchantment.EditorID, new EnchantmentInfo(enchantment));
                     }
                 }
@@ -102,9 +99,16 @@ namespace EnchantedVariantsGenerater
 
                     if (groups.TryGetValue(group.GroupName, out var oldgroup))
                     {
+                        Console.WriteLine("Group: " + group.GroupName + " already exists");
+
                         if (oldgroup.Weapons.Any() && group.RemoveWeapons != null)
                         {
-                            oldgroup.Weapons.Remove(group.RemoveWeapons);
+                            foreach (var weapon in group.RemoveWeapons) {
+                                if (oldgroup.Weapons.ContainsKey(weapon)) {
+                                    Console.WriteLine("Removing Weapon: " + weapon + " from Group: " + group.GroupName);
+                                    oldgroup.Weapons.Remove(weapon);
+                                }
+                            }
                         }
                         if (group.Weapons != null)
                         {
@@ -121,7 +125,14 @@ namespace EnchantedVariantsGenerater
 
                         if (oldgroup.Armors.Any() && group.RemoveArmors != null)
                         {
-                            oldgroup.Armors.Remove(group.RemoveArmors);
+                            foreach (var armor in group.RemoveArmors)
+                            {
+                                if (oldgroup.Armors.ContainsKey(armor))
+                                {
+                                    Console.WriteLine("Removing Armor: " + armor + " from Group: " + group.GroupName);
+                                    oldgroup.Armors.Remove(armor);
+                                }
+                            }
                         }
                         if (group.Armors != null)
                         {
@@ -142,17 +153,25 @@ namespace EnchantedVariantsGenerater
                             {
                                 if (oldgroup.LeveledLists.TryGetValue(leveledlist.LeveledListPrefix + leveledlist.LeveledListSuffix, out var oldleveledlist))
                                 {
+                                    Console.WriteLine("Leveled List: " + leveledlist.LeveledListPrefix + leveledlist.LeveledListSuffix + " already exists in group: " + group.GroupName);
                                     if (leveledlist.RemoveEnchantments != null)
                                     {
-                                        oldleveledlist.Enchantments.Remove(leveledlist.RemoveEnchantments);
+                                        foreach (var enchantment in leveledlist.RemoveEnchantments)
+                                        {
+                                            if (oldleveledlist.Enchantments.ContainsKey(enchantment))
+                                            {
+                                                Console.WriteLine("Removing Enchantment: " + enchantment + "from Leveled List: " + leveledlist.LeveledListPrefix + leveledlist.LeveledListSuffix + " in Group: " + group.GroupName);
+                                                oldleveledlist.Enchantments.Remove(enchantment);
+                                            }
+                                        }
                                     }
                                     if (leveledlist.Enchantments != null)
                                     {
                                         foreach (var enchantment in leveledlist.Enchantments) {
 
-                                            if (enchantments.ContainsKey(enchantment)) 
+                                            if (oldleveledlist.Enchantments.ContainsKey(enchantment)) 
                                             {
-                                                Program.DoError("Leveled List: " + leveledlist.LeveledListPrefix + leveledlist.LeveledListSuffix + " already contains enchantment: " + enchantment);
+                                                Program.DoError("Leveled List: " + leveledlist.LeveledListPrefix + leveledlist.LeveledListSuffix + " in group: " + group.GroupName + " already contains enchantment: " + enchantment);
                                             } else
                                             {
                                                 if (enchantments.TryGetValue(enchantment, out var enchantmentdefinition))
@@ -175,6 +194,7 @@ namespace EnchantedVariantsGenerater
                     }
                     else
                     {
+                        Console.WriteLine("Creating Group: " + group.GroupName);
                         groups.Add(group.GroupName, new GroupInfo(group, enchantments));
                     }
                 }

@@ -40,7 +40,8 @@ namespace EnchantedVariantsGenerater
         public string? EditorID { get; set; }
         public uint? Value { get; set; }
         public bool SetScripts { get; set; } = true;
-    }
+        public string? Name { get; set; }
+}
 
     public class EnchantmentJSON
     {
@@ -56,14 +57,14 @@ namespace EnchantedVariantsGenerater
         public EnchantmentInfo(EnchantmentJSON enchantment)
         {
             Enchantment = FormKey.Factory(enchantment.FormKey).ToNullableLink<IEffectRecordGetter>();
-            EnchantmentAmount = enchantment.EnchantmentAmount;
+            EnchantmentAmount = (ushort?)enchantment.EnchantmentAmount;
             Prefix = enchantment.Prefix;
             Suffix = enchantment.Suffix;
         }
         public IFormLinkNullable<IEffectRecordGetter> Enchantment { get; set; }
         public string? Prefix { get; set; }
         public string? Suffix { get; set; }
-        public int? EnchantmentAmount { get; set; }
+        public ushort? EnchantmentAmount { get; set; }
     }
 
     public class WeaponInfo
@@ -73,10 +74,12 @@ namespace EnchantedVariantsGenerater
             Item = FormKey.Factory(item.FormKey).ToLink<IWeaponGetter>();
             Value = item.Value;
             SetScripts = item.SetScripts;
+            Name = item.Name;
         }
         public IFormLink<IWeaponGetter> Item { get; set; }
         public uint? Value { get; set; }
         public bool SetScripts { get; set; } = true;
+        public string? Name { get; set; }
     }
 
     public class ArmorInfo
@@ -86,10 +89,12 @@ namespace EnchantedVariantsGenerater
             Item = FormKey.Factory(item.FormKey).ToLink<IArmorGetter>();
             Value = item.Value;
             SetScripts = item.SetScripts;
+            Name = item.Name;
         }
         public IFormLink<IArmorGetter> Item { get; set; }
         public uint? Value { get; set; }
         public bool SetScripts { get; set; } = true;
+        public string? Name { get; set; }
     }
 
     public class LeveledListInfo

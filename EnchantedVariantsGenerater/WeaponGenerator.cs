@@ -3,6 +3,7 @@ using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins.Records;
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Synthesis;
+using Noggog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +19,8 @@ namespace EnchantedVariantsGenerater
             ObjectEffect = true,
             EnchantmentAmount = true,
             Name = true,
-            BasicStats = new WeaponBasicStats.TranslationMask(false) {
+            BasicStats = new WeaponBasicStats.TranslationMask(false)
+            {
                 Value = true
             },
             VirtualMachineAdapter = true,
@@ -37,18 +39,25 @@ namespace EnchantedVariantsGenerater
                         Console.WriteLine("Reading Weapon: " + weaponInfo.Key);
 
                         uint itemvalue;
-                        if (weaponInfo.Value.Value != null && weaponInfo.Value.Value > 0) {
+                        if (weaponInfo.Value.Value != null && weaponInfo.Value.Value >= 0)
+                        {
                             itemvalue = (uint)weaponInfo.Value.Value;
-                        } else {
-                            if (weaponGetter.BasicStats == null) {
+                        }
+                        else
+                        {
+                            if (weaponGetter.BasicStats == null)
+                            {
                                 itemvalue = 0;
-                            } else {
+                            }
+                            else
+                            {
                                 itemvalue = weaponGetter.BasicStats.Value;
                             }
                         }
 
                         VirtualMachineAdapter? scripts = null;
-                        if (weaponGetter.VirtualMachineAdapter != null) {
+                        if (weaponGetter.VirtualMachineAdapter != null)
+                        {
                             scripts = weaponGetter.VirtualMachineAdapter.DeepCopy();
                         }
 
@@ -57,29 +66,38 @@ namespace EnchantedVariantsGenerater
                             string leveledlisteditorid = leveledlistInfo.LeveledListPrefix + weaponInfo.Key + leveledlistInfo.LeveledListSuffix;
                             Console.WriteLine("Reading Leveled List: " + leveledlisteditorid);
 
+                            ExtendedList<LeveledItemEntry>? oldleveledlist = null;
                             LeveledItem leveledlist;
-                            if (state.LinkCache.TryResolve<ILeveledItemGetter>(leveledlisteditorid, out var leveledlistGetter))
+                            if (state.LinkCache.TryResolveIdentifier<ILeveledItemGetter>(leveledlisteditorid, out var leveledlistGetter))
                             {
-                                leveledlist = leveledlistGetter.DeepCopy();
-                            } else {
-                                Console.WriteLine("Creating leveled list: " + leveledlisteditorid);
-                                leveledlist = new LeveledItem(state.PatchMod, leveledlisteditorid);
+                                leveledlist = state.LinkCache.Resolve<ILeveledItemGetter>(leveledlistGetter).DeepCopy();
+                                oldleveledlist = leveledlist.Entries;
+                                leveledlist.EditorID = leveledlisteditorid;
+                                leveledlist.Entries = new();
                             }
-                            bool copyleveledlist = false;
+                            else
+                            {
+                                Console.WriteLine("Creating leveled list: " + leveledlisteditorid);
+                                leveledlist = new LeveledItem(state.PatchMod, leveledlisteditorid)
+                                {
+                                    Entries = new()
+                                };
+                            }
 
-                            foreach (var enchantmentInfo in leveledlistInfo.Enchantments) {
+                            foreach (var enchantmentInfo in leveledlistInfo.Enchantments)
+                            {
                                 string enchanteditemeditorid = "Ench_" + weaponInfo.Key + "_" + enchantmentInfo.Key;
                                 Console.WriteLine("Reading Enchanted Weapon: " + enchanteditemeditorid);
 
                                 string enchanteditemname = enchantmentInfo.Value.Prefix + weaponGetter.Name + enchantmentInfo.Value.Suffix;
-                                ushort? enchantmentamount = (ushort?)enchantmentInfo.Value.EnchantmentAmount;
+                                ushort? enchantmentamount = enchantmentInfo.Value.EnchantmentAmount;
 
                                 Weapon enchanteditem;
-                                if (state.LinkCache.TryResolve<IWeaponGetter>(enchanteditemeditorid, out var enchantedWeaponGetter))
+                                if (state.LinkCache.TryResolveIdentifier<IWeaponGetter>(enchanteditemeditorid, out var enchantedWeaponGetter))
                                 {
                                     Console.WriteLine("Reading Enchanted Weapon Override: " + enchanteditemeditorid);
                                     bool copyitem = false;
-                                    enchanteditem = enchantedWeaponGetter.ToLink().Resolve(state.LinkCache).DeepCopy(weapontranslationmask);
+                                    enchanteditem = state.LinkCache.Resolve<IWeaponGetter>(enchantedWeaponGetter).DeepCopy(weapontranslationmask);
 
                                     if (enchanteditem.EnchantmentAmount != enchantmentamount)
                                     {
@@ -97,16 +115,23 @@ namespace EnchantedVariantsGenerater
                                         enchanteditem.BasicStats.Value = itemvalue;
                                         copyitem = true;
                                     }
-                                    if (scripts == null) {
-                                        if (enchanteditem.VirtualMachineAdapter != null) {
+                                    if (scripts == null)
+                                    {
+                                        if (enchanteditem.VirtualMachineAdapter != null)
+                                        {
                                             enchanteditem.VirtualMachineAdapter = null;
                                             copyitem = true;
                                         }
-                                    } else {
-                                        if (enchanteditem.VirtualMachineAdapter == null) {
+                                    }
+                                    else
+                                    {
+                                        if (enchanteditem.VirtualMachineAdapter == null)
+                                        {
                                             enchanteditem.VirtualMachineAdapter = scripts;
                                             copyitem = true;
-                                        } else {
+                                        }
+                                        else
+                                        {
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
                                             if (!scripts.GetEqualsMask(enchanteditem.VirtualMachineAdapter).Scripts.Overall)
                                             {
@@ -116,6 +141,11 @@ namespace EnchantedVariantsGenerater
 #pragma warning restore CS8602 // Dereference of a possibly null reference.
                                         }
                                     }
+                                    if (enchanteditem.ObjectEffect != enchantmentInfo.Value.Enchantment)
+                                    {
+                                        enchanteditem.ObjectEffect = enchantmentInfo.Value.Enchantment;
+                                        copyitem = true;
+                                    }
 
                                     if (copyitem)
                                     {
@@ -123,14 +153,15 @@ namespace EnchantedVariantsGenerater
                                         enchanteditem.EditorID = enchanteditemeditorid;
                                         state.PatchMod.Weapons.Set(enchanteditem);
                                     }
-                                } 
-                                else 
+                                }
+                                else
                                 {
                                     Console.WriteLine("Creating Enchanted Weapon: " + enchanteditemeditorid);
                                     enchanteditem = new Weapon(state.PatchMod, enchanteditemeditorid)
-                                    {   
+                                    {
                                         Name = enchanteditemname,
-                                        BasicStats = new WeaponBasicStats() {
+                                        BasicStats = new WeaponBasicStats()
+                                        {
                                             Value = itemvalue
                                         },
                                         ObjectEffect = enchantmentInfo.Value.Enchantment,
@@ -140,34 +171,25 @@ namespace EnchantedVariantsGenerater
                                     state.PatchMod.Weapons.Set(enchanteditem);
                                 }
 
-                                leveledlist.Entries ??= new();
-
-                                bool duplicate = true;
-                                foreach (var entry in leveledlist.Entries) {
-                                    if (entry.Data == null) continue;
-                                    if (entry.Data.Reference.FormKey == enchanteditem.FormKey)
-                                    {
-                                        Console.WriteLine("Enchanted Weapon: " + enchanteditemeditorid + " already exists in Leveled List: " + leveledlisteditorid);
-                                        duplicate = false;
-                                        break;
-                                    }
-                                }
-                                if (duplicate)
+                                leveledlist.Entries.Add(new LeveledItemEntry()
                                 {
-                                    Console.WriteLine("Adding Enchanted Weapon: " + enchanteditemeditorid + " to Leveled List: " + leveledlisteditorid);
-                                    leveledlist.Entries.Add(new LeveledItemEntry()
+                                    Data = new LeveledItemEntryData()
                                     {
-                                        Data = new LeveledItemEntryData()
-                                        {
-                                            Count = 1,
-                                            Level = 1,
-                                            Reference = enchanteditem.ToLink()
-                                        }
-                                    });
-                                    copyleveledlist = true;
+                                        Count = 1,
+                                        Level = 1,
+                                        Reference = enchanteditem.ToLink()
+                                    }
+                                });
+                            }
+                            if (oldleveledlist != null)
+                            {
+                                if (!LeveledListComparer.AreLeveledListsEqual(leveledlist.Entries, oldleveledlist))
+                                {
+                                    Console.WriteLine("Setting Leveled List: " + leveledlisteditorid);
+                                    state.PatchMod.LeveledItems.Set(leveledlist);
                                 }
                             }
-                            if (copyleveledlist)
+                            else
                             {
                                 state.PatchMod.LeveledItems.Set(leveledlist);
                             }
