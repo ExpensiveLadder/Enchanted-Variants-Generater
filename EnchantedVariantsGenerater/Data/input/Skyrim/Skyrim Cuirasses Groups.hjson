@@ -1,0 +1,381 @@
+{
+	Master: "Skyrim.esm"
+	Groups: [
+		{
+			GroupName: "CuirassesHeavy1to3"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+					Enchantments: [
+						"EnchArmorFortifyAlteration01"
+						"EnchArmorFortifyConjuration01"
+						"EnchArmorFortifyDestruction01"
+						"EnchArmorFortifyIllusion01"
+						"EnchArmorFortifyRestoration01"
+						"EnchArmorFortifyHealth01"
+						"EnchArmorFortifyHeavyArmor01"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorFortifyAlteration02"
+						"EnchArmorFortifyConjuration02"
+						"EnchArmorFortifyDestruction02"
+						"EnchArmorFortifyIllusion02"
+						"EnchArmorFortifyRestoration02"
+						"EnchArmorFortifyHealth02"
+						"EnchArmorFortifyHeavyArmor02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyAlteration03"
+						"EnchArmorFortifyConjuration03"
+						"EnchArmorFortifyDestruction03"
+						"EnchArmorFortifyIllusion03"
+						"EnchArmorFortifyRestoration03"
+						"EnchArmorFortifyHealth03"
+						"EnchArmorFortifyHeavyArmor03"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "CuirassesHeavy2to4"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorFortifyAlteration02"
+						"EnchArmorFortifyConjuration02"
+						"EnchArmorFortifyDestruction02"
+						"EnchArmorFortifyIllusion02"
+						"EnchArmorFortifyRestoration02"
+						"EnchArmorFortifyHealth02"
+						"EnchArmorFortifyHeavyArmor02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyAlteration03"
+						"EnchArmorFortifyConjuration03"
+						"EnchArmorFortifyDestruction03"
+						"EnchArmorFortifyIllusion03"
+						"EnchArmorFortifyRestoration03"
+						"EnchArmorFortifyHealth03"
+						"EnchArmorFortifyHeavyArmor03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyAlteration04"
+						"EnchArmorFortifyConjuration04"
+						"EnchArmorFortifyDestruction04"
+						"EnchArmorFortifyIllusion04"
+						"EnchArmorFortifyRestoration04"
+						"EnchArmorFortifyHealth04"
+						"EnchArmorFortifyHeavyArmor04"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "CuirassesHeavy3to5"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyAlteration03"
+						"EnchArmorFortifyConjuration03"
+						"EnchArmorFortifyDestruction03"
+						"EnchArmorFortifyIllusion03"
+						"EnchArmorFortifyRestoration03"
+						"EnchArmorFortifyHealth03"
+						"EnchArmorFortifyHeavyArmor03"
+						"EnchArmorFortifyHealRate03"
+						"EnchArmorFortifyStaminaRate03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyAlteration04"
+						"EnchArmorFortifyConjuration04"
+						"EnchArmorFortifyDestruction04"
+						"EnchArmorFortifyIllusion04"
+						"EnchArmorFortifyRestoration04"
+						"EnchArmorFortifyHealth04"
+						"EnchArmorFortifyHeavyArmor04"
+						"EnchArmorFortifyHealRate04"
+						"EnchArmorFortifyStaminaRate04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchArmorFortifyAlteration05"
+						"EnchArmorFortifyConjuration05"
+						"EnchArmorFortifyDestruction05"
+						"EnchArmorFortifyIllusion05"
+						"EnchArmorFortifyRestoration05"
+						"EnchArmorFortifyHealth05"
+						"EnchArmorFortifyHeavyArmor05"
+						"EnchArmorFortifyHealRate05"
+						"EnchArmorFortifyStaminaRate05"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "CuirassesHeavy4to6"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyAlteration04"
+						"EnchArmorFortifyConjuration04"
+						"EnchArmorFortifyDestruction04"
+						"EnchArmorFortifyIllusion04"
+						"EnchArmorFortifyRestoration04"
+						"EnchArmorFortifyHealth04"
+						"EnchArmorFortifyHeavyArmor04"
+						"EnchArmorFortifyHealRate04"
+						"EnchArmorFortifyStaminaRate04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchArmorFortifyAlteration05"
+						"EnchArmorFortifyConjuration05"
+						"EnchArmorFortifyDestruction05"
+						"EnchArmorFortifyIllusion05"
+						"EnchArmorFortifyRestoration05"
+						"EnchArmorFortifyHealth05"
+						"EnchArmorFortifyHeavyArmor05"
+						"EnchArmorFortifyHealRate05"
+						"EnchArmorFortifyStaminaRate05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+					Enchantments: [
+						"EnchArmorFortifyAlteration06"
+						"EnchArmorFortifyConjuration06"
+						"EnchArmorFortifyDestruction06"
+						"EnchArmorFortifyIllusion06"
+						"EnchArmorFortifyRestoration06"
+						"EnchArmorFortifyHealth06"
+						"EnchArmorFortifyHeavyArmor06"
+						"EnchArmorFortifyHealRate06"
+						"EnchArmorFortifyStaminaRate06"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "CuirassesLight1to3"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+					Enchantments: [
+						"EnchArmorFortifyAlteration01"
+						"EnchArmorFortifyConjuration01"
+						"EnchArmorFortifyDestruction01"
+						"EnchArmorFortifyIllusion01"
+						"EnchArmorFortifyRestoration01"
+						"EnchArmorFortifyHealth01"
+						"EnchArmorFortifyLightArmor01"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorFortifyAlteration02"
+						"EnchArmorFortifyConjuration02"
+						"EnchArmorFortifyDestruction02"
+						"EnchArmorFortifyIllusion02"
+						"EnchArmorFortifyRestoration02"
+						"EnchArmorFortifyHealth02"
+						"EnchArmorFortifyLightArmor02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyAlteration03"
+						"EnchArmorFortifyConjuration03"
+						"EnchArmorFortifyDestruction03"
+						"EnchArmorFortifyIllusion03"
+						"EnchArmorFortifyRestoration03"
+						"EnchArmorFortifyHealth03"
+						"EnchArmorFortifyLightArmor03"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "CuirassesLight2to4"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorFortifyAlteration02"
+						"EnchArmorFortifyConjuration02"
+						"EnchArmorFortifyDestruction02"
+						"EnchArmorFortifyIllusion02"
+						"EnchArmorFortifyRestoration02"
+						"EnchArmorFortifyHealth02"
+						"EnchArmorFortifyLightArmor02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyAlteration03"
+						"EnchArmorFortifyConjuration03"
+						"EnchArmorFortifyDestruction03"
+						"EnchArmorFortifyIllusion03"
+						"EnchArmorFortifyRestoration03"
+						"EnchArmorFortifyHealth03"
+						"EnchArmorFortifyLightArmor03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyAlteration04"
+						"EnchArmorFortifyConjuration04"
+						"EnchArmorFortifyDestruction04"
+						"EnchArmorFortifyIllusion04"
+						"EnchArmorFortifyRestoration04"
+						"EnchArmorFortifyHealth04"
+						"EnchArmorFortifyLightArmor04"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "CuirassesLight3to5"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyAlteration03"
+						"EnchArmorFortifyConjuration03"
+						"EnchArmorFortifyDestruction03"
+						"EnchArmorFortifyIllusion03"
+						"EnchArmorFortifyRestoration03"
+						"EnchArmorFortifyHealth03"
+						"EnchArmorFortifyLightArmor03"
+						"EnchArmorFortifyHealRate03"
+						"EnchArmorFortifyStaminaRate03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyAlteration04"
+						"EnchArmorFortifyConjuration04"
+						"EnchArmorFortifyDestruction04"
+						"EnchArmorFortifyIllusion04"
+						"EnchArmorFortifyRestoration04"
+						"EnchArmorFortifyHealth04"
+						"EnchArmorFortifyLightArmor04"
+						"EnchArmorFortifyHealRate04"
+						"EnchArmorFortifyStaminaRate04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchArmorFortifyAlteration05"
+						"EnchArmorFortifyConjuration05"
+						"EnchArmorFortifyDestruction05"
+						"EnchArmorFortifyIllusion05"
+						"EnchArmorFortifyRestoration05"
+						"EnchArmorFortifyHealth05"
+						"EnchArmorFortifyLightArmor05"
+						"EnchArmorFortifyHealRate05"
+						"EnchArmorFortifyStaminaRate05"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "CuirassesLight4to6"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyAlteration04"
+						"EnchArmorFortifyConjuration04"
+						"EnchArmorFortifyDestruction04"
+						"EnchArmorFortifyIllusion04"
+						"EnchArmorFortifyRestoration04"
+						"EnchArmorFortifyHealth04"
+						"EnchArmorFortifyLightArmor04"
+						"EnchArmorFortifyHealRate04"
+						"EnchArmorFortifyStaminaRate04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchArmorFortifyAlteration05"
+						"EnchArmorFortifyConjuration05"
+						"EnchArmorFortifyDestruction05"
+						"EnchArmorFortifyIllusion05"
+						"EnchArmorFortifyRestoration05"
+						"EnchArmorFortifyHealth05"
+						"EnchArmorFortifyLightArmor05"
+						"EnchArmorFortifyHealRate05"
+						"EnchArmorFortifyStaminaRate05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+					Enchantments: [
+						"EnchArmorFortifyAlteration06"
+						"EnchArmorFortifyConjuration06"
+						"EnchArmorFortifyDestruction06"
+						"EnchArmorFortifyIllusion06"
+						"EnchArmorFortifyRestoration06"
+						"EnchArmorFortifyHealth06"
+						"EnchArmorFortifyLightArmor06"
+						"EnchArmorFortifyHealRate06"
+						"EnchArmorFortifyStaminaRate06"
+					]
+				}
+			]
+		}
+	]
+}

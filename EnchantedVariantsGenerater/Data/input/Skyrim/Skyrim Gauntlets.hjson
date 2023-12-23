@@ -1,0 +1,136 @@
+{
+	Groups: [
+	{
+		GroupName: "GauntletsHeavy1to3"
+		Armors: [
+		{
+			EditorID: "ArmorIronGauntlets"
+			FormKey: "012E46:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorSteelGauntletsA"
+			FormKey: "013953:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorSteelGauntletsB"
+			FormKey: "0F6F23:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorImperialGauntlets"
+			FormKey: "0136D4:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorBonemoldGauntlets"
+			FormKey: "01CD94:Dragonborn.esm"
+		}
+		]
+	}
+	{
+		GroupName: "GauntletsHeavy2to4"
+		Armors: [
+		{
+			EditorID: "ArmorDwarvenGauntlets"
+			FormKey: "01394E:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorSteelPlateGauntlets"
+			FormKey: "01395D:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorChitinHeavyGauntlets"
+			FormKey: "01CD8B:Dragonborn.esm"
+		}
+		]
+	}
+	{
+		GroupName: "GauntletsHeavy3to5"
+		Armors: [
+		{
+			EditorID: "ArmorOrcishGauntlets"
+			FormKey: "013958:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorNordicHeavyGauntlets"
+			FormKey: "01CD98:Dragonborn.esm"
+		}
+		{
+			EditorID: "ArmorEbonyGauntlets"
+			FormKey: "013962:Skyrim.esm"
+		}
+		]
+	}
+	{
+		GroupName: "GauntletsHeavy4to6"
+		Armors: [
+		{
+			EditorID: "DLC2ArmorStalhrimHeavyGauntlets"
+			FormKey: "01CDA0:Dragonborn.esm"
+		}
+		{
+			EditorID: "ArmorDaedricGauntlets"
+			FormKey: "01396C:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorDragonplateGauntlets"
+			FormKey: "013967:Skyrim.esm"
+		}
+		]
+	}
+	{
+		GroupName: "GauntletsLight1to3"
+		Armors: [
+		{
+			EditorID: "ArmorHideGauntlets"
+			FormKey: "013912:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorLeatherGauntlets"
+			FormKey: "013921:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorImperialLightGauntlets"
+			FormKey: "013EDA:Skyrim.esm"
+		}
+		]
+	}
+	{
+		GroupName: "GauntletsLight2to4"
+		Armors: [
+		{
+			EditorID: "ArmorElvenGauntlets"
+			FormKey: "01391C:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorScaledGauntlets"
+			FormKey: "01B3A0:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorChitinLightGauntlets"
+			FormKey: "01CD88:Dragonborn.esm"
+		}
+		]
+	}
+	{
+		GroupName: "GauntletsLight3to5"
+		Armors: [
+		{
+			EditorID: "ArmorGlassGauntlets"
+			FormKey: "01393A:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorStalhrimLightGauntlets"
+			FormKey: "01CDA5:Dragonborn.esm"
+		}
+		]
+	}
+	{
+		GroupName: "GauntletsLight4to6"
+		Armors: [
+		{
+			EditorID: "ArmorDragonscaleGauntlets"
+			FormKey: "01393F:Skyrim.esm"
+		}
+		]
+	}
+	]
+}

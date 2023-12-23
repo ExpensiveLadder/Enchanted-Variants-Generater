@@ -1,0 +1,275 @@
+{
+	Master: "Thaumaturgy.esp"
+	Enchantments: [
+		{
+			EditorID: "EnchArmorFortifyHealRate01"
+			FormKey: "10CF26:Skyrim.esm"
+			Suffix: " of Minor Mending"
+		}
+		{
+			EditorID: "EnchArmorWaterwalking"
+			FormKey: "0EDD13:Thaumaturgy.esp"
+			Suffix: " of Waterwalking"
+		}
+		{
+			EditorID: "EnchArmorSlowfall"
+			FormKey: "12ABF9:Thaumaturgy.esp"
+			Suffix: " of the Acrobat"
+		}
+		{
+			EditorID: "EnchArmorFortifySneakAttacks01"
+			FormKey: "19F7BB:Thaumaturgy.esp"
+			Suffix: " of the Minor Assassin"
+		}
+		{
+			EditorID: "EnchArmorFortifySneakAttacks02"
+			FormKey: "19F7BC:Thaumaturgy.esp"
+			Suffix: " of the Minor Assassin"
+		}
+		{
+			EditorID: "EnchArmorFortifySneakAttacks03"
+			FormKey: "19F7BD:Thaumaturgy.esp"
+			Suffix: " of the Assassin"
+		}
+		{
+			EditorID: "EnchArmorFortifySneakAttacks04"
+			FormKey: "19F7BE:Thaumaturgy.esp"
+			Suffix: " of the Major Assassin"
+		}
+		{
+			EditorID: "EnchArmorFortifySneakAttacks05"
+			FormKey: "19F7BF:Thaumaturgy.esp"
+			Suffix: " of the Peerless Assassin"
+		}
+		{
+			EditorID: "EnchArmorFortifySneakAttacks06"
+			FormKey: "1BDEB6:Thaumaturgy.esp"
+			Suffix: " of the Peerless Assassin"
+		}
+		{
+			EditorID: "EnchArmorFortifyUnarmed01"
+			FormKey: "10A06B:Skyrim.esm"
+			Suffix: " of the Minor Pugilist"
+		}
+		{
+			EditorID: "EnchArmorFortifyUnarmed02"
+			FormKey: "03765F:Thaumaturgy.esp"
+			Suffix: " of the Pugilist"
+		}
+		{
+			EditorID: "EnchArmorFortifyUnarmed03"
+			FormKey: "037660:Thaumaturgy.esp"
+			Suffix: " of the Major Pugilist"
+		}
+		{
+			EditorID: "EnchArmorFortifyUnarmed04"
+			FormKey: "1BDEB6:Thaumaturgy.esp"
+			Suffix: " of the Peerless Pugilist"
+		}
+		{
+			EditorID: "EnchArmorResistPoison01"
+			FormKey: "100E5D:Skyrim.esm"
+			Suffix: " of Minor Poison Resistance"
+		}
+		{
+			EditorID: "EnchArmorResistPoison02"
+			FormKey: "100E5E:Skyrim.esm"
+			Suffix: " of Minor Poison Resistance"
+		}
+		{
+			EditorID: "EnchArmorResistPoison03"
+			FormKey: "00ED16:Thaumaturgy.esp"
+			Suffix: " of Poison Resistance"
+		}
+		{
+			EditorID: "EnchArmorResistPoison04"
+			FormKey: "00ED17:Thaumaturgy.esp"
+			Suffix: " of Major Poison Resistance"
+		}
+		{
+			EditorID: "EnchArmorResistPoison05"
+			FormKey: "00ED18:Thaumaturgy.esp"
+			Suffix: " of Peerless Poison Resistance"
+		}
+		{
+			EditorID: "EnchArmorResistPoison06"
+			FormKey: "00ED19:Thaumaturgy.esp"
+			Suffix: " of Peerless Poison Resistance"
+		}
+		{
+			EditorID: "EnchArmorFortifyPowerAttacks01"
+			FormKey: "19F7AF:Thaumaturgy.esp"
+			Suffix: " of the Minor Barbarian"
+		}
+		{
+			EditorID: "EnchArmorFortifyPowerAttacks02"
+			FormKey: "19F7B0:Thaumaturgy.esp"
+			Suffix: " of the Minor Barbarian"
+		}
+		{
+			EditorID: "EnchArmorFortifyPowerAttacks03"
+			FormKey: "19F7B1:Thaumaturgy.esp"
+			Suffix: " of the Barbarian"
+		}
+		{
+			EditorID: "EnchArmorFortifyPowerAttacks03"
+			FormKey: "19F7B1:Thaumaturgy.esp"
+			Suffix: " of the Barbarian"
+		}
+		{
+			EditorID: "EnchArmorFortifyPowerAttacks04"
+			FormKey: "19F7B2:Thaumaturgy.esp"
+			Suffix: " of the Major Barbarian"
+		}
+		{
+			EditorID: "EnchArmorFortifyPowerAttacks05"
+			FormKey: "19F7B3:Thaumaturgy.esp"
+			Suffix: " of the Peerless Barbarian"
+		}
+		{
+			EditorID: "EnchArmorFortifyPowerAttacks06"
+			FormKey: "19F7B4:Thaumaturgy.esp"
+			Suffix: " of the Peerless Barbarian"
+		}
+		{
+			EditorID: "EnchArmorFortifyShouts01"
+			FormKey: "0D01C3:Thaumaturgy.esp"
+			Suffix: " of the Minor Voice"
+		}
+		{
+			EditorID: "EnchArmorFortifyShouts02"
+			FormKey: "0D01C4:Thaumaturgy.esp"
+			Suffix: " of the Voice"
+		}
+		{
+			EditorID: "EnchArmorFortifyShouts03"
+			FormKey: "0D01C5:Thaumaturgy.esp"
+			Suffix: " of the Major Voice"
+		}
+		{
+			EditorID: "EnchArmorFortifyShouts04"
+			FormKey: "0D01C6:Thaumaturgy.esp"
+			Suffix: " of the Peerless Voice"
+		}
+		{
+			EditorID: "EnchArmorFortifyShoutDuration01"
+			FormKey: "2141BA:Thaumaturgy.esp"
+			Suffix: " of the Minor Voice"
+		}
+		{
+			EditorID: "EnchArmorFortifyShoutDuration02"
+			FormKey: "2141BC:Thaumaturgy.esp"
+			Suffix: " of the Voice"
+		}
+		{
+			EditorID: "EnchArmorFortifyShoutDuration03"
+			FormKey: "2141BE:Thaumaturgy.esp"
+			Suffix: " of the Major Voice"
+		}
+		{
+			EditorID: "EnchArmorFortifyShoutDuration04"
+			FormKey: "2141C0:Thaumaturgy.esp"
+			Suffix: " of the Peerless Voice"
+		}
+		{
+			EditorID: "EnchArmorFortifyBash02"
+			FormKey: "1FFBE6:Thaumaturgy.esp"
+			Suffix: " of the Minor Phalanx"
+		}
+		{
+			EditorID: "EnchArmorFortifyBash03"
+			FormKey: "1FFBE7:Thaumaturgy.esp"
+			Suffix: " of the Phalanx"
+		}
+		{
+			EditorID: "EnchArmorFortifyBash04"
+			FormKey: "1FFBE9:Thaumaturgy.esp"
+			Suffix: " of the Major Phalanx"
+		}
+		{
+			EditorID: "EnchArmorFortifyBash05"
+			FormKey: "1FFBEB:Thaumaturgy.esp"
+			Suffix: " of the Peerless Phalanx"
+		}
+		{
+			EditorID: "EnchArmorResistArrowDamage02"
+			FormKey: "26524D:Thaumaturgy.esp"
+			Suffix: " of Minor Discipline"
+		}
+		{
+			EditorID: "EnchArmorResistArrowDamage03"
+			FormKey: "26524E:Thaumaturgy.esp"
+			Suffix: " of Discipline"
+		}
+		{
+			EditorID: "EnchArmorResistArrowDamage04"
+			FormKey: "265250:Thaumaturgy.esp"
+			Suffix: " of Major Discipline"
+		}
+		{
+			EditorID: "EnchArmorResistArrowDamage05"
+			FormKey: "265252:Thaumaturgy.esp"
+			Suffix: " of Peerless Discipline"
+		}
+		{
+			EditorID: "EnchArmorResistPowerAttackDamage02"
+			FormKey: "265268:Thaumaturgy.esp"
+			Suffix: " of Minor Determination"
+		}
+		{
+			EditorID: "EnchArmorResistPowerAttackDamage03"
+			FormKey: "26526A:Thaumaturgy.esp"
+			Suffix: " of Determination"
+		}
+		{
+			EditorID: "EnchArmorResistPowerAttackDamage04"
+			FormKey: "26526C:Thaumaturgy.esp"
+			Suffix: " of Major Determination"
+		}
+		{
+			EditorID: "EnchArmorResistPowerAttackDamage05"
+			FormKey: "26526E:Thaumaturgy.esp"
+			Suffix: " of Peerless Determination"
+		}
+		{
+			EditorID: "EnchArmorResistSpellDamage02"
+			FormKey: "26525C:Thaumaturgy.esp"
+			Suffix: " of Minor Delection"
+		}
+		{
+			EditorID: "EnchArmorResistSpellDamage03"
+			FormKey: "26525D:Thaumaturgy.esp"
+			Suffix: " of Delection"
+		}
+		{
+			EditorID: "EnchArmorResistSpellDamage04"
+			FormKey: "26525F:Thaumaturgy.esp"
+			Suffix: " of Major Delection"
+		}
+		{
+			EditorID: "EnchArmorResistSpellDamage05"
+			FormKey: "265261:Thaumaturgy.esp"
+			Suffix: " of Peerless Delection"
+		}
+		{
+			EditorID: "EnchArmorResistStagger01"
+			FormKey: "209F70:Thaumaturgy.esp"
+			Suffix: " of Minor Poise"
+		}
+		{
+			EditorID: "EnchArmorResistStagger02"
+			FormKey: "209F71:Thaumaturgy.esp"
+			Suffix: " of Poise"
+		}
+		{
+			EditorID: "EnchArmorResistStagger03"
+			FormKey: "2CA74C:Thaumaturgy.esp"
+			Suffix: " of Major Poise"
+		}
+		{
+			EditorID: "EnchArmorResistStagger04"
+			FormKey: "2CA74E:Thaumaturgy.esp"
+			Suffix: " of Peerless Poise"
+		}
+	]
+}

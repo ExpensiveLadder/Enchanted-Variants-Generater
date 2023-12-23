@@ -1,0 +1,209 @@
+{
+	Master: "Thaumaturgy.esp"
+	Groups: [
+		{
+			GroupName: "Helmets1to3"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+					Enchantments: [
+						"EnchArmorFortifyHealth01"
+						"EnchArmorFortifyBlock01"
+						"EnchArmorFortifySpeechcraft01"
+						"EnchArmorFortifySmithing01"
+						"EnchArmorFortifyHeavyArmor01"
+						"EnchArmorFortifyPowerAttacks01"
+						"EnchArmorFortifyShouts01"
+						"EnchArmorFortifyHealRate01"
+						"EnchArmorFortifyStaminaRate01"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorFortifyHealth02"
+						"EnchArmorFortifyBlock02"
+						"EnchArmorFortifySpeechcraft02"
+						"EnchArmorFortifySmithing02"
+						"EnchArmorFortifyHeavyArmor02"
+						"EnchArmorFortifyPowerAttacks02"
+						"EnchArmorFortifyShouts02"
+						"EnchArmorFortifyHealRate02"
+						"EnchArmorFortifyStaminaRate02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyHealth03"
+						"EnchArmorFortifyBlock03"
+						"EnchArmorFortifySpeechcraft03"
+						"EnchArmorFortifySmithing03"
+						"EnchArmorFortifyHeavyArmor03"
+						"EnchArmorFortifyPowerAttacks03"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "Helmets2to4"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorFortifyHealth02"
+						"EnchArmorFortifyBlock02"
+						"EnchArmorFortifySpeechcraft02"
+						"EnchArmorFortifySmithing02"
+						"EnchArmorFortifyHeavyArmor02"
+						"EnchArmorFortifyPowerAttacks02"
+						"EnchArmorFortifyShouts02"
+						"EnchArmorFortifyHealRate02"
+						"EnchArmorFortifyStaminaRate02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyHealth03"
+						"EnchArmorFortifyBlock03"
+						"EnchArmorFortifySpeechcraft03"
+						"EnchArmorFortifySmithing03"
+						"EnchArmorFortifyHeavyArmor03"
+						"EnchArmorFortifyPowerAttacks03"
+						"EnchArmorFortifyShouts03"
+						"EnchArmorFortifyHealRate03"
+						"EnchArmorFortifyStaminaRate03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyHealth03"
+						"EnchArmorFortifyBlock03"
+						"EnchArmorFortifySpeechcraft03"
+						"EnchArmorFortifySmithing03"
+						"EnchArmorFortifyHeavyArmor03"
+						"EnchArmorFortifyPowerAttacks03"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "Helmets3to5"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyHealth03"
+						"EnchArmorFortifyBlock03"
+						"EnchArmorFortifySpeechcraft03"
+						"EnchArmorFortifySmithing03"
+						"EnchArmorFortifyHeavyArmor03"
+						"EnchArmorFortifyPowerAttacks03"
+						"EnchArmorFortifyShouts03"
+						"EnchArmorFortifyHealRate03"
+						"EnchArmorFortifyStaminaRate03"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMagickaRate03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyHealth04"
+						"EnchArmorFortifyBlock04"
+						"EnchArmorFortifySpeechcraft04"
+						"EnchArmorFortifySmithing04"
+						"EnchArmorFortifyHeavyArmor04"
+						"EnchArmorFortifyPowerAttacks04"
+						"EnchArmorFortifyShouts04"
+						"EnchArmorFortifyHealRate04"
+						"EnchArmorFortifyStaminaRate04"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMagickaRate04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchArmorFortifyHealth05"
+						"EnchArmorFortifyBlock05"
+						"EnchArmorFortifySpeechcraft05"
+						"EnchArmorFortifySmithing05"
+						"EnchArmorFortifyHeavyArmor05"
+						"EnchArmorFortifyPowerAttacks05"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMagickaRate05"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "Helmets4to6"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyHealth04"
+						"EnchArmorFortifyBlock04"
+						"EnchArmorFortifySpeechcraft04"
+						"EnchArmorFortifySmithing04"
+						"EnchArmorFortifyHeavyArmor04"
+						"EnchArmorFortifyPowerAttacks04"
+						"EnchArmorFortifyShouts04"
+						"EnchArmorFortifyHealRate04"
+						"EnchArmorFortifyStaminaRate04"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMagickaRate04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchArmorFortifyHealth05"
+						"EnchArmorFortifyBlock05"
+						"EnchArmorFortifySpeechcraft05"
+						"EnchArmorFortifySmithing05"
+						"EnchArmorFortifyHeavyArmor05"
+						"EnchArmorFortifyPowerAttacks05"
+						"EnchArmorFortifyHealRate05"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMagickaRate05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+					Enchantments: [
+						"EnchArmorFortifyHealth06"
+						"EnchArmorFortifyBlock06"
+						"EnchArmorFortifySpeechcraft06"
+						"EnchArmorFortifySmithing06"
+						"EnchArmorFortifyHeavyArmor06"
+						"EnchArmorFortifyPowerAttacks06"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMagickaRate06"
+					]
+				}
+			]
+		}
+	]
+}

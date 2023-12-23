@@ -1,0 +1,311 @@
+{
+	Master: "Thaumaturgy.esp"
+	Enchantments: [
+		{
+			EditorID: "EnchWeaponDamageWeapon01"
+			FormKey: "130641:Thaumaturgy.esp"
+			Suffix: " of Lesser Disintegration"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchWeaponDamageWeapon02"
+			FormKey: "130642:Thaumaturgy.esp"
+			Suffix: " of Disintegration"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchWeaponDamageWeapon03"
+			FormKey: "130643:Thaumaturgy.esp"
+			Suffix: " of Greater Disintegration"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchWeaponDamageWeapon04"
+			FormKey: "130644:Thaumaturgy.esp"
+			Suffix: " of Grand Disintegration"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchWeaponPoisonDamage01"
+			FormKey: "1305FD:Thaumaturgy.esp"
+			Suffix: " of Poison"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchWeaponPoisonDamage02"
+			FormKey: "130621:Thaumaturgy.esp"
+			Suffix: " of Venom"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchWeaponPoisonDamage03"
+			FormKey: "130622:Thaumaturgy.esp"
+			Suffix: " of the Serpent"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchWeaponPoisonDamage04"
+			FormKey: "130623:Thaumaturgy.esp"
+			Suffix: " of the Viper"
+			EnchantmentAmount: 2000
+		}	
+		{
+			EditorID: "EnchWeaponPoisonDamage05"
+			FormKey: "274612:Thaumaturgy.esp"
+			Suffix: " of the Plague"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchWeaponSunDamage01"
+			FormKey: "130626:Thaumaturgy.esp"
+			Suffix: " of Daylight"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchWeaponSunDamage02"
+			FormKey: "130627:Thaumaturgy.esp"
+			Suffix: " of Daylight"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchWeaponSunDamage03"
+			FormKey: "130628:Thaumaturgy.esp"
+			Suffix: " of Sunlight"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchWeaponSunDamage04"
+			FormKey: "130629:Thaumaturgy.esp"
+			Suffix: " of Radiance"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchWeaponSunDamage05"
+			FormKey: "13062A:Thaumaturgy.esp"
+			Suffix: " of Aetherius"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchWeaponSunDamage06"
+			FormKey: "13062B:Thaumaturgy.esp"
+			Suffix: " of Aetherius"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchWeaponFrenzy01"
+			FormKey: "130653:Thaumaturgy.esp"
+			Suffix: " of Frenzy"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchWeaponFrenzy02"
+			FormKey: "130654:Thaumaturgy.esp"
+			Suffix: " of Frenzy"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchWeaponFrenzy03"
+			FormKey: "130655:Thaumaturgy.esp"
+			Suffix: " of Fury"
+			EnchantmentAmount: 1500
+		}		
+		{
+			EditorID: "EnchWeaponFrenzy04"
+			FormKey: "130656:Thaumaturgy.esp"
+			Suffix: " of Rage"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchWeaponFrenzy05"
+			FormKey: "130657:Thaumaturgy.esp"
+			Suffix: " of Wrath"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchWeaponFrenzy06"
+			FormKey: "130658:Thaumaturgy.esp"
+			Suffix: " of Wrath"
+			EnchantmentAmount: 300
+		}
+		{
+			EditorID: "EnchWeaponSilence01"
+			FormKey: "FFF83D:Thaumaturgy.esp"
+			Suffix: " of Silence"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchWeaponSilence02"
+			FormKey: "FFF83E:Thaumaturgy.esp"
+			Suffix: " of Silence"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchWeaponSilence03"
+			FormKey: "FFF83F:Thaumaturgy.esp"
+			Suffix: " of Suppression"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchWeaponSilence04"
+			FormKey: "FFF840:Thaumaturgy.esp"
+			Suffix: " of Tranquility"
+			EnchantmentAmount: 2000
+		}		
+		{
+			EditorID: "EnchWeaponSilence05"
+			FormKey: "FFF841:Thaumaturgy.esp"
+			Suffix: " of Quietude"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchWeaponSilence06"
+			FormKey: "FFF842:Thaumaturgy.esp"
+			Suffix: " of Quietude"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchWeaponWeaknessToFire01"
+			FormKey: "13062D:Thaumaturgy.esp"
+			Suffix: " of Lesser Weakness to Fire"
+			EnchantmentAmount: 500
+		}		
+		{
+			EditorID: "EnchWeaponWeaknessToFire02"
+			FormKey: "13062E:Thaumaturgy.esp"
+			Suffix: " of Weakness to Fire"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchWeaponWeaknessToFire03"
+			FormKey: "13062F:Thaumaturgy.esp"
+			Suffix: " of Greater Weakness to Fire"
+			EnchantmentAmount: 1500
+		}		
+		{
+			EditorID: "EnchWeaponWeaknessToFire04"
+			FormKey: "130630:Thaumaturgy.esp"
+			Suffix: " of Grand Weakness to Fire"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchWeaponWeaknessToFrost01"
+			FormKey: "130632:Thaumaturgy.esp"
+			Suffix: " of Lesser Weakness to Frost"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchWeaponWeaknessToFrost02"
+			FormKey: "130633:Thaumaturgy.esp"
+			Suffix: " of Weakness to Frost"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchWeaponWeaknessToFrost03"
+			FormKey: "130634:Thaumaturgy.esp"
+			Suffix: " of Greater Weakness to Frost"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchWeaponWeaknessToFrost04"
+			FormKey: "130635:Thaumaturgy.esp"
+			Suffix: " of Grand Weakness to Frost"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchWeaponWeaknessToShock01"
+			FormKey: "130637:Thaumaturgy.esp"
+			Suffix: " of Lesser Weakness to Shock"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchWeaponWeaknessToShock02"
+			FormKey: "130638:Thaumaturgy.esp"
+			Suffix: " of Weakness to Shock"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchWeaponWeaknessToShock03"
+			FormKey: "130639:Thaumaturgy.esp"
+			Suffix: " of Greater Weakness to Shock"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchWeaponWeaknessToShock04"
+			FormKey: "13063A:Thaumaturgy.esp"
+			Suffix: " of Grand Weakness to Shock"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchWeaponWeaknessToPoison01"
+			FormKey: "13063C:Thaumaturgy.esp"
+			Suffix: " of Lesser Weakness to Poison"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchWeaponWeaknessToPoison02"
+			FormKey: "13063D:Thaumaturgy.esp"
+			Suffix: " of Weakness to Poison"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchWeaponWeaknessToPoison03"
+			FormKey: "13063E:Thaumaturgy.esp"
+			Suffix: " of Greater Weakness to Poison"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchWeaponWeaknessToPoison04"
+			FormKey: "13063F:Thaumaturgy.esp"
+			Suffix: " of Grand Weakness to Poison"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchWeaponBurden01"
+			FormKey: "204CF6:Thaumaturgy.esp"
+			Suffix: " of Burden"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchWeaponBurden02"
+			FormKey: "204CF7:Thaumaturgy.esp"
+			Suffix: " of Hinderance"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchWeaponBurden03"
+			FormKey: "204CF9:Thaumaturgy.esp"
+			Suffix: " of Encumbrance"
+			EnchantmentAmount: 1500
+		}		
+		{
+			EditorID: "EnchWeaponBurden04"
+			FormKey: "204CFB:Thaumaturgy.esp"
+			Suffix: " of Oppression"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchWeaponDamageArmor02"
+			FormKey: "130647:Thaumaturgy.esp"
+			Suffix: " of Corrosion"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchWeaponDamageArmor03"
+			FormKey: "130648:Thaumaturgy.esp"
+			Suffix: " of Corrosion"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchWeaponDamageArmor04"
+			FormKey: "130649:Thaumaturgy.esp"
+			Suffix: " of Greater Corrosion"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchWeaponDamageArmor05"
+			FormKey: "13064B:Thaumaturgy.esp"
+			Suffix: " of Grand Corrosion"
+			EnchantmentAmount: 2500
+		}
+	]
+}

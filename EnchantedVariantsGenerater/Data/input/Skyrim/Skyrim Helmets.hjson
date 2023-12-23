@@ -1,0 +1,116 @@
+{
+	Groups: [
+	{
+		GroupName: "Helmets1to3"
+		Armors: [
+		{
+			EditorID: "ArmorIronHelmet"
+			FormKey: "012E4D:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorSteelHelmetA"
+			FormKey: "013954:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorSteelHelmetB"
+			FormKey: "0F6F24:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorImperialHelmet"
+			FormKey: "013EDC:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorBonemoldHelmet"
+			FormKey: "01CD95:Dragonborn.esm"
+		}
+		{
+			EditorID: "ArmorHideHelmet"
+			FormKey: "013913:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorLeatherHelmet"
+			FormKey: "013922:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorImperialLightHelmet"
+			FormKey: "013EDB:Skyrim.esm"
+		}
+		]
+	}
+	{
+		GroupName: "Helmets2to4"
+		Armors: [
+		{
+			EditorID: "ArmorDwarvenHelmet"
+			FormKey: "01394F:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorSteelPlateHelmet"
+			FormKey: "01395E:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorChitinHeavyHelmet"
+			FormKey: "01CD8C:Dragonborn.esm"
+		}
+		{
+			EditorID: "ArmorElvenHelmet"
+			FormKey: "01391D:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorScaledHelmet"
+			FormKey: "01B3A1:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorChitinLightHelmet"
+			FormKey: "01CD89:Dragonborn.esm"
+		}
+		]
+	}
+	{
+		GroupName: "Helmets3to5"
+		Armors: [
+		{
+			EditorID: "ArmorOrcishHelmet"
+			FormKey: "013959:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorNordicHeavyHelmet"
+			FormKey: "01CD99:Dragonborn.esm"
+		}
+		{
+			EditorID: "ArmorEbonyHelmet"
+			FormKey: "013963:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorGlassHelmet"
+			FormKey: "01393B:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorStalhrimLightHelmet"
+			FormKey: "01CDA3:Dragonborn.esm"
+		}
+		]
+	}
+	{
+		GroupName: "Helmets4to6"
+		Armors: [
+		{
+			EditorID: "DLC2ArmorStalhrimHeavyHelmet"
+			FormKey: "01CDA1:Dragonborn.esm"
+		}
+		{
+			EditorID: "ArmorDaedricHelmet"
+			FormKey: "01396D:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorDragonplateHelmet"
+			FormKey: "013969:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorDragonscaleHelmet"
+			FormKey: "013940:Skyrim.esm"
+		}
+		]
+	}
+	]
+}

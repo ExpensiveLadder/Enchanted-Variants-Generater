@@ -1,0 +1,825 @@
+{
+	Master: "Skyrim.esm"
+	Enchantments: [
+		{
+			EditorID: "EnchArmorFortifyHealth01"
+			FormKey: "049509:Skyrim.esm"
+			Suffix: " of Minor Health"
+		}
+		{
+			EditorID: "EnchArmorFortifyHealth02"
+			FormKey: "0AD461:Skyrim.esm"
+			Suffix: " of Health"
+		}
+		{
+			EditorID: "EnchArmorFortifyHealth03"
+			FormKey: "0AD462:Skyrim.esm"
+			Suffix: " of Major Health"
+		}
+		{
+			EditorID: "EnchArmorFortifyHealth04"
+			FormKey: "0BDFFC:Skyrim.esm"
+			Suffix: " of Eminent Health"
+		}
+		{
+			EditorID: "EnchArmorFortifyHealth05"
+			FormKey: "0BDFFD:Skyrim.esm"
+			Suffix: " of Extreme Health"
+		}
+		{
+			EditorID: "EnchArmorFortifyHealth06"
+			FormKey: "0BDFFE:Skyrim.esm"
+			Suffix: " of Peerless Health"
+		}
+		{
+			EditorID: "EnchArmorFortifyStamina01"
+			FormKey: "04950A:Skyrim.esm"
+			Suffix: " of Minor Stamina"
+		}		
+		{
+			EditorID: "EnchArmorFortifyStamina02"
+			FormKey: "0AD47D:Skyrim.esm"
+			Suffix: " of Stamina"
+		}
+		{
+			EditorID: "EnchArmorFortifyStamina03"
+			FormKey: "0AD47E:Skyrim.esm"
+			Suffix: " of Major Stamina"
+		}
+		{
+			EditorID: "EnchArmorFortifyStamina04"
+			FormKey: "0BE021:Skyrim.esm"
+			Suffix: " of Eminent Stamina"
+		}
+		{
+			EditorID: "EnchArmorFortifyStamina05"
+			FormKey: "0BE022:Skyrim.esm"
+			Suffix: " of Extreme Stamina"
+		}
+		{
+			EditorID: "EnchArmorFortifyStamina06"
+			FormKey: "0BE023:Skyrim.esm"
+			Suffix: " of Peerless Stamina"
+		}
+		{
+			EditorID: "EnchArmorFortifyMagicka01"
+			FormKey: "049508:Skyrim.esm"
+			Suffix: " of Minor Magicka"
+		}
+		{
+			EditorID: "EnchArmorFortifyMagicka02"
+			FormKey: "0AD46B:Skyrim.esm"
+			Suffix: " of Magicka"
+		}
+		{
+			EditorID: "EnchArmorFortifyMagicka03"
+			FormKey: "0AD46C:Skyrim.esm"
+			Suffix: " of Major Magicka"
+		}
+		{
+			EditorID: "EnchArmorFortifyMagicka04"
+			FormKey: "0B7A31:Skyrim.esm"
+			Suffix: " of Eminent Magicka"
+		}
+		{
+			EditorID: "EnchArmorFortifyMagicka05"
+			FormKey: "0B7A32:Skyrim.esm"
+			Suffix: " of Extreme Magicka"
+		}
+		{
+			EditorID: "EnchArmorFortifyMagicka06"
+			FormKey: "0B7A33:Skyrim.esm"
+			Suffix: " of Peerless Magicka"
+		}
+		{
+			EditorID: "EnchArmorFortifyCarry01"
+			FormKey: "07A109:Skyrim.esm"
+			Suffix: " of Lifting"
+		}		
+		{
+			EditorID: "EnchArmorFortifyCarry02"
+			FormKey: "0AD44C:Skyrim.esm"
+			Suffix: " of Hauling"
+		}
+		{
+			EditorID: "EnchArmorFortifyCarry03"
+			FormKey: "0AD44D:Skyrim.esm"
+			Suffix: " of Strength"
+		}
+		{
+			EditorID: "EnchArmorFortifyCarry04"
+			FormKey: "0AD44E:Skyrim.esm"
+			Suffix: " of Brawn"
+		}
+		{
+			EditorID: "EnchArmorFortifyCarry05"
+			FormKey: "0AD44F:Skyrim.esm"
+			Suffix: " of the Ox"
+		}
+		{
+			EditorID: "EnchArmorFortifyCarry06"
+			FormKey: "0AD450:Skyrim.esm"
+			Suffix: " of the Mammoth"
+		}
+		{
+			EditorID: "EnchArmorFortifyAlteration01"
+			FormKey: "07A107:Skyrim.esm"
+			Suffix: " of Minor Alteration"
+		}
+		{
+			EditorID: "EnchArmorFortifyAlteration02"
+			FormKey: "0AD49F:Skyrim.esm"
+			Suffix: " of Alteration"
+		}
+		{
+			EditorID: "EnchArmorFortifyAlteration03"
+			FormKey: "0AD4A0:Skyrim.esm"
+			Suffix: " of Major Alteration"
+		}
+		{
+			EditorID: "EnchArmorFortifyAlteration04"
+			FormKey: "0BE037:Skyrim.esm"
+			Suffix: " of Eminent Alteration"
+		}		
+		{
+			EditorID: "EnchArmorFortifyAlteration05"
+			FormKey: "0BE038:Skyrim.esm"
+			Suffix: " of Extreme Alteration"
+		}
+		{
+			EditorID: "EnchArmorFortifyAlteration06"
+			FormKey: "0BE039:Skyrim.esm"
+			Suffix: " of Peerless Alteration"
+		}
+		{
+			EditorID: "EnchArmorFortifyConjuration01"
+			FormKey: "07A10A:Skyrim.esm"
+			Suffix: " of Minor Conjuring"
+		}
+		{
+			EditorID: "EnchArmorFortifyConjuration02"
+			FormKey: "0AD453:Skyrim.esm"
+			Suffix: " of Conjuring"
+		}
+		{
+			EditorID: "EnchArmorFortifyConjuration03"
+			FormKey: "0AD454:Skyrim.esm"
+			Suffix: " of Major Conjuring"
+		}
+		{
+			EditorID: "EnchArmorFortifyConjuration04"
+			FormKey: "0AD455:Skyrim.esm"
+			Suffix: " of Eminent Conjuring"
+		}
+		{
+			EditorID: "EnchArmorFortifyConjuration05"
+			FormKey: "0AD456:Skyrim.esm"
+			Suffix: " of Extreme Conjuring"
+		}
+		{
+			EditorID: "EnchArmorFortifyConjuration06"
+			FormKey: "0AD457:Skyrim.esm"
+			Suffix: " of Peerless Conjuring"
+		}
+		{
+			EditorID: "EnchArmorFortifyDestruction01"
+			FormKey: "07A10B:Skyrim.esm"
+			Suffix: " of Minor Destruction"
+		}
+		{
+			EditorID: "EnchArmorFortifyDestruction02"
+			FormKey: "0AD458:Skyrim.esm"
+			Suffix: " of Destruction"
+		}
+		{
+			EditorID: "EnchArmorFortifyDestruction03"
+			FormKey: "0AD459:Skyrim.esm"
+			Suffix: " of Major Destruction"
+		}
+		{
+			EditorID: "EnchArmorFortifyDestruction04"
+			FormKey: "0AD45A:Skyrim.esm"
+			Suffix: " of Eminent Destruction"
+		}
+		{
+			EditorID: "EnchArmorFortifyDestruction05"
+			FormKey: "0AD45B:Skyrim.esm"
+			Suffix: " of Extreme Destruction"
+		}
+		{
+			EditorID: "EnchArmorFortifyDestruction06"
+			FormKey: "0AD45C:Skyrim.esm"
+			Suffix: " of Peerless Destruction"
+		}
+		{
+			EditorID: "EnchArmorFortifyIllusion01",
+			FormKey: "07A10F:Skyrim.esm"
+			Suffix: " of Minor Illusion"
+		}		
+		{
+			EditorID: "EnchArmorFortifyIllusion02"
+			FormKey: "0AD465:Skyrim.esm"
+			Suffix: " of Illusion"
+		}
+		{
+			EditorID: "EnchArmorFortifyIllusion03",
+			FormKey: "0AD466:Skyrim.esm"
+			Suffix: " of Major Illusion"
+		}
+		{
+			EditorID: "EnchArmorFortifyIllusion04"
+			FormKey: "0BE002:Skyrim.esm"
+			Suffix: " of Eminent Illusion"
+		}
+		{
+			EditorID: "EnchArmorFortifyIllusion05"
+			FormKey: "0BE003:Skyrim.esm"
+			Suffix: " of Extreme Illusion"
+		}
+		{
+			EditorID: "EnchArmorFortifyIllusion06"
+			FormKey: "0BE004:Skyrim.esm"
+			Suffix: " of Peerless Illusion"
+		}
+		{
+			EditorID: "EnchArmorFortifyRestoration01"
+			FormKey: "07A116:Skyrim.esm"
+			Suffix: " of Minor Restoration"
+		}
+		{
+			EditorID: "EnchArmorFortifyRestoration02"
+			FormKey: "0AD475:Skyrim.esm"
+			Suffix: " of Restoration"
+		}
+		{
+			EditorID: "EnchArmorFortifyRestoration03"
+			FormKey: "0AD476:Skyrim.esm"
+			Suffix: " of Major Restoration"
+		}
+		{
+			EditorID: "EnchArmorFortifyRestoration04"
+			FormKey: "0BE015:Skyrim.esm"
+			Suffix: " of Eminent Restoration"
+		}
+		{
+			EditorID: "EnchArmorFortifyRestoration05"
+			FormKey: "0BE016:Skyrim.esm"
+			Suffix: " of Extreme Restoration"
+		}
+		{
+			EditorID: "EnchArmorFortifyRestoration06"
+			FormKey: "0BE017:Skyrim.esm"
+			Suffix: " of Peerless Restoration"
+		}
+		{
+			EditorID: "EnchArmorFortifyAlchemy01"
+			FormKey: "08B65B:Skyrim.esm"
+			Suffix: " of Minor Alchemy"
+		}
+		{
+			EditorID: "EnchArmorFortifyAlchemy02"
+			FormKey: "08B65D:Skyrim.esm"
+			Suffix: " of Alchemy"
+		}
+		{
+			EditorID: "EnchArmorFortifyAlchemy03"
+			FormKey: "08B65E:Skyrim.esm"
+			Suffix: " of Major Alchemy"
+		}
+		{
+			EditorID: "EnchArmorFortifyAlchemy04"
+			FormKey: "08B65F:Skyrim.esm"
+			Suffix: " of Eminent Alchemy"
+		}
+		{
+			EditorID: "EnchArmorFortifyAlchemy05"
+			FormKey: "08B660:Skyrim.esm"
+			Suffix: " of Extreme Alchemy"
+		}
+		{
+			EditorID: "EnchArmorFortifyAlchemy06"
+			FormKey: "08B661:Skyrim.esm"
+			Suffix: " of Peerless Alchemy"
+		}
+		{
+			EditorID: "EnchArmorFortifySmithing01"
+			FormKey: "07A117:Skyrim.esm"
+			Suffix: " of Minor Smithing"
+		}
+		{
+			EditorID: "EnchArmorFortifySmithing02"
+			FormKey: "0AD477:Skyrim.esm"
+			Suffix: " of Smithing"
+		}
+		{
+			EditorID: "EnchArmorFortifySmithing03"
+			FormKey: "0AD478:Skyrim.esm"
+			Suffix: " of Major Smithing"
+		}
+		{
+			EditorID: "EnchArmorFortifySmithing04"
+			FormKey: "0BE018:Skyrim.esm"
+			Suffix: " of Eminent Smithing"
+		}
+		{
+			EditorID: "EnchArmorFortifySmithing05"
+			FormKey: "0BE019:Skyrim.esm"
+			Suffix: " of Extreme Smithing"
+		}
+		{
+			EditorID: "EnchArmorFortifySmithing06"
+			FormKey: "0BE01A:Skyrim.esm"
+			Suffix: " of Peerless Smithing"
+		}
+		{
+			EditorID: "EnchArmorFortifyMarksman01"
+			FormKey: "07A113:Skyrim.esm"
+			Suffix: " of Minor Archery"
+		}
+		{
+			EditorID: "EnchArmorFortifyMarksman02"
+			FormKey: "0AD46F:Skyrim.esm"
+			Suffix: " of Archery"
+		}
+		{
+			EditorID: "EnchArmorFortifyMarksman03"
+			FormKey: "0AD470:Skyrim.esm"
+			Suffix: " of Major Archery"
+		}
+		{
+			EditorID: "EnchArmorFortifyMarksman04"
+			FormKey: "0BE00C:Skyrim.esm"
+			Suffix: " of Eminent Archery"
+		}
+		{
+			EditorID: "EnchArmorFortifyMarksman05"
+			FormKey: "0BE00D:Skyrim.esm"
+			Suffix: " of Extreme Archery"
+		}
+		{
+			EditorID: "EnchArmorFortifyMarksman06"
+			FormKey: "0BE00E:Skyrim.esm"
+			Suffix: " of Peerless Archery"
+		}
+		{
+			EditorID: "EnchArmorFortifyOneHanded01"
+			FormKey: "07A114:Skyrim.esm"
+			Suffix: " of Minor Wielding"
+		}
+		{
+			EditorID: "EnchArmorFortifyOneHanded02"
+			FormKey: "0AD471:Skyrim.esm"
+			Suffix: " of Wielding"
+		}
+		{
+			EditorID: "EnchArmorFortifyOneHanded03"
+			FormKey: "0AD472:Skyrim.esm"
+			Suffix: " of Major Wielding"
+		}
+		{
+			EditorID: "EnchArmorFortifyOneHanded04"
+			FormKey: "0BE00F:Skyrim.esm"
+			Suffix: " of Eminent Wielding"
+		}
+		{
+			EditorID: "EnchArmorFortifyOneHanded05"
+			FormKey: "0BE010:Skyrim.esm"
+			Suffix: " of Extreme Wielding"
+		}
+		{
+			EditorID: "EnchArmorFortifyOneHanded06"
+			FormKey: "0BE011:Skyrim.esm"
+			Suffix: " of Peerless Wielding"
+		}
+		{
+			EditorID: "EnchArmorFortifyTwoHanded01"
+			FormKey: "07A11B:Skyrim.esm"
+			Suffix: " of Minor Sure Grip"
+		}
+		{
+			EditorID: "EnchArmorFortifyTwoHanded02"
+			FormKey: "0AD481:Skyrim.esm"
+			Suffix: " of Sure Grip"
+		}
+		{
+			EditorID: "EnchArmorFortifyTwoHanded03"
+			FormKey: "0AD482:Skyrim.esm"
+			Suffix: " of Major Sure Grip"
+		}
+		{
+			EditorID: "EnchArmorFortifyTwoHanded04"
+			FormKey: "0BE025:Skyrim.esm"
+			Suffix: " of Eminent Sure Grip"
+		}
+		{
+			EditorID: "EnchArmorFortifyTwoHanded05"
+			FormKey: "0BE026:Skyrim.esm"
+			Suffix: " of Extreme Sure Grip"
+		}
+		{
+			EditorID: "EnchArmorFortifyTwoHanded06"
+			FormKey: "0BE027:Skyrim.esm"
+			Suffix: " of Peerless Sure Grip"
+		}
+		{
+			EditorID: "EnchArmorFortifyLightArmor01"
+			FormKey: "07A110:Skyrim.esm"
+			Suffix: " of the Minor Squire"
+		}
+		{
+			EditorID: "EnchArmorFortifyLightArmor02"
+			FormKey: "0AD467:Skyrim.esm"
+			Suffix: " of the Squire"
+		}
+		{
+			EditorID: "EnchArmorFortifyLightArmor03"
+			FormKey: "0AD468:Skyrim.esm"
+			Suffix: " of the Major Squire"
+		}
+		{
+			EditorID: "EnchArmorFortifyLightArmor04"
+			FormKey: "0BE005:Skyrim.esm"
+			Suffix: " of the Eminent Squire"
+		}
+		{
+			EditorID: "EnchArmorFortifyLightArmor05"
+			FormKey: "0BE006:Skyrim.esm"
+			Suffix: " of the Noble Squire"
+		}
+		{
+			EditorID: "EnchArmorFortifyLightArmor06"
+			FormKey: "0BE007:Skyrim.esm"
+			Suffix: " of the Peerless Squire"
+		}
+		{
+			EditorID: "EnchArmorFortifyHeavyArmor01"
+			FormKey: "07A10E:Skyrim.esm"
+			Suffix: " of the Minor Knight"
+		}
+		{
+			EditorID: "EnchArmorFortifyHeavyArmor02"
+			FormKey: "0AD463:Skyrim.esm"
+			Suffix: " of the Knight"
+		}
+		{
+			EditorID: "EnchArmorFortifyHeavyArmor03"
+			FormKey: "0AD464:Skyrim.esm"
+			Suffix: " of the Major Knight"
+		}
+		{
+			EditorID: "EnchArmorFortifyHeavyArmor04"
+			FormKey: "0BDFFF:Skyrim.esm"
+			Suffix: " of the Eminent Knight"
+		}
+		{
+			EditorID: "EnchArmorFortifyHeavyArmor05"
+			FormKey: "0BE000:Skyrim.esm"
+			Suffix: " of the Noble Knight"
+		}
+		{
+			EditorID: "EnchArmorFortifyHeavyArmor06"
+			FormKey: "0BE001:Skyrim.esm"
+			Suffix: " of the Peerless Knight"
+		}
+		{
+			EditorID: "EnchArmorFortifyBlock01"
+			FormKey: "07A108:Skyrim.esm"
+			Suffix: " of Minor Blocking"
+		}
+		{
+			EditorID: "EnchArmorFortifyBlock02"
+			FormKey: "0AD4A1:Skyrim.esm"				
+			Suffix: " of Blocking"
+		}
+		{
+			EditorID: "EnchArmorFortifyBlock03"
+			FormKey: "0AD4A2:Skyrim.esm"
+			Suffix: " of Major Blocking"
+		}
+		{
+			EditorID: "EnchArmorFortifyBlock04"
+			FormKey: "0BE034:Skyrim.esm"
+			Suffix: " of Eminent Blocking"
+		}
+		{
+			EditorID: "EnchArmorFortifyBlock05"
+			FormKey: "0BE035:Skyrim.esm"
+			Suffix: " of Extreme Blocking"
+		}
+		{
+			EditorID: "EnchArmorFortifyBlock06"
+			FormKey: "0BE036:Skyrim.esm"
+			Suffix: " of Peerless Blocking"
+		}
+		{
+			EditorID: "EnchArmorFortifyLockpicking01"
+			FormKey: "07A111:Skyrim.esm"
+			Suffix: " of Minor Lockpicking"
+		}
+		{
+			EditorID: "EnchArmorFortifyLockpicking02"
+			FormKey: "0AD469:Skyrim.esm"
+			Suffix: " of Lockpicking"
+		}
+		{
+			EditorID: "EnchArmorFortifyLockpicking03"
+			FormKey: "0AD46A:Skyrim.esm"
+			Suffix: " of Major Lockpicking"
+		}
+		{
+			EditorID: "EnchArmorFortifyLockpicking04"
+			FormKey: "0BE008:Skyrim.esm"
+			Suffix: " of Eminent Lockpicking"
+		}
+		{
+			EditorID: "EnchArmorFortifyLockpicking05"
+			FormKey: "0BE009:Skyrim.esm"
+			Suffix: " of Extreme Lockpicking"
+		}
+		{
+			EditorID: "EnchArmorFortifyLockpicking06"
+			FormKey: "0BE00A:Skyrim.esm"
+			Suffix: " of Peerless Lockpicking"
+		}
+		{
+			EditorID: "EnchArmorFortifyPickpocket01"
+			FormKey: "07A115:Skyrim.esm"
+			Suffix: " of Minor Deft Hands"
+		}
+		{
+			EditorID: "EnchArmorFortifyPickpocket02"
+			FormKey: "0AD473:Skyrim.esm"
+			Suffix: " of Deft Hands"
+		}
+		{
+			EditorID: "EnchArmorFortifyPickpocket03"
+			FormKey: "0AD474:Skyrim.esm"
+			Suffix: " of Major Deft Hands"
+		}
+		{
+			EditorID: "EnchArmorFortifyPickpocket04"
+			FormKey: "0BE012:Skyrim.esm"
+			Suffix: " of Eminent Deft Hands"
+		}
+		{
+			EditorID: "EnchArmorFortifyPickpocket05"
+			FormKey: "0BE013:Skyrim.esm"
+			Suffix: " of Extreme Deft Hands"
+		}
+		{
+			EditorID: "EnchArmorFortifyPickpocket06"
+			FormKey: "0BE014:Skyrim.esm"
+			Suffix: " of Peerless Deft Hands"
+		}
+		{
+			EditorID: "EnchArmorFortifySneak01"
+			FormKey: "07A118:Skyrim.esm"
+			Suffix: " of Minor Sneaking"
+		}
+		{
+			EditorID: "EnchArmorFortifySneak02"
+			FormKey: "0AD479:Skyrim.esm"
+			Suffix: " of Sneaking"
+		}
+		{
+			EditorID: "EnchArmorFortifySneak03"
+			FormKey: "0AD47A:Skyrim.esm"
+			Suffix: " of Major Sneaking"
+		}
+		{
+			EditorID: "EnchArmorFortifySneak04"
+			FormKey: "0BE01B:Skyrim.esm"
+			Suffix: " of Eminent Sneaking"
+		}
+		{
+			EditorID: "EnchArmorFortifySneak05"
+			FormKey: "0BE01C:Skyrim.esm"
+			Suffix: " of Extreme Sneaking"
+		}
+		{
+			EditorID: "EnchArmorFortifySneak06"
+			FormKey: "0BE01D:Skyrim.esm"
+			Suffix: " of Peerless Sneaking"
+		}
+		{
+			EditorID: "EnchArmorResistFire01"
+			FormKey: "04950B:Skyrim.esm"
+			Suffix: " of Resist Fire"
+		}
+		{
+			EditorID: "EnchArmorResistFire02"
+			FormKey: "0AD483:Skyrim.esm"
+			Suffix: " of Waning Fire"
+		}
+		{
+			EditorID: "EnchArmorResistFire03"
+			FormKey: "0AD484:Skyrim.esm"
+			Suffix: " of Dwindling Flames"
+		}
+		{
+			EditorID: "EnchArmorResistFire04"
+			FormKey: "0BE028:Skyrim.esm"
+			Suffix: " of Fire Suppression"
+		}
+		{
+			EditorID: "EnchArmorResistFire05"
+			FormKey: "0BE029:Skyrim.esm"
+			Suffix: " of Fire Abatement"
+		}
+		{
+			EditorID: "EnchArmorResistFire06"
+			FormKey: "0BE02A:Skyrim.esm"
+			Suffix: " of the Firewalker"
+		}
+		{
+			EditorID: "EnchArmorResistFrost01"
+			FormKey: "04950C:Skyrim.esm"
+			Suffix: " of Resist Frost"
+		}
+		{
+			EditorID: "EnchArmorResistFrost02"
+			FormKey: "0AD485:Skyrim.esm"
+			Suffix: " of Waning Frost"
+		}
+		{
+			EditorID: "EnchArmorResistFrost03"
+			FormKey: "0AD486:Skyrim.esm"
+			Suffix: " of Dwindling Frost"
+		}
+		{
+			EditorID: "EnchArmorResistFrost04"
+			FormKey: "0BE02B:Skyrim.esm"
+			Suffix: " of Frost Suppression"
+		}
+		{
+			EditorID: "EnchArmorResistFrost05"
+			FormKey: "0BE02C:Skyrim.esm"
+			Suffix: " of Frost Abatement"
+		}
+		{
+			EditorID: "EnchArmorResistFrost06"
+			FormKey: "0BE02D:Skyrim.esm"
+			Suffix: " of Warmth"
+		}
+		{
+			EditorID: "EnchArmorResistShock01"
+			FormKey: "04950D:Skyrim.esm"
+			Suffix: " of Resist Shock"
+		}
+		{
+			EditorID: "EnchArmorResistShock02"
+			FormKey: "0AD487:Skyrim.esm"
+			Suffix: " of Waning Shock"
+		}
+		{
+			EditorID: "EnchArmorResistShock03"
+			FormKey: "0AD488:Skyrim.esm"
+			Suffix: " of Dwindling Shock"
+		}
+		{
+			EditorID: "EnchArmorResistShock04"
+			FormKey: "0BE02E:Skyrim.esm"
+			Suffix: " of Shock Suppression"
+		}
+		{
+			EditorID: "EnchArmorResistShock05"
+			FormKey: "0BE02F:Skyrim.esm"
+			Suffix: " of Shock Abatement"
+		}	
+		{
+			EditorID: "EnchArmorResistShock06"
+			FormKey: "0BE030:Skyrim.esm"
+			Suffix: " of Grounding"
+		}
+		{
+			EditorID: "EnchArmorResistMagic01"
+			FormKey: "0FC05B:Skyrim.esm"
+			Suffix: " of Resist Magic"
+		}
+		{
+			EditorID: "EnchArmorResistMagic02"
+			FormKey: "0FC05C:Skyrim.esm"
+			Suffix: " of Waning Magic"
+		}
+		{
+			EditorID: "EnchArmorResistMagic03"
+			FormKey: "0FC05D:Skyrim.esm"
+			Suffix: " of Dwindling Magic"
+		}		
+		{
+			EditorID: "EnchArmorResistMagic04"
+			FormKey: "0FC05E:Skyrim.esm"
+			Suffix: " of Magic Suppression"
+		}		
+		{
+			EditorID: "EnchArmorResistMagic05"
+			FormKey: "0FC05F:Skyrim.esm"
+			Suffix: " of Magic Abatement"
+		}
+		{
+			EditorID: "EnchArmorResistMagic06"
+			FormKey: "0FC060:Skyrim.esm"
+			Suffix: " of Nullification"
+		}
+		{
+			EditorID: "EnchArmorMuffle"
+			FormKey: "092A77:Skyrim.esm"
+			Suffix: " of Muffling"
+		}
+		{
+			EditorID: "EnchArmorWaterbreathing"
+			FormKey: "092A76:Skyrim.esm"
+			Suffix: " of Waterbreathing"
+		}
+		{
+			EditorID: "EnchArmorFortifyHealRate03"
+			FormKey: "0AD460:Skyrim.esm"
+			Suffix: " of Remedy"
+		}
+		{
+			EditorID: "EnchArmorFortifyHealRate04"
+			FormKey: "07A10D:Skyrim.esm"
+			Suffix: " of Mending"
+		}
+		{
+			EditorID: "EnchArmorFortifyHealRate05"
+			FormKey: "0AD45F:Skyrim.esm"
+			Suffix: " of Regeneration"
+		}
+		{
+			EditorID: "EnchArmorFortifyHealRate06"
+			FormKey: "0AD493:Skyrim.esm"
+			Suffix: " of Revival"
+		}
+		{
+			EditorID: "EnchArmorFortifyStaminaRate03"
+			FormKey: "0AD480:Skyrim.esm"
+			Suffix: " of Recuperation"
+		}
+		{
+			EditorID: "EnchArmorFortifyStaminaRate04"
+			FormKey: "07A11A:Skyrim.esm"
+			Suffix: " of Rejuvenation"
+		}
+		{
+			EditorID: "EnchArmorFortifyStaminaRate05"
+			FormKey: "0AD47F:Skyrim.esm"
+			Suffix: " of Invigoration"
+		}
+		{
+			EditorID: "EnchArmorFortifyStaminaRate06"
+			FormKey: "0BE024:Skyrim.esm"
+			Suffix: " of Renewal"
+		}
+		{
+			EditorID: "EnchArmorFortifyMagickaRate03"
+			FormKey: "0AD46E:Skyrim.esm"
+			Suffix: " of Recharging"
+		}
+		{
+			EditorID: "EnchArmorFortifyMagickaRate04"
+			FormKey: "07A112:Skyrim.esm"
+			Suffix: " of Replenishing"
+		}
+		{
+			EditorID: "EnchArmorFortifyMagickaRate05"
+			FormKey: "0AD46D:Skyrim.esm"
+			Suffix: " of Resurgence"
+		}
+		{
+			EditorID: "EnchArmorFortifyMagickaRate06"
+			FormKey: "0BE00B:Skyrim.esm"
+			Suffix: " of Recovery"
+		}
+		{
+			EditorID: "EnchArmorFortifySpeechcraft01"
+			FormKey: "07A119:Skyrim.esm"
+			Suffix: " of Minor Haggling"
+		}
+		{
+			EditorID: "EnchArmorFortifySpeechcraft02"
+			FormKey: "0AD47B:Skyrim.esm"
+			Suffix: " of Haggling"
+		}
+		{
+			EditorID: "EnchArmorFortifySpeechcraft03"
+			FormKey: "0AD47C:Skyrim.esm"
+			Suffix: " of Major Haggling"
+		}
+		{
+			EditorID: "EnchArmorFortifySpeechcraft04"
+			FormKey: "0BE01E:Skyrim.esm"
+			Suffix: " of Eminent Haggling"
+		}
+		{
+			EditorID: "EnchArmorFortifySpeechcraft05"
+			FormKey: "0BE01F:Skyrim.esm"
+			Suffix: " of Extreme Haggling"
+		}
+		{
+			EditorID: "EnchArmorFortifySpeechcraft06"
+			FormKey: "0BE020:Skyrim.esm"
+			Suffix: " of Peerless Haggling"
+		}
+	]
+}

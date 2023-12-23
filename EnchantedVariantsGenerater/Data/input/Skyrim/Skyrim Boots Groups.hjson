@@ -1,0 +1,326 @@
+{
+	Master: "Skyrim.esm"
+	Groups: [
+		{
+			GroupName: "BootsHeavy1to3"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+					Enchantments: [
+						"EnchArmorResistFire01"
+						"EnchArmorResistFrost01"
+						"EnchArmorResistShock01"
+						"EnchArmorFortifyStamina01"
+						"EnchArmorFortifyCarry01"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorResistFire02"
+						"EnchArmorResistFrost02"
+						"EnchArmorResistShock02"
+						"EnchArmorFortifyStamina02"
+						"EnchArmorFortifyCarry02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorResistFire03"
+						"EnchArmorResistFrost03"
+						"EnchArmorResistShock03"
+						"EnchArmorFortifyStamina03"
+						"EnchArmorFortifyCarry03"
+						"EnchArmorMuffle"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "BootsHeavy2to4"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorResistFire02"
+						"EnchArmorResistFrost02"
+						"EnchArmorResistShock02"
+						"EnchArmorFortifyStamina02"
+						"EnchArmorFortifyCarry02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorResistFire03"
+						"EnchArmorResistFrost03"
+						"EnchArmorResistShock03"
+						"EnchArmorFortifyStamina03"
+						"EnchArmorFortifyCarry03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorResistFire04"
+						"EnchArmorResistFrost04"
+						"EnchArmorResistShock04"
+						"EnchArmorFortifyStamina04"
+						"EnchArmorFortifyCarry04"
+						"EnchArmorMuffle"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "BootsHeavy3to5"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorResistFire03"
+						"EnchArmorResistFrost03"
+						"EnchArmorResistShock03"
+						"EnchArmorFortifyStamina03"
+						"EnchArmorFortifyCarry03"
+						"EnchArmorMuffle"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorResistFire04"
+						"EnchArmorResistFrost04"
+						"EnchArmorResistShock04"
+						"EnchArmorFortifyStamina04"
+						"EnchArmorFortifyCarry04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchArmorResistFire05"
+						"EnchArmorResistFrost05"
+						"EnchArmorResistShock05"
+						"EnchArmorFortifyStamina05"
+						"EnchArmorFortifyCarry05"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "BootsHeavy4to6"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorResistFire04"
+						"EnchArmorResistFrost04"
+						"EnchArmorResistShock04"
+						"EnchArmorFortifyStamina04"
+						"EnchArmorFortifyCarry04"
+						"EnchArmorMuffle"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchArmorResistFire05"
+						"EnchArmorResistFrost05"
+						"EnchArmorResistShock05"
+						"EnchArmorFortifyStamina05"
+						"EnchArmorFortifyCarry05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+					Enchantments: [
+						"EnchArmorResistFire06"
+						"EnchArmorResistFrost06"
+						"EnchArmorResistShock06"
+						"EnchArmorFortifyStamina06"
+						"EnchArmorFortifyCarry06"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "BootsLight1to3"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+					Enchantments: [
+						"EnchArmorResistFire01"
+						"EnchArmorResistFrost01"
+						"EnchArmorResistShock01"
+						"EnchArmorFortifyStamina01"
+						"EnchArmorFortifyCarry01"
+						"EnchArmorFortifySneak01"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorResistFire02"
+						"EnchArmorResistFrost02"
+						"EnchArmorResistShock02"
+						"EnchArmorFortifyStamina02"
+						"EnchArmorFortifyCarry02"
+						"EnchArmorFortifySneak02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorResistFire03"
+						"EnchArmorResistFrost03"
+						"EnchArmorResistShock03"
+						"EnchArmorFortifyStamina03"
+						"EnchArmorFortifyCarry03"
+						"EnchArmorFortifySneak03"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "BootsLight2to4"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorResistFire02"
+						"EnchArmorResistFrost02"
+						"EnchArmorResistShock02"
+						"EnchArmorFortifyStamina02"
+						"EnchArmorFortifyCarry02"
+						"EnchArmorFortifySneak02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorResistFire03"
+						"EnchArmorResistFrost03"
+						"EnchArmorResistShock03"
+						"EnchArmorFortifyStamina03"
+						"EnchArmorFortifyCarry03"
+						"EnchArmorFortifySneak03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorResistFire04"
+						"EnchArmorResistFrost04"
+						"EnchArmorResistShock04"
+						"EnchArmorFortifyStamina04"
+						"EnchArmorFortifyCarry04"
+						"EnchArmorFortifySneak04"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "BootsLight3to5"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorResistFire03"
+						"EnchArmorResistFrost03"
+						"EnchArmorResistShock03"
+						"EnchArmorFortifyStamina03"
+						"EnchArmorFortifyCarry03"
+						"EnchArmorFortifySneak03"
+						"EnchArmorMuffle"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorResistFire04"
+						"EnchArmorResistFrost04"
+						"EnchArmorResistShock04"
+						"EnchArmorFortifyStamina04"
+						"EnchArmorFortifyCarry04"
+						"EnchArmorFortifySneak04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchArmorResistFire05"
+						"EnchArmorResistFrost05"
+						"EnchArmorResistShock05"
+						"EnchArmorFortifyStamina05"
+						"EnchArmorFortifyCarry05"
+						"EnchArmorFortifySneak05"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "BootsLight4to6"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorResistFire04"
+						"EnchArmorResistFrost04"
+						"EnchArmorResistShock04"
+						"EnchArmorFortifyStamina04"
+						"EnchArmorFortifyCarry04"
+						"EnchArmorFortifySneak04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchArmorResistFire05"
+						"EnchArmorResistFrost05"
+						"EnchArmorResistShock05"
+						"EnchArmorFortifyStamina05"
+						"EnchArmorFortifyCarry05"
+						"EnchArmorFortifySneak05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+					Enchantments: [
+						"EnchArmorResistFire06"
+						"EnchArmorResistFrost06"
+						"EnchArmorResistShock06"
+						"EnchArmorFortifyStamina06"
+						"EnchArmorFortifyCarry06"
+						"EnchArmorFortifySneak06"
+					]
+				}
+			]
+		}
+	]
+}

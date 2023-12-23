@@ -1,0 +1,333 @@
+{
+	Master: "Skyrim.esm"
+	Groups: [
+		{
+			GroupName: "GauntletsHeavy1to3"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+					Enchantments: [
+						"EnchArmorFortifyMarksman01"
+						"EnchArmorFortifyOneHanded01"
+						"EnchArmorFortifyTwoHanded01"
+						"EnchArmorFortifyAlchemy01"
+						"EnchArmorFortifySmithing01"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorFortifyMarksman02"
+						"EnchArmorFortifyOneHanded02"
+						"EnchArmorFortifyTwoHanded02"
+						"EnchArmorFortifyAlchemy02"
+						"EnchArmorFortifySmithing02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyMarksman03"
+						"EnchArmorFortifyOneHanded03"
+						"EnchArmorFortifyTwoHanded03"
+						"EnchArmorFortifyAlchemy03"
+						"EnchArmorFortifySmithing03"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "GauntletsHeavy2to4"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorFortifyMarksman02"
+						"EnchArmorFortifyOneHanded02"
+						"EnchArmorFortifyTwoHanded02"
+						"EnchArmorFortifyAlchemy02"
+						"EnchArmorFortifySmithing02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyMarksman03"
+						"EnchArmorFortifyOneHanded03"
+						"EnchArmorFortifyTwoHanded03"
+						"EnchArmorFortifyAlchemy03"
+						"EnchArmorFortifySmithing03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyMarksman04"
+						"EnchArmorFortifyOneHanded04"
+						"EnchArmorFortifyTwoHanded04"
+						"EnchArmorFortifyAlchemy04"
+						"EnchArmorFortifySmithing04"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "GauntletsHeavy3to5"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyMarksman03"
+						"EnchArmorFortifyOneHanded03"
+						"EnchArmorFortifyTwoHanded03"
+						"EnchArmorFortifyAlchemy03"
+						"EnchArmorFortifySmithing03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyMarksman04"
+						"EnchArmorFortifyOneHanded04"
+						"EnchArmorFortifyTwoHanded04"
+						"EnchArmorFortifyAlchemy04"
+						"EnchArmorFortifySmithing04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchArmorFortifyMarksman05"
+						"EnchArmorFortifyOneHanded05"
+						"EnchArmorFortifyTwoHanded05"
+						"EnchArmorFortifyAlchemy05"
+						"EnchArmorFortifySmithing05"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "GauntletsHeavy4to6"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyMarksman04"
+						"EnchArmorFortifyOneHanded04"
+						"EnchArmorFortifyTwoHanded04"
+						"EnchArmorFortifyAlchemy04"
+						"EnchArmorFortifySmithing04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchArmorFortifyMarksman05"
+						"EnchArmorFortifyOneHanded05"
+						"EnchArmorFortifyTwoHanded05"
+						"EnchArmorFortifyAlchemy05"
+						"EnchArmorFortifySmithing05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+					Enchantments: [
+						"EnchArmorFortifyMarksman06"
+						"EnchArmorFortifyOneHanded06"
+						"EnchArmorFortifyTwoHanded06"
+						"EnchArmorFortifyAlchemy06"
+						"EnchArmorFortifySmithing06"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "GauntletsLight1to3"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+					Enchantments: [
+						"EnchArmorFortifyMarksman01"
+						"EnchArmorFortifyOneHanded01"
+						"EnchArmorFortifyTwoHanded01"
+						"EnchArmorFortifyAlchemy01"
+						"EnchArmorFortifySmithing01"
+						"EnchArmorFortifyLockpicking01"
+						"EnchArmorFortifyPickpocket01"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorFortifyMarksman02"
+						"EnchArmorFortifyOneHanded02"
+						"EnchArmorFortifyTwoHanded02"
+						"EnchArmorFortifyAlchemy02"
+						"EnchArmorFortifySmithing02"
+						"EnchArmorFortifyLockpicking02"
+						"EnchArmorFortifyPickpocket02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyMarksman03"
+						"EnchArmorFortifyOneHanded03"
+						"EnchArmorFortifyTwoHanded03"
+						"EnchArmorFortifyAlchemy03"
+						"EnchArmorFortifySmithing03"
+						"EnchArmorFortifyLockpicking03"
+						"EnchArmorFortifyPickpocket03"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "GauntletsLight2to4"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorFortifyMarksman02"
+						"EnchArmorFortifyOneHanded02"
+						"EnchArmorFortifyTwoHanded02"
+						"EnchArmorFortifyAlchemy02"
+						"EnchArmorFortifySmithing02"
+						"EnchArmorFortifyLockpicking02"
+						"EnchArmorFortifyPickpocket02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyMarksman03"
+						"EnchArmorFortifyOneHanded03"
+						"EnchArmorFortifyTwoHanded03"
+						"EnchArmorFortifyAlchemy03"
+						"EnchArmorFortifySmithing03"
+						"EnchArmorFortifyLockpicking03"
+						"EnchArmorFortifyPickpocket03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyMarksman04"
+						"EnchArmorFortifyOneHanded04"
+						"EnchArmorFortifyTwoHanded04"
+						"EnchArmorFortifyAlchemy04"
+						"EnchArmorFortifySmithing04"
+						"EnchArmorFortifyLockpicking04"
+						"EnchArmorFortifyPickpocket04"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "GauntletsLight3to5"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyMarksman03"
+						"EnchArmorFortifyOneHanded03"
+						"EnchArmorFortifyTwoHanded03"
+						"EnchArmorFortifyAlchemy03"
+						"EnchArmorFortifySmithing03"
+						"EnchArmorFortifyLockpicking03"
+						"EnchArmorFortifyPickpocket03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyMarksman04"
+						"EnchArmorFortifyOneHanded04"
+						"EnchArmorFortifyTwoHanded04"
+						"EnchArmorFortifyAlchemy04"
+						"EnchArmorFortifySmithing04"
+						"EnchArmorFortifyLockpicking04"
+						"EnchArmorFortifyPickpocket04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchArmorFortifyMarksman05"
+						"EnchArmorFortifyOneHanded05"
+						"EnchArmorFortifyTwoHanded05"
+						"EnchArmorFortifyAlchemy05"
+						"EnchArmorFortifySmithing05"
+						"EnchArmorFortifyLockpicking05"
+						"EnchArmorFortifyPickpocket05"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "GauntletsLight4to6"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyMarksman04"
+						"EnchArmorFortifyOneHanded04"
+						"EnchArmorFortifyTwoHanded04"
+						"EnchArmorFortifyAlchemy04"
+						"EnchArmorFortifySmithing04"
+						"EnchArmorFortifyLockpicking04"
+						"EnchArmorFortifyPickpocket04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchArmorFortifyMarksman05"
+						"EnchArmorFortifyOneHanded05"
+						"EnchArmorFortifyTwoHanded05"
+						"EnchArmorFortifyAlchemy05"
+						"EnchArmorFortifySmithing05"
+						"EnchArmorFortifyLockpicking05"
+						"EnchArmorFortifyPickpocket05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+					Enchantments: [
+						"EnchArmorFortifyMarksman06"
+						"EnchArmorFortifyOneHanded06"
+						"EnchArmorFortifyTwoHanded06"
+						"EnchArmorFortifyAlchemy06"
+						"EnchArmorFortifySmithing06"
+						"EnchArmorFortifyLockpicking06"
+						"EnchArmorFortifyPickpocket06"
+					]
+				}
+			]
+		}
+	]
+}

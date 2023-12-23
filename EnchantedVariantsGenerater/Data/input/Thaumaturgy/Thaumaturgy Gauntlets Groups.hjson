@@ -1,0 +1,456 @@
+{
+	Master: "Thaumaturgy.esp"
+	Groups: [
+		{
+			GroupName: "GauntletsHeavy1to3"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+					Enchantments: [
+						"EnchArmorFortifyMagicka01"
+						"EnchArmorResistFire01"
+						"EnchArmorResistFrost01"
+						"EnchArmorResistShock01"
+						"EnchArmorResistPoison01"
+						"EnchArmorFortifySneakAttacks01"
+						"EnchArmorFortifyUnarmed01"
+						"EnchArmorFortifyMagickaRate01"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMarksman01"
+						"EnchArmorFortifySmithing01"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorFortifyMagicka02"
+						"EnchArmorResistFire02"
+						"EnchArmorResistFrost02"
+						"EnchArmorResistShock02"
+						"EnchArmorResistPoison02"
+						"EnchArmorFortifySneakAttacks02"
+						"EnchArmorFortifyUnarmed02"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMarksman02"
+						"EnchArmorFortifySmithing02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyMagicka03"
+						"EnchArmorResistFire03"
+						"EnchArmorResistFrost03"
+						"EnchArmorResistShock03"
+						"EnchArmorResistPoison03"
+						"EnchArmorFortifySneakAttacks03"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMarksman03"
+						"EnchArmorFortifySmithing03"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "GauntletsHeavy2to4"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorFortifyMagicka02"
+						"EnchArmorResistFire02"
+						"EnchArmorResistFrost02"
+						"EnchArmorResistShock02"
+						"EnchArmorResistPoison02"
+						"EnchArmorFortifySneakAttacks02"
+						"EnchArmorFortifyUnarmed02"
+						"EnchArmorFortifyMagickaRate02"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMarksman02"
+						"EnchArmorFortifySmithing02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyMagicka03"
+						"EnchArmorResistFire03"
+						"EnchArmorResistFrost03"
+						"EnchArmorResistShock03"
+						"EnchArmorResistPoison03"
+						"EnchArmorFortifySneakAttacks03"
+						"EnchArmorFortifyUnarmed03"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMarksman03"
+						"EnchArmorFortifySmithing03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyMagicka04"
+						"EnchArmorResistFire04"
+						"EnchArmorResistFrost04"
+						"EnchArmorResistShock04"
+						"EnchArmorResistPoison04"
+						"EnchArmorFortifySneakAttacks04"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMarksman04"
+						"EnchArmorFortifySmithing04"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "GauntletsHeavy3to5"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyMagicka03"
+						"EnchArmorResistFire03"
+						"EnchArmorResistFrost03"
+						"EnchArmorResistShock03"
+						"EnchArmorResistPoison03"
+						"EnchArmorFortifySneakAttacks03"
+						"EnchArmorFortifyUnarmed03"
+						"EnchArmorFortifyMagickaRate03"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMarksman03"
+						"EnchArmorFortifySmithing03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyMagicka04"
+						"EnchArmorResistFire04"
+						"EnchArmorResistFrost04"
+						"EnchArmorResistShock04"
+						"EnchArmorResistPoison04"
+						"EnchArmorFortifySneakAttacks04"
+						"EnchArmorFortifyUnarmed04"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMarksman03"
+						"EnchArmorFortifySmithing03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchArmorFortifyMagicka05"
+						"EnchArmorResistFire05"
+						"EnchArmorResistFrost05"
+						"EnchArmorResistShock05"
+						"EnchArmorResistPoison05"
+						"EnchArmorFortifySneakAttacks05"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMarksman05"
+						"EnchArmorFortifySmithing05"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "GauntletsHeavy4to6"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyMagicka04"
+						"EnchArmorResistFire04"
+						"EnchArmorResistFrost04"
+						"EnchArmorResistShock04"
+						"EnchArmorResistPoison04"
+						"EnchArmorFortifySneakAttacks04"
+						"EnchArmorFortifyUnarmed04"
+						"EnchArmorFortifyMagickaRate04"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMarksman04"
+						"EnchArmorFortifySmithing04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchArmorFortifyMagicka05"
+						"EnchArmorResistFire05"
+						"EnchArmorResistFrost05"
+						"EnchArmorResistShock05"
+						"EnchArmorResistPoison05"
+						"EnchArmorFortifySneakAttacks05"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMarksman05"
+						"EnchArmorFortifySmithing05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+					Enchantments: [
+						"EnchArmorFortifyMagicka06"
+						"EnchArmorResistFire06"
+						"EnchArmorResistFrost06"
+						"EnchArmorResistShock06"
+						"EnchArmorResistPoison06"
+						"EnchArmorFortifySneakAttacks06"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMarksman06"
+						"EnchArmorFortifySmithing06"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "GauntletsLight1to3"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+					Enchantments: [
+						"EnchArmorFortifyMagicka01"
+						"EnchArmorResistFire01"
+						"EnchArmorResistFrost01"
+						"EnchArmorResistShock01"
+						"EnchArmorResistPoison01"
+						"EnchArmorFortifySneakAttacks01"
+						"EnchArmorFortifyMagickaRate01"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMarksman01"
+						"EnchArmorFortifySmithing01"
+						"EnchArmorFortifyPickpocket01"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorFortifyMagicka02"
+						"EnchArmorResistFire02"
+						"EnchArmorResistFrost02"
+						"EnchArmorResistShock02"
+						"EnchArmorResistPoison02"
+						"EnchArmorFortifySneakAttacks02"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMarksman02"
+						"EnchArmorFortifySmithing02"
+						"EnchArmorFortifyPickpocket02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyMagicka03"
+						"EnchArmorResistFire03"
+						"EnchArmorResistFrost03"
+						"EnchArmorResistShock03"
+						"EnchArmorResistPoison03"
+						"EnchArmorFortifySneakAttacks03"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMarksman03"
+						"EnchArmorFortifySmithing03"
+						"EnchArmorFortifyPickpocket03"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "GauntletsLight2to4"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorFortifyMagicka02"
+						"EnchArmorResistFire02"
+						"EnchArmorResistFrost02"
+						"EnchArmorResistShock02"
+						"EnchArmorResistPoison02"
+						"EnchArmorFortifySneakAttacks02"
+						"EnchArmorFortifyMagickaRate02"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMarksman02"
+						"EnchArmorFortifySmithing02"
+						"EnchArmorFortifyPickpocket02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyMagicka03"
+						"EnchArmorResistFire03"
+						"EnchArmorResistFrost03"
+						"EnchArmorResistShock03"
+						"EnchArmorResistPoison03"
+						"EnchArmorFortifySneakAttacks03"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMarksman03"
+						"EnchArmorFortifySmithing03"
+						"EnchArmorFortifyPickpocket03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyMagicka04"
+						"EnchArmorResistFire04"
+						"EnchArmorResistFrost04"
+						"EnchArmorResistShock04"
+						"EnchArmorResistPoison04"
+						"EnchArmorFortifySneakAttacks04"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMarksman04"
+						"EnchArmorFortifySmithing04"
+						"EnchArmorFortifyPickpocket04"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "GauntletsLight3to5"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyMagicka03"
+						"EnchArmorResistFire03"
+						"EnchArmorResistFrost03"
+						"EnchArmorResistShock03"
+						"EnchArmorResistPoison03"
+						"EnchArmorFortifySneakAttacks03"
+						"EnchArmorFortifyMagickaRate03"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMarksman03"
+						"EnchArmorFortifySmithing03"
+						"EnchArmorFortifyPickpocket03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyMagicka04"
+						"EnchArmorResistFire04"
+						"EnchArmorResistFrost04"
+						"EnchArmorResistShock04"
+						"EnchArmorResistPoison04"
+						"EnchArmorFortifySneakAttacks04"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMarksman04"
+						"EnchArmorFortifySmithing04"
+						"EnchArmorFortifyPickpocket04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchArmorFortifyMagicka05"
+						"EnchArmorResistFire05"
+						"EnchArmorResistFrost05"
+						"EnchArmorResistShock05"
+						"EnchArmorResistPoison05"
+						"EnchArmorFortifySneakAttacks05"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMarksman05"
+						"EnchArmorFortifySmithing05"
+						"EnchArmorFortifyPickpocket05"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "GauntletsLight4to6"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyMagicka04"
+						"EnchArmorResistFire04"
+						"EnchArmorResistFrost04"
+						"EnchArmorResistShock04"
+						"EnchArmorResistPoison04"
+						"EnchArmorFortifySneakAttacks04"
+						"EnchArmorFortifyMagickaRate04"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMarksman04"
+						"EnchArmorFortifySmithing04"
+						"EnchArmorFortifyPickpocket04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchArmorFortifyMagicka05"
+						"EnchArmorResistFire05"
+						"EnchArmorResistFrost05"
+						"EnchArmorResistShock05"
+						"EnchArmorResistPoison05"
+						"EnchArmorFortifySneakAttacks05"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMarksman05"
+						"EnchArmorFortifySmithing05"
+						"EnchArmorFortifyPickpocket05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+					Enchantments: [
+						"EnchArmorFortifyMagicka06"
+						"EnchArmorResistFire06"
+						"EnchArmorResistFrost06"
+						"EnchArmorResistShock06"
+						"EnchArmorResistPoison06"
+						"EnchArmorFortifySneakAttacks06"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyMarksman06"
+						"EnchArmorFortifySmithing06"
+						"EnchArmorFortifyPickpocket06"
+					]
+				}
+			]
+		}
+	]
+}

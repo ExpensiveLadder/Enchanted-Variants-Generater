@@ -1,0 +1,160 @@
+{
+	Groups: [
+	{
+		GroupName: "CuirassesHeavy1to3"
+		Armors: [
+		{
+			EditorID: "ArmorIronCuirass"
+			FormKey: "012E49:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorIronBandedCuirass"
+			FormKey: "013948:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorSteelCuirassA"
+			FormKey: "013952:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorSteelCuirassB"
+			FormKey: "0F6F22:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorImperialCuirass"
+			FormKey: "0136D5:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorBonemoldCuirassVariant01"
+			FormKey: "037563:Dragonborn.esm"
+		}
+		{
+			EditorID: "DLC2ArmorBonemoldCuirassVariant02"
+			FormKey: "01CD93:Dragonborn.esm"
+		}
+		]
+	}
+	{
+		GroupName: "CuirassesHeavy2to4"
+		Armors: [
+		{
+			EditorID: "ArmorDwarvenCuirass"
+			FormKey: "01394D:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorSteelPlateCuirass"
+			FormKey: "01395C:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorChitinHeavyCuirass"
+			FormKey: "01CD8A:Dragonborn.esm"
+		}
+		]
+	}
+	{
+		GroupName: "CuirassesHeavy3to5"
+		Armors: [
+		{
+			EditorID: "ArmorOrcishCuirass"
+			FormKey: "013957:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorNordicHeavyCuirass"
+			FormKey: "01CD97:Dragonborn.esm"
+		}
+		{
+			EditorID: "ArmorEbonyCuirass"
+			FormKey: "013961:Skyrim.esm"
+		}
+		]
+	}
+	{
+		GroupName: "CuirassesHeavy4to6"
+		Armors: [		
+		{
+			EditorID: "DLC2ArmorStalhrimHeavyCuirass"
+			FormKey: "01CD9F:Dragonborn.esm"
+		}
+		{
+			EditorID: "ArmorDaedricCuirass"
+			FormKey: "01396B:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorDragonplateCuirass"
+			FormKey: "013966:Skyrim.esm"
+		}
+		]
+	}
+	{
+		GroupName: "CuirassesLight1to3"
+		Armors: [
+		{
+			EditorID: "ArmorHideCuirass"
+			FormKey: "013911:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorStuddedCuirass"
+			FormKey: "01B3A2:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorLeatherCuirass"
+			FormKey: "03619E:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorImperialLightCuirass"
+			FormKey: "013ED9:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorImperialStuddedCuirass"
+			FormKey: "013ED8:Skyrim.esm"
+		}
+		]
+	}
+	{
+		GroupName: "CuirassesLight2to4"
+		Armors: [
+		{
+			EditorID: "ArmorElvenCuirass"
+			FormKey: "0896A3:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorScaledCuirass"
+			FormKey: "01B3A3:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorScaledCuirassB"
+			FormKey: "01B3A4:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorChitinLightCuirass"
+			FormKey: "01CD87:Dragonborn.esm"
+		}
+		]
+	}
+	{
+		GroupName: "CuirassesLight3to5"
+		Armors: [
+		{
+			EditorID: "ArmorElvenGildedCuirass"
+			FormKey: "01392A:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorGlassCuirass"
+			FormKey: "013939:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorStalhrimLightCuirass"
+			FormKey: "01CDA2:Dragonborn.esm"
+		}
+		]
+	}
+	{
+		GroupName: "CuirassesLight4to6"
+		Armors: [
+		{
+			EditorID: "ArmorDragonscaleCuirass"
+			FormKey: "01393E:Skyrim.esm"
+		}
+		]
+	}
+	]
+}

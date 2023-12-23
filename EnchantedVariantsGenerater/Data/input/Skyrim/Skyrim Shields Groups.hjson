@@ -1,0 +1,157 @@
+{
+	Master: "Skyrim.esm"
+	Groups: [
+		{
+			GroupName: "Shields1to3"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+					Enchantments: [
+						"EnchArmorFortifyBlock01"
+						"EnchArmorResistFire01"
+						"EnchArmorResistFrost01"
+						"EnchArmorResistShock01"
+						"EnchArmorResistMagic01"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorFortifyBlock02"
+						"EnchArmorResistFire02"
+						"EnchArmorResistFrost02"
+						"EnchArmorResistShock02"
+						"EnchArmorResistMagic02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyBlock03"
+						"EnchArmorResistFire03"
+						"EnchArmorResistFrost03"
+						"EnchArmorResistShock03"
+						"EnchArmorResistMagic03"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "Shields2to4"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorFortifyBlock02"
+						"EnchArmorResistFire02"
+						"EnchArmorResistFrost02"
+						"EnchArmorResistShock02"
+						"EnchArmorResistMagic02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyBlock03"
+						"EnchArmorResistFire03"
+						"EnchArmorResistFrost03"
+						"EnchArmorResistShock03"
+						"EnchArmorResistMagic03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyBlock04"
+						"EnchArmorResistFire04"
+						"EnchArmorResistFrost04"
+						"EnchArmorResistShock04"
+						"EnchArmorResistMagic04"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "Shields3to5"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyBlock03"
+						"EnchArmorResistFire03"
+						"EnchArmorResistFrost03"
+						"EnchArmorResistShock03"
+						"EnchArmorResistMagic03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyBlock04"
+						"EnchArmorResistFire04"
+						"EnchArmorResistFrost04"
+						"EnchArmorResistShock04"
+						"EnchArmorResistMagic04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchArmorFortifyBlock05"
+						"EnchArmorResistFire05"
+						"EnchArmorResistFrost05"
+						"EnchArmorResistShock05"
+						"EnchArmorResistMagic05"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "Shields4to6"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyBlock04"
+						"EnchArmorResistFire04"
+						"EnchArmorResistFrost04"
+						"EnchArmorResistShock04"
+						"EnchArmorResistMagic04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchArmorFortifyBlock05"
+						"EnchArmorResistFire05"
+						"EnchArmorResistFrost05"
+						"EnchArmorResistShock05"
+						"EnchArmorResistMagic05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+					Enchantments: [
+						"EnchArmorFortifyBlock06"
+						"EnchArmorResistFire06"
+						"EnchArmorResistFrost06"
+						"EnchArmorResistShock06"
+						"EnchArmorResistMagic06"
+					]
+				}
+			]
+		}
+	]
+}

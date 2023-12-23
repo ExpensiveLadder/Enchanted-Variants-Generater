@@ -1,0 +1,203 @@
+{
+	Master: "Skyrim.esm"
+	Groups: [
+		{
+			GroupName: "Helmets1to3"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+					Enchantments: [
+						"EnchArmorFortifyAlteration01"
+						"EnchArmorFortifyConjuration01"
+						"EnchArmorFortifyDestruction01"
+						"EnchArmorFortifyIllusion01"
+						"EnchArmorFortifyRestoration01"
+						"EnchArmorFortifyMarksman01"
+						"EnchArmorFortifyAlchemy01"
+						"EnchArmorFortifyMagicka01"
+						"EnchArmorWaterbreathing"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorFortifyAlteration02"
+						"EnchArmorFortifyConjuration02"
+						"EnchArmorFortifyDestruction02"
+						"EnchArmorFortifyIllusion02"
+						"EnchArmorFortifyRestoration02"
+						"EnchArmorFortifyMarksman02"
+						"EnchArmorFortifyAlchemy02"
+						"EnchArmorFortifyMagicka02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyAlteration03"
+						"EnchArmorFortifyConjuration03"
+						"EnchArmorFortifyDestruction03"
+						"EnchArmorFortifyIllusion03"
+						"EnchArmorFortifyRestoration03"
+						"EnchArmorFortifyMarksman03"
+						"EnchArmorFortifyAlchemy03"
+						"EnchArmorFortifyMagicka03"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "Helmets2to4"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorFortifyAlteration02"
+						"EnchArmorFortifyConjuration02"
+						"EnchArmorFortifyDestruction02"
+						"EnchArmorFortifyIllusion02"
+						"EnchArmorFortifyRestoration02"
+						"EnchArmorFortifyMarksman02"
+						"EnchArmorFortifyAlchemy02"
+						"EnchArmorFortifyMagicka02"
+						"EnchArmorWaterbreathing"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyAlteration03"
+						"EnchArmorFortifyConjuration03"
+						"EnchArmorFortifyDestruction03"
+						"EnchArmorFortifyIllusion03"
+						"EnchArmorFortifyRestoration03"
+						"EnchArmorFortifyMarksman03"
+						"EnchArmorFortifyAlchemy03"
+						"EnchArmorFortifyMagicka03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyAlteration04"
+						"EnchArmorFortifyConjuration04"
+						"EnchArmorFortifyDestruction04"
+						"EnchArmorFortifyIllusion04"
+						"EnchArmorFortifyRestoration04"
+						"EnchArmorFortifyMarksman04"
+						"EnchArmorFortifyAlchemy04"
+						"EnchArmorFortifyMagicka04"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "Helmets3to5"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyAlteration03"
+						"EnchArmorFortifyConjuration03"
+						"EnchArmorFortifyDestruction03"
+						"EnchArmorFortifyIllusion03"
+						"EnchArmorFortifyRestoration03"
+						"EnchArmorFortifyMarksman03"
+						"EnchArmorFortifyAlchemy03"
+						"EnchArmorFortifyMagicka03"
+						"EnchArmorFortifyMagickaRate03"
+						"EnchArmorWaterbreathing"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyAlteration04"
+						"EnchArmorFortifyConjuration04"
+						"EnchArmorFortifyDestruction04"
+						"EnchArmorFortifyIllusion04"
+						"EnchArmorFortifyRestoration04"
+						"EnchArmorFortifyMarksman04"
+						"EnchArmorFortifyAlchemy04"
+						"EnchArmorFortifyMagicka04"
+						"EnchArmorFortifyMagickaRate04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchArmorFortifyAlteration05"
+						"EnchArmorFortifyConjuration05"
+						"EnchArmorFortifyDestruction05"
+						"EnchArmorFortifyIllusion05"
+						"EnchArmorFortifyRestoration05"
+						"EnchArmorFortifyMarksman05"
+						"EnchArmorFortifyAlchemy05"
+						"EnchArmorFortifyMagicka05"
+						"EnchArmorFortifyMagickaRate05"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "Helmets4to6"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyAlteration04"
+						"EnchArmorFortifyConjuration04"
+						"EnchArmorFortifyDestruction04"
+						"EnchArmorFortifyIllusion04"
+						"EnchArmorFortifyRestoration04"
+						"EnchArmorFortifyMarksman04"
+						"EnchArmorFortifyAlchemy04"
+						"EnchArmorFortifyMagicka04"
+						"EnchArmorFortifyMagickaRate04"
+						"EnchArmorWaterbreathing"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchArmorFortifyAlteration05"
+						"EnchArmorFortifyConjuration05"
+						"EnchArmorFortifyDestruction05"
+						"EnchArmorFortifyIllusion05"
+						"EnchArmorFortifyRestoration05"
+						"EnchArmorFortifyMarksman05"
+						"EnchArmorFortifyAlchemy05"
+						"EnchArmorFortifyMagicka05"
+						"EnchArmorFortifyMagickaRate05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+					Enchantments: [
+						"EnchArmorFortifyAlteration06"
+						"EnchArmorFortifyConjuration06"
+						"EnchArmorFortifyDestruction06"
+						"EnchArmorFortifyIllusion06"
+						"EnchArmorFortifyRestoration06"
+						"EnchArmorFortifyMarksman06"
+						"EnchArmorFortifyAlchemy06"
+						"EnchArmorFortifyMagicka06"
+						"EnchArmorFortifyMagickaRate06"
+					]
+				}
+			]
+		}
+	]
+}

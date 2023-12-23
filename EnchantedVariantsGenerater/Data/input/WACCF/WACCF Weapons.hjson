@@ -1,0 +1,113 @@
+{
+	Master: "Weapons Armor Clothing & Clutter Fixes.esp"
+	Groups: [
+	{
+		GroupName: "Weapons2to4"
+		RemoveWeapons: [
+			"OrcishBattleaxe"
+			"OrcishDagger"
+			"OrcishGreatsword"
+			"OrcishMace"
+			"OrcishSword"
+			"OrcishWarAxe"
+			"OrcishWarhammer"
+		]
+		Weapons: [
+		{
+			EditorID: "ElvenBattleaxe"
+			FormKey: "01399C:Skyrim.esm"
+		}
+		{
+			EditorID: "ElvenDagger"
+			FormKey: "01399E:Skyrim.esm"
+		}
+		{
+			EditorID: "ElvenGreatsword"
+			FormKey: "01399F:Skyrim.esm"
+		}
+		{
+			EditorID: "ElvenMace"
+			FormKey: "0139A0:Skyrim.esm"
+		}
+		{
+			EditorID: "ElvenSword"
+			FormKey: "0139A1:Skyrim.esm"
+		}
+		{
+			EditorID: "ElvenWarAxe"
+			FormKey: "01399B:Skyrim.esm"
+		}
+		{
+			EditorID: "ElvenWarhammer"
+			FormKey: "0139A2:Skyrim.esm"
+		}
+		]
+	}
+	{
+		GroupName: "Weapons3to5"
+		RemoveWeapons: [
+			"ElvenBattleaxe"
+			"ElvenDagger"
+			"ElvenGreatsword"
+			"ElvenMace"
+			"ElvenSword"
+			"ElvenWarAxe"
+			"ElvenWarhammer"
+		]
+		Weapons: [
+		{
+			EditorID: "OrcishBattleaxe"
+			FormKey: "01398C:Skyrim.esm"
+		}
+		{
+			EditorID: "OrcishDagger"
+			FormKey: "01398E:Skyrim.esm"
+		}
+		{
+			EditorID: "OrcishGreatsword"
+			FormKey: "01398F:Skyrim.esm"
+		}
+		{
+			EditorID: "OrcishMace"
+			FormKey: "013990:Skyrim.esm"
+		}
+		{
+			EditorID: "OrcishSword"
+			FormKey: "013991:Skyrim.esm"
+		}
+		{
+			EditorID: "OrcishWarAxe"
+			FormKey: "01398B:Skyrim.esm"
+		}
+		{
+			EditorID: "OrcishWarhammer"
+			FormKey: "013992:Skyrim.esm"
+		}
+		]
+	}
+	{
+		GroupName: Bows2to4"
+		RemoveWeapons: [
+			"OrcishBow"
+		]
+		Weapons: [
+		{
+			EditorID: "ElvenBow"
+			FormKey: "01399D:Skyrim.esm"
+		}
+		]
+	}
+	{
+		GroupName: Bows3to5"
+		RemoveWeapons: [
+			"ElvenBow"
+		]
+		Weapons: [
+		{
+			EditorID: "OrcishBow"
+			FormKey: "01398D:Skyrim.esm"
+		}
+		]
+	}
+	]
+}

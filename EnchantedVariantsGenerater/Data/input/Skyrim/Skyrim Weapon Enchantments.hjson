@@ -1,0 +1,444 @@
+{
+	Master: "Skyrim.esm"
+	Enchantments: [
+		{
+			EditorID: "EnchWeaponFireDamage01"
+			FormKey: "049BB7:Skyrim.esm"
+			Suffix: " of Embers"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchWeaponFireDamage02"
+			FormKey: "045C2A:Skyrim.esm"
+			Suffix: " of Burning"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchWeaponFireDamage03"
+			FormKey: "045C2C:Skyrim.esm"
+			Suffix: " of Scorching"
+			EnchantmentAmount: 1500
+		}		
+		{
+			EditorID: "EnchWeaponFireDamage04"
+			FormKey: "045C2D:Skyrim.esm"
+			Suffix: " of Flames"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchWeaponFireDamage05"
+			FormKey: "045C30:Skyrim.esm"
+			Suffix: " of the Blaze"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchWeaponFireDamage06"
+			FormKey: "045C35:Skyrim.esm"
+			Suffix: " of the Inferno"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchWeaponFrostDamage01"
+			FormKey: "045C36:Skyrim.esm"
+			Suffix: " of Chills"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchWeaponFrostDamage02"
+			FormKey: "045C37:Skyrim.esm"
+			Suffix: " of Frost"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchWeaponFrostDamage03"
+			FormKey: "045C39:Skyrim.esm"
+			Suffix: " of Ice"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchWeaponFrostDamage04"
+			FormKey: "045D4B:Skyrim.esm"
+			Suffix: " of Freezing"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchWeaponFrostDamage05"
+			FormKey: "045D56:Skyrim.esm"
+			Suffix: " of Blizzards"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchWeaponFrostDamage06"
+			FormKey: "045D58:Skyrim.esm"
+			Suffix: " of Winter"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchWeaponShockDamage01"
+			FormKey: "045D59:Skyrim.esm"
+			Suffix: " of Sparks"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchWeaponShockDamage02"
+			FormKey: "045D97:Skyrim.esm"
+			Suffix: " of Arcing"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchWeaponShockDamage03"
+			FormKey: "045F6F:Skyrim.esm"
+			Suffix: " of Shocks"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchWeaponShockDamage04"
+			FormKey: "045F89:Skyrim.esm"
+			Suffix: " of Thunderbolts"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchWeaponShockDamage05"
+			FormKey: "045F8D:Skyrim.esm"
+			Suffix: " of Lightning"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchWeaponShockDamage06"
+			FormKey: "045F9E:Skyrim.esm"
+			Suffix: " of Storms"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchWeaponStaminaDamage01"
+			FormKey: "05B459:Skyrim.esm"
+			Suffix: " of Fatigue"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchWeaponStaminaDamage02"
+			FormKey: "05B45A:Skyrim.esm"
+			Suffix: " of Weariness"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchWeaponStaminaDamage03"
+			FormKey: "05B45B:Skyrim.esm"
+			Suffix: " of Torpor"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchWeaponStaminaDamage04"
+			FormKey: "05B45C:Skyrim.esm"
+			Suffix: " of Debilitation"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchWeaponStaminaDamage05"
+			FormKey: "05B45D:Skyrim.esm"
+			Suffix: " of Lethargy"
+			EnchantmentAmount: 2500
+		}
+		
+		{
+			EditorID: "EnchWeaponStaminaDamage06"
+			FormKey: "05B45E:Skyrim.esm"
+			Suffix: " of Exhaustion"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchWeaponMagickaDamage01"
+			FormKey: "05B453:Skyrim.esm"
+			Suffix: " of Sapping"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchWeaponMagickaDamage02"
+			FormKey: "05B454:Skyrim.esm"
+			Suffix: " of Draining"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchWeaponMagickaDamage03"
+			FormKey: "05B455:Skyrim.esm"
+			Suffix: " of Diminishing"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchWeaponMagickaDamage04"
+			FormKey: "05B456:Skyrim.esm"
+			Suffix: " of Depleting"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchWeaponMagickaDamage05"
+			FormKey: "05B457:Skyrim.esm"
+			Suffix: " of Enervating"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchWeaponMagickaDamage06"
+			FormKey: "05B458:Skyrim.esm"
+			Suffix: " of Nullifying"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchWeaponSoulTrap01"
+			FormKey: "05B45F:Skyrim.esm"
+			Suffix: " of Souls"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchWeaponSoulTrap02"
+			FormKey: "05B460:Skyrim.esm"
+			Suffix: " of Soul Snares"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchWeaponSoulTrap03"
+			FormKey: "05B461:Skyrim.esm"
+			Suffix: " of Binding"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchWeaponSoulTrap04"
+			FormKey: "05B462:Skyrim.esm"
+			Suffix: " of Animus"
+			EnchantmentAmount: 2000
+		}		
+		{
+			EditorID: "EnchWeaponSoulTrap05"
+			FormKey: "05B463:Skyrim.esm"
+			Suffix: " of Malediction"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchWeaponSoulTrap06"
+			FormKey: "05B464:Skyrim.esm"
+			Suffix: " of Damnation"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchWeaponFear01"
+			FormKey: "0FBFF7:Skyrim.esm"
+			Suffix: " of Dismay"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchWeaponFear02"
+			FormKey: "05B466:Skyrim.esm"
+			Suffix: " of Cowardice"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchWeaponFear03"
+			FormKey: "05B467:Skyrim.esm"
+			Suffix: " of Fear"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchWeaponFear04"
+			FormKey: "05B468:Skyrim.esm"
+			Suffix: " of Despair"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchWeaponFear05"
+			FormKey: "05B469:Skyrim.esm"
+			Suffix: " of Dread"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchWeaponFear06"
+			FormKey: "05B46A:Skyrim.esm"
+			Suffix: " of Terror"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchWeaponTurnUndead01"
+			FormKey: "05B46C:Skyrim.esm"
+			Prefix: "Blessed "
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchWeaponTurnUndead02"
+			FormKey: "05B46D:Skyrim.esm"
+			Prefix: "Sanctified "
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchWeaponTurnUndead03"
+			FormKey: "05B46E:Skyrim.esm"
+			Prefix: "Reverent "
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchWeaponTurnUndead04"
+			FormKey: "05B46F:Skyrim.esm"
+			Prefix: "Hallowed "
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchWeaponTurnUndead05"
+			FormKey: "05B470:Skyrim.esm"
+			Prefix: "Virtuous "
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchWeaponTurnUndead06"
+			FormKey: "0BF3F5:Skyrim.esm"
+			Prefix: "Holy "
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchWeaponAbsorbHealth02"
+			FormKey: "0AA145:Skyrim.esm"
+			Suffix: " of Absorption"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchWeaponAbsorbHealth03"
+			FormKey: "0AA15A:Skyrim.esm"
+			Suffix: " of Consuming"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchWeaponAbsorbHealth04"
+			FormKey: "0AA15B:Skyrim.esm"
+			Suffix: " of Devouring"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchWeaponAbsorbHealth05"
+			FormKey: "0AA15C:Skyrim.esm"
+			Suffix: " of Leeching"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchWeaponAbsorbHealth06"
+			FormKey: "0AA15D:Skyrim.esm"
+			Suffix: " of the Vampire"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchWeaponAbsorbStamina02"
+			FormKey: "0AA159:Skyrim.esm"
+			Suffix: " of Gleaning"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchWeaponAbsorbStamina03"
+			FormKey: "0AA162:Skyrim.esm"
+			Suffix: " of Reaping"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchWeaponAbsorbStamina04"
+			FormKey: "0AA163:Skyrim.esm"
+			Suffix: " of Harvesting"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchWeaponAbsorbStamina05"
+			FormKey: "0AA164:Skyrim.esm"
+			Suffix: " of Garnering"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchWeaponAbsorbStamina06"
+			FormKey: "0AA165:Skyrim.esm"
+			Suffix: " of Subsuming"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchWeaponAbsorbMagicka02"
+			FormKey: "0AA158:Skyrim.esm"
+			Suffix: " of Siphoning"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchWeaponAbsorbMagicka03"
+			FormKey: "0AA15E:Skyrim.esm"
+			Suffix: " of Harrowing"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchWeaponAbsorbMagicka04"
+			FormKey: "0AA15F:Skyrim.esm"
+			Suffix: " of Winnowing"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchWeaponAbsorbMagicka05"
+			FormKey: "0AA160:Skyrim.esm"
+			Suffix: " of Evoking"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchWeaponAbsorbMagicka06"
+			FormKey: "0AA161:Skyrim.esm"
+			Suffix: " of the Sorcerer"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchWeaponBanish04"
+			FormKey: "0ACBB7:Skyrim.esm"
+			Suffix: " of Banishing"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchWeaponBanish05"
+			FormKey: "0ACBB8:Skyrim.esm"
+			Suffix: " of Expelling"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchWeaponBanish06"
+			FormKey: "0ACBB9:Skyrim.esm"
+			Suffix: " of Annihilating"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchWeaponParalysis04"
+			FormKey: "0ACBBA:Skyrim.esm"
+			Suffix: " of Stunning"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchWeaponParalysis05"
+			FormKey: "0ACBBB:Skyrim.esm"
+			Suffix: " of Immobilizing"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchWeaponParalysis06"
+			FormKey: "0ACBBC:Skyrim.esm"
+			Suffix: " of Petrifying"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchWeaponChaosDamage03"
+			FormKey: "02C46F:Dragonborn.esm"
+			Suffix: " of Chaos"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchWeaponChaosDamage04"
+			FormKey: "02C470:Dragonborn.esm"
+			Suffix: " of High Chaos"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchWeaponChaosDamage05"
+			FormKey: "02C471:Dragonborn.esm"
+			Suffix: " of Extreme Chaos"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchWeaponChaosDamage06"
+			FormKey: "02C472:Dragonborn.esm"
+			Suffix: " of Ultimate Chaos"
+			EnchantmentAmount: 3000
+		}
+	]
+}

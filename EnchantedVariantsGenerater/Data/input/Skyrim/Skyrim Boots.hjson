@@ -1,0 +1,136 @@
+{
+	Groups: [
+	{
+		GroupName: "BootsHeavy1to3"
+		Armors: [
+		{
+			EditorID: "ArmorIronBoots"
+			FormKey: "012E4B:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorSteelBootsA"
+			FormKey: "013951:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorSteelBootsB"
+			FormKey: "0F6F21:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorImperialBoots"
+			FormKey: "0136D6:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorBonemoldBoots"
+			FormKey: "01CD92:Dragonborn.esm"
+		}
+		]
+	}
+	{
+		GroupName: "BootsHeavy2to4"
+		Armors: [
+		{
+			EditorID: "ArmorDwarvenBoots"
+			FormKey: "01394C:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorSteelPlateBoots"
+			FormKey: "01395B:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorChitinHeavyBoots"
+			FormKey: "01CD82:Dragonborn.esm"
+		}
+		]
+	}
+	{
+		GroupName: "BootsHeavy3to5"
+		Armors: [
+		{
+			EditorID: "ArmorOrcishBoots"
+			FormKey: "013956:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorNordicHeavyBoots"
+			FormKey: "01CD96:Dragonborn.esm"
+		}
+		{
+			EditorID: "ArmorEbonyBoots"
+			FormKey: "013960:Skyrim.esm"
+		}
+		]
+	}
+	{
+		GroupName: "BootsHeavy4to6"
+		Armors: [
+		{
+			EditorID: "DLC2ArmorStalhrimHeavyBoots"
+			FormKey: "01CD9E:Dragonborn.esm"
+		}
+		{
+			EditorID: "ArmorDaedricBoots"
+			FormKey: "01396A:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorDragonplateBoots"
+			FormKey: "013965:Skyrim.esm"
+		}
+		]
+	}
+	{
+		GroupName: "BootsLight1to3"
+		Armors: [
+		{
+			EditorID: "ArmorHideBoots"
+			FormKey: "013910:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorLeatherBoots"
+			FormKey: "013920:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorImperialLightBoots"
+			FormKey: "013ED7:Skyrim.esm"
+		}
+		]
+	}
+	{
+		GroupName: "BootsLight2to4"
+		Armors: [
+		{
+			EditorID: "ArmorElvenBoots"
+			FormKey: "01391A:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorChitinLightBoots"
+			FormKey: "01CD86:Dragonborn.esm"
+		}
+		{
+			EditorID: "ArmorScaledBoots"
+			FormKey: "01B39F:Skyrim.esm"
+		}
+		]
+	}
+	{
+		GroupName: "BootsLight3to5"
+		Armors: [
+		{
+			EditorID: "ArmorGlassBoots"
+			FormKey: "013938:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorStalhrimLightBoots"
+			FormKey: "01CD7E:Dragonborn.esm"
+		}
+		]
+	}
+	{
+		GroupName: "BootsLight4to6"
+		Armors: [
+		{
+			EditorID: "ArmorDragonscaleBoots"
+			FormKey: "01393D:Skyrim.esm"
+		}
+		]
+	}
+	]
+}

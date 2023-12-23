@@ -1,0 +1,92 @@
+{
+	Groups: [
+	{
+		GroupName: "Shields1to3"
+		Armors: [
+		{
+			EditorID: "ArmorIronShield"
+			FormKey: "012EB6:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorIronBandedShield"
+			FormKey: "01394B:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorSteelShield"
+			FormKey: "013955:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorBonemoldShield"
+			FormKey: "026234:Dragonborn.esm"
+		}
+		{
+			EditorID: "ArmorHideShield"
+			FormKey: "013914:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorImperialLightShield"
+			FormKey: "013AB2:Skyrim.esm"
+		}
+		]
+	}
+	{
+		GroupName: "Shields2to4"
+		Armors: [
+		{
+			EditorID: "ArmorDwarvenShield"
+			FormKey: "013950:Skyrim.esm"
+		}		
+		{
+			EditorID: "ArmorElvenShield"
+			FormKey: "01391E:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorChitinShield"
+			FormKey: "026235:Dragonborn.esm"
+		}
+		]
+	}
+	{
+		GroupName: "Shields3to5"
+		Armors: [
+		{
+			EditorID: "ArmorOrcishShield"
+			FormKey: "013946:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorNordicShield"
+			FormKey: "026236:Dragonborn.esm"
+		}
+		{
+			EditorID: "ArmorEbonyShield"
+			FormKey: "013964:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorGlassShield"
+			FormKey: "01393C:Skyrim.esm"
+		}
+		{
+			EditorID: "DLC2ArmorStalhrimShield"
+			FormKey: "026237:Dragonborn.esm"
+		}
+		]
+	}
+	{
+		GroupName: "Shields4to6"
+		Armors: [
+		{
+			EditorID: "ArmorDaedricShield"
+			FormKey: "01396E:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorDragonplateShield"
+			FormKey: "013968:Skyrim.esm"
+		}
+		{
+			EditorID: "ArmorDragonscaleShield"
+			FormKey: "013941:Skyrim.esm"
+		}
+		]
+	}
+	]
+}

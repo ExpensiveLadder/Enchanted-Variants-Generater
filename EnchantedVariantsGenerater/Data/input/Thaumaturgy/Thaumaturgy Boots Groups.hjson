@@ -1,0 +1,181 @@
+{
+	Master: "Thaumaturgy.esp"
+	Groups: [
+		{
+			GroupName: "BootsHeavy1to3"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+					Enchantments: [
+						"EnchArmorFortifyStaminaRate01"
+						"EnchArmorMuffle"
+						"EnchArmorWaterwalking"
+						"EnchArmorSlowfall"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorFortifyStaminaRate02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					RemoveEnchantments: [
+						"EnchArmorMuffle"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "BootsHeavy2to4"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorFortifyStaminaRate02"
+						"EnchArmorMuffle"
+						"EnchArmorWaterwalking"
+						"EnchArmorSlowfall"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyStaminaRate03"
+						"EnchArmorSlowfall"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					RemoveEnchantments: [
+						"EnchArmorMuffle"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "BootsHeavy3to5"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyStaminaRate03"
+						"EnchArmorWaterwalking"
+						"EnchArmorSlowfall"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyStaminaRate04"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "BootsHeavy4to6"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyStaminaRate04"
+						"EnchArmorWaterwalking"
+						"EnchArmorSlowfall"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "BootsLight1to3"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+					Enchantments: [
+						"EnchArmorFortifyStaminaRate01"
+						"EnchArmorMuffle"
+						"EnchArmorWaterwalking"
+						"EnchArmorSlowfall"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorFortifyStaminaRate02"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "BootsLight2to4"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorFortifyStaminaRate02"
+						"EnchArmorMuffle"
+						"EnchArmorWaterwalking"
+						"EnchArmorSlowfall"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyStaminaRate03"
+						"EnchArmorSlowfall"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "BootsLight3to5"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyStaminaRate03"
+						"EnchArmorWaterwalking"
+						"EnchArmorSlowfall"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyStaminaRate04"
+						"EnchArmorSlowfall"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "BootsLight4to6"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyStaminaRate04"
+						"EnchArmorMuffle"
+						"EnchArmorWaterwalking"
+						"EnchArmorSlowfall"
+					]
+				}
+			]
+		}
+	]
+}

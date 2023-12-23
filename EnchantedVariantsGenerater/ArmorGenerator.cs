@@ -1,31 +1,31 @@
-﻿using Loqui;
-using Mutagen.Bethesda;
+﻿using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins.Records;
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Synthesis;
 using Noggog;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EnchantedVariantsGenerater
 {
     public class ArmorGenerator
     {
-        public static readonly Armor.TranslationMask armortranslationmask = new(defaultOn: false)
+        public static readonly Armor.TranslationMask armortranslationmask = new(defaultOn: true)
         {
-            MajorRecordFlagsRaw = true,
-            SkyrimMajorRecordFlags = true,
-            ObjectEffect = true,
-            EnchantmentAmount = true,
-            VirtualMachineAdapter = true,
-            Name = true,
-            Value = true,
-            TemplateArmor = true,
-            FormVersion = true,
+            AlternateBlockMaterial = false,
+            Armature = false,
+            Weight = false,
+            Race = false,
+            PutDownSound = false,
+            PickUpSound = false,
+            ArmorRating = false,
+            BashImpactDataSet = false,
+            BodyTemplate = false,
+            Description = false,
+            Destructible = false,
+            EquipmentType = false,
+            Keywords = false,
+            ObjectBounds = false,
             WorldModel = new GenderedItem<ArmorModel.TranslationMask>(new ArmorModel.TranslationMask(defaultOn: false) { Model = new Model.TranslationMask(false) { } }, new ArmorModel.TranslationMask(defaultOn: false) { Model = new Model.TranslationMask(false) { } })
         };
 
@@ -37,7 +37,7 @@ namespace EnchantedVariantsGenerater
                 {
                     if (armorInfo.Value.Item.TryResolve(state.LinkCache, out var armorGetter))
                     {
-                        Console.WriteLine("Reading Armor: " + armorInfo.Key);
+                        Program.DoVerboseLog("Reading Armor: " + armorInfo.Key);
 
                         uint itemvalue;
                         if (armorInfo.Value.Value != null && armorInfo.Value.Value > 0) {
@@ -55,7 +55,7 @@ namespace EnchantedVariantsGenerater
                         foreach (var leveledlistInfo in group.Value.LeveledLists.Values)
                         {
                             string leveledlisteditorid = leveledlistInfo.LeveledListPrefix + armorInfo.Key + leveledlistInfo.LeveledListSuffix;
-                            Console.WriteLine("Reading Leveled List: " + leveledlisteditorid);
+                            Program.DoVerboseLog("Reading Leveled List: " + leveledlisteditorid);
 
                             ExtendedList<LeveledItemEntry>? oldleveledlist = null;
                             LeveledItem leveledlist;
@@ -74,60 +74,73 @@ namespace EnchantedVariantsGenerater
 
                             foreach (var enchantmentInfo in leveledlistInfo.Enchantments) {
                                 string enchanteditemeditorid = "Ench_" + armorInfo.Key + "_" + enchantmentInfo.Key;
-                                Console.WriteLine("Reading Enchanted Armor: " + enchanteditemeditorid);
+                                Program.DoVerboseLog("Reading Enchanted Armor: " + enchanteditemeditorid);
 
                                 string enchanteditemname = enchantmentInfo.Value.Prefix + armorGetter.Name + enchantmentInfo.Value.Suffix;
-                                ushort? enchantmentamount = enchantmentInfo.Value.EnchantmentAmount;
+                                //ushort? enchantmentamount = enchantmentInfo.Value.EnchantmentAmount;
 
                                 Armor enchanteditem;
                                 if (state.LinkCache.TryResolveIdentifier<IArmorGetter>(enchanteditemeditorid, out var enchantedArmorGetter))
                                 {
-                                    Console.WriteLine("Reading Enchanted Armor Override: " + enchanteditemeditorid);
+                                    Program.DoVerboseLog("Reading Enchanted Armor Override: " + enchanteditemeditorid);
                                     bool copyitem = false;
                                     enchanteditem = state.LinkCache.Resolve<IArmorGetter>(enchantedArmorGetter).DeepCopy(armortranslationmask);
 
+                                    /*
                                     if (enchanteditem.EnchantmentAmount != enchantmentamount)
                                     {
+                                        Console.WriteLine(enchanteditemeditorid + ": EnchantmentAmount does not match: " + armorInfo.Key + " Overriding!");
                                         enchanteditem.EnchantmentAmount = enchantmentamount;
                                         copyitem = true;
                                     }
+                                    */
                                     if (enchanteditem.Name != enchanteditemname)
                                     {
+                                        Console.WriteLine(enchanteditemeditorid + ": Name does not match: " + armorInfo.Key + " Overriding!");
                                         enchanteditem.Name = enchanteditemname;
                                         copyitem = true;
                                     }
                                     if (enchanteditem.Value != itemvalue)
                                     {
+                                        Console.WriteLine(enchanteditemeditorid + " Value does not match " + armorInfo.Key + " Overriding!");
                                         enchanteditem.Value = itemvalue;
                                         copyitem = true;
                                     }
                                     if (scripts == null) {
-                                        if (enchanteditem.VirtualMachineAdapter != null) {
+                                        if (enchanteditem.VirtualMachineAdapter != null)
+                                        {
+                                            Console.WriteLine(enchanteditemeditorid + " Scrips does not match " + armorInfo.Key + " Overriding!");
                                             enchanteditem.VirtualMachineAdapter = null;
                                             copyitem = true;
                                         }
                                     } else {
                                         if (enchanteditem.VirtualMachineAdapter == null) {
-                                            enchanteditem.VirtualMachineAdapter = scripts;
-                                            copyitem = true;
+                                            if (scripts != null) {
+
+                                                Console.WriteLine(enchanteditemeditorid + " Scripts does not match " + armorInfo.Key + " Overriding!");
+                                                enchanteditem.VirtualMachineAdapter = scripts;
+                                                copyitem = true;
+                                            }
                                         } else {
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
                                             if (!scripts.GetEqualsMask(enchanteditem.VirtualMachineAdapter).Scripts.Overall)
                                             {
+                                                Console.WriteLine(enchanteditemeditorid + " Scripts does not match " + armorInfo.Key + " Overriding!");
                                                 enchanteditem.VirtualMachineAdapter = scripts;
                                                 copyitem = true;
                                             }
 #pragma warning restore CS8602 // Dereference of a possibly null reference.
                                         }
                                     }
-                                    if (enchanteditem.ObjectEffect != enchantmentInfo.Value.Enchantment) {
+                                    if (enchanteditem.ObjectEffect.FormKey != enchantmentInfo.Value.Enchantment.FormKey)
+                                    {
+                                        Console.WriteLine(enchanteditemeditorid + " Enchantment does not match " + armorInfo.Key + " Overriding!");
                                         enchanteditem.ObjectEffect = enchantmentInfo.Value.Enchantment;
                                         copyitem = true;
                                     }
 
                                     if (copyitem)
                                     {
-                                        Console.WriteLine("Overriding Enchanted Armor: " + enchanteditemeditorid);
                                         enchanteditem.EditorID = enchanteditemeditorid;
                                         state.PatchMod.Armors.Set(enchanteditem);
                                     }
@@ -140,7 +153,7 @@ namespace EnchantedVariantsGenerater
                                         Name = enchanteditemname,
                                         Value = itemvalue,
                                         ObjectEffect = enchantmentInfo.Value.Enchantment,
-                                        EnchantmentAmount = enchantmentamount,
+                                        //EnchantmentAmount = enchantmentamount,
                                         TemplateArmor = armorInfo.Value.Item.AsNullable()
                                     };
                                     state.PatchMod.Armors.Set(enchanteditem);

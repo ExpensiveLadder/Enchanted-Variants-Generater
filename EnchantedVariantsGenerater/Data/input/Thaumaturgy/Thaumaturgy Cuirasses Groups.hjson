@@ -1,0 +1,379 @@
+{
+	Master: "Thaumaturgy.esp"
+	Groups: [
+		{
+			GroupName: "CuirassesHeavy1to3"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+					Enchantments: [
+						"EnchArmorFortifyStamina01"
+						"EnchArmorFortifySmithing01"
+						"EnchArmorResistPoison01"
+						"EnchArmorResistMagic01"
+						"EnchArmorFortifyPowerAttacks01"
+						"EnchArmorFortifyShoutDuration01"
+						"EnchArmorFortifyHealRate01"
+						"EnchArmorFortifyMagickaRate01"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorFortifyStamina02"
+						"EnchArmorFortifySmithing02"
+						"EnchArmorResistPoison02"
+						"EnchArmorResistMagic02"
+						"EnchArmorFortifyPowerAttacks02"
+						"EnchArmorFortifyShoutDuration02"
+						"EnchArmorFortifyHealRate02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyStamina03"
+						"EnchArmorFortifySmithing03"
+						"EnchArmorResistPoison03"
+						"EnchArmorResistMagic03"
+						"EnchArmorFortifyPowerAttacks03"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "CuirassesHeavy2to4"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorFortifyStamina02"
+						"EnchArmorFortifySmithing02"
+						"EnchArmorResistPoison02"
+						"EnchArmorResistMagic02"
+						"EnchArmorFortifyPowerAttacks02"
+						"EnchArmorFortifyShoutDuration02"
+						"EnchArmorFortifyHealRate02"
+						"EnchArmorFortifyMagickaRate02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyStamina03"
+						"EnchArmorFortifySmithing03"
+						"EnchArmorResistPoison03"
+						"EnchArmorResistMagic03"
+						"EnchArmorFortifyPowerAttacks03"
+						"EnchArmorFortifyShoutDuration03"
+						"EnchArmorFortifyHealRate03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyStamina04"
+						"EnchArmorFortifySmithing04"
+						"EnchArmorResistPoison04"
+						"EnchArmorResistMagic04"
+						"EnchArmorFortifyPowerAttacks04"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "CuirassesHeavy3to5"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyStamina03"
+						"EnchArmorFortifySmithing03"
+						"EnchArmorResistPoison03"
+						"EnchArmorResistMagic03"
+						"EnchArmorFortifyPowerAttacks03"
+						"EnchArmorFortifyShoutDuration03"
+						"EnchArmorFortifyMagickaRate03"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyStaminaRate03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyStamina04"
+						"EnchArmorFortifySmithing04"
+						"EnchArmorResistPoison04"
+						"EnchArmorResistMagic04"
+						"EnchArmorFortifyPowerAttacks04"
+						"EnchArmorFortifyShoutDuration04"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyStaminaRate04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchArmorFortifyStamina05"
+						"EnchArmorFortifySmithing05"
+						"EnchArmorResistPoison05"
+						"EnchArmorResistMagic05"
+						"EnchArmorFortifyPowerAttacks05"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyStaminaRate05"
+						"EnchArmorFortifyHealRate05"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "CuirassesHeavy4to6"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyStamina04"
+						"EnchArmorFortifySmithing04"
+						"EnchArmorResistPoison04"
+						"EnchArmorResistMagic04"
+						"EnchArmorFortifyPowerAttacks04"
+						"EnchArmorFortifyShoutDuration04"
+						"EnchArmorFortifyMagickaRate04"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyStaminaRate04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchArmorFortifyStamina05"
+						"EnchArmorFortifySmithing05"
+						"EnchArmorResistPoison05"
+						"EnchArmorResistMagic05"
+						"EnchArmorFortifyPowerAttacks05"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyStaminaRate05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+					Enchantments: [
+						"EnchArmorFortifyStamina06"
+						"EnchArmorFortifySmithing06"
+						"EnchArmorResistPoison06"
+						"EnchArmorResistMagic06"
+						"EnchArmorFortifyPowerAttacks06"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyStaminaRate06"
+						"EnchArmorFortifyHealRate06"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "CuirassesLight1to3"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_01"
+					Enchantments: [
+						"EnchArmorFortifyShoutDuration01"
+						"EnchArmorFortifySmithing01"
+						"EnchArmorFortifyStamina01"
+						"EnchArmorResistPoison01"
+						"EnchArmorResistMagic01"
+						"EnchArmorFortifyPowerAttacks01"
+						"EnchArmorFortifyHealRate01"
+						"EnchArmorFortifyMagickaRate01"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorFortifyShoutDuration02"
+						"EnchArmorFortifySmithing02"
+						"EnchArmorFortifyStamina02"
+						"EnchArmorResistPoison02"
+						"EnchArmorResistMagic02"
+						"EnchArmorFortifyPowerAttacks02"
+						"EnchArmorFortifyHealRate02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifySmithing03"
+						"EnchArmorFortifyStamina03"
+						"EnchArmorResistPoison03"
+						"EnchArmorResistMagic03"
+						"EnchArmorFortifyPowerAttacks03"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "CuirassesLight2to4"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchArmorFortifyShoutDuration02"
+						"EnchArmorFortifySmithing02"
+						"EnchArmorFortifyStamina02"
+						"EnchArmorResistPoison02"
+						"EnchArmorResistMagic02"
+						"EnchArmorFortifyPowerAttacks02"
+						"EnchArmorFortifyHealRate02"
+						"EnchArmorFortifyMagickaRate02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyShoutDuration03"
+						"EnchArmorFortifySmithing03"
+						"EnchArmorFortifyStamina03"
+						"EnchArmorResistPoison03"
+						"EnchArmorResistMagic03"
+						"EnchArmorFortifyPowerAttacks03"
+						"EnchArmorFortifyHealRate03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifySmithing03"
+						"EnchArmorFortifyStamina03"
+						"EnchArmorResistPoison03"
+						"EnchArmorResistMagic03"
+						"EnchArmorFortifyPowerAttacks03"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "CuirassesLight3to5"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchArmorFortifyShoutDuration03"
+						"EnchArmorFortifySmithing03"
+						"EnchArmorFortifyStamina03"
+						"EnchArmorResistPoison03"
+						"EnchArmorResistMagic03"
+						"EnchArmorFortifyPowerAttacks03"
+						"EnchArmorFortifyMagickaRate03"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyStaminaRate03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyShoutDuration04"
+						"EnchArmorFortifySmithing04"
+						"EnchArmorFortifyStamina04"
+						"EnchArmorResistPoison04"
+						"EnchArmorResistMagic04"
+						"EnchArmorFortifyPowerAttacks04"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyStaminaRate04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchArmorFortifySmithing05"
+						"EnchArmorFortifyStamina05"
+						"EnchArmorResistPoison05"
+						"EnchArmorResistMagic05"
+						"EnchArmorFortifyPowerAttacks05"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyStaminaRate05"
+						"EnchArmorFortifyHealRate05"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "CuirassesLight4to6"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchArmorFortifyShoutDuration04"
+						"EnchArmorFortifySmithing04"
+						"EnchArmorFortifyStamina04"
+						"EnchArmorResistPoison04"
+						"EnchArmorResistMagic04"
+						"EnchArmorFortifyPowerAttacks04"
+						"EnchArmorFortifyMagickaRate04"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyStaminaRate04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchArmorFortifySmithing05"
+						"EnchArmorFortifyStamina05"
+						"EnchArmorResistPoison05"
+						"EnchArmorResistMagic05"
+						"EnchArmorFortifyPowerAttacks05"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyStaminaRate05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchArmor_"
+					LeveledListSuffix: "_06"
+					Enchantments: [
+						"EnchArmorFortifySmithing06"
+						"EnchArmorFortifyStamina06"
+						"EnchArmorResistPoison06"
+						"EnchArmorResistMagic06"
+						"EnchArmorFortifyPowerAttacks06"
+					]
+					RemoveEnchantments: [
+						"EnchArmorFortifyStaminaRate06"
+						"EnchArmorFortifyHealRate06"
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,31 +1,46 @@
-﻿using Loqui;
-using Mutagen.Bethesda;
+﻿using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins.Records;
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Synthesis;
 using Noggog;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EnchantedVariantsGenerater
 {
     public class WeaponGenerator
     {
-        public static readonly Weapon.TranslationMask weapontranslationmask = new(defaultOn: false)
+        public static readonly Weapon.TranslationMask weapontranslationmask = new(defaultOn: true)
         {
-            ObjectEffect = true,
-            EnchantmentAmount = true,
-            Name = true,
-            BasicStats = new WeaponBasicStats.TranslationMask(false)
+            BasicStats = new WeaponBasicStats.TranslationMask(true)
             {
-                Value = true
+                Damage = false,
+                Weight = false
             },
-            VirtualMachineAdapter = true,
-            Template = true,
-            FormVersion = true
+            ScopeModel = false,
+            ObjectBounds = false,
+            Model = false,
+            PutDownSound = false,
+            PickUpSound = false,
+            AlternateBlockMaterial = false,
+            UnequipSound = false,
+            AttackFailSound = false,
+            AttackLoopSound = false,
+            AttackSound = false,
+            AttackSound2D = false,
+            BlockBashImpact = false,
+            Critical = false,
+            Data = false,
+            Description = false,
+            Destructible = false,
+            DetectionSoundLevel = false,
+            EquipmentType = false,
+            EquipSound = false,
+            FirstPersonModel = false,
+            Icons = false,
+            IdleSound = false,
+            Keywords = false,
+            ImpactDataSet = false
         };
 
         public static void GenerateWeapons(IPatcherState<ISkyrimMod, ISkyrimModGetter> state, Dictionary<string, GroupInfo> groups)
@@ -36,7 +51,7 @@ namespace EnchantedVariantsGenerater
                 {
                     if (weaponInfo.Value.Item.TryResolve(state.LinkCache, out var weaponGetter))
                     {
-                        Console.WriteLine("Reading Weapon: " + weaponInfo.Key);
+                        Program.DoVerboseLog("Reading Weapon: " + weaponInfo.Key);
 
                         uint itemvalue;
                         if (weaponInfo.Value.Value != null && weaponInfo.Value.Value >= 0)
@@ -64,7 +79,7 @@ namespace EnchantedVariantsGenerater
                         foreach (var leveledlistInfo in group.Value.LeveledLists.Values)
                         {
                             string leveledlisteditorid = leveledlistInfo.LeveledListPrefix + weaponInfo.Key + leveledlistInfo.LeveledListSuffix;
-                            Console.WriteLine("Reading Leveled List: " + leveledlisteditorid);
+                            Program.DoVerboseLog("Reading Leveled List: " + leveledlisteditorid);
 
                             ExtendedList<LeveledItemEntry>? oldleveledlist = null;
                             LeveledItem leveledlist;
@@ -87,7 +102,7 @@ namespace EnchantedVariantsGenerater
                             foreach (var enchantmentInfo in leveledlistInfo.Enchantments)
                             {
                                 string enchanteditemeditorid = "Ench_" + weaponInfo.Key + "_" + enchantmentInfo.Key;
-                                Console.WriteLine("Reading Enchanted Weapon: " + enchanteditemeditorid);
+                                Program.DoVerboseLog("Reading Enchanted Weapon: " + enchanteditemeditorid);
 
                                 string enchanteditemname = enchantmentInfo.Value.Prefix + weaponGetter.Name + enchantmentInfo.Value.Suffix;
                                 ushort? enchantmentamount = enchantmentInfo.Value.EnchantmentAmount;
@@ -95,23 +110,26 @@ namespace EnchantedVariantsGenerater
                                 Weapon enchanteditem;
                                 if (state.LinkCache.TryResolveIdentifier<IWeaponGetter>(enchanteditemeditorid, out var enchantedWeaponGetter))
                                 {
-                                    Console.WriteLine("Reading Enchanted Weapon Override: " + enchanteditemeditorid);
+                                    Program.DoVerboseLog("Reading Enchanted Weapon Override: " + enchanteditemeditorid);
                                     bool copyitem = false;
                                     enchanteditem = state.LinkCache.Resolve<IWeaponGetter>(enchantedWeaponGetter).DeepCopy(weapontranslationmask);
 
                                     if (enchanteditem.EnchantmentAmount != enchantmentamount)
                                     {
+                                        Console.WriteLine(enchanteditemeditorid + " EnchantmentAmount does not match " + weaponInfo.Key + " Overriding!");
                                         enchanteditem.EnchantmentAmount = enchantmentamount;
                                         copyitem = true;
                                     }
                                     if (enchanteditem.Name != enchanteditemname)
                                     {
+                                        Console.WriteLine(enchanteditemeditorid + " Name does not match " + weaponInfo.Key + " Overriding!");
                                         enchanteditem.Name = enchanteditemname;
                                         copyitem = true;
                                     }
                                     enchanteditem.BasicStats ??= new();
                                     if (enchanteditem.BasicStats.Value != itemvalue)
                                     {
+                                        Console.WriteLine(enchanteditemeditorid + " Value does not match " + weaponInfo.Key + " Overriding!");
                                         enchanteditem.BasicStats.Value = itemvalue;
                                         copyitem = true;
                                     }
@@ -119,6 +137,7 @@ namespace EnchantedVariantsGenerater
                                     {
                                         if (enchanteditem.VirtualMachineAdapter != null)
                                         {
+                                            Console.WriteLine(enchanteditemeditorid + " Scripts does not match " + weaponInfo.Key + " Overriding!");
                                             enchanteditem.VirtualMachineAdapter = null;
                                             copyitem = true;
                                         }
@@ -127,29 +146,33 @@ namespace EnchantedVariantsGenerater
                                     {
                                         if (enchanteditem.VirtualMachineAdapter == null)
                                         {
-                                            enchanteditem.VirtualMachineAdapter = scripts;
-                                            copyitem = true;
+                                            if (scripts != null) {
+                                                Console.WriteLine(enchanteditemeditorid + " Scripts does not match " + weaponInfo.Key + " Overriding!");
+                                                enchanteditem.VirtualMachineAdapter = scripts;
+                                                copyitem = true;
+                                            }
                                         }
                                         else
                                         {
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
                                             if (!scripts.GetEqualsMask(enchanteditem.VirtualMachineAdapter).Scripts.Overall)
                                             {
+                                                Console.WriteLine(enchanteditemeditorid + " Scripts does not match " + weaponInfo.Key + " Overriding!");
                                                 enchanteditem.VirtualMachineAdapter = scripts;
                                                 copyitem = true;
                                             }
 #pragma warning restore CS8602 // Dereference of a possibly null reference.
                                         }
                                     }
-                                    if (enchanteditem.ObjectEffect != enchantmentInfo.Value.Enchantment)
+                                    if (enchanteditem.ObjectEffect.FormKey != enchantmentInfo.Value.Enchantment.FormKey)
                                     {
+                                        Console.WriteLine(enchanteditemeditorid + " Enchantment does not match " + weaponInfo.Key + " Overriding!");
                                         enchanteditem.ObjectEffect = enchantmentInfo.Value.Enchantment;
                                         copyitem = true;
                                     }
 
                                     if (copyitem)
                                     {
-                                        Console.WriteLine("Overriding Enchanted Weapon: " + enchanteditemeditorid);
                                         enchanteditem.EditorID = enchanteditemeditorid;
                                         state.PatchMod.Weapons.Set(enchanteditem);
                                     }

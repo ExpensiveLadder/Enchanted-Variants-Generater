@@ -1,0 +1,1101 @@
+{
+	Master: "Skyrim.esm"
+	Groups: [
+		{
+			GroupName: "Weapons1to3"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_01"
+					Enchantments: [
+						"EnchWeaponFireDamage01"
+						"EnchWeaponFrostDamage01"
+						"EnchWeaponShockDamage01"
+						"EnchWeaponStaminaDamage01"
+						"EnchWeaponMagickaDamage01"
+						"EnchWeaponSoulTrap01"
+						"EnchWeaponFear01"
+						"EnchWeaponTurnUndead01"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchWeaponFireDamage02"
+						"EnchWeaponFrostDamage02"
+						"EnchWeaponShockDamage02"
+						"EnchWeaponStaminaDamage02"
+						"EnchWeaponMagickaDamage02"
+						"EnchWeaponSoulTrap02"
+						"EnchWeaponFear02"
+						"EnchWeaponTurnUndead02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchWeaponFireDamage03"
+						"EnchWeaponFrostDamage03"
+						"EnchWeaponShockDamage03"
+						"EnchWeaponStaminaDamage03"
+						"EnchWeaponMagickaDamage03"
+						"EnchWeaponSoulTrap03"
+						"EnchWeaponFear03"
+						"EnchWeaponTurnUndead03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC01"
+					Enchantments: [
+						"EnchWeaponFireDamage01"
+						"EnchWeaponFrostDamage01"
+						"EnchWeaponShockDamage01"
+						"EnchWeaponStaminaDamage01"
+						"EnchWeaponMagickaDamage01"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC02"
+					Enchantments: [
+						"EnchWeaponFireDamage02"
+						"EnchWeaponFrostDamage02"
+						"EnchWeaponShockDamage02"
+						"EnchWeaponStaminaDamage02"
+						"EnchWeaponMagickaDamage02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+					Enchantments: [
+						"EnchWeaponFireDamage03"
+						"EnchWeaponFrostDamage03"
+						"EnchWeaponShockDamage03"
+						"EnchWeaponStaminaDamage03"
+						"EnchWeaponMagickaDamage03"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "Weapons2to4"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchWeaponFireDamage02"
+						"EnchWeaponFrostDamage02"
+						"EnchWeaponShockDamage02"
+						"EnchWeaponStaminaDamage02"
+						"EnchWeaponMagickaDamage02"
+						"EnchWeaponSoulTrap02"
+						"EnchWeaponFear02"
+						"EnchWeaponTurnUndead02"
+						"EnchWeaponAbsorbHealth02"
+						"EnchWeaponAbsorbStamina02"
+						"EnchWeaponAbsorbMagicka02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchWeaponFireDamage03"
+						"EnchWeaponFrostDamage03"
+						"EnchWeaponShockDamage03"
+						"EnchWeaponStaminaDamage03"
+						"EnchWeaponMagickaDamage03"
+						"EnchWeaponSoulTrap03"
+						"EnchWeaponFear03"
+						"EnchWeaponTurnUndead03"
+						"EnchWeaponAbsorbHealth03"
+						"EnchWeaponAbsorbStamina03"
+						"EnchWeaponAbsorbMagicka03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchWeaponFireDamage04"
+						"EnchWeaponFrostDamage04"
+						"EnchWeaponShockDamage04"
+						"EnchWeaponStaminaDamage04"
+						"EnchWeaponMagickaDamage04"
+						"EnchWeaponSoulTrap04"
+						"EnchWeaponFear04"
+						"EnchWeaponTurnUndead04"
+						"EnchWeaponAbsorbHealth04"
+						"EnchWeaponAbsorbStamina04"
+						"EnchWeaponAbsorbMagicka04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC02"
+					Enchantments: [
+						"EnchWeaponFireDamage02"
+						"EnchWeaponFrostDamage02"
+						"EnchWeaponShockDamage02"
+						"EnchWeaponStaminaDamage02"
+						"EnchWeaponMagickaDamage02"
+						"EnchWeaponAbsorbHealth02"
+						"EnchWeaponAbsorbStamina02"
+						"EnchWeaponAbsorbMagicka02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+					Enchantments: [
+						"EnchWeaponFireDamage03"
+						"EnchWeaponFrostDamage03"
+						"EnchWeaponShockDamage03"
+						"EnchWeaponStaminaDamage03"
+						"EnchWeaponMagickaDamage03"
+						"EnchWeaponAbsorbHealth03"
+						"EnchWeaponAbsorbStamina03"
+						"EnchWeaponAbsorbMagicka03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+					Enchantments: [
+						"EnchWeaponFireDamage04"
+						"EnchWeaponFrostDamage04"
+						"EnchWeaponShockDamage04"
+						"EnchWeaponStaminaDamage04"
+						"EnchWeaponMagickaDamage04"
+						"EnchWeaponAbsorbHealth04"
+						"EnchWeaponAbsorbStamina04"
+						"EnchWeaponAbsorbMagicka04"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "Weapons3to5"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchWeaponFireDamage03"
+						"EnchWeaponFrostDamage03"
+						"EnchWeaponShockDamage03"
+						"EnchWeaponStaminaDamage03"
+						"EnchWeaponMagickaDamage03"
+						"EnchWeaponSoulTrap03"
+						"EnchWeaponFear03"
+						"EnchWeaponTurnUndead03"
+						"EnchWeaponAbsorbHealth03"
+						"EnchWeaponAbsorbStamina03"
+						"EnchWeaponAbsorbMagicka03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchWeaponFireDamage04"
+						"EnchWeaponFrostDamage04"
+						"EnchWeaponShockDamage04"
+						"EnchWeaponStaminaDamage04"
+						"EnchWeaponMagickaDamage04"
+						"EnchWeaponSoulTrap04"
+						"EnchWeaponFear04"
+						"EnchWeaponTurnUndead04"
+						"EnchWeaponAbsorbHealth04"
+						"EnchWeaponAbsorbStamina04"
+						"EnchWeaponAbsorbMagicka04"
+						"EnchWeaponBanish04"
+						"EnchWeaponParalysis04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchWeaponFireDamage05"
+						"EnchWeaponFrostDamage05"
+						"EnchWeaponShockDamage05"
+						"EnchWeaponStaminaDamage05"
+						"EnchWeaponMagickaDamage05"
+						"EnchWeaponSoulTrap05"
+						"EnchWeaponFear05"
+						"EnchWeaponTurnUndead05"
+						"EnchWeaponAbsorbHealth05"
+						"EnchWeaponAbsorbStamina05"
+						"EnchWeaponAbsorbMagicka05"
+						"EnchWeaponBanish05"
+						"EnchWeaponParalysis05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+					Enchantments: [
+						"EnchWeaponFireDamage03"
+						"EnchWeaponFrostDamage03"
+						"EnchWeaponShockDamage03"
+						"EnchWeaponStaminaDamage03"
+						"EnchWeaponMagickaDamage03"
+						"EnchWeaponAbsorbHealth03"
+						"EnchWeaponAbsorbStamina03"
+						"EnchWeaponAbsorbMagicka03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+					Enchantments: [
+						"EnchWeaponFireDamage04"
+						"EnchWeaponFrostDamage04"
+						"EnchWeaponShockDamage04"
+						"EnchWeaponStaminaDamage04"
+						"EnchWeaponMagickaDamage04"
+						"EnchWeaponAbsorbHealth04"
+						"EnchWeaponAbsorbStamina04"
+						"EnchWeaponAbsorbMagicka04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC05"
+					Enchantments: [
+						"EnchWeaponFireDamage05"
+						"EnchWeaponFrostDamage05"
+						"EnchWeaponShockDamage05"
+						"EnchWeaponStaminaDamage05"
+						"EnchWeaponMagickaDamage05"
+						"EnchWeaponAbsorbHealth05"
+						"EnchWeaponAbsorbStamina05"
+						"EnchWeaponAbsorbMagicka05"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "Weapons4to6"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchWeaponFireDamage04"
+						"EnchWeaponFrostDamage04"
+						"EnchWeaponShockDamage04"
+						"EnchWeaponStaminaDamage04"
+						"EnchWeaponMagickaDamage04"
+						"EnchWeaponSoulTrap04"
+						"EnchWeaponFear04"
+						"EnchWeaponTurnUndead04"
+						"EnchWeaponAbsorbHealth04"
+						"EnchWeaponAbsorbStamina04"
+						"EnchWeaponAbsorbMagicka04"
+						"EnchWeaponBanish04"
+						"EnchWeaponParalysis04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchWeaponFireDamage05"
+						"EnchWeaponFrostDamage05"
+						"EnchWeaponShockDamage05"
+						"EnchWeaponStaminaDamage05"
+						"EnchWeaponMagickaDamage05"
+						"EnchWeaponSoulTrap05"
+						"EnchWeaponFear05"
+						"EnchWeaponTurnUndead05"
+						"EnchWeaponAbsorbHealth05"
+						"EnchWeaponAbsorbStamina05"
+						"EnchWeaponAbsorbMagicka05"
+						"EnchWeaponBanish05"
+						"EnchWeaponParalysis05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_06"
+					Enchantments: [
+						"EnchWeaponFireDamage06"
+						"EnchWeaponFrostDamage06"
+						"EnchWeaponShockDamage06"
+						"EnchWeaponStaminaDamage06"
+						"EnchWeaponMagickaDamage06"
+						"EnchWeaponSoulTrap06"
+						"EnchWeaponFear06"
+						"EnchWeaponTurnUndead06"
+						"EnchWeaponAbsorbHealth06"
+						"EnchWeaponAbsorbStamina06"
+						"EnchWeaponAbsorbMagicka06"
+						"EnchWeaponBanish06"
+						"EnchWeaponParalysis06"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+					Enchantments: [
+						"EnchWeaponFireDamage04"
+						"EnchWeaponFrostDamage04"
+						"EnchWeaponShockDamage04"
+						"EnchWeaponStaminaDamage04"
+						"EnchWeaponMagickaDamage04"
+						"EnchWeaponAbsorbHealth04"
+						"EnchWeaponAbsorbStamina04"
+						"EnchWeaponAbsorbMagicka04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC05"
+					Enchantments: [
+						"EnchWeaponFireDamage05"
+						"EnchWeaponFrostDamage05"
+						"EnchWeaponShockDamage05"
+						"EnchWeaponStaminaDamage05"
+						"EnchWeaponMagickaDamage05"
+						"EnchWeaponAbsorbHealth05"
+						"EnchWeaponAbsorbStamina05"
+						"EnchWeaponAbsorbMagicka05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC06"
+					Enchantments: [
+						"EnchWeaponFireDamage06"
+						"EnchWeaponFrostDamage06"
+						"EnchWeaponShockDamage06"
+						"EnchWeaponStaminaDamage06"
+						"EnchWeaponMagickaDamage06"
+						"EnchWeaponAbsorbHealth06"
+						"EnchWeaponAbsorbStamina06"
+						"EnchWeaponAbsorbMagicka06"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "WeaponsNordic"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchWeaponFireDamage03"
+						"EnchWeaponFrostDamage03"
+						"EnchWeaponShockDamage03"
+						"EnchWeaponStaminaDamage03"
+						"EnchWeaponMagickaDamage03"
+						"EnchWeaponSoulTrap03"
+						"EnchWeaponFear03"
+						"EnchWeaponTurnUndead03"
+						"EnchWeaponAbsorbHealth03"
+						"EnchWeaponAbsorbStamina03"
+						"EnchWeaponAbsorbMagicka03"
+						"EnchWeaponChaosDamage03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchWeaponFireDamage04"
+						"EnchWeaponFrostDamage04"
+						"EnchWeaponShockDamage04"
+						"EnchWeaponStaminaDamage04"
+						"EnchWeaponMagickaDamage04"
+						"EnchWeaponSoulTrap04"
+						"EnchWeaponFear04"
+						"EnchWeaponTurnUndead04"
+						"EnchWeaponAbsorbHealth04"
+						"EnchWeaponAbsorbStamina04"
+						"EnchWeaponAbsorbMagicka04"
+						"EnchWeaponBanish04"
+						"EnchWeaponParalysis04"
+						"EnchWeaponChaosDamage04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchWeaponFireDamage05"
+						"EnchWeaponFrostDamage05"
+						"EnchWeaponShockDamage05"
+						"EnchWeaponStaminaDamage05"
+						"EnchWeaponMagickaDamage05"
+						"EnchWeaponSoulTrap05"
+						"EnchWeaponFear05"
+						"EnchWeaponTurnUndead05"
+						"EnchWeaponAbsorbHealth05"
+						"EnchWeaponAbsorbStamina05"
+						"EnchWeaponAbsorbMagicka05"
+						"EnchWeaponBanish05"
+						"EnchWeaponParalysis05"
+						"EnchWeaponChaosDamage05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+					Enchantments: [
+						"EnchWeaponFireDamage03"
+						"EnchWeaponFrostDamage03"
+						"EnchWeaponShockDamage03"
+						"EnchWeaponStaminaDamage03"
+						"EnchWeaponMagickaDamage03"
+						"EnchWeaponAbsorbHealth03"
+						"EnchWeaponAbsorbStamina03"
+						"EnchWeaponAbsorbMagicka03"
+						"EnchWeaponChaosDamage03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+					Enchantments: [
+						"EnchWeaponFireDamage04"
+						"EnchWeaponFrostDamage04"
+						"EnchWeaponShockDamage04"
+						"EnchWeaponStaminaDamage04"
+						"EnchWeaponMagickaDamage04"
+						"EnchWeaponAbsorbHealth04"
+						"EnchWeaponAbsorbStamina04"
+						"EnchWeaponAbsorbMagicka04"
+						"EnchWeaponChaosDamage04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC05"
+					Enchantments: [
+						"EnchWeaponFireDamage05"
+						"EnchWeaponFrostDamage05"
+						"EnchWeaponShockDamage05"
+						"EnchWeaponStaminaDamage05"
+						"EnchWeaponMagickaDamage05"
+						"EnchWeaponAbsorbHealth05"
+						"EnchWeaponAbsorbStamina05"
+						"EnchWeaponAbsorbMagicka05"
+						"EnchWeaponChaosDamage05"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "WeaponsStalhrim"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchWeaponFrostDamage04"
+						"EnchWeaponShockDamage04"
+						"EnchWeaponStaminaDamage04"
+						"EnchWeaponMagickaDamage04"
+						"EnchWeaponSoulTrap04"
+						"EnchWeaponFear04"
+						"EnchWeaponTurnUndead04"
+						"EnchWeaponAbsorbHealth04"
+						"EnchWeaponAbsorbStamina04"
+						"EnchWeaponAbsorbMagicka04"
+						"EnchWeaponBanish04"
+						"EnchWeaponParalysis04"
+						"EnchWeaponChaosDamage04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchWeaponFrostDamage05"
+						"EnchWeaponShockDamage05"
+						"EnchWeaponStaminaDamage05"
+						"EnchWeaponMagickaDamage05"
+						"EnchWeaponSoulTrap05"
+						"EnchWeaponFear05"
+						"EnchWeaponTurnUndead05"
+						"EnchWeaponAbsorbHealth05"
+						"EnchWeaponAbsorbStamina05"
+						"EnchWeaponAbsorbMagicka05"
+						"EnchWeaponBanish05"
+						"EnchWeaponParalysis05"
+						"EnchWeaponChaosDamage05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_06"
+					Enchantments: [
+						"EnchWeaponFrostDamage06"
+						"EnchWeaponShockDamage06"
+						"EnchWeaponStaminaDamage06"
+						"EnchWeaponMagickaDamage06"
+						"EnchWeaponSoulTrap06"
+						"EnchWeaponFear06"
+						"EnchWeaponTurnUndead06"
+						"EnchWeaponAbsorbHealth06"
+						"EnchWeaponAbsorbStamina06"
+						"EnchWeaponAbsorbMagicka06"
+						"EnchWeaponBanish06"
+						"EnchWeaponParalysis06"
+						"EnchWeaponChaosDamage06"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+					Enchantments: [
+						"EnchWeaponFrostDamage04"
+						"EnchWeaponShockDamage04"
+						"EnchWeaponStaminaDamage04"
+						"EnchWeaponMagickaDamage04"
+						"EnchWeaponAbsorbHealth04"
+						"EnchWeaponAbsorbStamina04"
+						"EnchWeaponAbsorbMagicka04"
+						"EnchWeaponChaosDamage04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC05"
+					Enchantments: [
+						"EnchWeaponFrostDamage05"
+						"EnchWeaponShockDamage05"
+						"EnchWeaponStaminaDamage05"
+						"EnchWeaponMagickaDamage05"
+						"EnchWeaponAbsorbHealth05"
+						"EnchWeaponAbsorbStamina05"
+						"EnchWeaponAbsorbMagicka05"
+						"EnchWeaponChaosDamage05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC06"
+					Enchantments: [
+						"EnchWeaponFrostDamage06"
+						"EnchWeaponShockDamage06"
+						"EnchWeaponStaminaDamage06"
+						"EnchWeaponMagickaDamage06"
+						"EnchWeaponAbsorbHealth06"
+						"EnchWeaponAbsorbStamina06"
+						"EnchWeaponAbsorbMagicka06"
+						"EnchWeaponChaosDamage06"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "Bows1to3"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_01"
+					Enchantments: [
+						"EnchWeaponFireDamage01"
+						"EnchWeaponFrostDamage01"
+						"EnchWeaponShockDamage01"
+						"EnchWeaponStaminaDamage01"
+						"EnchWeaponMagickaDamage01"
+						"EnchWeaponSoulTrap01"
+						"EnchWeaponFear01"
+						"EnchWeaponTurnUndead01"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchWeaponFireDamage02"
+						"EnchWeaponFrostDamage02"
+						"EnchWeaponShockDamage02"
+						"EnchWeaponStaminaDamage02"
+						"EnchWeaponMagickaDamage02"
+						"EnchWeaponSoulTrap02"
+						"EnchWeaponFear02"
+						"EnchWeaponTurnUndead02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchWeaponFireDamage03"
+						"EnchWeaponFrostDamage03"
+						"EnchWeaponShockDamage03"
+						"EnchWeaponStaminaDamage03"
+						"EnchWeaponMagickaDamage03"
+						"EnchWeaponSoulTrap03"
+						"EnchWeaponFear03"
+						"EnchWeaponTurnUndead03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_NPC01"
+					Enchantments: [
+						"EnchWeaponFireDamage01"
+						"EnchWeaponFrostDamage01"
+						"EnchWeaponShockDamage01"
+						"EnchWeaponStaminaDamage01"
+						"EnchWeaponMagickaDamage01"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_NPC02"
+					Enchantments: [
+						"EnchWeaponFireDamage02"
+						"EnchWeaponFrostDamage02"
+						"EnchWeaponShockDamage02"
+						"EnchWeaponStaminaDamage02"
+						"EnchWeaponMagickaDamage02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_NPC03"
+					Enchantments: [
+						"EnchWeaponFireDamage03"
+						"EnchWeaponFrostDamage03"
+						"EnchWeaponShockDamage03"
+						"EnchWeaponStaminaDamage03"
+						"EnchWeaponMagickaDamage03"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "Bows2to4"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchWeaponFireDamage02"
+						"EnchWeaponFrostDamage02"
+						"EnchWeaponShockDamage02"
+						"EnchWeaponStaminaDamage02"
+						"EnchWeaponMagickaDamage02"
+						"EnchWeaponSoulTrap02"
+						"EnchWeaponFear02"
+						"EnchWeaponTurnUndead02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchWeaponFireDamage03"
+						"EnchWeaponFrostDamage03"
+						"EnchWeaponShockDamage03"
+						"EnchWeaponStaminaDamage03"
+						"EnchWeaponMagickaDamage03"
+						"EnchWeaponSoulTrap03"
+						"EnchWeaponFear03"
+						"EnchWeaponTurnUndead03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchWeaponFireDamage04"
+						"EnchWeaponFrostDamage04"
+						"EnchWeaponShockDamage04"
+						"EnchWeaponStaminaDamage04"
+						"EnchWeaponMagickaDamage04"
+						"EnchWeaponSoulTrap04"
+						"EnchWeaponFear04"
+						"EnchWeaponTurnUndead04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_NPC02"
+					Enchantments: [
+						"EnchWeaponFireDamage02"
+						"EnchWeaponFrostDamage02"
+						"EnchWeaponShockDamage02"
+						"EnchWeaponStaminaDamage02"
+						"EnchWeaponMagickaDamage02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_NPC03"
+					Enchantments: [
+						"EnchWeaponFireDamage03"
+						"EnchWeaponFrostDamage03"
+						"EnchWeaponShockDamage03"
+						"EnchWeaponStaminaDamage03"
+						"EnchWeaponMagickaDamage03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_NPC04"
+					Enchantments: [
+						"EnchWeaponFireDamage04"
+						"EnchWeaponFrostDamage04"
+						"EnchWeaponShockDamage04"
+						"EnchWeaponStaminaDamage04"
+						"EnchWeaponMagickaDamage04"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "Bows3to5"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchWeaponFireDamage03"
+						"EnchWeaponFrostDamage03"
+						"EnchWeaponShockDamage03"
+						"EnchWeaponStaminaDamage03"
+						"EnchWeaponMagickaDamage03"
+						"EnchWeaponSoulTrap03"
+						"EnchWeaponFear03"
+						"EnchWeaponTurnUndead03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchWeaponFireDamage04"
+						"EnchWeaponFrostDamage04"
+						"EnchWeaponShockDamage04"
+						"EnchWeaponStaminaDamage04"
+						"EnchWeaponMagickaDamage04"
+						"EnchWeaponSoulTrap04"
+						"EnchWeaponFear04"
+						"EnchWeaponTurnUndead04"
+						"EnchWeaponBanish04"
+						"EnchWeaponParalysis04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchWeaponFireDamage05"
+						"EnchWeaponFrostDamage05"
+						"EnchWeaponShockDamage05"
+						"EnchWeaponStaminaDamage05"
+						"EnchWeaponMagickaDamage05"
+						"EnchWeaponSoulTrap05"
+						"EnchWeaponFear05"
+						"EnchWeaponTurnUndead05"
+						"EnchWeaponBanish05"
+						"EnchWeaponParalysis05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_NPC03"
+					Enchantments: [
+						"EnchWeaponFireDamage03"
+						"EnchWeaponFrostDamage03"
+						"EnchWeaponShockDamage03"
+						"EnchWeaponStaminaDamage03"
+						"EnchWeaponMagickaDamage03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_NPC04"
+					Enchantments: [
+						"EnchWeaponFireDamage04"
+						"EnchWeaponFrostDamage04"
+						"EnchWeaponShockDamage04"
+						"EnchWeaponStaminaDamage04"
+						"EnchWeaponMagickaDamage04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_NPC05"
+					Enchantments: [
+						"EnchWeaponFireDamage05"
+						"EnchWeaponFrostDamage05"
+						"EnchWeaponShockDamage05"
+						"EnchWeaponStaminaDamage05"
+						"EnchWeaponMagickaDamage05"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "Bows4to6"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchWeaponFireDamage04"
+						"EnchWeaponFrostDamage04"
+						"EnchWeaponShockDamage04"
+						"EnchWeaponStaminaDamage04"
+						"EnchWeaponMagickaDamage04"
+						"EnchWeaponSoulTrap04"
+						"EnchWeaponFear04"
+						"EnchWeaponTurnUndead04"
+						"EnchWeaponBanish04"
+						"EnchWeaponParalysis04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchWeaponFireDamage05"
+						"EnchWeaponFrostDamage05"
+						"EnchWeaponShockDamage05"
+						"EnchWeaponStaminaDamage05"
+						"EnchWeaponMagickaDamage05"
+						"EnchWeaponSoulTrap05"
+						"EnchWeaponFear05"
+						"EnchWeaponTurnUndead05"
+						"EnchWeaponBanish05"
+						"EnchWeaponParalysis05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_06"
+					Enchantments: [
+						"EnchWeaponFireDamage06"
+						"EnchWeaponFrostDamage06"
+						"EnchWeaponShockDamage06"
+						"EnchWeaponStaminaDamage06"
+						"EnchWeaponMagickaDamage06"
+						"EnchWeaponSoulTrap06"
+						"EnchWeaponFear06"
+						"EnchWeaponTurnUndead06"
+						"EnchWeaponBanish06"
+						"EnchWeaponParalysis06"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_NPC04"
+					Enchantments: [
+						"EnchWeaponFireDamage04"
+						"EnchWeaponFrostDamage04"
+						"EnchWeaponShockDamage04"
+						"EnchWeaponStaminaDamage04"
+						"EnchWeaponMagickaDamage04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_NPC05"
+					Enchantments: [
+						"EnchWeaponFireDamage05"
+						"EnchWeaponFrostDamage05"
+						"EnchWeaponShockDamage05"
+						"EnchWeaponStaminaDamage05"
+						"EnchWeaponMagickaDamage05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_NPC06"
+					Enchantments: [
+						"EnchWeaponFireDamage06"
+						"EnchWeaponFrostDamage06"
+						"EnchWeaponShockDamage06"
+						"EnchWeaponStaminaDamage06"
+						"EnchWeaponMagickaDamage06"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "BowsNordic"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchWeaponFrostDamage03"
+						"EnchWeaponShockDamage03"
+						"EnchWeaponStaminaDamage03"
+						"EnchWeaponMagickaDamage03"
+						"EnchWeaponSoulTrap03"
+						"EnchWeaponFear03"
+						"EnchWeaponTurnUndead03"
+						"EnchWeaponChaosDamage03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchWeaponFrostDamage04"
+						"EnchWeaponShockDamage04"
+						"EnchWeaponStaminaDamage04"
+						"EnchWeaponMagickaDamage04"
+						"EnchWeaponSoulTrap04"
+						"EnchWeaponFear04"
+						"EnchWeaponTurnUndead04"
+						"EnchWeaponBanish04"
+						"EnchWeaponParalysis04"
+						"EnchWeaponChaosDamage04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchWeaponFrostDamage05"
+						"EnchWeaponShockDamage05"
+						"EnchWeaponStaminaDamage05"
+						"EnchWeaponMagickaDamage05"
+						"EnchWeaponSoulTrap05"
+						"EnchWeaponFear05"
+						"EnchWeaponTurnUndead05"
+						"EnchWeaponBanish05"
+						"EnchWeaponParalysis05"
+						"EnchWeaponChaosDamage05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_NPC03"
+					Enchantments: [
+						"EnchWeaponFrostDamage03"
+						"EnchWeaponShockDamage03"
+						"EnchWeaponStaminaDamage03"
+						"EnchWeaponMagickaDamage03"
+						"EnchWeaponChaosDamage03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_NPC04"
+					Enchantments: [
+						"EnchWeaponFrostDamage04"
+						"EnchWeaponShockDamage04"
+						"EnchWeaponStaminaDamage04"
+						"EnchWeaponMagickaDamage04"
+						"EnchWeaponChaosDamage04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_NPC05"
+					Enchantments: [
+						"EnchWeaponFrostDamage05"
+						"EnchWeaponShockDamage05"
+						"EnchWeaponStaminaDamage05"
+						"EnchWeaponMagickaDamage05"
+						"EnchWeaponChaosDamage05"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "BowsStalhrim"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchWeaponFrostDamage04"
+						"EnchWeaponShockDamage04"
+						"EnchWeaponStaminaDamage04"
+						"EnchWeaponMagickaDamage04"
+						"EnchWeaponSoulTrap04"
+						"EnchWeaponFear04"
+						"EnchWeaponTurnUndead04"
+						"EnchWeaponBanish04"
+						"EnchWeaponParalysis04"
+						"EnchWeaponChaosDamage04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchWeaponFrostDamage05"
+						"EnchWeaponShockDamage05"
+						"EnchWeaponStaminaDamage05"
+						"EnchWeaponMagickaDamage05"
+						"EnchWeaponSoulTrap05"
+						"EnchWeaponFear05"
+						"EnchWeaponTurnUndead05"
+						"EnchWeaponBanish05"
+						"EnchWeaponParalysis05"
+						"EnchWeaponChaosDamage05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_06"
+					Enchantments: [
+						"EnchWeaponFrostDamage06"
+						"EnchWeaponShockDamage06"
+						"EnchWeaponStaminaDamage06"
+						"EnchWeaponMagickaDamage06"
+						"EnchWeaponSoulTrap06"
+						"EnchWeaponFear06"
+						"EnchWeaponTurnUndead06"
+						"EnchWeaponBanish06"
+						"EnchWeaponParalysis06"
+						"EnchWeaponChaosDamage06"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_NPC04"
+					Enchantments: [
+						"EnchWeaponFrostDamage04"
+						"EnchWeaponShockDamage04"
+						"EnchWeaponStaminaDamage04"
+						"EnchWeaponMagickaDamage04"
+						"EnchWeaponChaosDamage04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_NPC05"
+					Enchantments: [
+						"EnchWeaponFrostDamage05"
+						"EnchWeaponShockDamage05"
+						"EnchWeaponStaminaDamage05"
+						"EnchWeaponMagickaDamage05"
+						"EnchWeaponChaosDamage05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListSuffix: "_NPC06"
+					Enchantments: [
+						"EnchWeaponFrostDamage06"
+						"EnchWeaponShockDamage06"
+						"EnchWeaponStaminaDamage06"
+						"EnchWeaponMagickaDamage06"
+						"EnchWeaponChaosDamage06"
+					]
+				}
+			]
+		}
+	]
+}

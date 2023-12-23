@@ -19,7 +19,8 @@ namespace EnchantedVariantsGenerater
     {
         static Lazy<Settings> Settings = null!;
 
-        public static void DoError(string text) {
+        public static void DoError(string text)
+        {
             if (Settings.Value.IgnoreErrors)
             {
                 Console.WriteLine(text);
@@ -27,6 +28,13 @@ namespace EnchantedVariantsGenerater
             else
             {
                 throw new Exception(text);
+            }
+        }
+        public static void DoVerboseLog(string text)
+        {
+            if (Settings.Value.VerboseLogging)
+            {
+                Console.WriteLine(text);
             }
         }
 

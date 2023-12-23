@@ -1,0 +1,646 @@
+{
+	Master: "Thaumaturgy.esp"
+	Enchantments: [
+		{
+			EditorID: "EnchArmorFortifyHealRate01"
+			Suffix: " of Minor Mending"			
+			FormKey: "10CF26:Skyrim.esm"
+		}
+		{
+			EditorID: "EnchArmorFortifyHealRate02"
+			Suffix: " of Mending"			
+			FormKey: "0AD460:Skyrim.esm"
+		}
+		{
+			EditorID: "EnchArmorFortifyHealRate03"
+			Suffix: " of Major Mending"			
+			FormKey: "07A10D:Skyrim.esm"
+		}
+		{
+			EditorID: "EnchArmorFortifyHealRate04"
+			Suffix: " of Peerless Mending"			
+			FormKey: "0AD45F:Skyrim.esm"
+		}
+		{
+			EditorID: "EnchArmorFortifyHealRate05"
+			Suffix: " of Peerless Mending"			
+			FormKey: "0AD493:Skyrim.esm"
+		}
+		{
+			EditorID: "EnchArmorFortifyStaminaRate01"
+			Suffix: " of Minor Rejuvenation"			
+			FormKey: "0AD480:Skyrim.esm"
+		}
+		{
+			EditorID: "EnchArmorFortifyStaminaRate02"
+			Suffix: " of Rejuvenation"			
+			FormKey: "07A11A:Skyrim.esm"
+		}
+		{
+			EditorID: "EnchArmorFortifyStaminaRate03"
+			Suffix: " of Major Rejuvenation"			
+			FormKey: "0AD47F:Skyrim.esm"
+		}
+		{
+			EditorID: "EnchArmorFortifyStaminaRate04"
+			Suffix: " of Peerless Rejuvenation"			
+			FormKey: "0BE024:Skyrim.esm"
+		}
+		{
+			EditorID: "EnchArmorFortifyMagickaRate01"
+			Suffix: " of Minor Recovery"			
+			FormKey: "0AD46E:Skyrim.esm"
+		}
+		{
+			EditorID: "EnchArmorFortifyMagickaRate02"
+			Suffix: " of Recovery"			
+			FormKey: "07A112:Skyrim.esm"
+		}
+		{
+			EditorID: "EnchArmorFortifyMagickaRate03"
+			Suffix: " of Major Recovery"			
+			FormKey: "0AD46D:Skyrim.esm"
+		}
+		{
+			EditorID: "EnchArmorFortifyMagickaRate04"
+			Suffix: " of Peerless Recovery"			
+			FormKey: "0BE00B:Skyrim.esm"
+		}
+		{
+			EditorID: "EnchArmorFortifyHealth01"
+			Suffix: " of Minor Health"
+		}
+		{
+			EditorID: "EnchArmorFortifyHealth02"
+			Suffix: " of Minor Health"
+		}
+		{
+			EditorID: "EnchArmorFortifyHealth03"
+			Suffix: " of Health"
+		}
+		{
+			EditorID: "EnchArmorFortifyHealth04"
+			Suffix: " of Major Health"
+		}
+		{
+			EditorID: "EnchArmorFortifyHealth05"
+			Suffix: " of Peerless Health"
+		}
+		{
+			EditorID: "EnchArmorFortifyHealth06"
+			Suffix: " of Peerless Health"
+		}
+		{
+			EditorID: "EnchArmorFortifyStamina01"
+			Suffix: " of Minor Stamina"
+		}		
+		{
+			EditorID: "EnchArmorFortifyStamina02"
+			Suffix: " of Minor Stamina"
+		}
+		{
+			EditorID: "EnchArmorFortifyStamina03"
+			Suffix: " of Stamina"
+		}
+		{
+			EditorID: "EnchArmorFortifyStamina04"
+			Suffix: " of Major Stamina"
+		}
+		{
+			EditorID: "EnchArmorFortifyStamina05"
+			Suffix: " of Peerless Stamina"
+		}
+		{
+			EditorID: "EnchArmorFortifyStamina06"
+			Suffix: " of Peerless Stamina"
+		}
+		{
+			EditorID: "EnchArmorFortifyMagicka01"
+			Suffix: " of Minor Magicka"
+		}
+		{
+			EditorID: "EnchArmorFortifyMagicka02"
+			Suffix: " of Minor Magicka"
+		}
+		{
+			EditorID: "EnchArmorFortifyMagicka03"
+			Suffix: " of Magicka"
+		}
+		{
+			EditorID: "EnchArmorFortifyMagicka04"
+			Suffix: " of Major Magicka"
+		}
+		{
+			EditorID: "EnchArmorFortifyMagicka05"
+			Suffix: " of Peerless Magicka"
+		}
+		{
+			EditorID: "EnchArmorFortifyMagicka06"
+			Suffix: " of Peerless Magicka"
+		}
+		{
+			EditorID: "EnchArmorFortifyCarry01"
+			Suffix: " of Minor Strength"
+		}		
+		{
+			EditorID: "EnchArmorFortifyCarry02"
+			Suffix: " of Minor Strength"
+		}
+		{
+			EditorID: "EnchArmorFortifyCarry03"
+			Suffix: " of Strength"
+		}
+		{
+			EditorID: "EnchArmorFortifyCarry04"
+			Suffix: " of Major Strength"
+		}
+		{
+			EditorID: "EnchArmorFortifyCarry05"
+			Suffix: " of Peerless Strength"
+		}
+		{
+			EditorID: "EnchArmorFortifyCarry06"
+			Suffix: " of Peerless Strength"
+		}
+		{
+			EditorID: "EnchArmorFortifyAlteration01"
+			Suffix: " of Minor Alteration"
+		}
+		{
+			EditorID: "EnchArmorFortifyAlteration02"
+			Suffix: " of Minor Alteration"
+		}
+		{
+			EditorID: "EnchArmorFortifyAlteration03"
+			Suffix: " of Alteration"
+		}
+		{
+			EditorID: "EnchArmorFortifyAlteration04"
+			Suffix: " of Major Alteration"
+		}		
+		{
+			EditorID: "EnchArmorFortifyAlteration05"
+			Suffix: " of Peerless Alteration"
+		}
+		{
+			EditorID: "EnchArmorFortifyAlteration06"
+			Suffix: " of Peerless Alteration"
+		}
+		{
+			EditorID: "EnchArmorFortifyConjuration01"
+			Suffix: " of Minor Conjuration"
+		}
+		{
+			EditorID: "EnchArmorFortifyConjuration02"
+			Suffix: " of Minor Conjuration"
+		}
+		{
+			EditorID: "EnchArmorFortifyConjuration03"
+			Suffix: " of Conjuration"
+		}
+		{
+			EditorID: "EnchArmorFortifyConjuration04"
+			Suffix: " of Major Conjuration"
+		}
+		{
+			EditorID: "EnchArmorFortifyConjuration05"
+			Suffix: " of Peerless Conjuration"
+		}
+		{
+			EditorID: "EnchArmorFortifyConjuration06"
+			Suffix: " of Peerless Conjuration"
+		}
+		{
+			EditorID: "EnchArmorFortifyDestruction01"
+			Suffix: " of Minor Destruction"
+		}
+		{
+			EditorID: "EnchArmorFortifyDestruction02"
+			Suffix: " of Minor Destruction"
+		}
+		{
+			EditorID: "EnchArmorFortifyDestruction03"
+			Suffix: " of Destruction"
+		}
+		{
+			EditorID: "EnchArmorFortifyDestruction04"
+			Suffix: " of Major Destruction"
+		}
+		{
+			EditorID: "EnchArmorFortifyDestruction05"
+			Suffix: " of Peerless Destruction"
+		}
+		{
+			EditorID: "EnchArmorFortifyDestruction06"
+			Suffix: " of Peerless Destruction"
+		}
+		{
+			"EditorID": "EnchArmorFortifyIllusion01",
+			Suffix: " of Minor Illusion"
+		}		
+		{
+			"EditorID": "EnchArmorFortifyIllusion02"
+			Suffix: " of Minor Illusion"
+		}
+		{
+			"EditorID": "EnchArmorFortifyIllusion03",
+			Suffix: " of Illusion"
+		}
+		{
+			EditorID: "EnchArmorFortifyIllusion04"
+			Suffix: " of Major Illusion"
+		}
+		{
+			EditorID: "EnchArmorFortifyIllusion05"
+			Suffix: " of Peerless Illusion"
+		}
+		{
+			EditorID: "EnchArmorFortifyIllusion06"
+			Suffix: " of Peerless Illusion"
+		}
+		{
+			EditorID: "EnchArmorFortifyRestoration01"
+			Suffix: " of Minor Restoration"
+		}
+		{
+			EditorID: "EnchArmorFortifyRestoration02"
+			Suffix: " of Minor Restoration"
+		}
+		{
+			EditorID: "EnchArmorFortifyRestoration03"
+			Suffix: " of Restoration"
+		}
+		{
+			EditorID: "EnchArmorFortifyRestoration04"
+			Suffix: " of Major Restoration"
+		}
+		{
+			EditorID: "EnchArmorFortifyRestoration05"
+			Suffix: " of Peerless Restoration"
+		}
+		{
+			EditorID: "EnchArmorFortifyRestoration06"
+			Suffix: " of Peerless Restoration"
+		}
+		{
+			EditorID: "EnchArmorFortifyAlchemy01"
+			Suffix: " of the Minor Alchemist"
+		}
+		{
+			EditorID: "EnchArmorFortifyAlchemy02"
+			Suffix: " of the Minor Alchemist"
+		}
+		{
+			EditorID: "EnchArmorFortifyAlchemy03"
+			Suffix: " of the Alchemist"
+		}
+		{
+			EditorID: "EnchArmorFortifyAlchemy04"
+			Suffix: " of the Major Alchemist"
+		}
+		{
+			EditorID: "EnchArmorFortifyAlchemy05"
+			Suffix: " of the Peerless Alchemist"
+		}
+		{
+			EditorID: "EnchArmorFortifyAlchemy06"
+			Suffix: " of the Peerless Alchemist"
+		}
+		{
+			EditorID: "EnchArmorFortifySmithing01"
+			Suffix: " of the Minor Defender"
+		}
+		{
+			EditorID: "EnchArmorFortifySmithing02"
+			Suffix: " of the Minor Defender"
+		}
+		{
+			EditorID: "EnchArmorFortifySmithing03"
+			Suffix: " of the Defender"
+		}
+		{
+			EditorID: "EnchArmorFortifySmithing04"
+			Suffix: " of the Major Defender"
+		}
+		{
+			EditorID: "EnchArmorFortifySmithing05"
+			Suffix: " of the Peerless Defender"
+		}
+		{
+			EditorID: "EnchArmorFortifySmithing06"
+			Suffix: " of the Peerless Defender"
+		}
+		{
+			EditorID: "EnchArmorFortifyMarksman01"
+			Suffix: " of the Minor Marksman"
+		}
+		{
+			EditorID: "EnchArmorFortifyMarksman02"
+			Suffix: " of the Minor Marksman"
+		}
+		{
+			EditorID: "EnchArmorFortifyMarksman03"
+			Suffix: " of the Marksman"
+		}
+		{
+			EditorID: "EnchArmorFortifyMarksman04"
+			Suffix: " of the Major Marksman"
+		}
+		{
+			EditorID: "EnchArmorFortifyMarksman05"
+			Suffix: " of the Peerless Marksman"
+		}
+		{
+			EditorID: "EnchArmorFortifyMarksman06"
+			Suffix: " of the Peerless Marksman"
+		}
+		{
+			EditorID: "EnchArmorFortifyOneHanded01"
+			Suffix: " of the Minor Skirmisher"
+		}
+		{
+			EditorID: "EnchArmorFortifyOneHanded02"
+			Suffix: " of the Minor Skirmisher"
+		}
+		{
+			EditorID: "EnchArmorFortifyOneHanded03"
+			Suffix: " of the Skirmisher"
+		}
+		{
+			EditorID: "EnchArmorFortifyOneHanded04"
+			Suffix: " of the Major Skirmisher"
+		}
+		{
+			EditorID: "EnchArmorFortifyOneHanded05"
+			Suffix: " of the Peerless Skirmisher"
+		}
+		{
+			EditorID: "EnchArmorFortifyOneHanded06"
+			Suffix: " of the Peerless Skirmisher"
+		}
+		{
+			EditorID: "EnchArmorFortifyTwoHanded01"
+			Suffix: " of the Minor Champion"
+		}
+		{
+			EditorID: "EnchArmorFortifyTwoHanded02"
+			Suffix: " of the Minor Champion"
+		}
+		{
+			EditorID: "EnchArmorFortifyTwoHanded03"
+			Suffix: " of the Champion"
+		}
+		{
+			EditorID: "EnchArmorFortifyTwoHanded04"
+			Suffix: " of the Major Champion"
+		}
+		{
+			EditorID: "EnchArmorFortifyTwoHanded05"
+			Suffix: " of the Peerless Champion"
+		}
+		{
+			EditorID: "EnchArmorFortifyTwoHanded06"
+			Suffix: " of the Peerless Champion"
+		}
+		{
+			EditorID: "EnchArmorFortifyHeavyArmor01"
+			Suffix: " of the Minor Mirror"
+		}
+		{
+			EditorID: "EnchArmorFortifyHeavyArmor02"
+			Suffix: " of the Minor Mirror"
+		}
+		{
+			EditorID: "EnchArmorFortifyHeavyArmor03"
+			Suffix: " of the Mirror"
+		}
+		{
+			EditorID: "EnchArmorFortifyHeavyArmor04"
+			Suffix: " of the Major Mirror"
+		}
+		{
+			EditorID: "EnchArmorFortifyHeavyArmor05"
+			Suffix: " of the Peerless Mirror"
+		}
+		{
+			EditorID: "EnchArmorFortifyHeavyArmor06"
+			Suffix: " of the Peerless Mirror"
+		}
+		{
+			EditorID: "EnchArmorFortifyBlock01"
+			Suffix: " of the Minor Gladiator"
+		}
+		{
+			EditorID: "EnchArmorFortifyBlock02"
+			Suffix: " of the Minor Gladiator"
+		}
+		{
+			EditorID: "EnchArmorFortifyBlock03"
+			Suffix: " of the Gladiator"
+		}
+		{
+			EditorID: "EnchArmorFortifyBlock04"
+			Suffix: " of the Major Gladiator"
+		}
+		{
+			EditorID: "EnchArmorFortifyBlock05"
+			Suffix: " of the Peerless Gladiator"
+		}
+		{
+			EditorID: "EnchArmorFortifyBlock06"
+			Suffix: " of the Peerless Gladiator"
+		}
+		{
+			EditorID: "EnchArmorFortifyLockpicking01"
+			Suffix: " of the Minor Cutpurse"
+		}
+		{
+			EditorID: "EnchArmorFortifyLockpicking02"
+			Suffix: " of the Minor Cutpurse"
+		}
+		{
+			EditorID: "EnchArmorFortifyLockpicking03"
+			Suffix: " of the Cutpurse"
+		}
+		{
+			EditorID: "EnchArmorFortifyLockpicking04"
+			Suffix: " of the Major Cutpurse"
+		}
+		{
+			EditorID: "EnchArmorFortifyLockpicking05"
+			Suffix: " of the Peerless Cutpurse"
+		}
+		{
+			EditorID: "EnchArmorFortifyLockpicking06"
+			Suffix: " of the Peerless Cutpurse"
+		}
+		{
+			EditorID: "EnchArmorFortifyPickpocket01"
+			Suffix: " of the Minor Cutpurse"
+		}
+		{
+			EditorID: "EnchArmorFortifyPickpocket02"
+			Suffix: " of the Minor Cutpurse"
+		}
+		{
+			EditorID: "EnchArmorFortifyPickpocket03"
+			Suffix: " of the Cutpurse"
+		}
+		{
+			EditorID: "EnchArmorFortifyPickpocket04"
+			Suffix: " of the Major Cutpurse"
+		}
+		{
+			EditorID: "EnchArmorFortifyPickpocket05"
+			Suffix: " of the Peerless Cutpurse"
+		}
+		{
+			EditorID: "EnchArmorFortifyPickpocket06"
+			Suffix: " of the Peerless Cutpurse"
+		}
+		{
+			EditorID: "EnchArmorFortifySneak01"
+			Suffix: " of the Minor Footpad"
+		}
+		{
+			EditorID: "EnchArmorFortifySneak02"
+			Suffix: " of the Minor Footpad"
+		}
+		{
+			EditorID: "EnchArmorFortifySneak03"
+			Suffix: " of the Footpad"
+		}
+		{
+			EditorID: "EnchArmorFortifySneak04"
+			Suffix: " of the Major Footpad"
+		}
+		{
+			EditorID: "EnchArmorFortifySneak05"
+			Suffix: " of the Peerless Footpad"
+		}
+		{
+			EditorID: "EnchArmorFortifySneak06"
+			Suffix: " of the Peerless Footpad"
+		}
+		{
+			EditorID: "EnchArmorResistFire01"
+			Suffix: " of Minor Fire Resistance"
+		}
+		{
+			EditorID: "EnchArmorResistFire02"
+			Suffix: " of Minor Fire Resistance"
+		}
+		{
+			EditorID: "EnchArmorResistFire03"
+			Suffix: " of Fire Resistance"
+		}
+		{
+			EditorID: "EnchArmorResistFire04"
+			Suffix: " of Major Fire Resistance"
+		}
+		{
+			EditorID: "EnchArmorResistFire05"
+			Suffix: " of Peerless Fire Resistance"
+		}
+		{
+			EditorID: "EnchArmorResistFire06"
+			Suffix: " of Peerless Fire Resistance"
+		}
+		{
+			EditorID: "EnchArmorResistFrost01"
+			Suffix: " of Minor Frost Resistance"
+		}
+		{
+			EditorID: "EnchArmorResistFrost02"
+			Suffix: " of Minor Frost Resistance"
+		}
+		{
+			EditorID: "EnchArmorResistFrost03"
+			Suffix: " of Frost Resistance"
+		}
+		{
+			EditorID: "EnchArmorResistFrost04"
+			Suffix: " of Major Frost Resistance"
+		}
+		{
+			EditorID: "EnchArmorResistFrost05"
+			Suffix: " of Peerless Frost Resistance"
+		}
+		{
+			EditorID: "EnchArmorResistFrost06"
+			Suffix: " of Peerless Frost Resistance"
+		}
+		{
+			EditorID: "EnchArmorResistShock01"
+			Suffix: " of Minor Shock Resistance"
+		}
+		{
+			EditorID: "EnchArmorResistShock02"
+			Suffix: " of Minor Shock Resistance"
+		}
+		{
+			EditorID: "EnchArmorResistShock03"
+			Suffix: " of Shock Resistance"
+		}
+		{
+			EditorID: "EnchArmorResistShock04"
+			Suffix: " of Major Shock Resistance"
+		}
+		{
+			EditorID: "EnchArmorResistShock05"
+			Suffix: " of Peerless Shock Resistance"
+		}	
+		{
+			EditorID: "EnchArmorResistShock06"
+			Suffix: " of Peerless Shock Resistance"
+		}
+		{
+			EditorID: "EnchArmorResistMagic01"
+			Suffix: " of Minor Magic Resistance"
+		}
+		{
+			EditorID: "EnchArmorResistMagic02"
+			Suffix: " of Minor Magic Resistance"
+		}
+		{
+			EditorID: "EnchArmorResistMagic03"
+			Suffix: " of Magic Resistance"
+		}		
+		{
+			EditorID: "EnchArmorResistMagic04"
+			Suffix: " of Major Magic Resistance"
+		}		
+		{
+			EditorID: "EnchArmorResistMagic05"
+			Suffix: " of Peerless Magic Resistance"
+		}
+		{
+			EditorID: "EnchArmorResistMagic06"
+			Suffix: " of Peerless Magic Resistance"
+		}
+		{
+			EditorID: "EnchArmorFortifySpeechcraft01"
+			Suffix: " of the Minor Merchant"
+		}
+		{
+			EditorID: "EnchArmorFortifySpeechcraft01"
+			Suffix: " of the Minor Merchant"
+		}
+		{
+			EditorID: "EnchArmorFortifySpeechcraft01"
+			Suffix: " of the Merchant"
+		}
+		{
+			EditorID: "EnchArmorFortifySpeechcraft01"
+			Suffix: " of the Major Merchant"
+		}
+		{
+			EditorID: "EnchArmorFortifySpeechcraft01"
+			Suffix: " of the Peerless Merchant"
+		}
+		{
+			EditorID: "EnchArmorFortifySpeechcraft01"
+			Suffix: " of the Peerless Merchant"
+		}
+	]
+}

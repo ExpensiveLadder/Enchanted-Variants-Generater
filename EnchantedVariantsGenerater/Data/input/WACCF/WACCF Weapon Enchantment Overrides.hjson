@@ -1,0 +1,29 @@
+{
+	Master: "Weapons Armor Clothing & Clutter Fixes.esp"
+	Enchantments: [
+		{
+			EditorID: "EnchWeaponTurnUndead01"
+			Suffix: " of Dismissal"
+		}
+		{
+			EditorID: "EnchWeaponTurnUndead02"
+			Suffix: " of Rebuke"
+		}
+		{
+			EditorID: "EnchWeaponTurnUndead03"
+			Suffix: " of Aversion"
+		}
+		{
+			EditorID: "EnchWeaponTurnUndead04"
+			Suffix: " of Repulsion"
+		}
+		{
+			EditorID: "EnchWeaponTurnUndead05"
+			Suffix: " of Turning"
+		}
+		{
+			EditorID: "EnchWeaponTurnUndead06"
+			Suffix: " of Holy Light"
+		}
+	]
+}
