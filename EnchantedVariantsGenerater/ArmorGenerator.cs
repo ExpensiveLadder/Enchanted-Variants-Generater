@@ -159,15 +159,22 @@ namespace EnchantedVariantsGenerater
                                     state.PatchMod.Armors.Set(enchanteditem);
                                 }
 
-                                leveledlist.Entries.Add(new LeveledItemEntry()
+                                if (leveledlist.Entries.Count == 255)
                                 {
-                                    Data = new LeveledItemEntryData()
+                                    Program.DoError("Leveled List: " + leveledlist.EditorID + " has reached limit of 255");
+                                }
+                                else
+                                {
+                                    leveledlist.Entries.Add(new LeveledItemEntry()
                                     {
-                                        Count = 1,
-                                        Level = 1,
-                                        Reference = enchanteditem.ToLink()
-                                    }
-                                });
+                                        Data = new LeveledItemEntryData()
+                                        {
+                                            Count = 1,
+                                            Level = 1,
+                                            Reference = enchanteditem.ToLink()
+                                        }
+                                    });
+                                }
                             }
                             if (oldleveledlist != null)
                             {
