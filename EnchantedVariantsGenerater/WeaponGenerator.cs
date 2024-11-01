@@ -133,36 +133,41 @@ namespace EnchantedVariantsGenerater
                                         enchanteditem.BasicStats.Value = itemvalue;
                                         copyitem = true;
                                     }
-                                    if (scripts == null)
+                                    if (Program.GetSettings().Value.UpdateScripts)
                                     {
-                                        if (enchanteditem.VirtualMachineAdapter != null)
+                                        if (scripts == null)
                                         {
-                                            Console.WriteLine(enchanteditemeditorid + " Scripts does not match " + weaponInfo.Key + " Overriding!");
-                                            enchanteditem.VirtualMachineAdapter = null;
-                                            copyitem = true;
-                                        }
-                                    }
-                                    else
-                                    {
-                                        if (enchanteditem.VirtualMachineAdapter == null)
-                                        {
-                                            if (scripts != null) {
+                                            if (enchanteditem.VirtualMachineAdapter != null)
+                                            {
                                                 Console.WriteLine(enchanteditemeditorid + " Scripts does not match " + weaponInfo.Key + " Overriding!");
-                                                enchanteditem.VirtualMachineAdapter = scripts;
+                                                enchanteditem.VirtualMachineAdapter = null;
                                                 copyitem = true;
                                             }
                                         }
                                         else
                                         {
-#pragma warning disable CS8602 // Dereference of a possibly null reference.
-                                            if (!scripts.GetEqualsMask(enchanteditem.VirtualMachineAdapter).Scripts.Overall)
+                                            if (enchanteditem.VirtualMachineAdapter == null)
                                             {
-                                                Console.WriteLine(enchanteditemeditorid + " Scripts does not match " + weaponInfo.Key + " Overriding!");
-                                                enchanteditem.VirtualMachineAdapter = scripts;
-                                                copyitem = true;
+                                                if (scripts != null)
+                                                {
+                                                    Console.WriteLine(enchanteditemeditorid + " Scripts does not match " + weaponInfo.Key + " Overriding!");
+                                                    enchanteditem.VirtualMachineAdapter = scripts;
+                                                    copyitem = true;
+                                                }
                                             }
+                                            else
+                                            {
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
+                                                if (!scripts.GetEqualsMask(enchanteditem.VirtualMachineAdapter).Scripts.Overall)
+                                                {
+                                                    Console.WriteLine(enchanteditemeditorid + " Scripts does not match " + weaponInfo.Key + " Overriding!");
+                                                    enchanteditem.VirtualMachineAdapter = scripts;
+                                                    copyitem = true;
+                                                }
 #pragma warning restore CS8602 // Dereference of a possibly null reference.
+                                            }
                                         }
+
                                     }
                                     if (enchanteditem.ObjectEffect.FormKey != enchantmentInfo.Value.Enchantment.FormKey)
                                     {

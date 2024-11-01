@@ -22,7 +22,7 @@ namespace EnchantedVariantsGenerater
                 var parsedfile = JsonConvert.DeserializeObject<InputJSON>(HjsonValue.Load(filePath).ToString());
                 if (parsedfile == null)
                 {
-                    Program.DoError("ERROR: Could not read HJSON file: " + filePath);
+                    Program.DoError("ERROR: Could not read HJSON file: " + filePath.ToString().Replace(path, ""));
                     continue;
                 }
                 if (modlist.Contains(parsedfile.Master))
@@ -31,7 +31,7 @@ namespace EnchantedVariantsGenerater
                 }
                 else
                 {
-                    Console.WriteLine("Skipping HJSON with missing master: " + filePath);
+                    Console.WriteLine("Skipping HJSON with missing master: " + filePath.ToString().Replace(path, ""));
                 }
             }
             jsons = jsons.OrderBy(o => modlist.IndexOf(o.Value.Master)).ToDictionary();

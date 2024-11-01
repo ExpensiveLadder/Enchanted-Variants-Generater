@@ -19,6 +19,11 @@ namespace EnchantedVariantsGenerater
     {
         static Lazy<Settings> Settings = null!;
 
+        public static Lazy<Settings> GetSettings()
+        {
+            return Settings;
+        }
+
         public static void DoError(string text)
         {
             if (Settings.Value.IgnoreErrors)
