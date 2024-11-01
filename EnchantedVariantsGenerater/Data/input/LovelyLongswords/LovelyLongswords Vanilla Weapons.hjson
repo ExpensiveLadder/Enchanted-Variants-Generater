@@ -1,0 +1,75 @@
+{
+	Master: "Lovely Longswords - Enchantments.esp"
+	Groups: [
+	{
+		GroupName: "Weapons1to3"
+		Weapons: [
+		{
+			EditorID: "IronLongsword"
+			FormKey: "005914:Lovely Longswords - Vanilla Version.esp"
+		}
+		{
+			EditorID: "SteelLongsword"
+			FormKey: "00590F:Lovely Longswords - Vanilla Version.esp"
+		}
+		]
+	}
+	{
+		GroupName: "Weapons2to4"
+		Weapons: [
+		{
+			EditorID: "OrcishLongsword"
+			FormKey: "005912:Lovely Longswords - Vanilla Version.esp"
+		}
+		{
+			EditorID: "DwarvenLongsword"
+			FormKey: "005919:Lovely Longswords - Vanilla Version.esp"
+		}
+		]
+	}
+	{
+		GroupName: "Weapons3to5"
+		Weapons: [
+		{
+			EditorID: "ElvenLongsword"
+			FormKey: "005917:Lovely Longswords - Vanilla Version.esp"
+		}
+		{
+			EditorID: "GlassLongsword"
+			FormKey: "005916:Lovely Longswords - Vanilla Version.esp"
+		}
+		]
+	}
+	{
+		GroupName: "Weapons4to6"
+		Weapons: [
+		{
+			EditorID: "EbonyLongsword"
+			FormKey: "005918:Lovely Longswords - Vanilla Version.esp"
+		}
+		{
+			EditorID: "DaedricLongsword"
+			FormKey: "00591C:Lovely Longswords - Vanilla Version.esp"
+		}
+		]
+	}
+	{
+		GroupName: "WeaponsNordic"
+		Weapons: [
+		{
+			EditorID: "NordicLongsword"
+			FormKey: "00591E:Lovely Longswords - Vanilla Version.esp"
+		}
+		]
+	}
+	{
+		GroupName: "WeaponsStalhrim"
+		Weapons: [
+		{
+			EditorID: "StalhrimLongsword"
+			FormKey: "00591D:Lovely Longswords - Vanilla Version.esp"
+		}
+		]
+	}
+	]
+}
