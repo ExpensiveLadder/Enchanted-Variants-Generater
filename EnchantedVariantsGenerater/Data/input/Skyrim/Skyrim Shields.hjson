@@ -1,4 +1,5 @@
 {
+	Master: "Enchantments.esp"
 	Groups: [
 	{
 		GroupName: "Shields1to3"
