@@ -1,0 +1,1409 @@
+{
+	Master: "Summermyst - Enchantments of Skyrim.esp"
+	Enchantments: [
+		{
+			EditorID: "EnchSUMDrainArmor01"
+			FormKey: "0513E4:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Denting"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchSUMDrainArmor02"
+			FormKey: "05118F:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Crushing"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchSUMDrainArmor03"
+			FormKey: "051190:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Bending"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchSUMShiftingEarth01"
+			FormKey: "051506:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of the Soil"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchSUMShiftingEarth02"
+			FormKey: "051507:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Mud"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchSUMShiftingEarth03"
+			FormKey: "051508:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Clay"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchSUMSkyhook01"
+			FormKey: "05141F:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Lifting"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchSUMSkyhook02"
+			FormKey: "051420:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Force"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchSUMSkyhook03"
+			FormKey: "051421:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Orbits"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchSUMCommandDaedra01"
+			FormKey: "0513E5:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Command"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchSUMCommandDaedra02"
+			FormKey: "0513E6:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Domination"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchSUMCommandDaedra03"
+			FormKey: "0513E7:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of the Conjurer"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchSUMDischarge01"
+			FormKey: "0511CC:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Discharging"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchSUMDischarge02"
+			FormKey: "0511CD:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Shorting"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchSUMDischarge03"
+			FormKey: "0511CE:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Spoliation"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchSUMBattleHunger01"
+			FormKey: "0511F5:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Anger"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchSUMBattleHunger02"
+			FormKey: "0511F6:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Ire"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchSUMBattleHunger03"
+			FormKey: "0511F7:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Jinxes"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchSUMDeathsDoor01"
+			FormKey: "0513EB:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Death's Door"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchSUMDeathsDoor02"
+			FormKey: "05150C:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of the Threads"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchSUMDeathsDoor03"
+			FormKey: "05150D:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Mortality"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchSUMFireDamageLingering01"
+			FormKey: "0511D7:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Smoldering"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchSUMFireDamageLingering02"
+			FormKey: "0511D8:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Slow Burning"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchSUMFireDamageLingering03"
+			FormKey: "0511D9:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Lingering Fire"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchSUMKillstreak01"
+			FormKey: "051209:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Slaying"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchSUMKillstreak02"
+			FormKey: "05120A:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Carnage"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchSUMKillstreak03"
+			FormKey: "05120B:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Butchery"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchSUMPoisonDamage01"
+			FormKey: "05122F:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Poison"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchSUMPoisonDamage02"
+			FormKey: "051230:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Venom"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchSUMPoisonDamage03"
+			FormKey: "051231:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Blight"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchSUMHaltRegen01"
+			FormKey: "05116F:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Dying"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchSUMHaltRegen02"
+			FormKey: "05116C:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Wasting"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchSUMHaltRegen03"
+			FormKey: "05116D:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Withering"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchSUMSunDamage01"
+			FormKey: "051160:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Dawn"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchSUMSunDamage02"
+			FormKey: "051161:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Daylight"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchSUMSunDamage03"
+			FormKey: "051162:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Noon"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchSUMClumsy04"
+			FormKey: "051105:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Spasming"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMClumsy05"
+			FormKey: "051106:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Incompetence"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMClumsy06"
+			FormKey: "051107:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Idiocy"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMDrainArmor04"
+			FormKey: "051191:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Buckling"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMDrainArmor05"
+			FormKey: "051192:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Crumpling"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMDrainArmor06"
+			FormKey: "051193:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Dismantling"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMDrainAttackDamage04"
+			FormKey: "0511A1:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Weakness"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMDrainAttackDamage05"
+			FormKey: "0511A2:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Futility"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMDrainAttackDamage06"
+			FormKey: "05119F:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Incapacitation"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMDrainMagicResist04"
+			FormKey: "05111C:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Razing"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMDrainMagicResist05"
+			FormKey: "05111D:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Subjugation"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMDrainMagicResist06"
+			FormKey: "05111E:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Oppression"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMImprison04"
+			FormKey: "051122:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Imprisonment"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMImprison05"
+			FormKey: "051123:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of the Dungeon"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMImprison06"
+			FormKey: "051124:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Penance"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMPowerSurge04"
+			FormKey: "0510F2:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Power Unbound"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMPowerSurge05"
+			FormKey: "0510F4:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Power Unfettered"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMPowerSurge06"
+			FormKey: "0510F3:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Power Unleashed"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMShiftingEarth04"
+			FormKey: "051214:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of the Land"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMShiftingEarth05"
+			FormKey: "051215:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Loam"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMShiftingEarth06"
+			FormKey: "051216:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Kaolin"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMStealWeapons04"
+			FormKey: "051195:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Grappling"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMStealWeapons05"
+			FormKey: "051196:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Hooks"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMStealWeapons06"
+			FormKey: "051197:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Snatching"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMCommandDaedra04"
+			FormKey: "051179:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of the Coven"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMCommandDaedra05"
+			FormKey: "05117A:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of the Summoner"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMCommandDaedra06"
+			FormKey: "05117B:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of the Warlock"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMDischarge04"
+			FormKey: "0511CF:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Depletion"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMDischarge05"
+			FormKey: "0511D0:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Interference"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMDischarge06"
+			FormKey: "0511D1:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Disenchanting"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMBalefire04"
+			FormKey: "0513FB:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Abaddon"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMBalefire05"
+			FormKey: "0513FC:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Blackfire"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMBalefire06"
+			FormKey: "0513FD:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of the Pit"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMBattleHunger04"
+			FormKey: "0511F8:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Curses"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMBattleHunger05"
+			FormKey: "0511F9:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Hexes"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMBattleHunger06"
+			FormKey: "0511FA:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Hate"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMDeathsDoor04"
+			FormKey: "05150E:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of the Fates"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMDeathsDoor05"
+			FormKey: "05150F:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of the Wyress"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMDeathsDoor06"
+			FormKey: "051510:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of the Broken Crown"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMFrostHazard04"
+			FormKey: "05124C:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Freezing Blasts"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMFrostHazard05"
+			FormKey: "05124D:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Chilling Blasts"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMFrostHazard06"
+			FormKey: "05124E:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Winter Blasts"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMInsult04"
+			FormKey: "05117F:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Insults"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMInsult05"
+			FormKey: "051180:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Indignities"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMInsult06"
+			FormKey: "051181:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Scorn"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMKillstreak04"
+			FormKey: "05120C:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Gore"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMKillstreak05"
+			FormKey: "05120D:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Extermination"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMKillstreak06"
+			FormKey: "05120E:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Prey"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMPoisonDamage04"
+			FormKey: "051232:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Rot"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMPoisonDamage05"
+			FormKey: "051234:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Corruption"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMPoisonDamage06"
+			FormKey: "051233:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Miasma"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMShockHazard04"
+			FormKey: "051252:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Thunder Blasts"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMShockHazard05"
+			FormKey: "051253:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Lightning Blasts"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMShockHazard06"
+			FormKey: "051254:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Storm Blasts"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMCounterspell04"
+			FormKey: "051135:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Frustration"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMCounterspell05"
+			FormKey: "051136:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Abjuration"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMCounterspell06"
+			FormKey: "051137:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Disjunction"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMHiddenSerpent04"
+			FormKey: "0511C5:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Vipers"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMHiddenSerpent05"
+			FormKey: "0511C6:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Adders"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMHiddenSerpent06"
+			FormKey: "0511C7:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Asps"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMIllusoryBurden04"
+			FormKey: "0511AA:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Encumbrance"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMIllusoryBurden05"
+			FormKey: "0511AB:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Ballast"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMIllusoryBurden06"
+			FormKey: "0511AC:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Mass"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMKarma04"
+			FormKey: "05112D:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Reckoning"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMKarma05"
+			FormKey: "05112E:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Justice"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMKarma06"
+			FormKey: "05112F:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Karma"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMSound04"
+			FormKey: "051151:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Irritation"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMSound05"
+			FormKey: "051152:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Clamor"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMSound06"
+			FormKey: "051153:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Ruckus"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMDrainSkills02"
+			FormKey: "0513E8:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Sorrow"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchSUMDrainSkills03"
+			FormKey: "051454:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Grief"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchSUMDrainSkills04"
+			FormKey: "051455:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Failure"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMDrainSkills05"
+			FormKey: "051456:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Misery"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMDrainSkills06"
+			FormKey: "051457:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Tears"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMHaltRegen04"
+			FormKey: "05116E:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Wilting"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMHaltRegen05"
+			FormKey: "0513E9:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Atrophy"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMHaltRegen06"
+			FormKey: "051233:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Putrefaction"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMHeal04"
+			FormKey: "05110C:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Healing"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMHeal05"
+			FormKey: "05110D:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Mercy"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMHeal06"
+			FormKey: "05110E:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Compassion"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMSunDamage04"
+			FormKey: "051163:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Radiance"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMSunDamage05"
+			FormKey: "051164:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Resplendence"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMSunDamage06"
+			FormKey: "051165:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Brilliance"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMChaosDamageB04"
+			FormKey: "25E463:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Booming"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMChaosDamageB05"
+			FormKey: "25E465:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of the Ancients"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMChaosDamageB06"
+			FormKey: "25E467:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of the First Era"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMChaosDamageC04"
+			FormKey: "25E4CC:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Warcries"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMChaosDamageC05"
+			FormKey: "25E4CE:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Tempests"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMChaosDamageC06"
+			FormKey: "25E4D0:Summermyst - Enchantments of Skyrim.esp"
+			Prefix: "Epic "
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMClumsy02"
+			FormKey: "0511A3:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Clumsiness"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchSUMClumsy03"
+			FormKey: "0511A4:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Twitching"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchSUMDrainAttackDamage02"
+			FormKey: "05119E:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Frailty"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchSUMDrainAttackDamage03"
+			FormKey: "0511A0:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Stifling"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchSUMBalefire02"
+			FormKey: "0513F9:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Balefire"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchSUMBalefire03"
+			FormKey: "0513FA:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Hellfire"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchSUMCounterspell02"
+			FormKey: "051133:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Cancellation"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchSUMCounterspell03"
+			FormKey: "051134:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Grounding"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchSUMIllusoryBurden02"
+			FormKey: "0511A8:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Burdens"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchSUMIllusoryBurden03"
+			FormKey: "0511A9:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Weight"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchSUMKarma02"
+			FormKey: "05112B:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Spite"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchSUMKarma03"
+			FormKey: "05112C:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Retribution"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchSUMSound02"
+			FormKey: "0511B4:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Noise"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchSUMSound03"
+			FormKey: "0511B5:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Annoyance"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchSUMChaosDamageB03"
+			FormKey: "25E461:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Atmora"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchSUMChaosDamageB04"
+			FormKey: "25E463:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Booming"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMChaosDamageB05"
+			FormKey: "25E465:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of the Ancients"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMChaosDamageC03"
+			FormKey: "25E4CA:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Battlecries"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchSUMChaosDamageC04"
+			FormKey: "25E4CC:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Warcries"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMChaosDamageC05"
+			FormKey: "25E4CE:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Tempests"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMChaosDamageC06"
+			FormKey: "25E4D0:Summermyst - Enchantments of Skyrim.esp"
+			Prefix: "Epic "
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMChaosDamageB06"
+			FormKey: "25E467:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of the First Era"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMBleedDamage01"
+			FormKey: "051400:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Bleeding"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchSUMBleedDamage02"
+			FormKey: "051403:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Wounding"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchSUMBleedDamage03"
+			FormKey: "051404:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Hemorrhaging"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchSUMBleedDamage04"
+			FormKey: "051405:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Gutting"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMBleedDamage05"
+			FormKey: "051406:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Exsanguination"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMBleedDamage06"
+			FormKey: "051407:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Evisceration"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMBlindness01"
+			FormKey: "0513EC:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Dimming"
+			EnchantmentAmount: 500
+		}
+		{
+			EditorID: "EnchSUMBlindness02"
+			FormKey: "0513ED:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Blinding"
+			EnchantmentAmount: 1000
+		}
+		{
+			EditorID: "EnchSUMBlindness03"
+			FormKey: "0513EE:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Blackness"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchSUMBlindness04"
+			FormKey: "051189:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of the Night"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMBlindness05"
+			FormKey: "05118A:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Shadows"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMBlindness06"
+			FormKey: "05118B:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of the Eyeless"
+			EnchantmentAmount: 3000
+		}      
+		{
+        EditorID: "EnchSUMFrenzy01"
+        FormKey: "0513F0:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Fury"
+        EnchantmentAmount: 500
+      }
+      {
+        EditorID: "EnchSUMFrenzy02"
+        FormKey: "0513F1:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Frenzy"
+        EnchantmentAmount: 1000
+      }
+      {
+        EditorID: "EnchSUMFrenzy03"
+        FormKey: "0513F2:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Havoc"
+        EnchantmentAmount: 1500
+      }
+      {
+        EditorID: "EnchSUMFrenzy04"
+        FormKey: "0513F3:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Rage"
+        EnchantmentAmount: 2000
+      }
+      {
+        EditorID: "EnchSUMFrenzy05"
+        FormKey: "0513F4:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Mayhem"
+        EnchantmentAmount: 2500
+      }
+      {
+        EditorID: "EnchSUMFrenzy06"
+        FormKey: "0513F5:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Pandemonium"
+        EnchantmentAmount: 3000
+      }
+      {
+        EditorID: "EnchSUMGoldstrike02"
+        FormKey: "051416:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Arcana"
+        EnchantmentAmount: 1000
+      }
+      {
+        EditorID: "EnchSUMGoldstrike03"
+        FormKey: "051417:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of the Magi"
+        EnchantmentAmount: 1500
+      }
+      {
+        EditorID: "EnchSUMGoldstrike04"
+        FormKey: "051418:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Sorceries"
+        EnchantmentAmount: 2000
+      }
+      {
+        EditorID: "EnchSUMGoldstrike05"
+        FormKey: "051419:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of the Abyss"
+        EnchantmentAmount: 2500
+      }
+      {
+        EditorID: "EnchSUMGoldstrike06"
+        FormKey: "05141A:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of the Maelstrom"
+        EnchantmentAmount: 3000
+      }
+      {
+        EditorID: "EnchSUMInvisibility03"
+        FormKey: "0511B1:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Invisibility"
+        EnchantmentAmount: 1500
+      }
+      {
+        EditorID: "EnchSUMInvisibility04"
+        FormKey: "0511B2:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Stealth"
+        EnchantmentAmount: 2000
+      }
+      {
+        EditorID: "EnchSUMInvisibility05"
+        FormKey: "0511B3:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Cloaking"
+        EnchantmentAmount: 2500
+      }
+      {
+        EditorID: "EnchSUMInvisibility06"
+        FormKey: "0510FD:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of the Dark Brotherhood"
+        EnchantmentAmount: 3000
+      }
+      {
+        EditorID: "EnchSUMLaunch02"
+        FormKey: "0510FE:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Slinging"
+        EnchantmentAmount: 1000
+      }
+      {
+        EditorID: "EnchSUMLaunch03"
+        FormKey: "0510FF:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Giants"
+        EnchantmentAmount: 1500
+      }
+      {
+        EditorID: "EnchSUMLaunch04"
+        FormKey: "051198:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Hurling"
+        EnchantmentAmount: 2000
+      }
+      {
+        EditorID: "EnchSUMLaunch05"
+        FormKey: "051199:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Catapulting"
+        EnchantmentAmount: 2500
+      }
+      {
+        EditorID: "EnchSUMLaunch06"
+        FormKey: "05119A:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Launching"
+        EnchantmentAmount: 3000
+      }
+      {
+        EditorID: "EnchSUMMania03"
+        FormKey: "051440:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Nonsense"
+        EnchantmentAmount: 1500
+      }
+      {
+        EditorID: "EnchSUMMania04"
+        FormKey: "051441:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Insanity"
+        EnchantmentAmount: 2000
+      }
+      {
+        EditorID: "EnchSUMMania05"
+        FormKey: "051436:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Madness"
+        EnchantmentAmount: 2500
+      }
+      {
+        EditorID: "EnchSUMMania06"
+        FormKey: "05143C:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Delirium"
+        EnchantmentAmount: 3000
+      }
+      {
+        EditorID: "EnchSUMPrimal03"
+        FormKey: "051421:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of the Shaman"
+        EnchantmentAmount: 1500
+      }
+      {
+        EditorID: "EnchSUMPrimal04"
+        FormKey: "051422:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of the Skaal"
+        EnchantmentAmount: 2000
+      }
+      {
+        EditorID: "EnchSUMPrimal05"
+        FormKey: "051423:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of the All-Maker"
+        EnchantmentAmount: 2500
+      }
+      {
+        EditorID: "EnchSUMPrimal06"
+        FormKey: "051424:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of the World"
+        EnchantmentAmount: 3000
+      }
+	        {
+        EditorID: "EnchSUMRadius02"
+        FormKey: "0510DD:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Echoes"
+        EnchantmentAmount: 1000
+      }
+      {
+        EditorID: "EnchSUMRadius03"
+        FormKey: "0510DE:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Swiping"
+        EnchantmentAmount: 1500
+      }
+      {
+        EditorID: "EnchSUMRadius04"
+        FormKey: "05111F:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Cleaving"
+        EnchantmentAmount: 2000
+      }
+      {
+        EditorID: "EnchSUMRadius05"
+        FormKey: "051120:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Sweeping"
+        EnchantmentAmount: 2500
+      }
+      {
+        EditorID: "EnchSUMRadius06"
+        FormKey: "051121:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Culling"
+        EnchantmentAmount: 3000
+      }
+      {
+        EditorID: "EnchSUMRoulette02"
+        FormKey: "05121A:Summermyst - Enchantments of Skyrim.esp"
+        Prefix: "Gambler's "
+        EnchantmentAmount: 1000
+      }
+      {
+        EditorID: "EnchSUMRoulette03"
+        FormKey: "05121B:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Fortune"
+        EnchantmentAmount: 1500
+      }
+      {
+        EditorID: "EnchSUMRoulette04"
+        FormKey: "05121C:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of the Fool"
+        EnchantmentAmount: 2000
+      }
+      {
+        EditorID: "EnchSUMRoulette05"
+        FormKey: "05121D:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of the Jester"
+        EnchantmentAmount: 2500
+      }
+      {
+        EditorID: "EnchSUMRoulette06"
+        FormKey: "05121E:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Absurdity"
+        EnchantmentAmount: 3000
+      }
+	  {
+        EditorID: "EnchSUMSlayLiving01"
+        FormKey: "051116:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Doom"
+        EnchantmentAmount: 500
+      }
+      {
+        EditorID: "EnchSUMSlayLiving02"
+        FormKey: "051117:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Culling"
+        EnchantmentAmount: 1000
+      }
+      {
+        EditorID: "EnchSUMSlayLiving03"
+        FormKey: "051118:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Dust"
+        EnchantmentAmount: 1500
+      }
+      {
+        EditorID: "EnchSUMSlayLiving04"
+        FormKey: "051125:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Ashes"
+        EnchantmentAmount: 2000
+      }
+      {
+        EditorID: "EnchSUMSlayLiving05"
+        FormKey: "051126:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Disintegration"
+        EnchantmentAmount: 2500
+      }
+      {
+        EditorID: "EnchSUMSlayLiving06"
+        FormKey: "051127:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Annihilation"
+        EnchantmentAmount: 3000
+      }
+	  {
+        EditorID: "EnchSUMWeaknessToFire01"
+        FormKey: "0511D7:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Fire Weakness"
+        EnchantmentAmount: 500
+      }
+      {
+        EditorID: "EnchSUMWeaknessToFire02"
+        FormKey: "0511D8:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Fire Vulnerability"
+        EnchantmentAmount: 1000
+      }
+      {
+        EditorID: "EnchSUMWeaknessToFire03"
+        FormKey: "0511D9:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Deadly Fire"
+        EnchantmentAmount: 1500
+      }
+      {
+        EditorID: "EnchSUMWeaknessToFire04"
+        FormKey: "0511DA:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Lethal Fire"
+        EnchantmentAmount: 2000
+      }
+      {
+        EditorID: "EnchSUMWeaknessToFire05"
+        FormKey: "0511DB:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Ruinous Fire"
+        EnchantmentAmount: 2500
+      }
+      {
+        EditorID: "EnchSUMWeaknessToFire06"
+        FormKey: "0511DC:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Death Fire"
+        EnchantmentAmount: 3000
+      }
+      {
+        EditorID: "EnchSUMWeaknessToFrost01"
+        FormKey: "0511FF:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Frost Weakness"
+        EnchantmentAmount: 500
+      }
+      {
+        EditorID: "EnchSUMWeaknessToFrost02"
+        FormKey: "051200:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Frost Vulnerability"
+        EnchantmentAmount: 1000
+      }
+      {
+        EditorID: "EnchSUMWeaknessToFrost03"
+        FormKey: "051201:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Deadly Frost"
+        EnchantmentAmount: 1500
+      }
+      {
+        EditorID: "EnchSUMWeaknessToFrost04"
+        FormKey: "051202:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Lethal Frost"
+        EnchantmentAmount: 2000
+      }
+      {
+        EditorID: "EnchSUMWeaknessToFrost06"
+        FormKey: "051203:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Ruinous Frost"
+        EnchantmentAmount: 2500
+      }
+      {
+        EditorID: "EnchSUMWeaknessToFrost05"
+        FormKey: "051204:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Death Frost"
+        EnchantmentAmount: 3000
+      }
+      {
+        EditorID: "EnchSUMWeaknessToPoison03"
+        FormKey: "05125D:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Deadly Poison"
+        EnchantmentAmount: 1500
+      }
+      {
+        EditorID: "EnchSUMWeaknessToPoison04"
+        FormKey: "05125E:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Lethal Poison"
+        EnchantmentAmount: 2000
+      }
+      {
+        EditorID: "EnchSUMWeaknessToPoison05"
+        FormKey: "05125F:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Ruinous Poison"
+        EnchantmentAmount: 2500
+      }
+      {
+        EditorID: "EnchSUMWeaknessToPoison06"
+        FormKey: "051260:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Death Poison"
+        EnchantmentAmount: 3000
+      }
+      {
+        EditorID: "EnchSUMWeaknessToShock01"
+        FormKey: "0511EA:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Shock Weakness"
+        EnchantmentAmount: 500
+      }
+      {
+        EditorID: "EnchSUMWeaknessToShock02"
+        FormKey: "0511EB:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Shock Vulnerability"
+        EnchantmentAmount: 1000
+      }
+      {
+        EditorID: "EnchSUMWeaknessToShock03"
+        FormKey: "0511EC:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Deadly Shocks"
+        EnchantmentAmount: 1500
+      }
+      {
+        EditorID: "EnchSUMWeaknessToShock04"
+        FormKey: "0511ED:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Lethal Shocks"
+        EnchantmentAmount: 2000
+      }
+      {
+        EditorID: "EnchSUMWeaknessToShock05"
+        FormKey: "0511EE:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Ruinous Shocks"
+        EnchantmentAmount: 2500
+      }
+      {
+        EditorID: "EnchSUMWeaknessToShock06"
+        FormKey: "0511EF:Summermyst - Enchantments of Skyrim.esp"
+        Suffix: " of Death Shocks"
+        EnchantmentAmount: 3000
+      }
+		{
+			EditorID: "EnchSUMShockHazard03"
+			FormKey: "051251:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Shock Blasts"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchSUMFireHazard03"
+			FormKey: "051245:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Scorching Blasts"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchSUMFrostHazard03"
+			FormKey: "05124B:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Ice Blasts"
+			EnchantmentAmount: 1500
+		}
+		{
+			EditorID: "EnchSUMFireDamageLingering04"
+			FormKey: "0511DA:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Everlasting Fire"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMFireDamageLingering05"
+			FormKey: "0511DB:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Enduring Fire"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMFireDamageLingering06"
+			FormKey: "0511DC:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Eternal Fire"
+			EnchantmentAmount: 3000
+		}
+		{
+			EditorID: "EnchSUMFireHazard04"
+			FormKey: "051246:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Fire Blasts"
+			EnchantmentAmount: 2000
+		}
+		{
+			EditorID: "EnchSUMFireHazard05"
+			FormKey: "051247:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Blazing Blasts"
+			EnchantmentAmount: 2500
+		}
+		{
+			EditorID: "EnchSUMFireHazard06"
+			FormKey: "051248:Summermyst - Enchantments of Skyrim.esp"
+			Suffix: " of Inferno Blasts"
+			EnchantmentAmount: 3000
+		}
+	]
+}

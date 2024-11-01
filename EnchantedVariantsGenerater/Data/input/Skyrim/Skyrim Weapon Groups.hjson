@@ -601,7 +601,7 @@
 			GroupName: "Bows1to3"
 			LeveledLists: [
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_01"
 					Enchantments: [
 						"EnchWeaponFireDamage01"
@@ -615,7 +615,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_02"
 					Enchantments: [
 						"EnchWeaponFireDamage02"
@@ -629,7 +629,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_03"
 					Enchantments: [
 						"EnchWeaponFireDamage03"
@@ -643,7 +643,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_NPC01"
 					Enchantments: [
 						"EnchWeaponFireDamage01"
@@ -654,7 +654,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_NPC02"
 					Enchantments: [
 						"EnchWeaponFireDamage02"
@@ -665,7 +665,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_NPC03"
 					Enchantments: [
 						"EnchWeaponFireDamage03"
@@ -681,7 +681,7 @@
 			GroupName: "Bows2to4"
 			LeveledLists: [
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_02"
 					Enchantments: [
 						"EnchWeaponFireDamage02"
@@ -695,7 +695,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_03"
 					Enchantments: [
 						"EnchWeaponFireDamage03"
@@ -709,7 +709,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_04"
 					Enchantments: [
 						"EnchWeaponFireDamage04"
@@ -723,7 +723,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_NPC02"
 					Enchantments: [
 						"EnchWeaponFireDamage02"
@@ -734,7 +734,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_NPC03"
 					Enchantments: [
 						"EnchWeaponFireDamage03"
@@ -745,7 +745,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_NPC04"
 					Enchantments: [
 						"EnchWeaponFireDamage04"
@@ -761,7 +761,7 @@
 			GroupName: "Bows3to5"
 			LeveledLists: [
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_03"
 					Enchantments: [
 						"EnchWeaponFireDamage03"
@@ -775,7 +775,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_04"
 					Enchantments: [
 						"EnchWeaponFireDamage04"
@@ -791,7 +791,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_05"
 					Enchantments: [
 						"EnchWeaponFireDamage05"
@@ -807,7 +807,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_NPC03"
 					Enchantments: [
 						"EnchWeaponFireDamage03"
@@ -818,7 +818,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_NPC04"
 					Enchantments: [
 						"EnchWeaponFireDamage04"
@@ -829,7 +829,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_NPC05"
 					Enchantments: [
 						"EnchWeaponFireDamage05"
@@ -845,7 +845,7 @@
 			GroupName: "Bows4to6"
 			LeveledLists: [
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_04"
 					Enchantments: [
 						"EnchWeaponFireDamage04"
@@ -861,7 +861,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_05"
 					Enchantments: [
 						"EnchWeaponFireDamage05"
@@ -877,7 +877,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_06"
 					Enchantments: [
 						"EnchWeaponFireDamage06"
@@ -893,7 +893,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_NPC04"
 					Enchantments: [
 						"EnchWeaponFireDamage04"
@@ -904,7 +904,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_NPC05"
 					Enchantments: [
 						"EnchWeaponFireDamage05"
@@ -915,7 +915,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_NPC06"
 					Enchantments: [
 						"EnchWeaponFireDamage06"
@@ -931,7 +931,7 @@
 			GroupName: "BowsNordic"
 			LeveledLists: [
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_03"
 					Enchantments: [
 						"EnchWeaponFrostDamage03"
@@ -945,7 +945,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_04"
 					Enchantments: [
 						"EnchWeaponFrostDamage04"
@@ -961,7 +961,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_05"
 					Enchantments: [
 						"EnchWeaponFrostDamage05"
@@ -977,7 +977,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_NPC03"
 					Enchantments: [
 						"EnchWeaponFrostDamage03"
@@ -988,7 +988,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_NPC04"
 					Enchantments: [
 						"EnchWeaponFrostDamage04"
@@ -999,7 +999,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_NPC05"
 					Enchantments: [
 						"EnchWeaponFrostDamage05"
@@ -1015,7 +1015,7 @@
 			GroupName: "BowsStalhrim"
 			LeveledLists: [
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_04"
 					Enchantments: [
 						"EnchWeaponFrostDamage04"
@@ -1031,7 +1031,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_05"
 					Enchantments: [
 						"EnchWeaponFrostDamage05"
@@ -1047,7 +1047,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_06"
 					Enchantments: [
 						"EnchWeaponFrostDamage06"
@@ -1063,7 +1063,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_NPC04"
 					Enchantments: [
 						"EnchWeaponFrostDamage04"
@@ -1074,7 +1074,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_NPC05"
 					Enchantments: [
 						"EnchWeaponFrostDamage05"
@@ -1085,7 +1085,7 @@
 					]
 				}
 				{
-					LeveledListPrefix: "SublistEnchBow_"
+					LeveledListPrefix: "SublistEnchWeapon_"
 					LeveledListSuffix: "_NPC06"
 					Enchantments: [
 						"EnchWeaponFrostDamage06"

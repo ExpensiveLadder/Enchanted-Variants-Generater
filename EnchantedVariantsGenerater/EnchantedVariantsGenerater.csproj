@@ -1,17 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>net7.0-windows</TargetFramework>
     </PropertyGroup>
+    <ItemGroup>
+      <None Remove="Data\input\Summermyst\Summermyst Weapon Enchantments %28old%29.zip" />
+    </ItemGroup>
 
     <ItemGroup>
         <PackageReference Include="Mutagen.Bethesda" Version="0.42.0" />
         <PackageReference Include="Mutagen.Bethesda.Synthesis" Version="0.26.0" />
 		<PackageReference Include="Hjson" Version="3.0.0" />
 	</ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Data\" />
-    </ItemGroup>
 
 </Project>
