@@ -99,13 +99,13 @@ namespace EnchantedVariantsGenerater
 
                     if (groups.TryGetValue(group.GroupName, out var oldgroup))
                     {
-                        Console.WriteLine("Group: " + group.GroupName + " already exists");
+                        Program.DoVerboseLog("Group: " + group.GroupName + " already exists");
 
                         if (oldgroup.Weapons.Any() && group.RemoveWeapons != null)
                         {
                             foreach (var weapon in group.RemoveWeapons) {
                                 if (oldgroup.Weapons.ContainsKey(weapon)) {
-                                    Console.WriteLine("Removing Weapon: " + weapon + " from Group: " + group.GroupName);
+                                    Program.DoVerboseLog("Removing Weapon: " + weapon + " from Group: " + group.GroupName);
                                     oldgroup.Weapons.Remove(weapon);
                                 }
                             }
@@ -129,7 +129,7 @@ namespace EnchantedVariantsGenerater
                             {
                                 if (oldgroup.Armors.ContainsKey(armor))
                                 {
-                                    Console.WriteLine("Removing Armor: " + armor + " from Group: " + group.GroupName);
+                                    Program.DoVerboseLog("Removing Armor: " + armor + " from Group: " + group.GroupName);
                                     oldgroup.Armors.Remove(armor);
                                 }
                             }
@@ -153,14 +153,14 @@ namespace EnchantedVariantsGenerater
                             {
                                 if (oldgroup.LeveledLists.TryGetValue(leveledlist.LeveledListPrefix + leveledlist.LeveledListSuffix, out var oldleveledlist))
                                 {
-                                    Console.WriteLine("Leveled List: " + leveledlist.LeveledListPrefix + leveledlist.LeveledListSuffix + " already exists in group: " + group.GroupName);
+                                    Program.DoVerboseLog("Leveled List: " + leveledlist.LeveledListPrefix + leveledlist.LeveledListSuffix + " already exists in group: " + group.GroupName);
                                     if (leveledlist.RemoveEnchantments != null)
                                     {
                                         foreach (var enchantment in leveledlist.RemoveEnchantments)
                                         {
                                             if (oldleveledlist.Enchantments.ContainsKey(enchantment))
                                             {
-                                                Console.WriteLine("Removing Enchantment: " + enchantment + "from Leveled List: " + leveledlist.LeveledListPrefix + leveledlist.LeveledListSuffix + " in Group: " + group.GroupName);
+                                                Program.DoVerboseLog("Removing Enchantment: " + enchantment + "from Leveled List: " + leveledlist.LeveledListPrefix + leveledlist.LeveledListSuffix + " in Group: " + group.GroupName);
                                                 oldleveledlist.Enchantments.Remove(enchantment);
                                             }
                                         }
@@ -194,7 +194,7 @@ namespace EnchantedVariantsGenerater
                     }
                     else
                     {
-                        Console.WriteLine("Creating Group: " + group.GroupName);
+                        Program.DoVerboseLog("Creating Group: " + group.GroupName);
                         groups.Add(group.GroupName, new GroupInfo(group, enchantments));
                     }
                 }
