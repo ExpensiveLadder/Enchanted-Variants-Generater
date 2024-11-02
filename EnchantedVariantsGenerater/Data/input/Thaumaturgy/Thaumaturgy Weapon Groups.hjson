@@ -17,6 +17,7 @@
 						"EnchWeaponWeaknessToFire01"
 						"EnchWeaponWeaknessToFrost01"
 						"EnchWeaponWeaknessToShock01"
+						"EnchWeaponWeaknessToPoison01"
 					]
 				}
 				{
@@ -32,6 +33,7 @@
 						"EnchWeaponWeaknessToFire02"
 						"EnchWeaponWeaknessToFrost02"
 						"EnchWeaponWeaknessToShock02"
+						"EnchWeaponWeaknessToPoison02"
 						"EnchWeaponDamageArmor02"
 					]
 				}
@@ -48,6 +50,7 @@
 						"EnchWeaponWeaknessToFire03"
 						"EnchWeaponWeaknessToFrost03"
 						"EnchWeaponWeaknessToShock03"
+						"EnchWeaponWeaknessToPoison03"
 						"EnchWeaponDamageArmor02"
 					]
 				}
@@ -101,6 +104,7 @@
 						"EnchWeaponWeaknessToFire02"
 						"EnchWeaponWeaknessToFrost02"
 						"EnchWeaponWeaknessToShock02"
+						"EnchWeaponWeaknessToPoison02"
 						"EnchWeaponDamageArmor02"
 					]
 				}
@@ -117,6 +121,7 @@
 						"EnchWeaponWeaknessToFire03"
 						"EnchWeaponWeaknessToFrost03"
 						"EnchWeaponWeaknessToShock03"
+						"EnchWeaponWeaknessToPoison03"
 						"EnchWeaponDamageArmor03"
 					]
 				}
@@ -133,6 +138,7 @@
 						"EnchWeaponWeaknessToFire04"
 						"EnchWeaponWeaknessToFrost04"
 						"EnchWeaponWeaknessToShock04"
+						"EnchWeaponWeaknessToPoison04"
 						"EnchWeaponDamageArmor04"
 					]
 				}
@@ -187,6 +193,7 @@
 						"EnchWeaponWeaknessToFire03"
 						"EnchWeaponWeaknessToFrost03"
 						"EnchWeaponWeaknessToShock03"
+						"EnchWeaponWeaknessToPoison03"
 						"EnchWeaponDamageArmor03"
 					]
 				}
@@ -203,6 +210,7 @@
 						"EnchWeaponWeaknessToFire04"
 						"EnchWeaponWeaknessToFrost04"
 						"EnchWeaponWeaknessToShock04"
+						"EnchWeaponWeaknessToPoison04"
 						"EnchWeaponDamageArmor04"
 					]
 				}
@@ -266,6 +274,7 @@
 						"EnchWeaponWeaknessToFire04"
 						"EnchWeaponWeaknessToFrost04"
 						"EnchWeaponWeaknessToShock04"
+						"EnchWeaponWeaknessToPoison04"
 						"EnchWeaponDamageArmor04"
 					]
 				}
@@ -334,6 +343,7 @@
 						"EnchWeaponWeaknessToFire03"
 						"EnchWeaponWeaknessToFrost03"
 						"EnchWeaponWeaknessToShock03"
+						"EnchWeaponWeaknessToPoison03"
 						"EnchWeaponDamageArmor03"
 					]
 				}
@@ -350,6 +360,7 @@
 						"EnchWeaponWeaknessToFire04"
 						"EnchWeaponWeaknessToFrost04"
 						"EnchWeaponWeaknessToShock04"
+						"EnchWeaponWeaknessToPoison04"
 						"EnchWeaponDamageArmor04"
 					]
 				}
@@ -413,6 +424,7 @@
 						"EnchWeaponWeaknessToFire04"
 						"EnchWeaponWeaknessToFrost04"
 						"EnchWeaponWeaknessToShock04"
+						"EnchWeaponWeaknessToPoison04"
 						"EnchWeaponDamageArmor04"
 					]
 				}
@@ -481,6 +493,7 @@
 						"EnchWeaponWeaknessToFire01"
 						"EnchWeaponWeaknessToFrost01"
 						"EnchWeaponWeaknessToShock01"
+						"EnchWeaponWeaknessToPoison01"
 					]
 				}
 				{
@@ -496,6 +509,7 @@
 						"EnchWeaponWeaknessToFire02"
 						"EnchWeaponWeaknessToFrost02"
 						"EnchWeaponWeaknessToShock02"
+						"EnchWeaponWeaknessToPoison02"
 						"EnchWeaponDamageArmor02"
 					]
 				}
@@ -512,6 +526,7 @@
 						"EnchWeaponWeaknessToFire03"
 						"EnchWeaponWeaknessToFrost03"
 						"EnchWeaponWeaknessToShock03"
+						"EnchWeaponWeaknessToPoison03"
 						"EnchWeaponDamageArmor02"
 					]
 				}
@@ -565,6 +580,7 @@
 						"EnchWeaponWeaknessToFire02"
 						"EnchWeaponWeaknessToFrost02"
 						"EnchWeaponWeaknessToShock02"
+						"EnchWeaponWeaknessToPoison02"
 						"EnchWeaponDamageArmor02"
 					]
 				}
@@ -581,6 +597,7 @@
 						"EnchWeaponWeaknessToFire03"
 						"EnchWeaponWeaknessToFrost03"
 						"EnchWeaponWeaknessToShock03"
+						"EnchWeaponWeaknessToPoison03"
 						"EnchWeaponDamageArmor03"
 					]
 				}
@@ -597,6 +614,7 @@
 						"EnchWeaponWeaknessToFire04"
 						"EnchWeaponWeaknessToFrost04"
 						"EnchWeaponWeaknessToShock04"
+						"EnchWeaponWeaknessToPoison04"
 						"EnchWeaponDamageArmor04"
 					]
 				}
@@ -651,6 +669,7 @@
 						"EnchWeaponWeaknessToFire03"
 						"EnchWeaponWeaknessToFrost03"
 						"EnchWeaponWeaknessToShock03"
+						"EnchWeaponWeaknessToPoison03"
 						"EnchWeaponDamageArmor03"
 					]
 				}
@@ -667,6 +686,7 @@
 						"EnchWeaponWeaknessToFire04"
 						"EnchWeaponWeaknessToFrost04"
 						"EnchWeaponWeaknessToShock04"
+						"EnchWeaponWeaknessToPoison04"
 						"EnchWeaponDamageArmor04"
 					]
 				}
@@ -730,6 +750,7 @@
 						"EnchWeaponWeaknessToFire04"
 						"EnchWeaponWeaknessToFrost04"
 						"EnchWeaponWeaknessToShock04"
+						"EnchWeaponWeaknessToPoison04"
 						"EnchWeaponDamageArmor04"
 					]
 				}
@@ -798,6 +819,7 @@
 						"EnchWeaponWeaknessToFire03"
 						"EnchWeaponWeaknessToFrost03"
 						"EnchWeaponWeaknessToShock03"
+						"EnchWeaponWeaknessToPoison03"
 						"EnchWeaponDamageArmor03"
 					]
 				}
@@ -814,6 +836,7 @@
 						"EnchWeaponWeaknessToFire04"
 						"EnchWeaponWeaknessToFrost04"
 						"EnchWeaponWeaknessToShock04"
+						"EnchWeaponWeaknessToPoison04"
 						"EnchWeaponDamageArmor04"
 					]
 				}
@@ -877,6 +900,7 @@
 						"EnchWeaponWeaknessToFire04"
 						"EnchWeaponWeaknessToFrost04"
 						"EnchWeaponWeaknessToShock04"
+						"EnchWeaponWeaknessToPoison04"
 						"EnchWeaponDamageArmor04"
 					]
 				}
