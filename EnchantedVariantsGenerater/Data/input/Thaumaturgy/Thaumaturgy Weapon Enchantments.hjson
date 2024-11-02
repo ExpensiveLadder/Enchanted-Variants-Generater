@@ -87,7 +87,7 @@
 		}
 		{
 			EditorID: "EnchWeaponSunDamage06"
-			FormKey: "13062B:Thaumaturgy.esp"
+			FormKey: "13062C:Thaumaturgy.esp"
 			Suffix: " of Aetherius"
 			EnchantmentAmount: 3000
 		}
@@ -125,7 +125,7 @@
 			EditorID: "EnchWeaponFrenzy06"
 			FormKey: "130658:Thaumaturgy.esp"
 			Suffix: " of Wrath"
-			EnchantmentAmount: 300
+			EnchantmentAmount: 3000
 		}
 		{
 			EditorID: "EnchWeaponSilence01"
