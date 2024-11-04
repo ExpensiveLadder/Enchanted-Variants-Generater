@@ -1,0 +1,113 @@
+{
+	Master: "Elemental Destruction Magic Redux.esp"
+	Enchantments: [
+	  {
+        EditorID: "EnchWeaponEarthDamage01"
+        FormKey: "0008F7:Elemental Destruction Magic Redux.esp"
+        Suffix: " of Dust"
+        EnchantmentAmount: 500
+      }
+      {
+        EditorID: "EnchWeaponEarthDamage02"
+        FormKey: "0008F5:Elemental Destruction Magic Redux.esp"
+        Suffix: " of Stone"
+        EnchantmentAmount: 1000
+      }
+      {
+        EditorID: "EnchWeaponEarthDamage03"
+        FormKey: "0008F4:Elemental Destruction Magic Redux.esp"
+        Suffix: " of Earth"
+        EnchantmentAmount: 1500
+      }
+      {
+        EditorID: "EnchWeaponEarthDamage04"
+        FormKey: "0008F2:Elemental Destruction Magic Redux.esp"
+        Suffix: " of Crags"
+        EnchantmentAmount: 2000
+      }
+      {
+        EditorID: "EnchWeaponEarthDamage05"
+        FormKey: "0008EF:Elemental Destruction Magic Redux.esp"
+        Suffix: " of Avalanches"
+        EnchantmentAmount: 2500
+      }
+      {
+        EditorID: "EnchWeaponEarthDamage06"
+        FormKey: "0008EE:Elemental Destruction Magic Redux.esp"
+        Suffix: " of the Mountain"
+        EnchantmentAmount: 3000
+      }
+      {
+        EditorID: "EnchWeaponWaterDamage01"
+        FormKey: "0008DC:Elemental Destruction Magic Redux.esp"
+        Suffix: " of Rain"
+        EnchantmentAmount: 500
+      }
+      {
+        EditorID: "EnchWeaponWaterDamage02"
+        FormKey: "000902:Elemental Destruction Magic Redux.esp"
+        Suffix: " of Drenching"
+        EnchantmentAmount: 1000
+      }
+      {
+        EditorID: "EnchWeaponWaterDamage03"
+        FormKey: "0008FE:Elemental Destruction Magic Redux.esp"
+        Suffix: " of Water"
+        EnchantmentAmount: 1500
+      }
+      {
+        EditorID: "EnchWeaponWaterDamage04"
+        FormKey: "0008FD:Elemental Destruction Magic Redux.esp"
+        Suffix: " of Rivers"
+        EnchantmentAmount: 2000
+      }
+      {
+        EditorID: "EnchWeaponWaterDamage05"
+        FormKey: "0008FC:Elemental Destruction Magic Redux.esp"
+        Suffix: " of Flooding"
+        EnchantmentAmount: 2500
+      }
+      {
+        EditorID: "EnchWeaponWaterDamage06"
+        FormKey: "0008F8:Elemental Destruction Magic Redux.esp"
+        Suffix: " of the Ocean"
+        EnchantmentAmount: 3000
+      }
+      {
+        EditorID: "EnchWeaponWindDamage01"
+        FormKey: "0008E9:Elemental Destruction Magic Redux.esp"
+        Suffix: " of Drafts"
+        EnchantmentAmount: 500
+      }
+      {
+        EditorID: "EnchWeaponWindDamage02"
+        FormKey: "0008E2:Elemental Destruction Magic Redux.esp"
+        Suffix: " of Breezes"
+        EnchantmentAmount: 1000
+      }
+      {
+        EditorID: "EnchWeaponWindDamage03"
+        FormKey: "0008E0:Elemental Destruction Magic Redux.esp"
+        Suffix: " of Flurries"
+        EnchantmentAmount: 1500
+      }
+      {
+        EditorID: "EnchWeaponWindDamage04"
+        FormKey: "0008DF:Elemental Destruction Magic Redux.esp"
+        Suffix: " of Wind"
+        EnchantmentAmount: 2000
+      }
+      {
+        EditorID: "EnchWeaponWindDamage05"
+        FormKey: "0008DE:Elemental Destruction Magic Redux.esp"
+        Suffix: " of Typhoons"
+        EnchantmentAmount: 2500
+      }
+      {
+        EditorID: "EnchWeaponWindDamage06"
+        FormKey: "0008DD:Elemental Destruction Magic Redux.esp"
+        Suffix: " of Hurricanes"
+        EnchantmentAmount: 3000
+      }
+	]
+}

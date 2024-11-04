@@ -1,0 +1,714 @@
+{
+	Master: "Elemental Destruction Magic Redux.esp"
+	Groups: [
+		{
+			GroupName: "Weapons1to3"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_01"
+					Enchantments: [
+						"EnchWeaponEarthDamage01"
+						"EnchWeaponWaterDamage01"
+						"EnchWeaponWindDamage01"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchWeaponEarthDamage02"
+						"EnchWeaponWaterDamage02"
+						"EnchWeaponWindDamage02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchWeaponEarthDamage03"
+						"EnchWeaponWaterDamage03"
+						"EnchWeaponWindDamage03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC01"
+					Enchantments: [
+						"EnchWeaponEarthDamage01"
+						"EnchWeaponWaterDamage01"
+						"EnchWeaponWindDamage01"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC02"
+					Enchantments: [
+						"EnchWeaponEarthDamage02"
+						"EnchWeaponWaterDamage02"
+						"EnchWeaponWindDamage02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+					Enchantments: [
+						"EnchWeaponEarthDamage03"
+						"EnchWeaponWaterDamage03"
+						"EnchWeaponWindDamage03"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "Weapons2to4"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchWeaponEarthDamage02"
+						"EnchWeaponWaterDamage02"
+						"EnchWeaponWindDamage02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchWeaponEarthDamage03"
+						"EnchWeaponWaterDamage03"
+						"EnchWeaponWindDamage03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchWeaponEarthDamage04"
+						"EnchWeaponWaterDamage04"
+						"EnchWeaponWindDamage04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC02"
+					Enchantments: [
+						"EnchWeaponEarthDamage02"
+						"EnchWeaponWaterDamage02"
+						"EnchWeaponWindDamage02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+					Enchantments: [
+						"EnchWeaponEarthDamage03"
+						"EnchWeaponWaterDamage03"
+						"EnchWeaponWindDamage03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+					Enchantments: [
+						"EnchWeaponEarthDamage04"
+						"EnchWeaponWaterDamage04"
+						"EnchWeaponWindDamage04"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "Weapons3to5"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchWeaponEarthDamage03"
+						"EnchWeaponWaterDamage03"
+						"EnchWeaponWindDamage03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchWeaponEarthDamage04"
+						"EnchWeaponWaterDamage04"
+						"EnchWeaponWindDamage04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchWeaponEarthDamage05"
+						"EnchWeaponWaterDamage05"
+						"EnchWeaponWindDamage05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+					Enchantments: [
+						"EnchWeaponEarthDamage03"
+						"EnchWeaponWaterDamage03"
+						"EnchWeaponWindDamage03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+					Enchantments: [
+						"EnchWeaponEarthDamage04"
+						"EnchWeaponWaterDamage04"
+						"EnchWeaponWindDamage04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC05"
+					Enchantments: [
+						"EnchWeaponEarthDamage05"
+						"EnchWeaponWaterDamage05"
+						"EnchWeaponWindDamage05"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "Weapons4to6"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchWeaponEarthDamage04"
+						"EnchWeaponWaterDamage04"
+						"EnchWeaponWindDamage04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchWeaponEarthDamage05"
+						"EnchWeaponWaterDamage05"
+						"EnchWeaponWindDamage05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_06"
+					Enchantments: [
+						"EnchWeaponEarthDamage06"
+						"EnchWeaponWaterDamage06"
+						"EnchWeaponWindDamage06"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+					Enchantments: [
+						"EnchWeaponEarthDamage04"
+						"EnchWeaponWaterDamage04"
+						"EnchWeaponWindDamage04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC05"
+					Enchantments: [
+						"EnchWeaponEarthDamage05"
+						"EnchWeaponWaterDamage05"
+						"EnchWeaponWindDamage05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC06"
+					Enchantments: [
+						"EnchWeaponEarthDamage06"
+						"EnchWeaponWaterDamage06"
+						"EnchWeaponWindDamage06"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "WeaponsNordic"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchWeaponEarthDamage03"
+						"EnchWeaponWaterDamage03"
+						"EnchWeaponWindDamage03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchWeaponEarthDamage04"
+						"EnchWeaponWaterDamage04"
+						"EnchWeaponWindDamage04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchWeaponEarthDamage05"
+						"EnchWeaponWaterDamage05"
+						"EnchWeaponWindDamage05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+					Enchantments: [
+						"EnchWeaponEarthDamage03"
+						"EnchWeaponWaterDamage03"
+						"EnchWeaponWindDamage03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+					Enchantments: [
+						"EnchWeaponEarthDamage04"
+						"EnchWeaponWaterDamage04"
+						"EnchWeaponWindDamage04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC05"
+					Enchantments: [
+						"EnchWeaponEarthDamage05"
+						"EnchWeaponWaterDamage05"
+						"EnchWeaponWindDamage05"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "WeaponsStalhrim"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchWeaponEarthDamage04"
+						"EnchWeaponWaterDamage04"
+						"EnchWeaponWindDamage04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchWeaponEarthDamage05"
+						"EnchWeaponWaterDamage05"
+						"EnchWeaponWindDamage05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_06"
+					Enchantments: [
+						"EnchWeaponEarthDamage06"
+						"EnchWeaponWaterDamage06"
+						"EnchWeaponWindDamage06"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+					Enchantments: [
+						"EnchWeaponEarthDamage04"
+						"EnchWeaponWaterDamage04"
+						"EnchWeaponWindDamage04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC05"
+					Enchantments: [
+						"EnchWeaponEarthDamage05"
+						"EnchWeaponWaterDamage05"
+						"EnchWeaponWindDamage05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC06"
+					Enchantments: [
+						"EnchWeaponEarthDamage06"
+						"EnchWeaponWaterDamage06"
+						"EnchWeaponWindDamage06"
+					]
+				}
+			]
+		}
+		
+		{
+			GroupName: "Bows1to3"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_01"
+					Enchantments: [
+						"EnchWeaponEarthDamage01"
+						"EnchWeaponWaterDamage01"
+						"EnchWeaponWindDamage01"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchWeaponEarthDamage02"
+						"EnchWeaponWaterDamage02"
+						"EnchWeaponWindDamage02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchWeaponEarthDamage03"
+						"EnchWeaponWaterDamage03"
+						"EnchWeaponWindDamage03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC01"
+					Enchantments: [
+						"EnchWeaponEarthDamage01"
+						"EnchWeaponWaterDamage01"
+						"EnchWeaponWindDamage01"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC02"
+					Enchantments: [
+						"EnchWeaponEarthDamage02"
+						"EnchWeaponWaterDamage02"
+						"EnchWeaponWindDamage02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+					Enchantments: [
+						"EnchWeaponEarthDamage03"
+						"EnchWeaponWaterDamage03"
+						"EnchWeaponWindDamage03"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "Bows2to4"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_02"
+					Enchantments: [
+						"EnchWeaponEarthDamage02"
+						"EnchWeaponWaterDamage02"
+						"EnchWeaponWindDamage02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchWeaponEarthDamage03"
+						"EnchWeaponWaterDamage03"
+						"EnchWeaponWindDamage03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchWeaponEarthDamage04"
+						"EnchWeaponWaterDamage04"
+						"EnchWeaponWindDamage04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC02"
+					Enchantments: [
+						"EnchWeaponEarthDamage02"
+						"EnchWeaponWaterDamage02"
+						"EnchWeaponWindDamage02"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+					Enchantments: [
+						"EnchWeaponEarthDamage03"
+						"EnchWeaponWaterDamage03"
+						"EnchWeaponWindDamage03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+					Enchantments: [
+						"EnchWeaponEarthDamage04"
+						"EnchWeaponWaterDamage04"
+						"EnchWeaponWindDamage04"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "Bows3to5"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchWeaponEarthDamage03"
+						"EnchWeaponWaterDamage03"
+						"EnchWeaponWindDamage03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchWeaponEarthDamage04"
+						"EnchWeaponWaterDamage04"
+						"EnchWeaponWindDamage04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchWeaponEarthDamage05"
+						"EnchWeaponWaterDamage05"
+						"EnchWeaponWindDamage05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+					Enchantments: [
+						"EnchWeaponEarthDamage03"
+						"EnchWeaponWaterDamage03"
+						"EnchWeaponWindDamage03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+					Enchantments: [
+						"EnchWeaponEarthDamage04"
+						"EnchWeaponWaterDamage04"
+						"EnchWeaponWindDamage04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC05"
+					Enchantments: [
+						"EnchWeaponEarthDamage05"
+						"EnchWeaponWaterDamage05"
+						"EnchWeaponWindDamage05"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "Bows4to6"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchWeaponEarthDamage04"
+						"EnchWeaponWaterDamage04"
+						"EnchWeaponWindDamage04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchWeaponEarthDamage05"
+						"EnchWeaponWaterDamage05"
+						"EnchWeaponWindDamage05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_06"
+					Enchantments: [
+						"EnchWeaponEarthDamage06"
+						"EnchWeaponWaterDamage06"
+						"EnchWeaponWindDamage06"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+					Enchantments: [
+						"EnchWeaponEarthDamage04"
+						"EnchWeaponWaterDamage04"
+						"EnchWeaponWindDamage04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC05"
+					Enchantments: [
+						"EnchWeaponEarthDamage05"
+						"EnchWeaponWaterDamage05"
+						"EnchWeaponWindDamage05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC06"
+					Enchantments: [
+						"EnchWeaponEarthDamage06"
+						"EnchWeaponWaterDamage06"
+						"EnchWeaponWindDamage06"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "BowsNordic"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_03"
+					Enchantments: [
+						"EnchWeaponEarthDamage03"
+						"EnchWeaponWaterDamage03"
+						"EnchWeaponWindDamage03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchWeaponEarthDamage04"
+						"EnchWeaponWaterDamage04"
+						"EnchWeaponWindDamage04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchWeaponEarthDamage05"
+						"EnchWeaponWaterDamage05"
+						"EnchWeaponWindDamage05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC03"
+					Enchantments: [
+						"EnchWeaponEarthDamage03"
+						"EnchWeaponWaterDamage03"
+						"EnchWeaponWindDamage03"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+					Enchantments: [
+						"EnchWeaponEarthDamage04"
+						"EnchWeaponWaterDamage04"
+						"EnchWeaponWindDamage04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC05"
+					Enchantments: [
+						"EnchWeaponEarthDamage05"
+						"EnchWeaponWaterDamage05"
+						"EnchWeaponWindDamage05"
+					]
+				}
+			]
+		}
+		{
+			GroupName: "BowsStalhrim"
+			LeveledLists: [
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_04"
+					Enchantments: [
+						"EnchWeaponEarthDamage04"
+						"EnchWeaponWaterDamage04"
+						"EnchWeaponWindDamage04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_05"
+					Enchantments: [
+						"EnchWeaponEarthDamage05"
+						"EnchWeaponWaterDamage05"
+						"EnchWeaponWindDamage05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_06"
+					Enchantments: [
+						"EnchWeaponEarthDamage06"
+						"EnchWeaponWaterDamage06"
+						"EnchWeaponWindDamage06"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC04"
+					Enchantments: [
+						"EnchWeaponEarthDamage04"
+						"EnchWeaponWaterDamage04"
+						"EnchWeaponWindDamage04"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC05"
+					Enchantments: [
+						"EnchWeaponEarthDamage05"
+						"EnchWeaponWaterDamage05"
+						"EnchWeaponWindDamage05"
+					]
+				}
+				{
+					LeveledListPrefix: "SublistEnchWeapon_"
+					LeveledListSuffix: "_NPC06"
+					Enchantments: [
+						"EnchWeaponEarthDamage06"
+						"EnchWeaponWaterDamage06"
+						"EnchWeaponWindDamage06"
+					]
+				}
+			]
+		}
+	]
+}
